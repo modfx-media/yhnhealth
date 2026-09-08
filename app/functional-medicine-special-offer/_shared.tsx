@@ -47,7 +47,15 @@ export const REVIEWS = [
 /*  Header — slim branded bar for funnel sub-pages                             */
 /* -------------------------------------------------------------------------- */
 
-export function LpHeader({ ctaHref = THANK_YOU_PATH, ctaLabel = "Book Free Consult" }: { ctaHref?: string; ctaLabel?: string }) {
+export function LpHeader({
+  ctaHref = THANK_YOU_PATH,
+  ctaLabel = "Book Free Consult",
+  showPhone = true,
+}: {
+  ctaHref?: string;
+  ctaLabel?: string;
+  showPhone?: boolean;
+}) {
   return (
     <header className="relative z-40 border-b border-brand/10 bg-white/90 backdrop-blur sm:sticky sm:top-0">
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-5 py-3 lg:px-10">
@@ -62,13 +70,15 @@ export function LpHeader({ ctaHref = THANK_YOU_PATH, ctaLabel = "Book Free Consu
           />
         </Link>
         <div className="flex items-center gap-2 sm:gap-3">
-          <a
-            href={PHONE_NJ_TEL}
-            className="hidden items-center gap-2 rounded-full bg-mist px-4 py-2 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white sm:inline-flex"
-          >
-            <Phone size={14} className="text-accent-dark" />
-            Call {PHONE_NJ}
-          </a>
+          {showPhone && (
+            <a
+              href={PHONE_NJ_TEL}
+              className="hidden items-center gap-2 rounded-full bg-mist px-4 py-2 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white sm:inline-flex"
+            >
+              <Phone size={14} className="text-accent-dark" />
+              Call {PHONE_NJ}
+            </a>
+          )}
           <Link
             href={ctaHref}
             className="inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-bold text-brand-dark shadow-sm transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:text-white hover:shadow-md sm:gap-2 sm:px-5"

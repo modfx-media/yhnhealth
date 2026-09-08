@@ -63,7 +63,11 @@ export default function ThankYouPage({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-screen scroll-smooth bg-white font-sans text-ink">
-      <LpHeader ctaHref={PHONE_NJ_TEL} ctaLabel={`Call ${PHONE_NJ}`} />
+      <LpHeader
+        ctaHref={PHONE_NJ_TEL}
+        ctaLabel={`Call ${PHONE_NJ}`}
+        showPhone={false}
+      />
 
       <main>
         {/* ----------------------------------------------------------------- */}
