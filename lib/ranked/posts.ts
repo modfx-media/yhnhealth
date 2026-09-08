@@ -41,6 +41,61 @@ function uniqueSlug(title: string, contentId: string, taken: Set<string>): strin
   return `${base}-${i}`
 }
 
+const TITLE_STOP = new Set([
+  'when',
+  'to',
+  'a',
+  'the',
+  'in',
+  'for',
+  'your',
+  'may',
+  'from',
+  'what',
+  'at',
+  'why',
+  'can',
+  'is',
+  'and',
+  'of',
+  'on',
+  'with',
+  'how',
+  'seek',
+  'help',
+  'choose',
+  'expect',
+])
+
+function titleTokens(title: string): Set<string> {
+  return new Set(
+    title
+      .toLowerCase()
+      .replace(/['’]/g, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim()
+      .split(/\s+/)
+      .filter((w) => w.length > 2 && !TITLE_STOP.has(w)),
+  )
+}
+
+function isSameArticleTitle(a: string, b: string): boolean {
+  const na = a.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, ' ').trim()
+  const nb = b.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, ' ').trim()
+  if (na === nb) return true
+  if (na.includes(nb) || nb.includes(na)) return true
+  const A = titleTokens(a)
+  const B = titleTokens(b)
+  let inter = 0
+  for (const t of A) if (B.has(t)) inter += 1
+  const min = Math.min(A.size, B.size)
+  return min > 0 && inter / min >= 0.72
+}
+
+function duplicatesLocalPost(title: string, local: BlogPostData[]): boolean {
+  return local.some((p) => isSameArticleTitle(p.title, title) || isSameArticleTitle(p.h1, title))
+}
+
 export async function getLiveRankedBlogPosts(
   projectId?: string,
   opts: { generateCovers?: boolean; generateForSlug?: string } = {},
@@ -52,10 +107,12 @@ export async function getLiveRankedBlogPosts(
   try {
     const items = await listRankedContent(id)
     if (!rankedCalendarBelongsHere(items)) return []
-    const candidates = items.filter((item) =>
-      shouldImportRankedItem(item, true, isBlogContentType, isRankedPostLive),
-    )
     const local = getLocalBlogPosts()
+    const candidates = items.filter(
+      (item) =>
+        shouldImportRankedItem(item, true, isBlogContentType, isRankedPostLive) &&
+        !duplicatesLocalPost(item.title, local),
+    )
     const taken = new Set(local.map((p) => p.slug))
     const reservedCovers = new Set(local.map((p) => p.coverImage))
     const resolved = await Promise.all(
