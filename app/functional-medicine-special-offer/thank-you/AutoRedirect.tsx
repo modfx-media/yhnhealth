@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 const REDIRECT_URL = 'https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2';
-const REDIRECT_DELAY_MS = 1000; // 1 second
+const REDIRECT_DELAY_MS = 3000;
 
 export default function AutoRedirect() {
   useEffect(() => {
