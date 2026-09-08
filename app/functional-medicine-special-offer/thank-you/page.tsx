@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import JaneBooking from "@/components/JaneBooking";
 import { SITE_URL } from "@/lib/siteUrl";
+import AutoRedirect from "./AutoRedirect";
 import ThankYouClient from "./ThankYouClient";
 
 const GOOGLE_ADS_ID = "AW-18270082937";
@@ -53,9 +53,7 @@ export default function Page() {
           });
         `}
       </Script>
-      <ThankYouClient>
-        <JaneBooking />
-      </ThankYouClient>
+      <ThankYouClient autoRedirect={<AutoRedirect />} />
     </>
   );
 }

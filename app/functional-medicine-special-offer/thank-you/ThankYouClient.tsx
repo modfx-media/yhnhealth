@@ -37,7 +37,11 @@ const STEPS = [
   },
 ];
 
-export default function ThankYouPage({ children }: { children: ReactNode }) {
+export default function ThankYouPage({
+  autoRedirect,
+}: {
+  autoRedirect: ReactNode;
+}) {
   // Hide the global Knock Knock chat widget on this standalone funnel page.
   useEffect(() => {
     const style = document.createElement("style");
@@ -98,6 +102,7 @@ export default function ThankYouPage({ children }: { children: ReactNode }) {
                 thank you!
               </span>
             </motion.h1>
+            {autoRedirect}
             <motion.p
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,8 +112,6 @@ export default function ThankYouPage({ children }: { children: ReactNode }) {
               Your request for a free functional medicine consultation has been received.
               Our team will be in touch shortly to confirm the details.
             </motion.p>
-
-            {children}
 
             <motion.div
               initial={{ opacity: 0, y: 18 }}
