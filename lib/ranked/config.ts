@@ -23,7 +23,13 @@ export function coverPrompt(title: string): string {
 }
 
 /**
- * Slugs that already have a committed file at /images/blog/covers/{slug}.png
- * List only. Do not fs.stat public/ — that packs images into the cron bundle.
+ * Committed cover URL per slug. String map only — do not fs.stat public/.
+ * Used for Ranked posts that already have a local image in this repo.
  */
-export const COMMITTED_COVER_SLUGS: readonly string[] = []
+export const COMMITTED_COVERS: Record<string, string> = {
+  'chronic-lyme-vs-mold-illness-symptoms-testing-and-next-steps':
+    '/images/blog/nguy-n-hi-p-2rNHliX6XHk-unsplash.jpg',
+}
+
+/** Slugs that already have a committed cover file. */
+export const COMMITTED_COVER_SLUGS: readonly string[] = Object.keys(COMMITTED_COVERS)
