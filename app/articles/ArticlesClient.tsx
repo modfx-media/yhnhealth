@@ -7,16 +7,16 @@ import { motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
 import { ArrowUpRight, BookOpen, Calendar, Clock, Search } from "lucide-react";
 import { Breadcrumbs, BookingStrip, FadeUp } from "@/components/page/Primitives";
-import { ARTICLES, ARTICLE_CATEGORIES } from "@/lib/articlesData";
+import { ARTICLE_CATEGORIES, type Article } from "@/lib/articlesData";
 
-function ArticlesIndex() {
+function ArticlesIndex({ articles }: { articles: Article[] }) {
   const searchParams = useSearchParams();
   const initialCategory = searchParams.get("category") ?? "All";
   const [active, setActive] = useState<string>(initialCategory);
   const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
-    let list = [...ARTICLES].sort(
+    let list = [...articles].sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
     );
     if (active !== "All") list = list.filter((a) => a.category === active);
@@ -30,7 +30,7 @@ function ArticlesIndex() {
       );
     }
     return list;
-  }, [active, query]);
+  }, [active, query, articles]);
 
   const featured = filtered[0];
   const rest = filtered.slice(1);
@@ -74,7 +74,7 @@ function ArticlesIndex() {
               />
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone md:text-lg">
                 Practical chiropractic, functional medicine, nutrition, and recovery guidance from
-                our team. {ARTICLES.length} articles across {ARTICLE_CATEGORIES.length} categories - updated regularly.
+                our team. {articles.length} articles across {ARTICLE_CATEGORIES.length} categories - updated regularly.
               </p>
             </FadeUp>
 
@@ -89,7 +89,7 @@ function ArticlesIndex() {
                 />
               </div>
               <p className="mt-3 text-xs text-stone">
-                {filtered.length} of {ARTICLES.length} articles
+                {filtered.length} of {articles.length} articles
               </p>
             </FadeUp>
           </div>
@@ -246,10 +246,10 @@ function ArticlesIndex() {
   );
 }
 
-export default function ArticlesClient() {
+export default function ArticlesClient({ articles }: { articles: Article[] }) {
   return (
     <Suspense fallback={null}>
-      <ArticlesIndex />
+      <ArticlesIndex articles={articles} />
     </Suspense>
   );
 }

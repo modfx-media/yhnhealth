@@ -16,9 +16,8 @@ import {
 } from "lucide-react";
 import { Breadcrumbs, FadeUp } from "@/components/page/Primitives";
 import {
-  ARTICLE_BY_SLUG,
   getArticleAuthor,
-  getRelated,
+  type Article,
   type ArticleBlock,
 } from "@/lib/articlesData";
 
@@ -130,10 +129,13 @@ function Block({ block }: { block: ArticleBlock }) {
   }
 }
 
-export default function ArticlePostClient({ slug }: { slug: string }) {
-  const article = ARTICLE_BY_SLUG[slug];
-  if (!article) return null;
-  const related = getRelated(slug, 3);
+export default function ArticlePostClient({
+  article,
+  related,
+}: {
+  article: Article;
+  related: Article[];
+}) {
   const author = getArticleAuthor(article);
 
   return (

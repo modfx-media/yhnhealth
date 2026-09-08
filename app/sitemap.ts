@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { SITE_PATHS } from "@/lib/navigation";
 import { CITIES, SERVICES } from "@/lib/pseoData";
-import { ARTICLES } from "@/lib/articlesData";
+import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { SITE_URL } from "@/lib/siteUrl";
 
 const BASE = SITE_URL;
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const lastModified = new Date("2026-09-02T12:00:00.000Z");
   const core: MetadataRoute.Sitemap = SITE_PATHS.map((path) => ({
     url: `${BASE}${path === "/" ? "" : path}`,
@@ -43,10 +43,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  const articles: MetadataRoute.Sitemap = ARTICLES.map((a) => ({
-    url: `${BASE}/articles/${a.slug}`,
+  const slugs = await getPublishedBlogSlugs().catch(() => []);
+  const articles: MetadataRoute.Sitemap = slugs.map((slug) => ({
+    url: `${BASE}/articles/${slug}`,
     lastModified,
-    changeFrequency: "monthly",
+    changeFrequency: "weekly",
     priority: 0.6,
   }));
 
