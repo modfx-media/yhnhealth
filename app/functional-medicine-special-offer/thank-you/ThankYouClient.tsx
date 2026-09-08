@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, type ReactNode } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import {
-  ArrowUpRight,
   CalendarCheck,
   CheckCircle2,
   Mail,
@@ -19,10 +17,7 @@ import {
   PHONE_NJ,
   PHONE_NJ_TEL,
   LP_PATH,
-  BOOK_PATH,
 } from "../_shared";
-
-const REDIRECT_SECONDS = 5;
 
 const STEPS = [
   {
@@ -42,24 +37,7 @@ const STEPS = [
   },
 ];
 
-export default function ThankYouPage() {
-  const router = useRouter();
-  const [secondsLeft, setSecondsLeft] = useState(REDIRECT_SECONDS);
-
-  // Send the visitor straight to the booking calendar a few seconds after landing here.
-  useEffect(() => {
-    const tick = setInterval(() => {
-      setSecondsLeft((s) => Math.max(0, s - 1));
-    }, 1000);
-    const redirect = setTimeout(() => {
-      router.push(BOOK_PATH);
-    }, REDIRECT_SECONDS * 1000);
-    return () => {
-      clearInterval(tick);
-      clearTimeout(redirect);
-    };
-  }, [router]);
-
+export default function ThankYouPage({ children }: { children: ReactNode }) {
   // Hide the global Knock Knock chat widget on this standalone funnel page.
   useEffect(() => {
     const style = document.createElement("style");
@@ -126,28 +104,14 @@ export default function ThankYouPage() {
               Our team will be in touch shortly to confirm the details.
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.25 }}
-              className="mt-3 text-sm text-white/60"
-            >
-              Taking you to our booking calendar in {secondsLeft}s&hellip;
-            </motion.p>
+            {children}
 
             <motion.div
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
+              className="mt-5 flex justify-center"
             >
-              <Link
-                href={BOOK_PATH}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-bold uppercase tracking-[0.16em] text-brand-dark shadow-card transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:text-white"
-              >
-                Book My Appointment Now
-                <ArrowUpRight size={16} />
-              </Link>
               <a
                 href={PHONE_NJ_TEL}
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-bold uppercase tracking-[0.16em] text-white transition-all hover:border-accent hover:text-accent"

@@ -13,7 +13,7 @@ export const PHONE_NJ = "+1 609-869-9498";
 export const PHONE_NJ_TEL = "tel:+16098699498";
 
 export const LP_PATH = "/functional-medicine-special-offer";
-export const BOOK_PATH = "/functional-medicine-special-offer/book";
+export const THANK_YOU_PATH = "/functional-medicine-special-offer/thank-you";
 
 /** Patient stories shown across the Functional Medicine landing-page funnel. */
 export const REVIEWS = [
@@ -47,7 +47,7 @@ export const REVIEWS = [
 /*  Header — slim branded bar for funnel sub-pages                             */
 /* -------------------------------------------------------------------------- */
 
-export function LpHeader({ ctaHref = BOOK_PATH, ctaLabel = "Book Free Consult" }: { ctaHref?: string; ctaLabel?: string }) {
+export function LpHeader({ ctaHref = THANK_YOU_PATH, ctaLabel = "Book Free Consult" }: { ctaHref?: string; ctaLabel?: string }) {
   return (
     <header className="relative z-40 border-b border-brand/10 bg-white/90 backdrop-blur sm:sticky sm:top-0">
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-5 py-3 lg:px-10">
