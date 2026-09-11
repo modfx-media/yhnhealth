@@ -116,7 +116,7 @@ function DesktopDropdown({
   const [open, setOpen] = useState(false);
 
   const linkBase =
-    "relative inline-flex h-full items-center whitespace-nowrap px-3 text-[11.5px] font-semibold uppercase tracking-[0.14em] transition-colors xl:px-4";
+    "relative inline-flex h-full items-center whitespace-nowrap px-2 text-[10.5px] font-semibold uppercase tracking-[0.1em] transition-colors xl:px-3 2xl:px-4 2xl:text-[11.5px] 2xl:tracking-[0.14em]";
 
   if (item.children.length === 0 && item.href) {
     return (
@@ -551,7 +551,7 @@ export default function Header() {
         <div className="border-b border-brand/10">
           <div
             className={cn(
-              "mx-auto flex max-w-[1400px] items-center gap-4 px-5 transition-all duration-300 md:gap-6 md:px-8 lg:px-10",
+              "mx-auto flex max-w-[1400px] items-center gap-3 px-5 transition-all duration-300 md:gap-6 md:px-8 lg:px-10 xl:gap-2 xl:px-6 2xl:gap-6 2xl:px-10",
               scrolled ? "h-16" : "h-20"
             )}
           >
@@ -612,8 +612,8 @@ export default function Header() {
                   }
                 }}
                 className={cn(
-                  "group inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand text-[11px] font-bold uppercase tracking-[0.2em] text-white shadow-soft transition-all duration-300 hover:bg-brand-light hover:shadow-card",
-                  scrolled ? "px-5 py-2.5" : "px-6 py-3"
+                  "group inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand text-[11px] font-bold uppercase tracking-[0.2em] text-white shadow-soft transition-all duration-300 hover:bg-brand-light hover:shadow-card xl:text-[10px] xl:tracking-[0.16em] 2xl:text-[11px] 2xl:tracking-[0.2em]",
+                  scrolled ? "px-5 py-2.5 xl:px-4 xl:py-2 2xl:px-5 2xl:py-2.5" : "px-6 py-3 xl:px-4 xl:py-2.5 2xl:px-6 2xl:py-3"
                 )}
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-accent transition-colors group-hover:bg-white" />

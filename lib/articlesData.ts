@@ -82,6 +82,363 @@ const IMG = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "saddle-river-soft-tissue-therapy-for-active-adults",
+    title: "Saddle River Soft Tissue Therapy for Active Adults",
+    excerpt:
+      "Discover relief and faster recovery with soft tissue therapy in Saddle River, NJ, plus functional care and hands-on treatment for lasting results.",
+    category: "Therapies & Techniques",
+    date: "September 8, 2026",
+    readTime: 7,
+    image: "/images/articles/saddle-river-soft-tissue-therapy-for-active-adults.webp",
+    imageAlt: "Active adult receiving soft tissue therapy for muscle and joint pain relief in Saddle River, NJ",
+    body: [
+      { type: "h2", text: "Unlocking Pain-Free Movement for Active Adults in Saddle River" },
+      {
+        type: "p",
+        text: "Staying active around Saddle River is a big part of life. Many adults enjoy golf, tennis, pickleball, running, and long walks on local trails. Others love yard work, gardening, and weekend projects that keep them moving.",
+      },
+      {
+        type: "p",
+        text: "All that activity is good, but it can come with tight muscles, sore joints, and nagging aches that do not seem to go away. Even if you feel generally healthy, overuse, small injuries, and natural tissue changes with age can slow you down. Soft tissue therapy gives us a focused, hands-on way to help your body move better so you can keep doing what you love with less pain and stiffness as your schedule stays busy year-round.",
+      },
+      { type: "h2", text: "What Soft Tissue Therapy Really Is (and Why It Works)" },
+      {
+        type: "p",
+        text: "Soft tissue therapy is hands-on care for the parts of your body that are not bones. It focuses on muscles, fascia, tendons, and ligaments, the tissues that help you move, bend, lift, swing, and run. When these tissues get tight, irritated, or stuck together, they can limit how you move and how comfortable you feel.",
+      },
+      {
+        type: "p",
+        text: "With soft tissue therapy, we use different techniques to ease tension, support circulation, and improve how those tissues slide and move. Some of the methods we may use include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Myofascial release to gently work on the thin layer of tissue around your muscles",
+          "Trigger point therapy to press on tender knots that send pain to other areas",
+          "Instrument-assisted techniques using small tools to work through sticky or stiff spots",
+          "Targeted stretching to help lengthen tight muscles and improve joint range of motion",
+        ],
+      },
+      {
+        type: "p",
+        text: "Each of these approaches can support your body's natural healing process. They are not about forcing change. They are about guiding tissues back toward healthier movement. When we combine soft tissue therapy with chiropractic care, we can address both how your joints line up and how the surrounding muscles and fascia are working.",
+      },
+      {
+        type: "p",
+        text: "Functional medicine fits in by looking at deeper health factors that may affect how well you recover, such as inflammation, stress, or sleep patterns. When structure, soft tissue health, and overall wellness are all considered together, active adults tend to notice more lasting improvements, not just a quick fix.",
+      },
+      { type: "h2", text: "Common Sports and Lifestyle Injuries in Saddle River Adults" },
+      {
+        type: "p",
+        text: "Active adults in Saddle River deal with many of the same issues we see in other busy suburbs, but the patterns often tie back to local habits. Common problems include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Tennis elbow or shoulder strain from tennis and pickleball",
+          "Golfer's elbow, wrist tightness, or low back soreness from repeated golf swings",
+          "Runner's knee, hip tightness, and shin pain from road running and trail running",
+          "Plantar fasciitis and arch pain from walking, jogging, or standing for long periods",
+          "Neck and low back tightness from commuting, computer work, and phone use",
+        ],
+      },
+      {
+        type: "p",
+        text: "Repetitive motions are a big part of the story. Swinging a racquet, turning through a golf swing, jogging the same loop, or bending over in the garden again and again can create tiny micro-injuries over time. Your body does its best to repair this stress, but the healing process can leave behind small areas of scar tissue and stiffness.",
+      },
+      {
+        type: "p",
+        text: "When that happens, nearby muscles start to compensate. You might favor one side without even noticing, or you might change your form just a little to avoid a sore area. Over time, this can set up a cycle of:",
+      },
+      {
+        type: "list",
+        items: [
+          "Tight, overworked muscles that feel like they never relax",
+          "Weak or underused muscles that are not doing their share",
+          "Joints that feel stiff or unstable because the surrounding tissues are not balanced",
+        ],
+      },
+      {
+        type: "p",
+        text: "Soft tissue therapy in Saddle River, NJ, can help by breaking up adhesions, those sticky spots in muscle and fascia, and by improving flexibility where you need it most. As we restore better movement, your body does not have to compensate as much, which may lower the chance of those same injuries coming back when your training or activity level increases.",
+      },
+      { type: "h2", text: "How Your Health Now Builds Personalized Treatment Plans" },
+      {
+        type: "p",
+        text: "At Your Health Now, we start by getting to know you, not just your pain. Your first step usually includes:",
+      },
+      {
+        type: "list",
+        items: [
+          "A detailed health history to understand past injuries, surgeries, and daily habits",
+          "A movement assessment to see how you walk, bend, squat, or reach",
+          "Targeted exams to check specific joints, muscles, and areas of concern",
+        ],
+      },
+      {
+        type: "p",
+        text: "When needed, we may also recommend advanced functional medicine testing to get a clearer picture of what is going on inside your body. This can give more insight into things like inflammation, recovery, and overall wellness that may be affecting how your tissues heal.",
+      },
+      {
+        type: "p",
+        text: "From there, we build a plan that often includes a mix of:",
+      },
+      {
+        type: "list",
+        items: [
+          "Soft tissue therapy to address tight, irritated, or overworked areas",
+          "Chiropractic adjustments to help improve joint alignment and motion",
+          "Corrective exercises to support better strength, balance, and posture",
+          "Lifestyle guidance for movement, rest, and daily habits that support recovery",
+        ],
+      },
+      {
+        type: "p",
+        text: "We also think about your activity level and your goals. If you are getting ready for a race, tournament, or busy sports season, we take that into account when planning treatment frequency and intensity. The goal is to support your performance and comfort while still allowing you to stay as active as possible.",
+      },
+      { type: "h2", text: "What to Expect From Your First Soft Tissue Session" },
+      {
+        type: "p",
+        text: "Many people want to know what their first session will actually feel like. The visit usually begins with a conversation about your main concerns, what activities you enjoy, and what has or has not helped you in the past. Then we perform a focused exam and movement check so we can see how your body is working in real life.",
+      },
+      {
+        type: "p",
+        text: "Once we have a clear picture, we explain how soft tissue therapy fits into your overall care. A typical session may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Hands-on work to specific muscles or fascia around your problem areas",
+          "Gentle or firm pressure, depending on what your body needs and what you prefer",
+          "Stretches or guided movements to test and improve your range of motion",
+        ],
+      },
+      {
+        type: "p",
+        text: "Most sessions last long enough to address key areas without overwhelming your body. Some people feel relief and lightness right away, while others notice a bit of soreness, similar to the feeling after a new workout. This usually fades within a day or so.",
+      },
+      {
+        type: "p",
+        text: "To get the most out of soft tissue therapy, it often helps to:",
+      },
+      {
+        type: "list",
+        items: [
+          "Drink plenty of water after your session",
+          "Do light walking or gentle movement, rather than complete rest",
+          "Follow any simple at-home stretches or exercises we suggest",
+          "Plan heavier workouts or games with a little buffer around your visit when possible",
+        ],
+      },
+      {
+        type: "p",
+        text: "Our goal is to help you feel heard, supported, and clear on what is happening at every step, so you feel confident staying active while your body recovers and improves.",
+      },
+      {
+        type: "callout",
+        title: "Move with less pain and more confidence",
+        text: "If pain or tightness is limiting your daily activities, we are ready to help you move with confidence again through targeted [soft tissue therapy in Saddle River, NJ](/art). At Your Health Now, we focus on personalized care that addresses the root causes of your discomfort, not just the symptoms. Schedule a visit or ask a question through our [contact page](/contact-us) so we can create a plan tailored to your goals.",
+      },
+    ],
+    related: ["what-is-art-active-release", "iastm-explained", "athletic-care-young-athletes"],
+  },
+  {
+    slug: "chronic-lyme-vs-mold-illness-symptoms-and-testing",
+    title: "Chronic Lyme vs. Mold Illness: Symptoms and Testing",
+    excerpt:
+      "Learn how a Lyme disease specialist in Villanova, PA differentiates chronic Lyme from mold illness using key symptoms, advanced testing, and care steps.",
+    category: "Functional Medicine",
+    date: "September 1, 2026",
+    readTime: 7,
+    image: "/images/articles/chronic-lyme-vs-mold-illness-symptoms-and-testing.jpg",
+    imageAlt: "Illustration comparing chronic Lyme disease and mold illness symptoms and lab testing",
+    body: [
+      { type: "h2", text: "When Mysterious Symptoms Do Not Add Up Any More" },
+      {
+        type: "p",
+        text: "Persistent fatigue, brain fog, aches, and flu-like symptoms that never fully clear can make daily life feel like a blur. You may be trying to push through work, school, or family routines, but your body just will not cooperate. Rest does not fix it. Regular labs look \u201cnormal.\u201d You start to wonder if anyone will ever find a real answer.",
+      },
+      {
+        type: "p",
+        text: "Chronic Lyme disease and mold illness are two of the most common root causes we see behind this kind of long-term, confusing illness. On the surface, they can look almost the same, which is why people often get misdiagnosed or only feel a little better with basic treatment. As a Lyme disease specialist in Villanova, PA, we use a mix of functional medicine, advanced testing, and hands-on chiropractic care to sort through overlapping symptoms and look for the true source of what your body is trying to tell you.",
+      },
+      { type: "h2", text: "Chronic Lyme vs. Mold Illness Basics" },
+      {
+        type: "p",
+        text: "Lyme disease starts with a bite from an infected tick. Many people think they would always see a bullseye rash or remember the bite, but that is not always the case. When Lyme becomes chronic, it often means your immune system and nervous system are still struggling with either a lingering infection, leftover bacterial pieces, or a dysregulated immune response long after the first illness passed.",
+      },
+      {
+        type: "p",
+        text: "Mold illness is different. Many people know mold can affect allergies or asthma, but mold-related conditions can go much deeper. Long-term exposure to toxic mold in homes, workplaces, or schools can trigger a chronic inflammatory response in some people. This is often called CIRS, or chronic inflammatory response syndrome, and it can affect the brain, hormones, gut, and immune system.",
+      },
+      {
+        type: "p",
+        text: "Here is a simple way to think about where each often begins:",
+      },
+      {
+        type: "list",
+        items: [
+          "Chronic Lyme often starts outdoors after tick exposure, even if you never saw the tick",
+          "Mold illness usually starts indoors in a water-damaged or damp building",
+          "Both can lead to full-body symptoms that do not match simple lab work",
+          "Both can flare at certain times of year, like when humidity changes or you are outside more",
+        ],
+      },
+      {
+        type: "p",
+        text: "In and around Villanova, we see both: wooded areas with ticks and older or damp buildings that may hide mold behind walls or under floors. That overlap is one big reason clear answers can feel so hard to find.",
+      },
+      { type: "h2", text: "Symptom Clues a Villanova Specialist Looks For" },
+      {
+        type: "p",
+        text: "Lyme and mold illness share fatigue, brain fog, pain, sleep issues, and mood changes. Still, there are patterns that gently point in one direction or the other.",
+      },
+      {
+        type: "p",
+        text: "Symptoms that lean more toward chronic Lyme may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Migrating joint or muscle pain that shifts from place to place",
+          "Nerve pain, tingling, or buzzing sensations in hands, feet, or face",
+          "Facial droop or twitching that comes and goes",
+          "Night sweats or feeling feverish without a clear cause",
+          "Flares after physical exertion or after another infection",
+        ],
+      },
+      {
+        type: "p",
+        text: "Clues that suggest mold illness instead can look like:",
+      },
+      {
+        type: "list",
+        items: [
+          "Feeling clearly worse inside certain buildings or rooms",
+          "Static shocks, feeling \u201celectric,\u201d or odd skin sensations",
+          "Strong light, sound, or chemical sensitivity",
+          "Chronic sinus congestion or post-nasal drip that never really clears",
+          "Noticing symptoms ease when you travel or sleep away from home or work",
+        ],
+      },
+      {
+        type: "p",
+        text: "When we meet someone with these types of symptoms, we slow down and ask about daily patterns:",
+      },
+      {
+        type: "list",
+        items: [
+          "Where do you feel worst: home, work, school, car, outside?",
+          "Do you feel different on vacation or after staying somewhere else?",
+          "Have you ever had a visible water leak, musty smell, or known mold in your home?",
+          "Do you spend time in tick-heavy areas like woods, tall grass, or leaf piles?",
+          "When did symptoms start, and did they follow a flu-like illness, a move, or a big life change?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Putting this story together helps us form a working idea of what might be driving your symptoms before we order any tests.",
+      },
+      { type: "h2", text: "Advanced Testing That Separates Lyme From Mold" },
+      {
+        type: "p",
+        text: "Standard Lyme testing often looks for antibodies that your immune system makes against the Lyme bacteria. These basic tests can miss chronic or complicated cases, especially if your immune system is worn down. In our work with patients near Villanova, we may use:",
+      },
+      {
+        type: "list",
+        items: [
+          "Expanded tick-borne disease panels that check for multiple Lyme markers",
+          "Co-infection testing for other tick-borne infections that can ride along with Lyme",
+          "Immune and inflammation markers that show how your body is responding overall",
+        ],
+      },
+      {
+        type: "p",
+        text: "For mold illness, the testing is aimed less at the bug and more at your body's response to toxins. Helpful tools can include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Mycotoxin urine tests that look for mold-related toxins your body is trying to excrete",
+          "Visual contrast sensitivity (VCS) screening, a simple eye test that can pick up brain and nerve effects of toxins",
+          "Blood markers linked with chronic inflammatory response patterns",
+          "Environmental testing of home or work spaces to check for moisture problems or hidden mold",
+        ],
+      },
+      {
+        type: "p",
+        text: "Because ticks and water-damaged buildings are both present in the Villanova area, it is very possible for someone to have both chronic Lyme and mold illness at the same time. That is why accurate test selection and careful interpretation matter so much. We are not just checking boxes; we are looking for patterns that explain your day-to-day experience.",
+      },
+      { type: "h2", text: "Personalized Treatment Paths for Lyme and Mold" },
+      {
+        type: "p",
+        text: "Once we have a clearer idea of what is going on, treatment can be shaped in a more focused way instead of trying random options and hoping something sticks.",
+      },
+      {
+        type: "p",
+        text: "For chronic Lyme disease, common strategies can include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Antimicrobial herbs or medications chosen for your specific infections",
+          "Support for mitochondria, the energy \u201cengines\u201d inside your cells",
+          "Nutritional guidance to lower inflammation and support the immune system",
+          "Chiropractic care to improve joint motion, spinal alignment, and nervous system stress",
+        ],
+      },
+      {
+        type: "p",
+        text: "For mold illness, the focus shifts to both your body and your environment:",
+      },
+      {
+        type: "list",
+        items: [
+          "Reducing or remediating exposure to mold and moisture when possible",
+          "Using binders that help capture and remove certain toxins through the gut",
+          "Supporting detox organs such as the liver, gut, and kidneys",
+          "Targeted nutrients to help calm an overactive and inflamed immune system",
+        ],
+      },
+      {
+        type: "p",
+        text: "At our functional medicine and chiropractic clinic serving the Villanova area, we also pay attention to pacing. Moving too fast with treatment can lead to strong \u201cdie-off\u201d or detox reactions, where symptoms spike as your body tries to clear out infections or toxins. Seasonal shifts, like changes in humidity and indoor air, can also affect how your immune system feels, so we adjust plans as needed.",
+      },
+      { type: "h2", text: "Your Next Steps with a Lyme Specialist in Villanova" },
+      {
+        type: "p",
+        text: "If this sounds familiar, your next steps do not need to be big or overwhelming. Small pieces of information can give a specialist a much better starting point.",
+      },
+      {
+        type: "p",
+        text: "Here is a simple roadmap many people find helpful:",
+      },
+      {
+        type: "list",
+        items: [
+          "Start a symptom log; include time of day, location, and what you were doing",
+          "Note where symptoms feel worst, specific rooms, buildings, or outdoor areas",
+          "Gather prior lab work, imaging, and a list of medications and supplements",
+          "Write down any known tick bites, rashes, moves to new homes, or water damage issues",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your fatigue, pain, or brain fog tend to flare when life gets busier, when you spend more time in certain buildings, or when the weather and humidity shift, it is worth looking deeper. At Your Health Now, we combine functional medicine testing with chiropractic care to help uncover whether chronic Lyme, mold illness, or both are driving what you feel and to create a plan that respects your body's pace and goals.",
+      },
+      {
+        type: "callout",
+        title: "Get answers for chronic Lyme or mold illness",
+        text: "If you are ready to move beyond short-term fixes and get to the root of your symptoms, our team at Your Health Now is here to help. Work directly with a dedicated [Lyme disease specialist in Villanova, PA](/lyme-disease-solutions) who can evaluate your history, refine your diagnosis, and create a care plan tailored to your needs. To schedule an appointment or ask questions about your next steps, simply [contact us](/contact-us) today.",
+      },
+    ],
+    related: [
+      "lyme-disease-specialist-villanova-pa",
+      "villanova-pa-lyme-diagnosis-tests-co-infections-care",
+      "chronic-lyme-functional-medicine",
+    ],
+  },
+  {
     slug: "postpartum-pelvic-alignment-and-core-care-in-furlong",
     title: "Postpartum Pelvic Alignment and Core Care in Furlong",
     excerpt:
