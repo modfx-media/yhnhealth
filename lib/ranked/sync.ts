@@ -1,4 +1,4 @@
-import { hasRankedApiKey, listRankedProjects } from './client'
+import { hasRankedApiKey, isRankedEnabled, listRankedProjects } from './client'
 import { generateLiveRankedCovers } from './publish'
 import { revalidateRankedBlog } from './revalidate'
 import { getRankedSiteTargets, isLocalOrigin, type RankedSiteTarget } from './sites'
@@ -26,6 +26,17 @@ async function pingRemoteCron(site: RankedSiteTarget): Promise<{ ok: boolean; er
 }
 
 export async function syncAllRankedSites() {
+  if (!isRankedEnabled()) {
+    return {
+      disabled: true,
+      rankedProjectCount: 0,
+      mappedCount: 0,
+      unmappedCount: 0,
+      unmapped: [],
+      published: [],
+    }
+  }
+
   const projects = hasRankedApiKey() ? await listRankedProjects().catch(() => []) : []
   const targets = getRankedSiteTargets()
   const mappedIds = new Set(targets.map((t) => t.projectId))

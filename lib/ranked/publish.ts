@@ -1,9 +1,10 @@
-import { listRankedContent } from './client'
+import { isRankedEnabled, listRankedContent } from './client'
 import { getRankedCoverImage } from './cover'
 import { isBlogContentType, isRankedPostLive, slugFromTitle } from './html-to-post'
 import { rankedCalendarBelongsHere, shouldImportRankedItem } from './site-fit'
 
 export async function generateLiveRankedCovers(projectId: string): Promise<string[]> {
+  if (!isRankedEnabled()) return []
   const items = await listRankedContent(projectId)
   if (!rankedCalendarBelongsHere(items)) return []
   const slugs: string[] = []

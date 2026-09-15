@@ -1,5 +1,6 @@
 import { createHmac, timingSafeEqual } from 'node:crypto'
 import { NextResponse } from 'next/server'
+import { isRankedEnabled } from '@/lib/ranked/client'
 import { revalidateRankedBlog } from '@/lib/ranked/revalidate'
 
 export const runtime = 'nodejs'
@@ -26,6 +27,10 @@ function timestampFresh(header: string | null): boolean {
 }
 
 export async function POST(request: Request) {
+  if (!isRankedEnabled()) {
+    return NextResponse.json({ ok: true, ignored: true, reason: 'ranked_disabled' })
+  }
+
   const secret = process.env.RANKED_WEBHOOK_SECRET
   if (!secret) {
     return NextResponse.json({ ok: false, error: 'Webhook not configured' }, { status: 503 })

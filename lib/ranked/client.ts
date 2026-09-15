@@ -10,6 +10,13 @@ import {
 
 const RANKED_BASE = 'https://app.ranked.ai/api/v1'
 
+/** Flip to true to pull articles from Ranked CMS again. */
+export const RANKED_CMS_ENABLED = false
+
+export function isRankedEnabled(): boolean {
+  return RANKED_CMS_ENABLED
+}
+
 function rankedConfig() {
   return {
     apiKey: process.env.RANKED_API_KEY,
@@ -18,11 +25,13 @@ function rankedConfig() {
 }
 
 export function isRankedConfigured(): boolean {
+  if (!isRankedEnabled()) return false
   const { apiKey, projectId } = rankedConfig()
   return Boolean(apiKey && projectId)
 }
 
 export function hasRankedApiKey(): boolean {
+  if (!isRankedEnabled()) return false
   return Boolean(rankedConfig().apiKey)
 }
 
@@ -48,7 +57,7 @@ async function rankedGet<T>(path: string): Promise<T> {
 }
 
 export async function listRankedProjects(): Promise<RankedProject[]> {
-  if (!hasRankedApiKey()) return []
+  if (!isRankedEnabled() || !hasRankedApiKey()) return []
 
   const items: RankedProject[] = []
   for (let offset = 0; offset < 500; offset += 50) {
@@ -61,6 +70,7 @@ export async function listRankedProjects(): Promise<RankedProject[]> {
 }
 
 export async function listRankedContent(projectId?: string, limit = 50): Promise<RankedContentListItem[]> {
+  if (!isRankedEnabled()) return []
   const id = thisProjectId(projectId)
   if (!id) return []
 
@@ -81,6 +91,7 @@ export async function getRankedContentDetail(
   contentId: string,
   projectId?: string,
 ): Promise<RankedContentDetail | null> {
+  if (!isRankedEnabled()) return null
   const id = thisProjectId(projectId)
   if (!id) return null
 

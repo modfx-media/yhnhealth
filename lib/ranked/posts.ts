@@ -1,4 +1,4 @@
-import { getRankedContentDetail, isRankedConfigured, listRankedContent } from './client'
+import { getRankedContentDetail, isRankedConfigured, isRankedEnabled, listRankedContent } from './client'
 import { ensureUniqueCoverImages, getRankedCoverImage } from './cover'
 import { fetchGoogleDocHtml } from './google-doc'
 import {
@@ -100,6 +100,7 @@ export async function getLiveRankedBlogPosts(
   projectId?: string,
   opts: { generateCovers?: boolean; generateForSlug?: string } = {},
 ): Promise<BlogPostData[]> {
+  if (!isRankedEnabled()) return []
   if (!isRankedConfigured() && !projectId) return []
   const id = projectId || process.env.RANKED_PROJECT_ID
   if (!process.env.RANKED_API_KEY || !id) return []
@@ -179,6 +180,9 @@ export async function getPublishedBlogPost(slug: string): Promise<BlogPostData |
 
 export async function getPublishedBlogPosts(opts: { generateForSlug?: string } = {}): Promise<BlogPostData[]> {
   const local = getLocalBlogPosts()
+  if (!isRankedEnabled()) {
+    return ensureUniquePublishDates(ensureUniqueCoverImages(local))
+  }
   const ranked = await getLiveRankedBlogPosts(undefined, opts)
   const taken = new Set(local.map((p) => p.slug))
   const merged = [...local, ...ranked.filter((p) => !taken.has(p.slug))]
