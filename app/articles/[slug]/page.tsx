@@ -26,7 +26,7 @@ export async function generateMetadata({
   const post = posts.find((p) => p.slug === slug);
   if (!post) return { title: "Article Not Found | Your Health Now" };
   const a = blogPostToArticle(post);
-  const title = a.title;
+  const title = a.seoTitle ?? a.title;
   const description = a.excerpt;
   const url = `${SITE_URL}/articles/${a.slug}`;
   return {

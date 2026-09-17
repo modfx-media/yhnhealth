@@ -9,6 +9,8 @@ export type ArticleBlock =
 export type Article = {
   slug: string;
   title: string;
+  /** Browser/SEO title when it should differ from the on-page H1. */
+  seoTitle?: string;
   excerpt: string;
   category: ArticleCategory;
   date: string; // e.g. "May 2026"
@@ -81,6 +83,250 @@ const IMG = {
 };
 
 export const ARTICLES: Article[] = [
+  {
+    slug: "choosing-pediatric-chiropractor-haddonfield",
+    title: "How to Confidently Choose a Pediatric Chiropractor in Haddonfield",
+    seoTitle: "Choosing a Pediatric Chiropractor in Haddonfield NJ",
+    excerpt:
+      "Learn the top questions and warning signs to consider when choosing a family chiropractor in Haddonfield, NJ for safe, effective pediatric care",
+    category: "Wellness4Kids",
+    date: "September 15, 2026",
+    readTime: 8,
+    image: "/images/articles/choosing-a-pediatric-chiropractor-in-haddonfield-nj.png",
+    imageAlt: "Child with a backpack holding her neck and lower back after school in Haddonfield, NJ",
+    body: [
+      {
+        type: "p",
+        text: "Choosing a chiropractor for your child can feel a little scary. You want to support their growth, posture, and comfort, but you never want to put them at risk. When you are thinking about care for a tiny newborn, an active grade-schooler, or a teen athlete, safety and trust have to come first.",
+      },
+      {
+        type: "p",
+        text: "More parents in Haddonfield are exploring chiropractic care for babies, kids, and teens. Common reasons include sports strains, heavy backpacks, poor posture from screen time, sensory overload, growing pains, and general stiffness from sitting all day in class. A gentle, age-appropriate approach can sometimes help kids move and feel better so they can focus, play, and sleep more comfortably.",
+      },
+      {
+        type: "p",
+        text: "The key is knowing what to ask and what to watch for. When you understand how pediatric chiropractic should work, it is much easier to spot a trusted family chiropractor in Haddonfield, NJ, and to walk away when something does not feel right. Early fall with back-to-school, new sports seasons, and fresh routines is a natural time to look at your child’s care team and decide who you want in their corner.",
+      },
+      {
+        type: "p",
+        text: "In this guide, we will share questions to ask, safety and communication checkpoints, and red flags that should make you pause before bringing your child back for more care.",
+      },
+      { type: "h2", text: "Must-Ask Questions About Training and Experience" },
+      {
+        type: "p",
+        text: "Pediatric chiropractic care is not the same as care for adults. Babies and kids have smaller, more flexible bodies, and their nervous systems are still developing. You want a chiropractor who understands that and has specific training to match.",
+      },
+      {
+        type: "p",
+        text: "Start with questions about pediatric training:",
+      },
+      {
+        type: "list",
+        items: [
+          "What pediatric-specific coursework have you completed?",
+          "Do you do ongoing education focused on infants, children, or teens?",
+          "Have you done any postgraduate programs centered on pediatric care?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Then, ask about day-to-day experience:",
+      },
+      {
+        type: "list",
+        items: [
+          "How many pediatric patients do you typically see in a week?",
+          "What age ranges do you work with most often?",
+          "What are the most common kid-focused concerns you see here in Haddonfield?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Many families bring children in for things like sports-related aches, posture concerns, headaches, or general tension. Some parents of babies are curious whether gentle bodywork might support issues like colic, feeding positions, or general fussiness. You want a chiropractor who can clearly explain what they focus on and what they do not treat.",
+      },
+      {
+        type: "p",
+        text: "Ask about their clinical approach too:",
+      },
+      {
+        type: "list",
+        items: [
+          "How do you evaluate a child during the first visit?",
+          "How do you adjust your techniques for a newborn vs. a teenager?",
+          "When do you refer a child to a pediatrician or another specialist?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Their answers should sound calm, thoughtful, and clear. You want to hear about careful assessments, age-appropriate touch, and a willingness to work with your pediatrician or other providers when needed.",
+      },
+      { type: "h2", text: "Safety, Communication, and Office Environment Checkpoints" },
+      {
+        type: "p",
+        text: "Your child’s safety should always be the top priority. Pediatric chiropractic care should look very gentle. For infants, touch is typically light, often no more pressure than you would use to check a ripe tomato. For older kids and teens, techniques should still be adapted to their size, bone growth, and comfort level.",
+      },
+      {
+        type: "p",
+        text: "Key safety questions to ask:",
+      },
+      {
+        type: "list",
+        items: [
+          "What techniques do you use with children, and how are they different from adult care?",
+          "How do you decide when chiropractic care is not appropriate?",
+          "What is your process for informed consent with parents and older kids?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Good communication matters just as much. Notice how they talk with you:",
+      },
+      {
+        type: "list",
+        items: [
+          "Do they explain findings in plain language, without big medical words?",
+          "Do they ask what you are comfortable with before touching your child?",
+          "Do they lay out a clear care plan, including re-checks and goals?",
+        ],
+      },
+      {
+        type: "p",
+        text: "You should never feel rushed, confused, or pressured. A trustworthy chiropractor will invite questions, respect your “no,” and be open if you want time to think before starting care.",
+      },
+      {
+        type: "p",
+        text: "Take a slow look at the office environment too. Signs of a good fit include:",
+      },
+      {
+        type: "list",
+        items: [
+          "A kid-friendly waiting space with simple toys or books",
+          "Staff who speak kindly to children and caregivers",
+          "Clean treatment rooms and tools",
+          "A schedule that does not feel like an assembly line of quick visits",
+        ],
+      },
+      {
+        type: "p",
+        text: "Kids often pick up on energy before adults do. If your child seems at ease and you feel heard, that is a good sign.",
+      },
+      { type: "h2", text: "Red Flags That Should Make Haddonfield Parents Pause" },
+      {
+        type: "p",
+        text: "Some warnings are big and obvious, others are subtle. If you notice any of these, it might be time to look elsewhere, or at least ask more questions.",
+      },
+      {
+        type: "p",
+        text: "Be careful with exaggerated claims, such as:",
+      },
+      {
+        type: "list",
+        items: [
+          "Promising to “cure” specific diseases or serious conditions",
+          "Saying chiropractic care should replace your pediatrician",
+          "Insisting that chiropractic care replaces vaccines or other standard medical care",
+        ],
+      },
+      {
+        type: "p",
+        text: "A chiropractor can be part of your child’s wellness team, but not a full replacement for medical care. Anyone who tells you to avoid your pediatrician altogether is not acting in your child’s best interest.",
+      },
+      {
+        type: "p",
+        text: "Watch out for one-size-fits-all care:",
+      },
+      {
+        type: "list",
+        items: [
+          "Every child gets the same adjustment pattern, no matter their age or complaint",
+          "Rigid long-term treatment contracts with no clear reason",
+          "Pressure to prepay for large packages before you have even seen how your child responds",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your child’s body is unique. Care should change as they grow, heal, and move through sports seasons and school stresses.",
+      },
+      {
+        type: "p",
+        text: "Pay attention to professionalism and boundaries:",
+      },
+      {
+        type: "list",
+        items: [
+          "Dismissing your questions, or making you feel silly for asking",
+          "Refusing to share records with your pediatrician",
+          "Discouraging second opinions",
+          "Using techniques that look or feel too forceful for your child’s age, especially if your child seems scared or in pain",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your instincts matter. If something feels off, you are allowed to stop care and seek another opinion.",
+      },
+      { type: "h2", text: "Finding a Trusted Family Chiropractor in Haddonfield, NJ" },
+      {
+        type: "p",
+        text: "Once you know what you want, it gets easier to sort through your options in Haddonfield. Start by checking credentials and reading local reviews with an eye on families who mention pediatric care and long-term trust.",
+      },
+      {
+        type: "p",
+        text: "It can help to look for someone who offers both pediatric and general family care, so your child can stay with the same chiropractor as they move from preschool to middle school to high school. Continuity can make visits calmer and more comfortable.",
+      },
+      {
+        type: "p",
+        text: "Practical, location-specific questions to ask:",
+      },
+      {
+        type: "list",
+        items: [
+          "Do your office hours work around local school schedules and after-school sports?",
+          "How is parking and building access with a stroller, sports gear, or a car seat?",
+          "Do you offer telehealth conversations for follow-ups or care coordination when an in-person adjustment is not needed?",
+        ],
+      },
+      {
+        type: "p",
+        text: "A strong family chiropractor in Haddonfield, NJ will also be open to working with your wider team. Ask how they share notes or communicate with:",
+      },
+      {
+        type: "list",
+        items: [
+          "Pediatricians",
+          "Physical or occupational therapists",
+          "Mental health providers, when stress and body tension overlap",
+          "Other specialists your child already sees",
+        ],
+      },
+      {
+        type: "p",
+        text: "You want someone who understands that kids do best when their team works together.",
+      },
+      { type: "h2", text: "Next Steps to Support Your Child’s Healthy Future" },
+      {
+        type: "p",
+        text: "From here, a simple next step is to make a shortlist of pediatric or family chiropractors in Haddonfield who seem promising. Look at their training, read what other parents say about their communication style, then set up brief conversations so you can compare how you feel with each one.",
+      },
+      {
+        type: "p",
+        text: "Bring a small checklist of questions and your child’s health history to your first visit. Notice not just what the chiropractor says, but how they listen. The right fit should respect your family’s values, explain their approach clearly, and welcome your input as the parent.",
+      },
+      {
+        type: "p",
+        text: "At Your Health Now, we combine a root-cause, functional approach with gentle chiropractic care to support whole-body wellness for families in Haddonfield and the surrounding area. When children move well and feel supported, they are more free to grow, learn, and play with confidence all year long.",
+      },
+      { type: "h2", text: "Help Your Family Feel Better and Move With Ease" },
+      {
+        type: "p",
+        text: "If you are looking for a trusted partner in natural, drug-free relief, our [family chiropractor in Haddonfield, NJ](/family-chiropractic-care) is here to support every member of your household. At Your Health Now, we take time to understand your goals so we can tailor care to your lifestyle, activities, and health history. [Schedule an appointment](/contact-us) today or [contact us](/contact-us) with any questions so we can help you take the next step toward feeling your best.",
+      },
+    ],
+    related: [
+      "childs-first-chiropractic-visit-haddonfield",
+      "family-chiropractor-preventive-care-haddonfield",
+      "pediatric-care-benefits",
+    ],
+  },
   {
     slug: "saddle-river-soft-tissue-therapy-for-active-adults",
     title: "Saddle River Soft Tissue Therapy for Active Adults",

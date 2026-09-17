@@ -77,7 +77,7 @@ function articleToBlogPost(article: Article): BlogPostData {
 
   return {
     slug: article.slug,
-    title: article.title,
+    title: article.seoTitle ?? article.title,
     metaDescription: article.excerpt,
     h1: article.title,
     publishDate: displayDateToIso(article.date),
