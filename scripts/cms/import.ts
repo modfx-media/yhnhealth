@@ -98,7 +98,7 @@ async function main() {
   for (const record of doc.records) {
     const data = {
       ...(skipRefs(record.data) as Record<string, unknown>),
-      _status: "draft",
+      _status: "draft" as const,
     };
     if (typeof data.path === "string") {
       data.path = data.path === "/" ? "/" : data.path.replace(/\/+$/, "");

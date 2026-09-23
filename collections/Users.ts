@@ -1,10 +1,10 @@
 import type { CollectionConfig } from "payload";
-import { authenticated } from "@/lib/cms/access";
+import { authenticated, isLoggedIn } from "@/lib/cms/access";
 
 export const Users: CollectionConfig = {
   slug: "users",
   access: {
-    admin: authenticated,
+    admin: isLoggedIn,
     create: authenticated,
     delete: authenticated,
     read: authenticated,

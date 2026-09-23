@@ -305,7 +305,16 @@ function DropdownRow({ child }: { child: NavChild }) {
 /* -------------------------------------------------------------------------- */
 /*  Mobile Drawer                                                             */
 /* -------------------------------------------------------------------------- */
-function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
+function MobileDrawer({
+  open,
+  onClose,
+  items,
+}: {
+  open: boolean;
+  onClose: () => void;
+  items: NavItem[];
+}) {
+  const navItems = items;
   const pathname = usePathname();
   const [accordionOpen, setAccordionOpen] = useState<Record<number, boolean>>({});
 
@@ -631,7 +640,7 @@ export default function Header({ items }: { items?: NavItem[] }) {
         />
       </motion.header>
 
-      <MobileDrawer open={mobileOpen} onClose={() => setMobileOpen(false)} />
+      <MobileDrawer open={mobileOpen} onClose={() => setMobileOpen(false)} items={navItems} />
     </>
   );
 }
