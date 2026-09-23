@@ -2,6 +2,7 @@ import { createHmac, timingSafeEqual } from 'node:crypto'
 import { NextResponse } from 'next/server'
 import { isRankedEnabled } from '@/lib/ranked/client'
 import { revalidateRankedBlog } from '@/lib/ranked/revalidate'
+import { upsertRankedPostsAsDrafts } from '@/lib/cms/syncRanked'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -63,6 +64,7 @@ export async function POST(request: Request) {
 
   if (!event || CONTENT_EVENTS.has(event)) {
     revalidateRankedBlog()
+    void upsertRankedPostsAsDrafts()
   }
 
   return NextResponse.json({ ok: true })

@@ -1,4 +1,6 @@
+import path from "path";
 import type { NextConfig } from "next";
+import { withPayload } from "@payloadcms/next/withPayload";
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
@@ -15,6 +17,25 @@ const nextConfig: NextConfig = {
   outputFileTracingExcludes: {
     "*": ["./public/images/**", "./public/**/*.mp4", "./public/**/*.webm"],
   },
+  serverExternalPackages: [
+    "pg",
+    "@payloadcms/db-vercel-postgres",
+    "@neondatabase/serverless",
+    "@vercel/postgres",
+  ],
+  turbopack: {
+    resolveAlias: {
+      bytes: "./node_modules/bytes",
+    },
+  },
+  webpack: (config) => {
+    config.resolve = config.resolve || {};
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      bytes: path.resolve(process.cwd(), "node_modules/bytes"),
+    };
+    return config;
+  },
 };
 
-export default nextConfig;
+export default withPayload(nextConfig, { devBundleServerPackages: false });

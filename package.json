@@ -6,17 +6,33 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:types": "payload generate:types",
+    "generate:importmap": "payload generate:importmap",
+    "cms:export": "tsx scripts/cms/export-content.ts",
+    "cms:validate-export": "tsx scripts/cms/validate-export.ts",
+    "cms:import": "tsx --env-file=.env scripts/cms/import.ts"
   },
   "dependencies": {
+    "@payloadcms/db-vercel-postgres": "^3.80.0",
+    "@payloadcms/next": "^3.80.0",
+    "@payloadcms/plugin-seo": "^3.80.0",
+    "@payloadcms/richtext-lexical": "^3.80.0",
+    "@payloadcms/storage-vercel-blob": "^3.80.0",
+    "@payloadcms/translations": "^3.80.0",
     "@tailwindcss/typography": "^0.5.19",
     "@vercel/blob": "^2.8.0",
+    "bytes": "^3.1.2",
     "clsx": "^2.1.1",
+    "colorette": "^2.0.20",
+    "graphql": "^16.14.2",
     "lucide-react": "^1.17.0",
     "motion": "^12.40.0",
     "next": "16.2.7",
+    "payload": "^3.80.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "sharp": "^0.35.4",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
@@ -24,9 +40,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^16.6.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

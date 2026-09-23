@@ -370,7 +370,7 @@ function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void })
             </div>
 
             <nav aria-label="Mobile" className="flex-1 px-2 py-2">
-              {NAV_ITEMS.map((item, idx) => {
+              {navItems.map((item, idx) => {
                 const isOpen = !!accordionOpen[idx];
                 if (item.children.length === 0 && item.href) {
                   return (
@@ -518,7 +518,8 @@ function MobileDrawer({ open, onClose }: { open: boolean; onClose: () => void })
 /* -------------------------------------------------------------------------- */
 /*  Header                                                                    */
 /* -------------------------------------------------------------------------- */
-export default function Header() {
+export default function Header({ items }: { items?: NavItem[] }) {
+  const navItems = items?.length ? items : NAV_ITEMS;
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -590,7 +591,7 @@ export default function Header() {
               aria-label="Primary navigation"
               className="hidden h-full flex-1 items-stretch justify-center xl:flex"
             >
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <DesktopDropdown
                   key={item.label}
                   item={item}
