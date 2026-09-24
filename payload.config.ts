@@ -3,6 +3,7 @@ import { buildConfig } from "payload";
 import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import { seoPlugin } from "@payloadcms/plugin-seo";
+import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import sharp from "sharp";
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
@@ -67,6 +68,12 @@ export default buildConfig({
         if (!pathValue || previewFromPath(pathValue) === null) return getPublicSiteURL();
         return `${getPublicSiteURL()}${pathValue === "/" ? "" : pathValue}`;
       },
+    }),
+    vercelBlobStorage({
+      collections: {
+        media: true,
+      },
+      token: process.env.BLOB_READ_WRITE_TOKEN,
     }),
   ],
 });

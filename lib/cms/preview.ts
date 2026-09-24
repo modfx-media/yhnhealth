@@ -1,6 +1,7 @@
 export function previewFromPath(path?: string | null): string | null {
   if (!path) return null;
   if (!path.startsWith("/")) return null;
+  if (path.includes("?") || path.includes("#")) return null;
   const segments = path.split("/");
   if (segments.some((segment) => segment === "null" || segment === "undefined")) {
     return null;

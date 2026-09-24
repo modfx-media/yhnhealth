@@ -21,12 +21,13 @@ export const Header: GlobalConfig = {
       fields: [
         ...navLinkFields,
         {
-          name: "children",
+          name: "groups",
           type: "array",
+          admin: { description: "Dropdown groups. Named groups so nested arrays do not collide in Postgres." },
           fields: [
             ...navLinkFields,
             {
-              name: "children",
+              name: "links",
               type: "array",
               fields: navLinkFields,
             },

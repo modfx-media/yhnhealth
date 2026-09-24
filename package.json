@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:types": "payload generate:types",
-    "generate:importmap": "payload generate:importmap",
+    "generate:types": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/generate.ts types",
+    "generate:importmap": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/generate.ts importmap",
     "cms:export": "tsx scripts/cms/export-content.ts",
     "cms:validate-export": "tsx scripts/cms/validate-export.ts",
-    "cms:import": "tsx --env-file=.env scripts/cms/import.ts"
+    "cms:import": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/import.ts",
+    "cms:create-user": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/create-user.ts"
   },
   "dependencies": {
     "@payloadcms/db-vercel-postgres": "^3.80.0",
@@ -34,6 +35,10 @@
     "react-dom": "19.2.4",
     "sharp": "^0.35.4",
     "tailwind-merge": "^3.6.0"
+  },
+  "optionalDependencies": {
+    "@img/sharp-libvips-linux-x64": "^1.3.3",
+    "@img/sharp-linux-x64": "^0.35.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

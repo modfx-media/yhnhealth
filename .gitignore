@@ -41,4 +41,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 public/videos/functional-medicine.mp4
-public/videos/functional-medicine.mp4
+
+# generated CMS migration artifacts
+/data/content-export.json
+/migration-data/

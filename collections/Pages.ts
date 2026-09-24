@@ -174,6 +174,12 @@ export const Pages: CollectionConfig = {
             { name: "noIndex", type: "checkbox", defaultValue: false },
             { name: "noFollow", type: "checkbox", defaultValue: false },
             { name: "excludeFromSitemap", type: "checkbox", defaultValue: false },
+            {
+              name: "schemaType",
+              type: "select",
+              options: ["WebPage", "MedicalWebPage", "Article", "AboutPage", "ContactPage", "FAQPage"],
+            },
+            { name: "breadcrumbLabel", type: "text" },
           ],
         },
       ],

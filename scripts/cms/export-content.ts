@@ -20,30 +20,59 @@ type RecordDoc = {
 
 const SITE = SITE_URL.replace(/\/$/, "");
 
+const TITLE_FALLBACK: Record<string, { title: string; description: string }> = {
+  "/": {
+    title: "Chiropractor in Chalfont, PA & Merchantville, NJ | Your Health Now",
+    description:
+      "Your Health Now is a chiropractic and functional medicine clinic in Chalfont, PA and Merchantville, NJ. Doctor-led care for back pain, neck pain, sciatica, and root-cause health. Same-week appointments.",
+  },
+  "/medical-disclaimer": {
+    title: "Medical Disclaimer | Your Health Now",
+    description:
+      "Educational information on Your Health Now is not a diagnosis. Care is provided by licensed clinicians in Merchantville, NJ and Chalfont, PA.",
+  },
+  "/sitemap": {
+    title: "Sitemap | Your Health Now",
+    description:
+      "Browse every page on yhnhealth.com, including chiropractic care, functional medicine, locations, and local service pages across NJ and PA.",
+  },
+};
+
 function pageRecord(pagePath: string, extra: Record<string, unknown> = {}): RecordDoc {
-  const seo = SEO[pagePath];
+  const {
+    title,
+    description,
+    template,
+    noIndex,
+    noFollow,
+    excludeFromSitemap,
+    ...fields
+  } = extra;
+  const seo = SEO[pagePath] || TITLE_FALLBACK[pagePath];
   const slug = pagePath === "/" ? "home" : pagePath.replace(/^\//, "").replace(/\//g, "--");
+  const resolvedTitle =
+    seo?.title || (typeof title === "string" ? title : "") || pagePath;
   return {
     collection: "pages",
     legacyId: `page:${pagePath}`,
     sourceUrl: `${SITE}${pagePath === "/" ? "" : pagePath}`,
     path: pagePath,
     data: {
-      title: seo?.title || extra.title || pagePath,
+      title: resolvedTitle,
       path: pagePath,
       slug,
-      template: extra.template || templateForPath(pagePath),
+      template: typeof template === "string" ? template : templateForPath(pagePath),
       legacyId: `page:${pagePath}`,
       sourceUrl: `${SITE}${pagePath === "/" ? "" : pagePath}`,
       meta: {
-        title: seo?.title || extra.title,
-        description: seo?.description || extra.description,
+        title: resolvedTitle,
+        description: seo?.description || (typeof description === "string" ? description : undefined),
         canonicalUrl: `${SITE}${pagePath === "/" ? "" : pagePath}`,
-        noIndex: extra.noIndex === true,
-        noFollow: extra.noFollow === true,
-        excludeFromSitemap: extra.excludeFromSitemap === true,
+        noIndex: noIndex === true,
+        noFollow: noFollow === true,
+        excludeFromSitemap: excludeFromSitemap === true,
       },
-      ...extra,
+      ...fields,
     },
   };
 }
@@ -193,15 +222,15 @@ function mapNav(items: typeof NAV_ITEMS) {
   return items.map((item) => ({
     label: item.label,
     href: item.href,
-    children: item.children.map((child) => {
+    groups: item.children.map((child) => {
       if (isNavGroup(child)) {
         return {
           label: child.label,
           href: child.href,
-          children: child.children.map((leaf) => ({ label: leaf.label, href: leaf.href })),
+          links: child.children.map((leaf) => ({ label: leaf.label, href: leaf.href })),
         };
       }
-      return { label: child.label, href: child.href, children: [] };
+      return { label: child.label, href: child.href, links: [] };
     }),
   }));
 }

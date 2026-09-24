@@ -142,6 +142,12 @@ export const Posts: CollectionConfig = {
             { name: "noIndex", type: "checkbox", defaultValue: false },
             { name: "noFollow", type: "checkbox", defaultValue: false },
             { name: "excludeFromSitemap", type: "checkbox", defaultValue: false },
+            {
+              name: "schemaType",
+              type: "select",
+              options: ["Article", "MedicalWebPage", "WebPage"],
+            },
+            { name: "breadcrumbLabel", type: "text" },
           ],
         },
       ],
