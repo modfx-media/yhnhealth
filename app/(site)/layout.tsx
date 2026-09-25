@@ -83,10 +83,11 @@ export default async function SiteLayout({
 }>) {
   const header = await getPublishedGlobal<HeaderGlobal>("header");
   const navItems = headerToNavItems(header);
+  const orgGraph = await organizationGraph();
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} ${italianno.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans bg-cream-light text-ink antialiased">
-        <JsonLd data={organizationGraph()} />
+        <JsonLd data={orgGraph} />
         <Script
           id="ga4-loader"
           src="https://www.googletagmanager.com/gtag/js?id=G-GX8PHZR3EG"

@@ -215,6 +215,8 @@ export const TEAM = [
   { name: "Barbara Chianese",    slug: "barbara",    credentials: "Office Director",      image: "/images/yhn-clone/team-barbara.webp" },
 ];
 
+// Unverified Google-sourced placeholders were removed; real 5-star Google
+// reviews are fetched live via lib/google-reviews.ts and merged in at render time.
 export const TESTIMONIALS = [
   {
     quote:
@@ -223,33 +225,6 @@ export const TESTIMONIALS = [
     location: "Chalfont, PA",
     service: "Functional Medicine",
     source: "Yelp",
-    stars: 5,
-  },
-  {
-    quote:
-      "I had chronic Lyme symptoms for over a decade. The protocol Dr. Chris built for me is the first thing that has actually moved the needle. I am so grateful for this team.",
-    author: "Kevin S.",
-    location: "Chalfont, PA",
-    service: "Lyme Disease Solutions",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
-      "Chris addresses not just the pain but the root causes of pain. Over the months he has been treating me, my condition has steadily improved and I am hopeful again about doing the activities I love.",
-    author: "Mark B.",
-    location: "Chalfont, PA",
-    service: "Chiropractic Medicine",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
-      "After my first call I felt heard. The 15-minute consultation alone was more thorough than any visit I had with my previous doctor, and that was before I even stepped into the office.",
-    author: "Jessica R.",
-    location: "Merchantville, NJ",
-    service: "Functional Medicine",
-    source: "Google",
     stars: 5,
   },
   {
@@ -263,56 +238,11 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "What sold me was the free consultation call before booking. No pressure, just a real conversation about whether they could help. They could, and they did.",
-    author: "Maria G.",
-    location: "Merchantville, NJ",
-    service: "Functional Medicine",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
       "Dr. Lillee has provided chiropractic care for myself and my family several times and we have been extremely happy with the results every time.",
     author: "Tammy T-Y.",
     location: "Chalfont, PA",
     service: "Family Chiropractic",
     source: "Facebook",
-    stars: 5,
-  },
-  {
-    quote:
-      "Our 4-year-old son waits by the door for Dr. Marc, that says it all. He engages every age group, listens carefully, and explains things in a down-to-earth way. We are so thankful for his care and highly recommend Your Health Now.",
-    author: "Murari and Ashley S.",
-    location: "Merchantville, NJ",
-    service: "Pediatric Care",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
-      "I came in barely able to walk after a herniated disc. Six weeks of decompression and adjustments later, I am back on the trail and lifting again. The team is exceptional.",
-    author: "Daniel K.",
-    location: "Chalfont, PA",
-    service: "Decompression Therapy",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
-      "Dr. Lillee took care of me through both pregnancies. The Webster Technique made such a difference, I felt aligned, comfortable, and confident going into each delivery.",
-    author: "Hannah P.",
-    location: "Merchantville, NJ",
-    service: "Pregnancy Care",
-    source: "Google",
-    stars: 5,
-  },
-  {
-    quote:
-      "Best chiropractic experience I have ever had. They explained the plan clearly, never pushed unnecessary visits, and the results speak for themselves. Highly recommend.",
-    author: "Anthony D.",
-    location: "Merchantville, NJ",
-    service: "Athletic Care",
-    source: "Google",
     stars: 5,
   },
   {
@@ -331,15 +261,6 @@ export const TESTIMONIALS = [
     location: "Merchantville, NJ",
     service: "Arthrostimulation Therapy",
     source: "Yelp",
-    stars: 5,
-  },
-  {
-    quote:
-      "Sciatica had me sleeping on the floor for months. After three weeks of care here I was sleeping through the night. Their approach is methodical and it works.",
-    author: "Robert C.",
-    location: "Chalfont, PA",
-    service: "Decompression Therapy",
-    source: "Google",
     stars: 5,
   },
 ];

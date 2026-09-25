@@ -1,6 +1,7 @@
 import { SITE_URL } from "@/lib/siteUrl";
 import { CLINICS, type City, type ServiceData } from "@/lib/pseoData";
 import { AVERAGE_RATING, VERIFIED_REVIEW_COUNT, reviewsFor } from "@/lib/testimonialsData";
+import { getDisplayedGoogleReviews } from "@/lib/google-reviews";
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -10,8 +11,23 @@ export const CLINIC_GEO = {
   chalfont: { lat: 40.2887, lng: -75.2096 },
 } as const;
 
-function reviewNodes(key: "merchantville" | "chalfont") {
-  return reviewsFor(key).map((r) => ({
+async function reviewNodes(key: "merchantville" | "chalfont") {
+  const { reviews: liveReviews } = await getDisplayedGoogleReviews();
+  const googleNodes = liveReviews
+    .filter((r) => r.location === key)
+    .map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: 5,
+        bestRating: 5,
+      },
+      reviewBody: r.quote,
+      publisher: { "@type": "Organization", name: "Google" },
+    }));
+
+  const curatedNodes = reviewsFor(key).map((r) => ({
     "@type": "Review",
     author: { "@type": "Person", name: r.author },
     reviewRating: {
@@ -22,12 +38,16 @@ function reviewNodes(key: "merchantville" | "chalfont") {
     reviewBody: r.text,
     publisher: r.source ? { "@type": "Organization", name: r.source } : undefined,
   }));
+
+  return [...googleNodes, ...curatedNodes];
 }
 
-function clinicNode(key: "merchantville" | "chalfont") {
+async function clinicNode(key: "merchantville" | "chalfont") {
   const c = CLINICS[key];
   const geo = CLINIC_GEO[key];
   const isNj = key === "merchantville";
+  const { meta } = await getDisplayedGoogleReviews();
+  const locationMeta = meta.byLocation[key];
   return {
     "@type": ["MedicalClinic", "LocalBusiness"],
     "@id": `${SITE_URL}/locations#${key}`,
@@ -76,11 +96,11 @@ function clinicNode(key: "merchantville" | "chalfont") {
       : "https://maps.app.goo.gl/XZTDgRGTwdgtHUgS6",
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: AVERAGE_RATING,
+      ratingValue: locationMeta.rating,
       bestRating: 5,
-      reviewCount: VERIFIED_REVIEW_COUNT / 2,
+      reviewCount: locationMeta.reviewCount,
     },
-    review: reviewNodes(key),
+    review: await reviewNodes(key),
   };
 }
 
@@ -129,7 +149,12 @@ const PEOPLE = [
   },
 ];
 
-export function organizationGraph() {
+export async function organizationGraph() {
+  const [merchantvilleClinic, chalfontClinic] = await Promise.all([
+    clinicNode("merchantville"),
+    clinicNode("chalfont"),
+  ]);
+
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -171,8 +196,8 @@ export function organizationGraph() {
         publisher: { "@id": ORG_ID },
         inLanguage: "en-US",
       },
-      clinicNode("merchantville"),
-      clinicNode("chalfont"),
+      merchantvilleClinic,
+      chalfontClinic,
       ...PEOPLE,
     ],
   };

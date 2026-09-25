@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { ArrowUpRight, Phone, Quote, Star } from "lucide-react";
 import { Breadcrumbs, FadeUp } from "@/components/page/Primitives";
-import { REVIEWS, VERIFIED_REVIEW_COUNT } from "@/lib/testimonialsData";
+import { VERIFIED_REVIEW_COUNT, type Review } from "@/lib/testimonialsData";
 
 const SOURCES = ["All", "Google", "Yelp", "Facebook"] as const;
 type SourceFilter = (typeof SOURCES)[number];
@@ -26,24 +26,24 @@ function Stars({ count = 5, size = 14 }: { count?: number; size?: number }) {
   );
 }
 
-export default function TestimonialsClient() {
+export default function TestimonialsClient({ reviews }: { reviews: Review[] }) {
   const [filter, setFilter] = useState<SourceFilter>("All");
 
   const filtered = useMemo(
-    () => (filter === "All" ? REVIEWS : REVIEWS.filter((r) => r.source === filter)),
-    [filter]
+    () => (filter === "All" ? reviews : reviews.filter((r) => r.source === filter)),
+    [filter, reviews]
   );
 
-  const featured = REVIEWS[0];
+  const featured = reviews[0];
   const rest = filtered.filter((r) => r !== featured);
 
   const sourceCounts = useMemo(() => {
-    const c: Record<string, number> = { All: REVIEWS.length };
-    for (const r of REVIEWS) {
+    const c: Record<string, number> = { All: reviews.length };
+    for (const r of reviews) {
       if (r.source) c[r.source] = (c[r.source] ?? 0) + 1;
     }
     return c;
-  }, []);
+  }, [reviews]);
 
   return (
     <main className="bg-white">
