@@ -9,6 +9,7 @@ import { headerToNavItems } from "@/lib/cms/nav";
 import type { Header as HeaderGlobal } from "@/payload-types";
 import ScrollToTop from "@/components/ScrollToTop";
 import BottomBookBanner from "@/components/BottomBookBanner";
+import KnockKnockOffset from "@/components/KnockKnockOffset";
 import { BookingProvider } from "@/components/BookingPopup";
 import { SITE_URL } from "@/lib/siteUrl";
 import JsonLd from "@/components/JsonLd";
@@ -116,23 +117,15 @@ export default async function SiteLayout({
           <div className="flex-1 flex flex-col">{children}</div>
           <Footer />
           <BottomBookBanner />
+          <KnockKnockOffset />
         </BookingProvider>
 
         <Script id="knock-knock-widget" strategy="afterInteractive">
           {`
-            (function () {
-              var bareRoutes = ['/functional-medicine-special-offer'];
-              var path = window.location.pathname.replace(/\\/$/, '');
-              for (var i = 0; i < bareRoutes.length; i++) {
-                if (path === bareRoutes[i] || path.indexOf(bareRoutes[i] + '/') === 0) {
-                  return;
-                }
-              }
-              window.company_id = '6a355eb46b7af26290ba9224';
-              var newScript = document.createElement('script');
-              newScript.src = 'https://api.knock-knockapp.com/widget/widget.js';
-              document.getElementsByTagName('HEAD')[0].appendChild(newScript);
-            })();
+            window.company_id = '6a355eb46b7af26290ba9224';
+            var newScript = document.createElement('script');
+            newScript.src = 'https://api.knock-knockapp.com/widget/widget.js';
+            document.getElementsByTagName('HEAD')[0].appendChild(newScript);
           `}
         </Script>
       </body>

@@ -496,30 +496,6 @@ export default function FunctionalMedicineSpecialOfferPage() {
     if (redirectTimeout.current) clearTimeout(redirectTimeout.current);
   }, []);
 
-  // Hide the global Knock Knock chat widget on this standalone landing page
-  // (fallback for client-side navigation; layout already skips loading it here).
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.setAttribute("data-fm-lp", "hide-chat-widget");
-    style.textContent = `
-      #knock-knock-widget-container,
-      [id*="knock-knock"],
-      [class*="knock-knock"],
-      iframe[src*="knock-knockapp"],
-      #chat-widget,
-      .chat-widget,
-      [class*="chat-widget"] {
-        display: none !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      style.remove();
-    };
-  }, []);
-
   const heroRef = useRef<HTMLDivElement>(null);
   const heroVideoRef = useRef<HTMLIFrameElement>(null);
   const { scrollYProgress } = useScroll({
@@ -1408,7 +1384,8 @@ export default function FunctionalMedicineSpecialOfferPage() {
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-brand/10 bg-white/95 p-3 backdrop-blur sm:hidden"
+        data-sticky-bar=""
+        className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-brand/10 bg-white/95 px-3 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur sm:hidden"
       >
         <a
           href={PHONE_NJ_TEL}

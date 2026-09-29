@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import { motion } from "motion/react";
 import { CheckCircle2 } from "lucide-react";
 import { LpHeader, PHONE_NJ, PHONE_NJ_TEL } from "../_shared";
@@ -10,28 +10,6 @@ export default function ThankYouPage({
 }: {
   autoRedirect: ReactNode;
 }) {
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.setAttribute("data-fm-lp", "hide-chat-widget");
-    style.textContent = `
-      #knock-knock-widget-container,
-      [id*="knock-knock"],
-      [class*="knock-knock"],
-      iframe[src*="knock-knockapp"],
-      #chat-widget,
-      .chat-widget,
-      [class*="chat-widget"] {
-        display: none !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      style.remove();
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-brand-dark">
       <LpHeader
