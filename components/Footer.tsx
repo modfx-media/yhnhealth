@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
-import { ArrowUpRight, Phone, MapPin, Mail, Clock } from "lucide-react";
-import { CITIES, SERVICES } from "@/lib/pseoData";
+import { ArrowUpRight, Phone, MapPin, Mail, Clock, Video } from "lucide-react";
+import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 
 /** Routes that render as standalone landing pages without the site chrome. */
 const BARE_ROUTES = ["/functional-medicine-special-offer"];
@@ -44,7 +44,7 @@ const QUICK_LINKS = [
   { label: "About Us", href: "/about-us" },
   { label: "Meet The Team", href: "/meet-the-doctor" },
   { label: "Articles", href: "/articles" },
-  { label: "Areas We Serve", href: "/areas-we-serve" },
+  { label: "Our Locations", href: "/locations" },
   { label: "Contact", href: "/contact-us" },
 ];
 
@@ -64,7 +64,7 @@ const FOOTER_LOCATIONS = [
     address: "5 W Chestnut Ave, Merchantville, NJ 08109",
     phone: "(856) 532-2063",
     tel: "tel:8565322063",
-    href: "/areas-we-serve/merchantville-nj/chiropractic-care",
+    href: "/locations",
   },
   {
     name: "Chalfont",
@@ -72,7 +72,7 @@ const FOOTER_LOCATIONS = [
     address: "350 N Main St #201, Chalfont, PA 18914",
     phone: "(609) 651-7436",
     tel: "tel:6096517436",
-    href: "/areas-we-serve/chalfont-pa/chiropractic-care",
+    href: "/locations",
   },
 ];
 
@@ -251,18 +251,19 @@ export default function Footer() {
       <div className="relative border-t border-white/10">
         <div className="mx-auto flex max-w-[1320px] flex-wrap items-center justify-between gap-3 px-6 py-5 lg:px-10">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent">
-              Areas We Serve
+            <p className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.32em] text-accent">
+              <Video size={11} />
+              Functional Medicine Telehealth
             </p>
             <p className="text-[12px] text-white/70">
-              {CITIES.length} cities across NJ &amp; PA · {SERVICES.length} services
+              Now available in {TELEHEALTH_STATES.length} states
             </p>
           </div>
           <Link
-            href="/areas-we-serve"
+            href="/functional-medicine"
             className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-[0.24em] text-white/80 hover:text-accent"
           >
-            See all areas
+            See all states
             <ArrowUpRight size={12} />
           </Link>
         </div>

@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, ArrowUpRight, MapPin, type LucideIcon } from "lucide-react";
+import { ArrowRight, type LucideIcon } from "lucide-react";
 import { Breadcrumbs, FadeUp, Parallax } from "@/components/page/Primitives";
-import { CLINICS, pseoChildrenForParent, representativeCities } from "@/lib/pseoData";
+import { CLINICS } from "@/lib/pseoData";
 
 export type ServiceSection = { heading?: string; body: string };
 export type ServiceBenefit = { icon: LucideIcon; title: string; body?: string };
@@ -36,11 +36,6 @@ const cardItem = {
 export default function ServicePage({ config }: { config: ServiceConfig }) {
   const { title, eyebrow = "Our Services", intro, imageSrc, imageAlt, sections, benefits, related, slug } = config;
   const isChiropracticMedicine = eyebrow === "Chiropractic Medicine";
-
-  // Silo link-down: connect this pillar page to its local city x service pages
-  // so link equity and topical relevance flow both ways, not just hub -> leaf.
-  const localService = pseoChildrenForParent(`/${slug}`)[0];
-  const localCities = localService ? representativeCities(6) : [];
 
   return (
     <main className="bg-white">
@@ -278,56 +273,30 @@ export default function ServicePage({ config }: { config: ServiceConfig }) {
           </section>
         )}
 
-        {/* 4b - LOCAL AREAS (silo link-down to pSEO city pages) */}
-        {localService && localCities.length > 0 && (
-          <section className="bg-cream-light py-20 md:py-24">
-            <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
-              <FadeUp>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-accent-dark">
-                  Serving NJ &amp; PA
-                </p>
-                <h2 className="mt-3 font-display text-2xl font-bold text-brand md:text-3xl">
-                  {title} near you.
-                </h2>
-                <p className="mt-3 max-w-2xl text-sm text-stone">
-                  From our {CLINICS.merchantville.name} and {CLINICS.chalfont.name} clinics, we
-                  bring this care to patients across South Jersey and Bucks/Montco, PA.
-                </p>
-              </FadeUp>
-
-              <motion.div
-                variants={cardStagger}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-                className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6"
-              >
-                {localCities.map((c) => (
-                  <motion.div key={c.slug} variants={cardItem}>
-                    <Link
-                      href={`/areas-we-serve/${c.slug}/${localService.slug}`}
-                      className="group flex items-center justify-between gap-2 rounded-2xl border border-brand/10 bg-white px-4 py-3 text-sm font-semibold text-brand shadow-card transition-all hover:-translate-y-0.5 hover:shadow-card-hover"
-                    >
-                      <span className="inline-flex items-center gap-1.5">
-                        <MapPin size={13} className="text-accent-dark" />
-                        {c.name}, {c.state}
-                      </span>
-                      <ArrowUpRight size={13} className="shrink-0 text-accent-dark transition-transform group-hover:-translate-y-0.5" />
-                    </Link>
-                  </motion.div>
-                ))}
-              </motion.div>
-
+        {/* 4b - TWO-OFFICE LOCATIONS CARD */}
+        <section className="bg-cream-light py-20 md:py-24">
+          <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
+            <FadeUp>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-accent-dark">
+                Serving NJ &amp; PA
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-bold text-brand md:text-3xl">
+                {title} near you.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm text-stone">
+                From our {CLINICS.merchantville.name} and {CLINICS.chalfont.name} clinics, we
+                bring this care to patients across South Jersey and Bucks/Montco, PA.
+              </p>
               <Link
-                href="/areas-we-serve"
+                href="/locations"
                 className="mt-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-brand hover:text-accent-dark"
               >
-                See all areas we serve
+                See both locations
                 <ArrowRight size={13} />
               </Link>
-            </div>
-          </section>
-        )}
+            </FadeUp>
+          </div>
+        </section>
 
         {/* 5 - NAVY CTA BANNER */}
         <section className="relative overflow-hidden bg-brand text-white">

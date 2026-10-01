@@ -164,14 +164,14 @@ export default function HeroSection() {
               className="mt-10 flex flex-col flex-wrap items-start gap-4 sm:flex-row sm:items-center"
             >
               <Link
-                href="/areas-we-serve/chalfont-pa/chiropractic-care"
+                href="/locations"
                 className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.24em] text-brand-dark transition-colors hover:bg-white"
               >
                 Chiropractic in Chalfont
                 <ArrowUpRight size={14} />
               </Link>
               <Link
-                href="/areas-we-serve/merchantville-nj/chiropractic-care"
+                href="/locations"
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur transition-colors hover:border-accent hover:text-accent"
               >
                 Chiropractic in Merchantville
@@ -353,7 +353,7 @@ export default function HeroSection() {
                         {[
                           "Doctor-led, root-cause care",
                           "A plan built around your biology",
-                          "In-office & secure telehealth across PA & NJ",
+                          "In-office care in PA & NJ, telehealth in 9 states",
                         ].map((point) => (
                           <li
                             key={point}

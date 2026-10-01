@@ -14,7 +14,7 @@ const LOCATIONS = [
     phoneHref: "tel:+18565322063",
     address: "5 W Chestnut Ave",
     bookingUrl: "https://yourhealthnow.janeapp.com/locations/mmwc/book#/staff_member/1",
-    careHref: "/areas-we-serve/merchantville-nj/chiropractic-care",
+    careHref: "/locations",
   },
   {
     clinic: "Chiropractic Clinic",
@@ -24,7 +24,7 @@ const LOCATIONS = [
     phoneHref: "tel:+16096517436",
     address: "350 N Main St #201",
     bookingUrl: "https://yourhealthnow.janeapp.com/locations/afc/book#/staff_member/3",
-    careHref: "/areas-we-serve/chalfont-pa/chiropractic-care",
+    careHref: "/locations",
   },
 ];
 

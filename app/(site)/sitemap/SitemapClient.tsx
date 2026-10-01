@@ -14,14 +14,12 @@ import {
 } from "lucide-react";
 import { NAV_ITEMS, isNavGroup } from "@/lib/navigation";
 import { LOCATIONS, HOURS } from "@/lib/siteData";
-import { CITIES, SERVICES } from "@/lib/pseoData";
+import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 import { Breadcrumbs, FadeUp } from "@/components/page/Primitives";
 
-const TOTAL_PSEO = CITIES.length * SERVICES.length + CITIES.length + 1;
+const TOTAL_STATES = TELEHEALTH_STATES.length;
 
 export default function SitemapPage() {
-  const njCities = CITIES.filter((c) => c.state === "NJ");
-  const paCities = CITIES.filter((c) => c.state === "PA");
   const totalSitePages =
     1 /* home */ +
     NAV_ITEMS.reduce((acc, item) => {
@@ -32,7 +30,7 @@ export default function SitemapPage() {
       }
       return acc + n;
     }, 0) +
-    TOTAL_PSEO;
+    TOTAL_STATES;
 
   return (
     <main className="bg-white">
@@ -73,8 +71,8 @@ export default function SitemapPage() {
               />
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone md:text-lg">
                 Every page on yhnhealth.com - chiropractic care, functional medicine, physiotherapy
-                services, locations, resources, and {TOTAL_PSEO.toLocaleString()} local service pages
-                across South Jersey and Bucks/Montgomery County, PA.
+                services, locations, resources, and functional medicine telehealth pages covering{" "}
+                {TOTAL_STATES} states.
               </p>
             </FadeUp>
 
@@ -101,8 +99,8 @@ export default function SitemapPage() {
             <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-brand/10 md:grid-cols-4">
               {[
                 { label: "Total Pages", value: totalSitePages.toLocaleString() },
-                { label: "Cities", value: String(CITIES.length) },
-                { label: "Services", value: String(SERVICES.length) },
+                { label: "Offices", value: "2" },
+                { label: "Telehealth States", value: String(TOTAL_STATES) },
                 { label: "Counties", value: "5" },
               ].map((s) => (
                 <div key={s.label} className="bg-cream-light px-5 py-5 text-center">
@@ -215,116 +213,44 @@ export default function SitemapPage() {
         </div>
       </section>
 
-      {/* AREAS WE SERVE */}
+      {/* TELEHEALTH STATES */}
       <section className="bg-cream-light py-20 md:py-24">
         <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
           <FadeUp className="max-w-2xl">
             <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
-              Areas We Serve · {TOTAL_PSEO.toLocaleString()} pages
+              Functional Medicine Telehealth · {TOTAL_STATES} states
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold text-brand md:text-4xl">
-              Local pages across NJ &amp; PA.
+              Telehealth pages, state by state.
             </h2>
             <div className="mt-4 h-[3px] w-20 bg-accent" />
             <p className="mt-5 text-sm leading-relaxed text-stone">
-              City hubs and dedicated local service pages for every combination of {CITIES.length}{" "}
-              cities and {SERVICES.length} services.
+              A dedicated page for each state where Dr. Chris sees functional medicine patients by
+              secure video visit.
             </p>
             <Link
-              href="/areas-we-serve"
+              href="/functional-medicine"
               className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
             >
-              Browse Areas Index
+              Browse Functional Medicine
               <ArrowUpRight size={12} />
             </Link>
           </FadeUp>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {[
-              { state: "New Jersey", list: njCities },
-              { state: "Pennsylvania", list: paCities },
-            ].map((g) => (
-              <div
-                key={g.state}
-                className="rounded-3xl border border-brand/10 bg-white p-6 shadow-card md:p-7"
+          <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {TELEHEALTH_STATES.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/functional-medicine/${s.slug}`}
+                className="group flex items-center justify-between gap-2 rounded-2xl border border-brand/10 bg-white px-5 py-4 text-sm font-semibold text-brand shadow-card transition-all hover:-translate-y-0.5 hover:shadow-card-hover"
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
-                  {g.state}
-                </p>
-                <p className="mt-1 font-display text-lg font-bold text-brand">
-                  {g.list.length} city hubs
-                </p>
-                <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2">
-                  {g.list.map((c) => (
-                    <li key={c.slug}>
-                      <Link
-                        href={`/areas-we-serve/${c.slug}`}
-                        className="group inline-flex items-center gap-1 text-sm text-stone hover:text-brand"
-                      >
-                        <ChevronRight
-                          size={11}
-                          className="text-accent-dark transition-transform group-hover:translate-x-0.5"
-                        />
-                        {c.name}, {c.state}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <span className="inline-flex items-center gap-1.5">
+                  <MapPin size={13} className="text-accent-dark" />
+                  {s.name}
+                </span>
+                <ArrowUpRight size={13} className="shrink-0 text-accent-dark transition-transform group-hover:-translate-y-0.5" />
+              </Link>
             ))}
-          </div>
-
-          <div className="mt-12">
-            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
-              Local Service Pages · {(CITIES.length * SERVICES.length).toLocaleString()}
-            </p>
-            <p className="mt-2 font-display text-2xl font-bold text-brand md:text-3xl">
-              Every service in every city.
-            </p>
-            <p className="mt-2 text-sm text-stone">
-              Click a service to expand all {CITIES.length} city pages.
-            </p>
-
-            <div className="mt-8 grid gap-3 md:grid-cols-2">
-              {SERVICES.map((s) => (
-                <details
-                  key={s.slug}
-                  className="group rounded-2xl border border-brand/10 bg-white p-5 shadow-card open:shadow-card-hover"
-                >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 list-none">
-                    <div>
-                      <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-accent-dark">
-                        {s.category}
-                      </p>
-                      <p className="mt-1 font-display text-base font-bold text-brand">
-                        {s.name}
-                      </p>
-                      <p className="mt-1 text-[11px] text-stone">{CITIES.length} cities</p>
-                    </div>
-                    <span className="text-accent-dark transition-transform group-open:rotate-180">
-                      ▾
-                    </span>
-                  </summary>
-
-                  <ul className="mt-4 grid grid-cols-1 gap-1 sm:grid-cols-2">
-                    {CITIES.map((c) => (
-                      <li key={`${s.slug}-${c.slug}`}>
-                        <Link
-                          href={`/areas-we-serve/${c.slug}/${s.slug}`}
-                          className="group/link flex items-center gap-1 rounded-md px-2 py-1 text-xs text-stone transition-colors hover:bg-cream-light hover:text-brand"
-                        >
-                          <ChevronRight
-                            size={10}
-                            className="text-accent-dark/60 transition-transform group-hover/link:translate-x-0.5"
-                          />
-                          {c.name}, {c.state}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </details>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -438,10 +364,10 @@ export default function SitemapPage() {
                 <ArrowUpRight size={14} />
               </Link>
               <Link
-                href="/areas-we-serve"
+                href="/functional-medicine"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-white/10"
               >
-                Browse Areas
+                Browse Functional Medicine
               </Link>
             </div>
           </FadeUp>

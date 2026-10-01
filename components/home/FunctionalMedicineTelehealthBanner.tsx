@@ -63,10 +63,10 @@ export default function FunctionalMedicineTelehealthBanner() {
           </h3>
 
           <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 md:text-lg">
-            Doctor-led functional medicine care delivered across{" "}
-            <span className="font-semibold text-white">
-              all of Pennsylvania &amp; New Jersey
-            </span>{" "}
+            Doctor-led functional medicine care delivered to{" "}
+            <Link href="/functional-medicine#states" className="font-semibold text-white underline decoration-accent/60 underline-offset-4 hover:text-accent">
+              9 states nationwide
+            </Link>{" "}
             via secure video. No commute, no waiting room - just deep
             root-cause work with Dr. Chris.
           </p>
@@ -87,11 +87,7 @@ export default function FunctionalMedicineTelehealthBanner() {
           <div className="mt-7 flex flex-wrap items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70">
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur">
               <MapPin size={12} className="text-accent" strokeWidth={2.25} />
-              Pennsylvania
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur">
-              <MapPin size={12} className="text-accent" strokeWidth={2.25} />
-              New Jersey
+              9 States Nationwide
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur">
               <Video size={12} className="text-accent" strokeWidth={2.25} />
@@ -110,7 +106,7 @@ export default function FunctionalMedicineTelehealthBanner() {
               Schedule with Dr. Chris
             </p>
             <p className="mt-2 text-sm leading-relaxed text-white/70">
-              Telehealth visits open to PA &amp; NJ residents. New patients can
+              Telehealth visits open to residents of 9 states. New patients can
               start with a free 30-minute consultation call.
             </p>
 

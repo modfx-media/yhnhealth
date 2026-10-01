@@ -3,10 +3,11 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import Link from "next/link";
-import { ArrowUpRight, Atom, Microscope, Heart, Sparkles, ListChecks, Stethoscope, Compass, Phone } from "lucide-react";
+import { ArrowUpRight, Atom, Microscope, Heart, Sparkles, ListChecks, Stethoscope, Compass, Phone, MapPin, Video } from "lucide-react";
 import { Breadcrumbs, BookingStrip, FadeUp } from "@/components/page/Primitives";
 import { useBookingPopup } from "@/components/BookingPopup";
 import FMCPBadge from "@/components/FMCPBadge";
+import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 
 const PILLARS = [
   { icon: Atom, title: "Root-Cause Analysis", body: "We investigate biochemistry, gut health, hormones, and lifestyle to find why symptoms appear, not just what they look like." },
@@ -295,6 +296,53 @@ export default function FunctionalMedicineClient() {
                 ))}
               </ul>
             </FadeUp>
+          </div>
+        </div>
+      </section>
+
+      {/* States we serve by telehealth */}
+      <section id="states" className="relative bg-mist/40 scroll-mt-24">
+        <div className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-24">
+          <FadeUp>
+            <p className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
+              <Video size={12} />
+              Telehealth Coverage
+            </p>
+            <h2 className="mt-4 max-w-2xl font-display text-4xl font-bold leading-tight text-brand md:text-5xl">
+              States we serve by functional medicine telehealth.
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-stone">
+              Dr. Chris sees patients by secure video visit well beyond our two physical offices. Pick your
+              state for licensing, lab-draw, and insurance details specific to where you live.
+            </p>
+          </FadeUp>
+
+          <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {TELEHEALTH_STATES.map((s, i) => (
+              <motion.div
+                key={s.slug}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.4, delay: i * 0.04 }}
+              >
+                <Link
+                  href={`/functional-medicine/${s.slug}`}
+                  className="group flex items-center justify-between gap-3 rounded-xl border border-brand/10 bg-white px-5 py-4 transition-all hover:border-accent/40 hover:shadow-card"
+                >
+                  <span className="flex items-center gap-2 text-sm font-semibold text-brand">
+                    <MapPin size={14} className="text-accent" />
+                    {s.name}
+                    {s.hasOffice && (
+                      <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.18em] text-accent-dark">
+                        + office
+                      </span>
+                    )}
+                  </span>
+                  <ArrowUpRight size={14} className="text-stone-light transition-colors group-hover:text-accent" />
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import { SITE_URL } from "@/lib/siteUrl";
 import { CLINICS, type City, type ServiceData } from "@/lib/pseoData";
 import { AVERAGE_RATING, VERIFIED_REVIEW_COUNT, reviewsFor } from "@/lib/testimonialsData";
 import { getDisplayedGoogleReviews } from "@/lib/google-reviews";
+import { TELEHEALTH_STATES, type TelehealthState } from "@/data/telehealth-states";
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -52,7 +53,7 @@ async function clinicNode(key: "merchantville" | "chalfont") {
     "@type": ["MedicalClinic", "LocalBusiness"],
     "@id": `${SITE_URL}/locations#${key}`,
     name: `Your Health Now - ${c.name}`,
-    url: `${SITE_URL}/areas-we-serve/${isNj ? "merchantville-nj" : "chalfont-pa"}/chiropractic-care`,
+    url: `${SITE_URL}/locations#${key}`,
     telephone: isNj ? "+1-856-532-2063" : "+1-609-651-7436",
     image: `${SITE_URL}/images/yhn-clone/your-health-now.jpg`,
     parentOrganization: { "@id": ORG_ID },
@@ -181,6 +182,11 @@ export async function organizationGraph() {
           { "@id": `${SITE_URL}/locations#merchantville` },
           { "@id": `${SITE_URL}/locations#chalfont` },
         ],
+        /** Functional medicine telehealth reaches every state in data/telehealth-states.ts, not just the two clinic states. */
+        areaServed: TELEHEALTH_STATES.map((s) => ({
+          "@type": "State",
+          name: s.name,
+        })),
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: AVERAGE_RATING,
@@ -325,3 +331,38 @@ export function articleJsonLd(opts: {
     about: { "@type": "MedicalSpecialty", name: "Chiropractic" },
   };
 }
+
+const DR_CHRIS_ID = `${SITE_URL}/meet-the-doctor#dr-chris`;
+
+/** Schema graph for a /functional-medicine/{state} telehealth page. */
+export function stateTelehealthJsonLd(state: TelehealthState, reviewedDate: string) {
+  const pageUrl = `${SITE_URL}/functional-medicine/${state.slug}`;
+  return [
+    breadcrumbJsonLd([
+      { name: "Home", url: `${SITE_URL}/` },
+      { name: "Functional Medicine", url: `${SITE_URL}/functional-medicine` },
+      { name: state.name, url: pageUrl },
+    ]),
+    faqJsonLd(state.faq),
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      name: state.title,
+      url: pageUrl,
+      description: state.metaDescription,
+      lastReviewed: reviewedDate,
+      reviewedBy: { "@id": DR_CHRIS_ID },
+      author: { "@id": DR_CHRIS_ID },
+      about: {
+        "@type": "MedicalClinic",
+        name: "Your Health Now - Functional Medicine Telehealth",
+        medicalSpecialty: "FunctionalMedicine",
+        areaServed: { "@type": "State", name: state.name },
+        provider: { "@id": DR_CHRIS_ID },
+        parentOrganization: { "@id": ORG_ID },
+      },
+      publisher: { "@id": ORG_ID },
+    },
+  ];
+}
+

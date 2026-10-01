@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Link from "next/link";
 import {
   ArrowUpRight,
   Calendar,
@@ -76,10 +77,10 @@ export default function ConsultationCallBanner() {
                 Wondering if functional medicine is the right path for your
                 chronic symptoms? Start with a complimentary 30-minute phone
                 consultation with Dr. Chris, no waiting room, no
-                in-person visit required. Open to residents anywhere in{" "}
-                <span className="font-semibold text-brand">
-                  Pennsylvania &amp; New Jersey
-                </span>
+                in-person visit required. Open to residents in{" "}
+                <Link href="/functional-medicine#states" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  9 states nationwide
+                </Link>
                 .
               </p>
 
@@ -126,8 +127,8 @@ export default function ConsultationCallBanner() {
                   30 minutes with Dr. Chris
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-stone">
-                  Functional medicine telehealth visits available across all of
-                  Pennsylvania &amp; New Jersey. Pick a time that works for you.
+                  Functional medicine telehealth visits available across 9
+                  states nationwide. Pick a time that works for you.
                 </p>
 
                 <div className="mt-5 space-y-3">
@@ -165,7 +166,7 @@ export default function ConsultationCallBanner() {
                           className="text-accent"
                           strokeWidth={2.25}
                         />
-                        All of PA &amp; NJ
+                        9 States Nationwide
                       </p>
                     </div>
                     <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/5 text-brand">

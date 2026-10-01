@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_PATHS } from "@/lib/navigation";
-import { CITIES, SERVICES } from "@/lib/pseoData";
+import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { SITE_URL } from "@/lib/siteUrl";
 import { queryPublishedPagesForSitemap, queryPublishedPostsForSitemap } from "@/lib/cms/query";
@@ -50,25 +50,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   ).filter(Boolean) as MetadataRoute.Sitemap;
 
-  const areasIndex = [
-    entry("/areas-we-serve", { lastModified, changeFrequency: "monthly", priority: 0.8 }),
-  ].filter(Boolean) as MetadataRoute.Sitemap;
-
-  const cityHubs = CITIES.map((c) =>
-    entry(`/areas-we-serve/${c.slug}`, { lastModified, changeFrequency: "monthly", priority: 0.6 }),
+  const telehealthStates = TELEHEALTH_STATES.map((s) =>
+    entry(`/functional-medicine/${s.slug}`, { lastModified, changeFrequency: "monthly", priority: 0.7 }),
   ).filter(Boolean) as MetadataRoute.Sitemap;
-
-  const cityServices: MetadataRoute.Sitemap = [];
-  for (const c of CITIES) {
-    for (const s of SERVICES) {
-      const row = entry(`/areas-we-serve/${c.slug}/${s.slug}`, {
-        lastModified,
-        changeFrequency: "monthly",
-        priority: 0.5,
-      });
-      if (row) cityServices.push(row);
-    }
-  }
 
   const slugs = await getPublishedBlogSlugs().catch(() => []);
   const articles = slugs
@@ -85,5 +69,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   ].filter(Boolean) as MetadataRoute.Sitemap;
 
-  return [...core, ...areasIndex, ...cityHubs, ...cityServices, ...articles, ...landingPages];
+  return [...core, ...telehealthStates, ...articles, ...landingPages];
 }

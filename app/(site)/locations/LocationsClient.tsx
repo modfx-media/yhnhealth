@@ -59,7 +59,7 @@ const FM_BOOKING_URL =
   "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
 
 const FM_REGION_MAP =
-  "https://www.google.com/maps?q=Pennsylvania+and+New+Jersey,+USA&z=7&output=embed";
+  "https://www.google.com/maps?q=United+States&z=4&output=embed";
 
 export default function LocationsClient() {
   const { openBooking } = useBookingPopup();
@@ -239,11 +239,16 @@ export default function LocationsClient() {
                   Functional Medicine · Telehealth
                 </p>
                 <h2 className="mt-4 max-w-2xl font-display text-3xl font-bold leading-tight text-brand md:text-4xl lg:text-[44px]">
-                  Serving all of <span className="font-script font-normal italic text-accent">PA &amp; NJ.</span>
+                  Serving{" "}
+                  <span className="font-script font-normal italic text-accent">9 states.</span>
                 </h2>
               </div>
               <p className="max-w-md text-sm leading-relaxed text-stone md:text-right">
-                Dr. Chris sees functional medicine patients via secure video visit anywhere in Pennsylvania and New Jersey - no in-person visit required.
+                Dr. Chris sees functional medicine patients via secure video visit in{" "}
+                <Link href="/functional-medicine#states" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  9 states nationwide
+                </Link>{" "}
+                - no in-person visit required.
               </p>
             </div>
           </FadeUp>
@@ -255,27 +260,27 @@ export default function LocationsClient() {
                 <div className="relative aspect-[16/10] w-full bg-mist lg:col-span-7 lg:aspect-auto">
                   <iframe
                     src={FM_REGION_MAP}
-                    title="Pennsylvania and New Jersey service area"
+                    title="Functional medicine telehealth coverage: 9 states nationwide"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="h-full w-full border-0"
                   />
                   <div className="pointer-events-none absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.28em] text-white shadow-card">
                     <Video size={11} strokeWidth={2.5} />
-                    PA &amp; NJ Coverage
+                    9 States Nationwide
                   </div>
                 </div>
 
                 {/* Details */}
                 <div className="bg-brand-dark px-7 py-9 text-white md:px-9 md:py-11 lg:col-span-5">
                   <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent">
-                    Telehealth · Statewide
+                    Telehealth · Nationwide
                   </p>
                   <h3 className="mt-3 font-display text-2xl font-bold leading-tight md:text-3xl">
                     Functional medicine, wherever you are.
                   </h3>
                   <p className="mt-4 text-sm leading-relaxed text-white/75">
-                    Doctor-led functional medicine with Dr. Chris. Available to residents anywhere in Pennsylvania and New Jersey via secure video visit.
+                    Doctor-led functional medicine with Dr. Chris. Available to residents in 9 states nationwide via secure video visit.
                   </p>
 
                   <div className="mt-7 space-y-4">
@@ -299,7 +304,7 @@ export default function LocationsClient() {
                         <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/55">
                           Coverage
                         </p>
-                        <p className="mt-1 text-sm font-semibold">All of Pennsylvania &amp; New Jersey</p>
+                        <p className="mt-1 text-sm font-semibold">9 states nationwide</p>
                       </div>
                     </div>
 
@@ -336,7 +341,7 @@ export default function LocationsClient() {
                       <ArrowUpRight size={14} className="transition-transform group-hover:translate-x-0.5" />
                     </a>
                     <Link
-                      href="/functional-medicine"
+                      href="/functional-medicine#states"
                       className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-[11px] font-bold uppercase tracking-[0.22em] text-white/85 transition-colors hover:border-accent hover:text-accent"
                     >
                       Explore Functional Medicine
