@@ -281,6 +281,15 @@ export default function Footer() {
             <Link href="/sitemap" className="hover:text-accent">Sitemap</Link>
             <span className="h-3 w-px bg-white/20" />
             <Link href="/contact-us" className="hover:text-accent">Contact</Link>
+            <span className="h-3 w-px bg-white/20" />
+            <a
+              href="https://modfxmedia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent"
+            >
+              POWERED BY MODFXMEDIA
+            </a>
           </div>
         </div>
         <p className="mx-auto max-w-[1320px] px-6 pb-5 text-[10px] leading-relaxed normal-case tracking-normal text-white/40 lg:px-10">
