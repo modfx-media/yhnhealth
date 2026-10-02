@@ -148,6 +148,91 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
           </FadeUp>
         </div>
 
+        <div className="mt-20 border-t border-brand/10 pt-16">
+          <h2 className="font-display text-2xl font-bold text-brand md:text-3xl">
+            How care works from {state.name}
+          </h2>
+          <div className="mt-6 max-w-3xl space-y-4">
+            {state.localGuide.map((paragraph) => (
+              <p key={paragraph.slice(0, 48)} className="text-base leading-relaxed text-stone">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <h3 className="mt-10 font-display text-xl font-bold text-brand">
+            Video visit versus a trip to the clinic
+          </h3>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-brand/10 bg-cream-light/50 p-5">
+              <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
+                <Video size={14} />
+                By secure video
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-stone">
+                <li>Free 30-minute fit consult with Dr. Chris</li>
+                <li>Review of your history, symptoms, and goals</li>
+                <li>Decision about whether functional lab testing makes sense</li>
+                <li>Follow-up conversations about the care plan</li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-brand/10 bg-white p-5">
+              <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
+                <MapPin size={14} />
+                Only at Merchantville or Chalfont
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-stone">
+                <li>Physical exam</li>
+                <li>Chiropractic adjustment</li>
+                <li>In-office lab draw</li>
+                <li>
+                  {state.hasOffice
+                    ? `The ${state.officeCity} office is in ${state.name}. It is optional for the functional medicine case.`
+                    : `${state.name} has no YHN clinic, so these require a trip.`}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone">{state.scheduling}</p>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone">
+            The shared clinical pathway, what the free consult is for, and the conditions this program takes on are on{" "}
+            <Link href="/functional-medicine#visit" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+              how a functional medicine visit works
+            </Link>
+            {". "}
+            Clinic addresses are on{" "}
+            <Link href="/locations" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+              our locations page
+            </Link>
+            {". "}
+            Dr. Chris&apos;s credentials are on{" "}
+            <Link href="/meet-the-doctor" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+              meet the doctor
+            </Link>
+            {"."}
+            {state.slug === "washington" && (
+              <>
+                {" "}
+                District residents should use the{" "}
+                <Link href="/functional-medicine/washington-dc" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  Washington, D.C. page
+                </Link>
+                {"."}
+              </>
+            )}
+            {state.slug === "washington-dc" && (
+              <>
+                {" "}
+                Washington State residents should use the{" "}
+                <Link href="/functional-medicine/washington" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  Washington State page
+                </Link>
+                {"."}
+              </>
+            )}
+          </p>
+        </div>
+
         {/* FAQ */}
         <div className="mt-20">
           <h2 className="font-display text-2xl font-bold text-brand md:text-3xl">

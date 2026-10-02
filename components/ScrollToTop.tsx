@@ -11,15 +11,25 @@ export default function ScrollToTop() {
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
     }
-    if (window.location.hash) {
-      const el = document.getElementById(window.location.hash.slice(1));
-      if (el) {
-        requestAnimationFrame(() => {
-          const top = el.getBoundingClientRect().top + window.scrollY - 120;
-          window.scrollTo({ top: Math.max(0, top), left: 0, behavior: "auto" });
-        });
+    const alignHash = () => {
+      const hash = window.location.hash;
+      if (!hash) {
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
         return;
       }
+      const el = document.getElementById(hash.slice(1));
+      if (!el) return;
+      const top = el.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({ top: Math.max(0, top), left: 0, behavior: "auto" });
+    };
+
+    if (window.location.hash) {
+      const frame = requestAnimationFrame(alignHash);
+      const later = window.setTimeout(alignHash, 80);
+      return () => {
+        cancelAnimationFrame(frame);
+        window.clearTimeout(later);
+      };
     }
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [pathname]);

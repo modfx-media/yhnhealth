@@ -300,6 +300,110 @@ export default function FunctionalMedicineClient() {
         </div>
       </section>
 
+      {/* How a visit works. Shared clinical depth lives here, not copied onto every state page. */}
+      <section className="relative bg-cream-light">
+        <div className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-24">
+          <div id="visit" className="scroll-mt-[120px]">
+          <FadeUp>
+            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">The Visit</p>
+            <h2 className="mt-4 max-w-3xl font-display text-4xl font-bold leading-tight text-brand md:text-5xl">
+              How a functional medicine visit works.
+            </h2>
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone">
+              This is the same pathway in every state we serve. What changes by state is whether a clinic is nearby and what time the video visit lands on your clock. Those details are on the state pages. Licensing, which lab network is used, and what a visit costs are confirmed with you on the consult. They are not guessed on this page.
+            </p>
+          </FadeUp>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            <FadeUp>
+              <article className="h-full rounded-3xl border border-brand/10 bg-white p-7 shadow-card md:p-9">
+                <h3 className="font-display text-2xl font-bold text-brand">The free 30-minute consult</h3>
+                <p className="mt-4 text-base leading-relaxed text-stone">
+                  The first step is a complimentary 30-minute call with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is a fit check. You talk through why you are calling. It is not a treatment visit, and it is not a diagnosis.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-stone">
+                  Use it to find out whether Personalized Clinical Care is the right path. If you are proactively focused on energy, longevity, hormones, or metabolism, the 12{" "}
+                  <Link href="/health-optimization-programs" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                    Health Optimization Programs
+                  </Link>{" "}
+                  may fit better. If the case is complex, ongoing, or has not improved with conventional care, this clinical pathway is the one to discuss.
+                </p>
+              </article>
+            </FadeUp>
+            <FadeUp delay={0.08}>
+              <article className="h-full rounded-3xl border border-brand/10 bg-white p-7 shadow-card md:p-9">
+                <h3 className="font-display text-2xl font-bold text-brand">If you continue</h3>
+                <p className="mt-4 text-base leading-relaxed text-stone">
+                  The clinical visit reviews your health history, current symptoms, and goals, then whether functional lab testing makes sense for your case. From there the work is comprehensive testing, a treatment plan built around your history, ongoing clinical guidance, and close follow-up.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-stone">
+                  That conversation can happen by secure video from any of the nine states, or in person at Merchantville or Chalfont if you would rather be in the room. Video does not shorten the agenda. It changes where you sit.
+                </p>
+              </article>
+            </FadeUp>
+          </div>
+
+          <FadeUp className="mt-8">
+            <div className="overflow-hidden rounded-3xl border border-brand/10 bg-white">
+              <div className="border-b border-brand/10 px-6 py-5 md:px-8">
+                <h3 className="font-display text-2xl font-bold text-brand">What video can do, and what still needs a clinic</h3>
+              </div>
+              <div className="grid md:grid-cols-2">
+                <div className="px-6 py-6 md:px-8">
+                  <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
+                    <Video size={14} />
+                    Secure video, all 9 states
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-stone">
+                    <li>The free 30-minute fit consult</li>
+                    <li>History, symptoms, and goals</li>
+                    <li>Whether functional lab testing makes sense</li>
+                    <li>The care plan and later follow-up</li>
+                  </ul>
+                </div>
+                <div className="border-t border-brand/10 px-6 py-6 md:border-l md:border-t-0 md:px-8">
+                  <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
+                    <MapPin size={14} />
+                    Merchantville, NJ or Chalfont, PA only
+                  </p>
+                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-stone">
+                    <li>A physical exam</li>
+                    <li>A chiropractic adjustment</li>
+                    <li>An in-office lab draw</li>
+                    <li>
+                      Addresses and hours are on the{" "}
+                      <Link href="/locations" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                        locations page
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </FadeUp>
+
+          <FadeUp className="mt-8">
+            <div className="max-w-3xl">
+              <h3 className="font-display text-2xl font-bold text-brand">What this program is for</h3>
+              <p className="mt-4 text-base leading-relaxed text-stone">
+                Functional medicine here is aimed at complex, chronic, multi-system problems: fatigue and energy, digestion and gut health, hormone imbalance, autoimmune conditions, Lyme disease and other tick-borne illness, inflammation and pain, brain fog and mood, and metabolic health. If standard labs have been called normal and you still do not feel well, bring that to the consult. Dr. Chris&apos;s own history with chronic Lyme, and how this clinic approaches it, is on the{" "}
+                <Link href="/lyme-disease-solutions" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  Lyme disease page
+                </Link>
+                {". His training is on "}
+                <Link href="/meet-the-doctor" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  meet the doctor
+                </Link>.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-stone">
+                The consult is also where a case can be turned away. Not every symptom picture is one we should take. That is the point of the free call.
+              </p>
+            </div>
+          </FadeUp>
+          </div>
+        </div>
+      </section>
+
       {/* States we serve by telehealth */}
       <section className="relative bg-mist/40">
         <div className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-24">
@@ -314,8 +418,7 @@ export default function FunctionalMedicineClient() {
             </h2>
             </div>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-stone">
-              Dr. Chris sees patients by secure video visit well beyond our two physical offices. Pick your
-              state for licensing, lab-draw, and insurance details specific to where you live.
+              Dr. Chris sees patients by secure video in nine states, and in person at Merchantville, NJ and Chalfont, PA. Pick your state for how a video visit works from where you live, including the clock and whether a clinic is nearby. How the visit itself works is in the section above.
             </p>
           </FadeUp>
 
