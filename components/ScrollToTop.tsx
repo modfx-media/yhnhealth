@@ -15,7 +15,8 @@ export default function ScrollToTop() {
       const el = document.getElementById(window.location.hash.slice(1));
       if (el) {
         requestAnimationFrame(() => {
-          el.scrollIntoView({ behavior: "auto", block: "start" });
+          const top = el.getBoundingClientRect().top + window.scrollY - 120;
+          window.scrollTo({ top: Math.max(0, top), left: 0, behavior: "auto" });
         });
         return;
       }

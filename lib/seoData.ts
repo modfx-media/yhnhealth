@@ -37,14 +37,14 @@ export const SEO: Record<string, SeoEntry> = {
       "Contact Your Health Now in Merchantville, NJ or Chalfont, PA. Call, email, or book online for chiropractic and functional medicine appointments.",
   },
   "/functional-medicine": {
-    title: "Personalized Clinical Care | Functional Medicine in NJ & PA | Your Health Now",
+    title: "Functional Medicine Telehealth in 9 States | Your Health Now",
     description:
-      "Doctor-led functional medicine for complex, chronic conditions. Comprehensive testing, advanced personalized treatment plans, and ongoing clinical guidance in Merchantville, NJ & Chalfont, PA.",
+      "Doctor-led functional medicine for complex, chronic conditions. Comprehensive testing and personalized plans, with telehealth in 9 states and clinics in Merchantville, NJ and Chalfont, PA.",
   },
   "/health-optimization-programs": {
-    title: "Health Optimization Programs | Functional Medicine in NJ & PA | Your Health Now",
+    title: "Health Optimization Programs | Your Health Now",
     description:
-      "12 doctor-designed Health Optimization Programs - weight & metabolism, hormones, energy, thyroid, gut, longevity and more. 6- or 12-month pathways with telehealth in Merchantville, NJ & Chalfont, PA.",
+      "12 doctor-designed Health Optimization Programs - weight and metabolism, hormones, energy, thyroid, gut, longevity and more. 6- or 12-month pathways, with telehealth in 9 states.",
   },
   "/family-chiropractic-care": {
     title: "Chiropractor in Chalfont, PA & Merchantville, NJ | Your Health Now",

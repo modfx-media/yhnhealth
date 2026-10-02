@@ -85,6 +85,8 @@ const nextConfig: NextConfig = {
         destination,
         permanent: true,
       })),
+      // Any city/service pair not listed above still leaves the retired grid.
+      { source: "/areas-we-serve/:city/:service", destination: "/locations", permanent: true },
       // /areas-we-serve/{city} city index -> the two-office locations page
       { source: "/areas-we-serve/:city", destination: "/locations", permanent: true },
       // /areas-we-serve grid index -> the two-office locations page

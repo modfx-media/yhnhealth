@@ -3305,8 +3305,8 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        title: "Telehealth across PA & NJ",
-        text: "Functional medicine consults at YHN are delivered via secure video to residents anywhere in Pennsylvania and New Jersey. New patients start with a free 30-minute call to see if it's a fit.",
+        title: "Telehealth in 9 states",
+        text: "Functional medicine consults at YHN are delivered via secure video to residents in 9 states, including PA, NJ, FL, DE, VT, AZ, ID, WA, and D.C. New patients start with a free 30-minute call to see if it's a fit.",
       },
     ],
     related: ["functional-medicine-fatigue-root-causes", "functional-medicine-gut-health"],

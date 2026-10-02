@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "motion/react";
 import Script from "next/script";
 import { Phone, MapPin, Calendar, ArrowUpRight, Video, Clock, Navigation } from "lucide-react";
@@ -113,7 +114,10 @@ export default function ContactClient() {
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">
                   New to functional medicine? Start with a complimentary 30-minute
-                  telehealth consult with Dr. Chris, available in 9 states nationwide.
+                  telehealth consult with Dr. Chris, available in{" "}
+                  <Link href="/functional-medicine#states" className="font-semibold text-accent hover:text-white">
+                    9 states
+                  </Link>.
                 </p>
 
                 <a

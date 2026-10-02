@@ -712,7 +712,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                 {[
                   { big: <Counter end={2000} suffix="+" />, label: "Patients Served" },
                   { big: "2", label: "Chiropractic Care Locations" },
-                  { big: "Telehealth", label: "Across NJ & PA" },
+                  { big: "Telehealth", label: "In 9 states" },
                   { big: <Counter end={30} suffix=" min" />, label: "Free Consultation" },
                 ].map((s, i) => (
                   <FadeUp
@@ -1208,7 +1208,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
             <div className="mt-12 grid gap-8 lg:grid-cols-12 lg:items-start">
               <CollageImage
                 src="/images/functional-medicine-lp/telehealth.webp"
-                alt="Functional medicine telehealth appointment from anywhere in NJ and PA"
+                alt="Functional medicine telehealth appointment from any of the 9 states we serve"
                 label="Telehealth Visits"
                 width={656}
                 height={656}
@@ -1226,7 +1226,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   {
                     icon: Video,
                     title: "Telehealth Available",
-                    body: "See a functional medicine doctor near you or from home, anywhere in NJ & PA.",
+                    body: "See a functional medicine doctor near you or from home, in any of the 9 states we serve.",
                   },
                   {
                     icon: Compass,

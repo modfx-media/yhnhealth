@@ -8,6 +8,11 @@ import type { TelehealthState } from "@/data/telehealth-states";
 
 const FM_BOOKING_URL = "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
 
+/** Names like "Washington, D.C." already end in a period. */
+function endSentence(name: string) {
+  return name.endsWith(".") ? name : `${name}.`;
+}
+
 /** Date shown in the "Medically reviewed by" byline; bump when this template's clinical copy is revised. */
 const REVIEWED_DATE = "2026-10-02";
 
@@ -37,7 +42,7 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
 
           <h1 className="mt-6 font-display text-4xl font-bold leading-[1.05] text-brand md:text-5xl lg:text-6xl">
             Functional Medicine Telehealth in{" "}
-            <span className="font-script font-normal italic text-accent">{state.name}.</span>
+            <span className="font-script font-normal italic text-accent">{endSentence(state.name)}</span>
           </h1>
 
           {/* 40-60 word direct answer, with a link to the FM pillar in the first 200 words */}
@@ -100,7 +105,7 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
               {/* TODO: needs client info - confirm Dr. Chris's specific telehealth licensing/compact status for this state before publishing */}
               Telehealth licensing rules vary by state and by provider type. Our team confirms licensing
               and scope of practice before your first visit; call or ask during your free consult if you
-              have questions specific to {state.name}.
+              have questions specific to {endSentence(state.name)}
             </p>
           </FadeUp>
 

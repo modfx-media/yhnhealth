@@ -11,6 +11,7 @@ import {
   Video,
 } from "lucide-react";
 import { useBookingPopup } from "@/components/BookingPopup";
+import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 
 const FM_BOOKING_URL =
   "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
@@ -83,16 +84,24 @@ export default function FunctionalMedicineTelehealthBanner() {
             ))}
           </ul>
 
-          {/* Coverage strip */}
-          <div className="mt-7 flex flex-wrap items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-white/70">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur">
-              <MapPin size={12} className="text-accent" strokeWidth={2.25} />
-              9 States Nationwide
-            </span>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur">
+          <div className="mt-7 flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80">
+            {TELEHEALTH_STATES.map((state) => (
+              <Link
+                key={state.slug}
+                href={`/functional-medicine/${state.slug}`}
+                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur transition-colors hover:border-accent hover:text-accent"
+              >
+                <MapPin size={12} className="text-accent" strokeWidth={2.25} />
+                {state.name}
+              </Link>
+            ))}
+            <Link
+              href="/functional-medicine#states"
+              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 backdrop-blur transition-colors hover:border-accent hover:text-accent"
+            >
               <Video size={12} className="text-accent" strokeWidth={2.25} />
-              Secure Video Visits
-            </span>
+              See all states
+            </Link>
           </div>
         </div>
 

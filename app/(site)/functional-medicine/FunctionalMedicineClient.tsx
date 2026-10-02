@@ -301,9 +301,10 @@ export default function FunctionalMedicineClient() {
       </section>
 
       {/* States we serve by telehealth */}
-      <section id="states" className="relative bg-mist/40 scroll-mt-24">
+      <section className="relative bg-mist/40">
         <div className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-24">
           <FadeUp>
+            <div id="states" className="scroll-mt-[120px]">
             <p className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
               <Video size={12} />
               Telehealth Coverage
@@ -311,6 +312,7 @@ export default function FunctionalMedicineClient() {
             <h2 className="mt-4 max-w-2xl font-display text-4xl font-bold leading-tight text-brand md:text-5xl">
               States we serve by functional medicine telehealth.
             </h2>
+            </div>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-stone">
               Dr. Chris sees patients by secure video visit well beyond our two physical offices. Pick your
               state for licensing, lab-draw, and insurance details specific to where you live.

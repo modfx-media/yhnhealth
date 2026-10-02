@@ -9,7 +9,7 @@ const PATH = "/sitemap";
 const fallbackMetadata: Metadata = {
   title: { absolute: "Sitemap | Your Health Now" },
   description:
-    "Browse every page on yhnhealth.com - chiropractic care, functional medicine, physiotherapy services, locations, and 1,081 local service pages across NJ & PA.",
+    "Browse every page on yhnhealth.com, including chiropractic care, functional medicine, physiotherapy, locations, and telehealth in 9 states.",
   alternates: { canonical: `${SITE_URL}/sitemap` },
 };
 

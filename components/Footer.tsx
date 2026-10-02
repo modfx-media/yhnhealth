@@ -45,6 +45,7 @@ const QUICK_LINKS = [
   { label: "Meet The Team", href: "/meet-the-doctor" },
   { label: "Articles", href: "/articles" },
   { label: "Our Locations", href: "/locations" },
+  { label: "Telehealth States", href: "/functional-medicine#states" },
   { label: "Contact", href: "/contact-us" },
 ];
 
@@ -260,7 +261,7 @@ export default function Footer() {
             </p>
           </div>
           <Link
-            href="/functional-medicine"
+            href="/functional-medicine#states"
             className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-[0.24em] text-white/80 hover:text-accent"
           >
             See all states
