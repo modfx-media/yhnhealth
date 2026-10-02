@@ -39,7 +39,7 @@ export const SEO: Record<string, SeoEntry> = {
   "/functional-medicine": {
     title: "Functional Medicine Telehealth in 9 States | Your Health Now",
     description:
-      "Doctor-led functional medicine for complex, chronic conditions. Comprehensive testing and personalized plans, with telehealth in 9 states and clinics in Merchantville, NJ and Chalfont, PA.",
+      "Doctor-led functional medicine for complex, chronic conditions. A personalized care plan, with telehealth in 9 states and clinics in Merchantville, NJ and Chalfont, PA.",
   },
   "/health-optimization-programs": {
     title: "Health Optimization Programs | Your Health Now",
@@ -124,7 +124,7 @@ export const SEO: Record<string, SeoEntry> = {
   "/lyme-disease-solutions": {
     title: "Lyme Disease Solutions | Chiropractors In Merchantville, NJ & Chalfont, PA | Your Health Now",
     description:
-      "Functional medicine solutions for chronic Lyme in Merchantville, NJ & Chalfont, PA. Advanced testing and personalized protocols for lasting recovery.",
+      "Functional medicine solutions for chronic Lyme in Merchantville, NJ & Chalfont, PA. A personalized care plan and protocols for lasting recovery.",
   },
   "/physician-grade-supplementation": {
     title: "Physician Grade Supplementation | Chiropractors In Merchantville, NJ & Chalfont, PA | Your Health Now",

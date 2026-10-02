@@ -30,13 +30,13 @@ export const REVIEWS = [
     service: "Root-Cause Care",
   },
   {
-    text: "Years of fatigue and brain fog, and every doctor said my test results were 'normal.' Functional diagnostic testing here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
+    text: "Years of fatigue and brain fog, and every doctor said everything looked 'normal.' A personalized care plan here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
     author: "Hannah P.",
     location: "Telehealth · NJ",
-    service: "Functional Diagnostic Testing",
+    service: "Personalized Care Plan",
   },
   {
-    text: "The telehealth appointments made it so easy to keep up with my plan. Comprehensive testing, a clear protocol, and real follow-up. My hormones and gut health are finally balanced.",
+    text: "The telehealth appointments made it so easy to keep up with my plan. A comprehensive care plan, a clear protocol, and real follow-up. My hormones and gut health are finally balanced.",
     author: "Daniel K.",
     location: "Telehealth · PA",
     service: "Hormone & Gut Health",

@@ -112,13 +112,13 @@ const REVIEWS = [
     service: "Root-Cause Care",
   },
   {
-    text: "Years of fatigue and brain fog, and every doctor said my test results were 'normal.' Functional diagnostic testing here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
+    text: "Years of fatigue and brain fog, and every doctor said everything looked 'normal.' A personalized care plan here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
     author: "Hannah P.",
     location: "Telehealth · NJ",
-    service: "Functional Diagnostic Testing",
+    service: "Personalized Care Plan",
   },
   {
-    text: "The telehealth appointments made it so easy to keep up with my plan. Comprehensive testing, a clear protocol, and real follow-up. My hormones and gut health are finally balanced.",
+    text: "The telehealth appointments made it so easy to keep up with my plan. A comprehensive care plan, a clear protocol, and real follow-up. My hormones and gut health are finally balanced.",
     author: "Daniel K.",
     location: "Telehealth · PA",
     service: "Hormone & Gut Health",
@@ -631,8 +631,8 @@ export default function FunctionalMedicineSpecialOfferPage() {
                 className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/75 lg:mx-0"
               >
                 Doctor-led <strong className="font-semibold text-white">root cause medicine</strong>{" "}
-                for complex chronic conditions. Comprehensive functional diagnostic testing,
-                personalized treatment, and whole-person care, in-person or via telehealth.
+                for complex chronic conditions. A personalized care plan, comprehensive
+                protocols, and whole-person care, in-person or via telehealth.
               </motion.p>
 
               <motion.div
@@ -860,9 +860,9 @@ export default function FunctionalMedicineSpecialOfferPage() {
                     body: "We investigate biochemistry, gut health, hormones, and lifestyle to find WHY symptoms appear, not just what they look like. This is root cause medicine, not symptom suppression.",
                   },
                   {
-                    icon: Microscope,
-                    title: "Functional Diagnostic Testing",
-                    body: "Comprehensive testing beyond standard panels: micronutrients, food sensitivity testing, hormone panel testing, and gut microbiome testing to map your full picture.",
+                    icon: Stethoscope,
+                    title: "Whole-Person Assessment",
+                    body: "A deep look at your biochemistry, gut health, hormones, and lifestyle, translated into a clear, personalized care plan, not a standard panel guessed off a shelf.",
                   },
                   {
                     icon: ClipboardList,
@@ -903,14 +903,14 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   The Functional Difference
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-bold text-brand sm:text-4xl">
-                  From &ldquo;your test results are normal&rdquo; to{" "}
+                  From &ldquo;everything looks normal&rdquo; to{" "}
                   <span className="font-script text-4xl font-normal text-accent sm:text-5xl">
                     feeling well again
                   </span>
                 </h2>
                 <p className="mx-auto mt-4 max-w-xl text-lg text-stone sm:mx-0">
-                  We track the markers conventional panels often miss and build a clear
-                  path forward. As your gut, hormones, and inflammation rebalance, your
+                  We build a personalized care plan around what conventional visits often
+                  miss. As your gut, hormones, and inflammation rebalance, your
                   energy and clarity follow.
                 </p>
 
@@ -992,7 +992,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   </h2>
                   <p className="mx-auto mt-4 max-w-xl text-lg text-stone sm:mx-0">
                     Functional medicine is at its best with complex, chronic, multi-system
-                    conditions. If you&rsquo;ve been told your test results are &ldquo;normal&rdquo;
+                    conditions. If you&rsquo;ve been told &ldquo;everything looks normal&rdquo;
                     but you don&rsquo;t feel well, this is for you.
                   </p>
                 </FadeUp>
@@ -1024,8 +1024,8 @@ export default function FunctionalMedicineSpecialOfferPage() {
 
               <CollageImage
                 src="/images/functional-medicine-lp/functional_medicine_4.webp"
-                alt="Functional diagnostic testing and root-cause diagnostics for chronic conditions"
-                label="Functional Diagnostic Testing"
+                alt="Personalized functional medicine care plan for chronic conditions"
+                label="Personalized Care Plan"
                 width={1052}
                 height={806}
               />
@@ -1061,15 +1061,15 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   Designed for individuals dealing with complex or ongoing health concerns
                   who want a deeper, highly individualized functional medicine approach.
                   This doctor-led care focuses on identifying and addressing the root
-                  causes of illness through comprehensive testing, advanced personalized
-                  treatment plans, ongoing clinical guidance, and close follow-up
+                  causes of illness through a personalized care plan, advanced
+                  treatment protocols, ongoing clinical guidance, and close follow-up
                   management.
                 </p>
 
                 <div className="mt-7 rounded-3xl border border-brand/10 bg-white p-8 shadow-card">
                   <ul className="flex flex-col gap-5">
                     {[
-                      "Comprehensive functional diagnostic testing",
+                      "A personalized care plan built around your history",
                       "Personalized treatment plans",
                       "Ongoing clinical guidance",
                       "Close follow-up management care",
@@ -1105,30 +1105,30 @@ export default function FunctionalMedicineSpecialOfferPage() {
         </section>
 
         {/* --------------------------------------------------------------- */}
-        {/*  TESTING SECTION                                                 */}
+        {/*  CARE PLAN SECTION                                               */}
         {/* --------------------------------------------------------------- */}
-        <section id="testing" className="bg-white py-20 scroll-mt-28 lg:py-28">
+        <section id="care-plan" className="bg-white py-20 scroll-mt-28 lg:py-28">
           <div className="mx-auto max-w-[1320px] px-5 lg:px-10">
             <FadeUp className="text-center sm:text-left">
               <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent-dark">
-                Functional Diagnostic Testing
+                Personalized Care Plan
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold text-brand sm:text-4xl">
-                We test deeper, so we can{" "}
+                We look deeper, so we can{" "}
                 <span className="font-script text-4xl font-normal text-accent sm:text-5xl">
                   treat smarter
                 </span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-stone sm:mx-0">
-                Standard bloodwork only tells part of the story. Our functional diagnostic
-                testing reveals the root-cause drivers behind chronic symptoms.
+                A standard checkup only tells part of the story. Our personalized care
+                plans address the root-cause drivers behind chronic symptoms.
               </p>
             </FadeUp>
 
             <div className="mt-12 grid gap-8 lg:grid-cols-12 lg:items-center">
               <CollageImage
                 src="/images/functional-medicine-lp/fb639531-1408-5ca9-90bb-1d0370501c61.webp"
-                alt="Root-cause medicine and integrative functional diagnostic testing"
+                alt="Root-cause medicine and integrative functional medicine care"
                 label="Root-Cause Medicine"
                 width={1080}
                 height={1080}
@@ -1139,33 +1139,33 @@ export default function FunctionalMedicineSpecialOfferPage() {
               {[
                 {
                   icon: Droplets,
-                  title: "Gut Microbiome Testing",
-                  body: "Map bacterial balance, digestion, and inflammation driving gut and immune issues.",
+                  title: "Gut & Microbiome Health",
+                  body: "A personalized plan addressing bacterial balance, digestion, and inflammation driving gut and immune issues.",
                 },
                 {
                   icon: FlaskConical,
-                  title: "Hormone Panel Testing",
-                  body: "Thyroid, adrenal, and sex-hormone panels to uncover fatigue, mood, and metabolic imbalances.",
+                  title: "Hormone Balance",
+                  body: "A personalized plan addressing thyroid, adrenal, and sex-hormone imbalances behind fatigue, mood, and metabolic issues.",
                 },
                 {
                   icon: TestTube,
-                  title: "Food Sensitivity Testing",
-                  body: "Identify reactive foods quietly fueling inflammation, bloating, and brain fog.",
+                  title: "Food Sensitivity Support",
+                  body: "A personalized plan to manage reactive foods quietly fueling inflammation, bloating, and brain fog.",
                 },
                 {
                   icon: Microscope,
-                  title: "Micronutrient Analysis",
-                  body: "Pinpoint vitamin and mineral deficiencies that standard panels overlook.",
+                  title: "Micronutrient Support",
+                  body: "A personalized plan addressing vitamin and mineral gaps that standard care often overlooks.",
                 },
                 {
                   icon: ShieldCheck,
-                  title: "Autoimmune & Lyme Markers",
-                  body: "Advanced screening for autoimmune activity and tick-borne illness.",
+                  title: "Autoimmune & Lyme Support",
+                  body: "A personalized plan for autoimmune activity and tick-borne illness.",
                 },
                 {
                   icon: Activity,
-                  title: "Metabolic & Inflammation",
-                  body: "Track inflammation and metabolic markers that predict long-term health.",
+                  title: "Metabolic & Inflammation Support",
+                  body: "A personalized plan to manage inflammation and metabolic factors that predict long-term health.",
                 },
               ].map((c, i) => (
                 <FadeUp key={c.title} delay={i * 0.06}>
@@ -1236,7 +1236,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   {
                     icon: HeartPulse,
                     title: "Whole-Person Plans",
-                    body: "Nutrition, testing, lifestyle, and clinical care working together as one protocol.",
+                    body: "Nutrition, personalized care planning, lifestyle, and clinical care working together as one protocol.",
                   },
                 ].map((c, i) => (
                   <FadeUp key={c.title} delay={i * 0.08}>

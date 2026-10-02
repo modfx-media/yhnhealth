@@ -390,7 +390,7 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       },
       {
         body:
-          "Whether you have been told that you have Lyme or not, whether you are at the point of despair and hopelessness, no matter what testing or imaging has or has not told you, not matter how much medication you have or have not been given, please contact us and we will provide you with the solutions to heal and regain your life.",
+          "Whether you have been told that you have Lyme or not, whether you are at the point of despair and hopelessness, no matter what prior evaluation or imaging has or has not told you, not matter how much medication you have or have not been given, please contact us and we will provide you with the solutions to heal and regain your life.",
       },
     ],
     related: pickRelated("other", "lyme-disease-solutions"),

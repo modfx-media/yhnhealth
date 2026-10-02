@@ -111,14 +111,13 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
 
           <FadeUp delay={0.1}>
             <h2 className="font-display text-2xl font-bold text-brand md:text-3xl">
-              How does diagnostic testing work in {state.name}?
+              How does your care plan come together in {state.name}?
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone">
-              {/* TODO: needs client info - confirm which outside testing partner/draw-site network is used for this state */}
-              Functional medicine care often includes advanced diagnostic testing. We do not process any
-              testing on-site, so it is ordered through outside partner facilities. Your specific options
-              and draw-site logistics in {state.name} are confirmed with you directly once a plan is in
-              place, since this can depend on the test panel and your location.
+              {/* TODO: needs client info - confirm which outside care-team partner/draw-site network is used for this state */}
+              Functional medicine care is built around your history, symptoms, and goals. If additional
+              bloodwork or diagnostics would help, your doctor discusses the options with you directly,
+              since this can depend on your specific case and location in {state.name}.
             </p>
           </FadeUp>
 

@@ -32,7 +32,7 @@ export const REVIEWS: Review[] = [
     stars: 5,
   },
   {
-    text: "I had been told for years that my fatigue was 'just stress.' Functional medicine here finally found the underlying issue through proper testing and a personalized plan. I have my energy and life back. I cannot say enough about Dr. Chris.",
+    text: "I had been told for years that my fatigue was 'just stress.' Functional medicine here finally found the underlying issue through a personalized care plan. I have my energy and life back. I cannot say enough about Dr. Chris.",
     author: "Renee M.",
     source: "Yelp",
     location: "Chalfont, PA",

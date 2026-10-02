@@ -33,7 +33,7 @@ const TIMELINE = [
   {
     year: "Today",
     title: "Functional medicine integration",
-    body: "Beyond chiropractic, YHN now offers full functional medicine - root-cause investigation, testing-driven protocols, and integrative nutrition for the whole person.",
+    body: "Beyond chiropractic, YHN now offers full functional medicine - root-cause investigation, a personalized care plan, and integrative nutrition for the whole person.",
     icon: Atom,
   },
 ];
@@ -144,7 +144,7 @@ export default function AboutUsClient() {
                 Our practice was built on a single conviction: that healthcare should produce health - not simply manage disease. We bring a salutogenic approach to every patient encounter, working to make people healthier and not just &lsquo;less sick&rsquo;.
               </p>
               <p className="mt-5 text-base leading-relaxed text-stone">
-                That means starting with the root cause, listening longer, testing more thoughtfully, and refusing to treat symptoms in isolation. It is, simply, the kind of care our family wants for our own family.
+                That means starting with the root cause, listening longer, evaluating more thoroughly, and refusing to treat symptoms in isolation. It is, simply, the kind of care our family wants for our own family.
               </p>
               <Link
                 href="/meet-the-doctor"
