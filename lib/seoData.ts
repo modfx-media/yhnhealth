@@ -149,7 +149,7 @@ export const SEO: Record<string, SeoEntry> = {
   "/integrative-nutrition": {
     title: "Integrative Nutrition | Chiropractors In Merchantville, NJ & Chalfont, PA | Your Health Now",
     description:
-      "Integrative nutrition coaching in Chalfont, PA & Merchantville, NJ. Personalized food plans built around lab work and your unique health goals.",
+      "Integrative nutrition coaching in Chalfont, PA & Merchantville, NJ. Personalized food plans built around your bloodwork and your unique health goals.",
   },
   "/lifestyle-and-nutritional-advice": {
     title: "Lifestyle & Nutritional Advice | Chiropractors In Merchantville, NJ & Chalfont, PA | Your Health Now",

@@ -49,7 +49,7 @@ export const HERO_SLIDES = [
     alt: "Functional Medicine",
     eyebrow: "Now Featuring",
     title: "Functional medicine",
-    info: "Where conventional medicine ends, we ask the next question, using advanced labs and root-cause protocols to restore whole-body health.",
+    info: "Where conventional medicine ends, we ask the next question, using advanced diagnostic testing and root-cause protocols to restore whole-body health.",
     href: "/functional-medicine",
     cta: "Functional medicine",
   },
@@ -103,7 +103,7 @@ export const HERO_SLIDES = [
     alt: "Physician Grade Supplementation",
     eyebrow: "Now Featuring",
     title: "Physician-grade supplementation",
-    info: "Targeted, professionally formulated supplements, selected for your labs and your needs, never guesswork off a shelf.",
+    info: "Targeted, professionally formulated supplements, selected for your bloodwork and your needs, never guesswork off a shelf.",
     href: "/physician-grade-supplementation",
     cta: "Browse protocols",
   },
@@ -305,7 +305,7 @@ export const SERVICE_GROUPS: ServiceGroup[] = [
     title: "Root-cause care, ",
     scriptWord: "evidence-backed.",
     description:
-      "Doctor-led functional medicine, integrative nutrition, and chiropractic working together, advanced labs, personalized protocols, and clinical care under one roof.",
+      "Doctor-led functional medicine, integrative nutrition, and chiropractic working together, advanced diagnostic testing, personalized protocols, and clinical care under one roof.",
     metric: { value: "8", label: "integrated programs" },
     items: [
       { name: "Functional Medicine", href: "/functional-medicine", image: "/images/yhn-clone/svc-funcmed.webp", blurb: "Personalized clinical care for chronic conditions." },
@@ -358,7 +358,7 @@ export const ARTICLES = [
   {
     title: "Why You're Still Tired: A Functional Medicine Look at Fatigue",
     excerpt:
-      "Told your fatigue is 'just stress'? Here's how functional medicine actually investigates low energy, and what standard labs miss.",
+      "Told your fatigue is 'just stress'? Here's how functional medicine actually investigates low energy, and what standard bloodwork misses.",
     href: "/articles/functional-medicine-fatigue-root-causes",
     image: "/images/yhn-clone/hero-funcmed.webp",
   },

@@ -17,7 +17,6 @@ const FM_BOOKING_URL =
   "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
 
 const FEATURES = [
-  "Advanced labs & root-cause workups",
   "Personalized clinical protocols",
   "Same depth, same doctor - over secure video",
 ];

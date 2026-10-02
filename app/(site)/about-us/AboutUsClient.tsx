@@ -33,7 +33,7 @@ const TIMELINE = [
   {
     year: "Today",
     title: "Functional medicine integration",
-    body: "Beyond chiropractic, YHN now offers full functional medicine - root-cause investigation, lab-driven protocols, and integrative nutrition for the whole person.",
+    body: "Beyond chiropractic, YHN now offers full functional medicine - root-cause investigation, testing-driven protocols, and integrative nutrition for the whole person.",
     icon: Atom,
   },
 ];

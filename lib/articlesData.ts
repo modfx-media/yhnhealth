@@ -102,7 +102,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Shorter daylight hours, busy school and work schedules, and more time inside can all make low energy stand out. If your standard lab work keeps coming back “normal” but you still feel wiped out, it can be frustrating and confusing. At that point, it may be time to look beyond quick checklists and ask deeper questions about what is going on in your body.",
+        text: "Shorter daylight hours, busy school and work schedules, and more time inside can all make low energy stand out. If your standard bloodwork keeps coming back “normal” but you still feel wiped out, it can be frustrating and confusing. At that point, it may be time to look beyond quick checklists and ask deeper questions about what is going on in your body.",
       },
       {
         type: "p",
@@ -132,7 +132,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Under the surface, there may be issues that basic labs do not always catch, such as:",
+        text: "Under the surface, there may be issues that basic testing does not always catch, such as:",
       },
       {
         type: "list",
@@ -149,7 +149,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "How an Integrative Medicine Doctor in Haverford, PA Thinks Differently" },
       {
         type: "p",
-        text: "An integrative medicine doctor in Haverford, PA steps back and looks at the whole picture, not just one symptom or one lab result. At Your Health Now, we combine functional medicine thinking with chiropractic insight to see how your body’s systems and structure are working together.",
+        text: "An integrative medicine doctor in Haverford, PA steps back and looks at the whole picture, not just one symptom or one test result. At Your Health Now, we combine functional medicine thinking with chiropractic insight to see how your body’s systems and structure are working together.",
       },
       {
         type: "p",
@@ -183,7 +183,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Root Cause Factors Behind Unexplained Fatigue" },
       {
         type: "p",
-        text: "Unexplained fatigue often has more than one cause. It is rarely just one lab value or one late night. Many people have a mix of underlying drivers that quietly drain their tank.",
+        text: "Unexplained fatigue often has more than one cause. It is rarely just one test value or one late night. Many people have a mix of underlying drivers that quietly drain their tank.",
       },
       {
         type: "p",
@@ -269,7 +269,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Is an Integrative Medicine Doctor in Haverford Right for You?" },
       {
         type: "p",
-        text: "If you feel “tired of being tired,” even though your labs look normal and quick fixes never seem to last, it may be time for a deeper look. An integrative medicine doctor in Haverford, PA can help you explore root causes with a blend of functional medicine and chiropractic care that respects your unique body and life.",
+        text: "If you feel “tired of being tired,” even though your bloodwork looks normal and quick fixes never seem to last, it may be time for a deeper look. An integrative medicine doctor in Haverford, PA can help you explore root causes with a blend of functional medicine and chiropractic care that respects your unique body and life.",
       },
       {
         type: "p",
@@ -705,12 +705,12 @@ export const ARTICLES: Article[] = [
     date: "September 1, 2026",
     readTime: 7,
     image: "/images/articles/chronic-lyme-vs-mold-illness-symptoms-and-testing.jpg",
-    imageAlt: "Illustration comparing chronic Lyme disease and mold illness symptoms and lab testing",
+    imageAlt: "Illustration comparing chronic Lyme disease and mold illness symptoms and diagnostic testing",
     body: [
       { type: "h2", text: "When Mysterious Symptoms Do Not Add Up Any More" },
       {
         type: "p",
-        text: "Persistent fatigue, brain fog, aches, and flu-like symptoms that never fully clear can make daily life feel like a blur. You may be trying to push through work, school, or family routines, but your body just will not cooperate. Rest does not fix it. Regular labs look \u201cnormal.\u201d You start to wonder if anyone will ever find a real answer.",
+        text: "Persistent fatigue, brain fog, aches, and flu-like symptoms that never fully clear can make daily life feel like a blur. You may be trying to push through work, school, or family routines, but your body just will not cooperate. Rest does not fix it. Regular bloodwork looks \u201cnormal.\u201d You start to wonder if anyone will ever find a real answer.",
       },
       {
         type: "p",
@@ -734,7 +734,7 @@ export const ARTICLES: Article[] = [
         items: [
           "Chronic Lyme often starts outdoors after tick exposure, even if you never saw the tick",
           "Mold illness usually starts indoors in a water-damaged or damp building",
-          "Both can lead to full-body symptoms that do not match simple lab work",
+          "Both can lead to full-body symptoms that do not match simple bloodwork",
           "Both can flare at certain times of year, like when humidity changes or you are outside more",
         ],
       },
@@ -872,7 +872,7 @@ export const ARTICLES: Article[] = [
         items: [
           "Start a symptom log; include time of day, location, and what you were doing",
           "Note where symptoms feel worst, specific rooms, buildings, or outdoor areas",
-          "Gather prior lab work, imaging, and a list of medications and supplements",
+          "Gather prior test results, imaging, and a list of medications and supplements",
           "Write down any known tick bites, rashes, moves to new homes, or water damage issues",
         ],
       },
@@ -1276,7 +1276,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "We also include a careful physical and neurological exam. This helps us look for muscle weakness, joint restrictions, balance issues, or nerve changes that might not show up on lab work.",
+        text: "We also include a careful physical and neurological exam. This helps us look for muscle weakness, joint restrictions, balance issues, or nerve changes that might not show up on bloodwork.",
       },
       {
         type: "p",
@@ -1414,7 +1414,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Functional Medicine Support for Third Trimester Comfort" },
       {
         type: "p",
-        text: "Chiropractic care often works best when your whole body is supported. Functional medicine can help by looking at how your nutrition, lifestyle, and lab findings may be affecting your energy, inflammation, and sleep during pregnancy.",
+        text: "Chiropractic care often works best when your whole body is supported. Functional medicine can help by looking at how your nutrition, lifestyle, and test findings may be affecting your energy, inflammation, and sleep during pregnancy.",
       },
       {
         type: "p",
@@ -1850,7 +1850,7 @@ export const ARTICLES: Article[] = [
       { type: "h3", text: "2. Deeper review and testing" },
       {
         type: "p",
-        text: "If needed, we suggest lab work or other tests to learn more about your gut, hormones, blood sugar, or other systems that may be affecting digestion.",
+        text: "If needed, we suggest additional testing to learn more about your gut, hormones, blood sugar, or other systems that may be affecting digestion.",
       },
       { type: "h3", text: "3. A summer-friendly gut health plan" },
       {
@@ -2103,7 +2103,7 @@ export const ARTICLES: Article[] = [
     date: "June 30, 2026",
     readTime: 8,
     image: "/images/articles/functional-medicine.avif",
-    imageAlt: "Functional medicine doctor reviewing advanced lab results with a patient",
+    imageAlt: "Functional medicine doctor reviewing advanced test results with a patient",
     body: [
       {
         type: "p",
@@ -2140,7 +2140,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "We often use advanced testing that goes beyond standard lab work - expanded bloodwork panels, hormone testing, GI and microbiome testing, food sensitivity panels, and micronutrient testing. These tools can help uncover hidden imbalances that do not show up on basic tests.",
+        text: "We often use advanced testing that goes beyond a standard screening - expanded bloodwork panels, hormone testing, GI and microbiome testing, food sensitivity panels, and micronutrient testing. These tools can help uncover hidden imbalances that do not show up on basic tests.",
       },
       { type: "h3", text: "Personalized plans, not one-size-fits-all" },
       {
@@ -2165,7 +2165,7 @@ export const ARTICLES: Article[] = [
       {
         type: "list",
         items: [
-          "Persistent fatigue, brain fog, or low energy with \"normal\" labs.",
+          "Persistent fatigue, brain fog, or low energy with \"normal\" bloodwork.",
           "Ongoing weight changes that do not match your eating or activity.",
           "Sleep problems that have not improved with simple changes.",
           "Anxiety, mood swings, or irritability that feel out of character.",
@@ -2252,7 +2252,7 @@ export const ARTICLES: Article[] = [
       {
         type: "list",
         items: [
-          "Gather recent lab results, imaging, and medical records.",
+          "Gather recent test results, imaging, and medical records.",
           "Make a list of medications and supplements you are taking.",
           "Write down your main symptoms and when they started.",
           "Think about your health goals, both short-term and long-term.",
@@ -3068,7 +3068,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "When to look deeper" },
       {
         type: "p",
-        text: "If you've cleaned up your nutrition and pain or fatigue is still high, that's where our functional medicine programs come in - targeted lab work, gut and hormone analysis, and a structured plan. Most patients are surprised how much further they can get.",
+        text: "If you've cleaned up your nutrition and pain or fatigue is still high, that's where our functional medicine programs come in - targeted testing, gut and hormone analysis, and a structured plan. Most patients are surprised how much further they can get.",
       },
     ],
     related: ["chiropractic-care-stress-levels", "morning-routine-affects-your-spine"],
@@ -3193,7 +3193,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "Persistent fatigue is one of the most common reasons patients book a functional medicine consult - and one of the most under-investigated symptoms in conventional care. A normal CBC and a TSH inside the lab range do not rule out a real, fixable problem. They rule out roughly five problems out of dozens.",
+        text: "Persistent fatigue is one of the most common reasons patients book a functional medicine consult - and one of the most under-investigated symptoms in conventional care. A normal CBC and a TSH inside the reference range do not rule out a real, fixable problem. They rule out roughly five problems out of dozens.",
       },
       { type: "h2", text: "The five drivers we see most often" },
       {
@@ -3206,10 +3206,10 @@ export const ARTICLES: Article[] = [
           "Hidden infections, including chronic Lyme and tick-borne co-infections.",
         ],
       },
-      { type: "h2", text: "Why standard labs miss it" },
+      { type: "h2", text: "Why standard testing misses it" },
       {
         type: "p",
-        text: "Conventional reference ranges are statistical descriptions of a sick population, not definitions of optimal function. A ferritin of 18 is 'normal' on most lab reports, but it's a near-certain driver of fatigue in a 35-year-old woman. Functional medicine uses tighter, evidence-based optimal ranges and looks at patterns across panels - not isolated red flags.",
+        text: "Conventional reference ranges are statistical descriptions of a sick population, not definitions of optimal function. A ferritin of 18 is 'normal' on most test reports, but it's a near-certain driver of fatigue in a 35-year-old woman. Functional medicine uses tighter, evidence-based optimal ranges and looks at patterns across panels - not isolated red flags.",
       },
       {
         type: "callout",
@@ -3219,7 +3219,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "When to ask for a different approach" },
       {
         type: "p",
-        text: "If you've been told 'everything looks fine' more than once, but you don't feel fine - that's the moment to escalate, not to accept it. Bring your prior labs to a free 30-minute consultation call. We'll tell you honestly whether there's more to investigate or whether a different specialist is the right next step.",
+        text: "If you've been told 'everything looks fine' more than once, but you don't feel fine - that's the moment to escalate, not to accept it. Bring your prior test results to a free 30-minute consultation call. We'll tell you honestly whether there's more to investigate or whether a different specialist is the right next step.",
       },
     ],
     related: ["functional-medicine-gut-health", "functional-medicine-vs-conventional"],
@@ -3262,7 +3262,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "A typical 90-day gut protocol" },
       {
         type: "p",
-        text: "We use a structured approach - remove triggers, replace digestive support, reinoculate with targeted strains, and repair the lining with specific nutrients like L-glutamine, zinc carnosine, and butyrate. Most patients feel meaningful change in the first 30 days and see lab markers move in 90.",
+        text: "We use a structured approach - remove triggers, replace digestive support, reinoculate with targeted strains, and repair the lining with specific nutrients like L-glutamine, zinc carnosine, and butyrate. Most patients feel meaningful change in the first 30 days and see biomarkers move in 90.",
       },
     ],
     related: ["functional-medicine-fatigue-root-causes", "functional-medicine-vs-conventional"],
@@ -3280,7 +3280,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "Conventional medicine is exceptional at acute care, surgery, and life-threatening disease. Functional medicine is exceptional at chronic, multi-system, and 'I don't feel right but my labs are normal' problems. Most patients benefit from both - used appropriately.",
+        text: "Conventional medicine is exceptional at acute care, surgery, and life-threatening disease. Functional medicine is exceptional at chronic, multi-system, and 'I don't feel right but my bloodwork is normal' problems. Most patients benefit from both - used appropriately.",
       },
       { type: "h2", text: "The core difference" },
       {
@@ -3315,7 +3315,7 @@ export const ARTICLES: Article[] = [
     slug: "functional-medicine-hormone-thyroid",
     title: "Hormones & Thyroid: Why Functional Medicine Looks Beyond TSH",
     excerpt:
-      "Fatigue, weight gain, anxiety, and brain fog are often labeled 'hormonal' - then dismissed because labs are 'normal.' Here's how functional medicine actually evaluates hormone health.",
+      "Fatigue, weight gain, anxiety, and brain fog are often labeled 'hormonal' - then dismissed because bloodwork is 'normal.' Here's how functional medicine actually evaluates hormone health.",
     category: "Functional Medicine",
     date: "June 2, 2026",
     readTime: 7,
@@ -3324,7 +3324,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "Hormones don't work in isolation. Thyroid function depends on adrenal status, gut health, nutrient availability, and inflammatory load - and yet most patients are evaluated by a single TSH lab. When that one number falls inside a wide statistical range, they're told everything is fine. For someone whose symptoms scream otherwise, that conversation is exhausting.",
+        text: "Hormones don't work in isolation. Thyroid function depends on adrenal status, gut health, nutrient availability, and inflammatory load - and yet most patients are evaluated by a single TSH test. When that one number falls inside a wide statistical range, they're told everything is fine. For someone whose symptoms scream otherwise, that conversation is exhausting.",
       },
       { type: "h2", text: "What we look at instead" },
       {
@@ -3337,7 +3337,7 @@ export const ARTICLES: Article[] = [
           "Iron, vitamin D, B12, and selenium - without these, your thyroid simply cannot convert T4 into active T3.",
         ],
       },
-      { type: "h2", text: "Why 'normal' labs aren't always healthy" },
+      { type: "h2", text: "Why 'normal' bloodwork isn't always healthy" },
       {
         type: "p",
         text: "A TSH of 3.8 sits inside most reference ranges, but it's a near-certain driver of fatigue, low mood, and weight resistance in someone with classic symptoms. Functional ranges are tighter, evidence-based, and designed around how you should feel - not just how a sick population looks on average.",
@@ -3384,7 +3384,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Better testing changes the picture" },
       {
         type: "p",
-        text: "We use specialty labs that look for direct evidence (PCR), antibody patterns across more bands, and common co-infections - Babesia, Bartonella, Ehrlichia, and more. Just as importantly, we look at the inflammatory and immune fingerprint these infections leave behind, even when the bug itself is hard to detect.",
+        text: "We use specialty testing that looks for direct evidence (PCR), antibody patterns across more bands, and common co-infections - Babesia, Bartonella, Ehrlichia, and more. Just as importantly, we look at the inflammatory and immune fingerprint these infections leave behind, even when the bug itself is hard to detect.",
       },
       {
         type: "callout",
@@ -3434,12 +3434,12 @@ export const ARTICLES: Article[] = [
       {
         type: "callout",
         title: "Anti-inflammatory living isn't a fad diet",
-        text: "It's the daily layering of food quality, sleep regularity, gut repair, stress management, and movement - done well over months, not days. The labs follow. The symptoms follow. That's the work.",
+        text: "It's the daily layering of food quality, sleep regularity, gut repair, stress management, and movement - done well over months, not days. The biomarkers follow. The symptoms follow. That's the work.",
       },
       { type: "h2", text: "Why this matters" },
       {
         type: "p",
-        text: "Lower the inflammation, and you don't just feel better - you reduce risk for almost every chronic disease that drives healthcare costs and shortens lives. That's why we treat it early and aggressively, even when conventional labs are still 'normal.'",
+        text: "Lower the inflammation, and you don't just feel better - you reduce risk for almost every chronic disease that drives healthcare costs and shortens lives. That's why we treat it early and aggressively, even when conventional bloodwork is still 'normal.'",
       },
     ],
     related: ["functional-medicine-fatigue-root-causes", "functional-medicine-gut-health", "functional-medicine-vs-conventional"],
@@ -3457,7 +3457,7 @@ export const ARTICLES: Article[] = [
     body: [
       {
         type: "p",
-        text: "There is no single diet that works for everyone. The same food that quiets one person's inflammation can spike another person's. Functional medicine starts with the individual - your labs, your symptoms, your goals - and builds the plan from there.",
+        text: "There is no single diet that works for everyone. The same food that quiets one person's inflammation can spike another person's. Functional medicine starts with the individual - your bloodwork, your symptoms, your goals - and builds the plan from there.",
       },
       { type: "h2", text: "What we evaluate before recommending a plan" },
       {
@@ -3478,12 +3478,12 @@ export const ARTICLES: Article[] = [
       {
         type: "callout",
         title: "Food first, then targeted supplements",
-        text: "We use food as the foundation and add physician-grade supplements only where labs and symptoms point to a specific need - never as a shotgun approach.",
+        text: "We use food as the foundation and add physician-grade supplements only where testing and symptoms point to a specific need - never as a shotgun approach.",
       },
       { type: "h2", text: "What success looks like" },
       {
         type: "p",
-        text: "Not weight loss alone. Better energy, stable mood, improved labs, fewer cravings, better sleep, lower inflammation. Weight changes follow when the plan fits - but they're a side effect of getting the system right, not the goal in isolation.",
+        text: "Not weight loss alone. Better energy, stable mood, improved bloodwork, fewer cravings, better sleep, lower inflammation. Weight changes follow when the plan fits - but they're a side effect of getting the system right, not the goal in isolation.",
       },
     ],
     related: ["functional-medicine-gut-health", "functional-medicine-fatigue-root-causes", "functional-medicine-hormone-thyroid"],
@@ -3538,7 +3538,7 @@ export const ARTICLES: Article[] = [
         type: "p",
         text: "A general doctor often focuses on a quick symptom review, a basic Lyme test (especially if there was a clear rash), and a short course of antibiotics if the test is positive. A Lyme disease specialist will usually go deeper. They are more likely to ask detailed questions about outdoor habits and possible bites, look closely at both early and late-stage symptoms, understand local tick patterns and common co-infections, and plan careful follow-up rather than a one-time visit.",
       },
-      { type: "h2", text: "Beyond Standard Labs: Tick Panels and Advanced Testing" },
+      { type: "h2", text: "Beyond Standard Testing: Tick Panels and Advanced Testing" },
       {
         type: "p",
         text: "Standard Lyme testing often starts with an ELISA test. If that is positive or unclear, it may be followed by a Western blot. These tests look for antibodies your immune system makes against Borrelia, the bacteria that causes Lyme. This basic approach can help, but it has limits.",
@@ -3570,12 +3570,12 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "A negative Lyme test does not always mean ticks are off the hook. Co-infections can hide behind vague symptoms like fatigue and body pain, make standard Lyme treatment less effective, and confuse the picture when labs look \u201cnormal\u201d but you do not feel normal. A functional medicine approach looks at the full clinical picture, not just one lab number \u2014 including your symptoms, your history, your nervous system, and how your body is handling stress and inflammation.",
+        text: "A negative Lyme test does not always mean ticks are off the hook. Co-infections can hide behind vague symptoms like fatigue and body pain, make standard Lyme treatment less effective, and confuse the picture when bloodwork looks \u201cnormal\u201d but you do not feel normal. A functional medicine approach looks at the full clinical picture, not just one test result \u2014 including your symptoms, your history, your nervous system, and how your body is handling stress and inflammation.",
       },
       {
         type: "callout",
         title: "Questions worth asking",
-        text: "\u201cWhich co-infections do you routinely test for and why?\u201d \u201cHow would treatment differ if I have Babesia or Bartonella along with Lyme?\u201d \u201cWhat signs make you suspect a co-infection even if labs are unclear?\u201d \u201cHow will you adjust the plan if I react strongly to treatment?\u201d",
+        text: "\u201cWhich co-infections do you routinely test for and why?\u201d \u201cHow would treatment differ if I have Babesia or Bartonella along with Lyme?\u201d \u201cWhat signs make you suspect a co-infection even if test results are unclear?\u201d \u201cHow will you adjust the plan if I react strongly to treatment?\u201d",
       },
       { type: "h2", text: "From Diagnosis to Healing: Treatment, Recovery, and Prevention" },
       {
@@ -3615,7 +3615,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "To get the most out of a first visit with a Lyme disease specialist in Villanova, PA, it helps to come prepared. Bring a symptom timeline (even if it feels messy or uncertain), any past lab results or imaging reports, a list of current medications and supplements, and a written list of questions about testing options and next steps.",
+        text: "To get the most out of a first visit with a Lyme disease specialist in Villanova, PA, it helps to come prepared. Bring a symptom timeline (even if it feels messy or uncertain), any past test results or imaging reports, a list of current medications and supplements, and a written list of questions about testing options and next steps.",
       },
       {
         type: "p",

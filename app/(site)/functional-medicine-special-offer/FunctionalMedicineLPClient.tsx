@@ -112,10 +112,10 @@ const REVIEWS = [
     service: "Root-Cause Care",
   },
   {
-    text: "Years of fatigue and brain fog, and every doctor said my labs were 'normal.' Functional lab testing here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
+    text: "Years of fatigue and brain fog, and every doctor said my test results were 'normal.' Functional diagnostic testing here finally found what was wrong. Months later I feel like myself again. I only wish I'd found them sooner.",
     author: "Hannah P.",
     location: "Telehealth · NJ",
-    service: "Functional Lab Testing",
+    service: "Functional Diagnostic Testing",
   },
   {
     text: "The telehealth appointments made it so easy to keep up with my plan. Comprehensive testing, a clear protocol, and real follow-up. My hormones and gut health are finally balanced.",
@@ -239,7 +239,7 @@ function TrendGraph({ className = "" }: { className?: string }) {
   );
 }
 
-/** Animated lab-marker bars (each fills to its target on view). */
+/** Animated biomarker bars (each fills to its target on view). */
 function MarkerBars() {
   const bars = [
     { label: "Energy", value: 88 },
@@ -631,7 +631,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                 className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/75 lg:mx-0"
               >
                 Doctor-led <strong className="font-semibold text-white">root cause medicine</strong>{" "}
-                for complex chronic conditions. Comprehensive functional lab testing,
+                for complex chronic conditions. Comprehensive functional diagnostic testing,
                 personalized treatment, and whole-person care, in-person or via telehealth.
               </motion.p>
 
@@ -861,8 +861,8 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   },
                   {
                     icon: Microscope,
-                    title: "Functional Lab Testing",
-                    body: "Comprehensive labs beyond standard panels: micronutrients, food sensitivity testing, hormone panel testing, and gut microbiome testing to map your full picture.",
+                    title: "Functional Diagnostic Testing",
+                    body: "Comprehensive testing beyond standard panels: micronutrients, food sensitivity testing, hormone panel testing, and gut microbiome testing to map your full picture.",
                   },
                   {
                     icon: ClipboardList,
@@ -903,7 +903,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   The Functional Difference
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-bold text-brand sm:text-4xl">
-                  From &ldquo;your labs are normal&rdquo; to{" "}
+                  From &ldquo;your test results are normal&rdquo; to{" "}
                   <span className="font-script text-4xl font-normal text-accent sm:text-5xl">
                     feeling well again
                   </span>
@@ -992,7 +992,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   </h2>
                   <p className="mx-auto mt-4 max-w-xl text-lg text-stone sm:mx-0">
                     Functional medicine is at its best with complex, chronic, multi-system
-                    conditions. If you&rsquo;ve been told your labs are &ldquo;normal&rdquo;
+                    conditions. If you&rsquo;ve been told your test results are &ldquo;normal&rdquo;
                     but you don&rsquo;t feel well, this is for you.
                   </p>
                 </FadeUp>
@@ -1024,8 +1024,8 @@ export default function FunctionalMedicineSpecialOfferPage() {
 
               <CollageImage
                 src="/images/functional-medicine-lp/functional_medicine_4.webp"
-                alt="Functional lab testing and root-cause diagnostics for chronic conditions"
-                label="Functional Lab Testing"
+                alt="Functional diagnostic testing and root-cause diagnostics for chronic conditions"
+                label="Functional Diagnostic Testing"
                 width={1052}
                 height={806}
               />
@@ -1069,7 +1069,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                 <div className="mt-7 rounded-3xl border border-brand/10 bg-white p-8 shadow-card">
                   <ul className="flex flex-col gap-5">
                     {[
-                      "Comprehensive functional lab testing",
+                      "Comprehensive functional diagnostic testing",
                       "Personalized treatment plans",
                       "Ongoing clinical guidance",
                       "Close follow-up management care",
@@ -1111,7 +1111,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
           <div className="mx-auto max-w-[1320px] px-5 lg:px-10">
             <FadeUp className="text-center sm:text-left">
               <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-accent-dark">
-                Functional Lab Testing
+                Functional Diagnostic Testing
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold text-brand sm:text-4xl">
                 We test deeper, so we can{" "}
@@ -1120,7 +1120,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                 </span>
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-lg text-stone sm:mx-0">
-                Standard bloodwork only tells part of the story. Our functional lab
+                Standard bloodwork only tells part of the story. Our functional diagnostic
                 testing reveals the root-cause drivers behind chronic symptoms.
               </p>
             </FadeUp>
@@ -1128,7 +1128,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
             <div className="mt-12 grid gap-8 lg:grid-cols-12 lg:items-center">
               <CollageImage
                 src="/images/functional-medicine-lp/fb639531-1408-5ca9-90bb-1d0370501c61.webp"
-                alt="Root-cause medicine and integrative functional lab testing"
+                alt="Root-cause medicine and integrative functional diagnostic testing"
                 label="Root-Cause Medicine"
                 width={1080}
                 height={1080}
@@ -1236,7 +1236,7 @@ export default function FunctionalMedicineSpecialOfferPage() {
                   {
                     icon: HeartPulse,
                     title: "Whole-Person Plans",
-                    body: "Nutrition, labs, lifestyle, and clinical care working together as one protocol.",
+                    body: "Nutrition, testing, lifestyle, and clinical care working together as one protocol.",
                   },
                 ].map((c, i) => (
                   <FadeUp key={c.title} delay={i * 0.08}>

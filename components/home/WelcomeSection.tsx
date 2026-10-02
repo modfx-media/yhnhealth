@@ -7,9 +7,9 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Heart, Sparkles, Shield } from "lucide-react";
 
 const PARAGRAPHS = [
-  "We pair functional medicine with chiropractic care so you get the deeper picture and the hands-on relief - advanced labs, personalized protocols, root-cause investigation, and precise in-clinic care all under one roof.",
+  "We pair functional medicine with chiropractic care so you get the deeper picture and the hands-on relief - advanced diagnostic testing, personalized protocols, root-cause investigation, and precise in-clinic care all under one roof.",
   "For chronic conditions, complex illness, fatigue, or hormone and digestive concerns, our doctor-led functional medicine protocols look upstream of your symptoms first. For pain, mobility, and nervous-system care, our chiropractic team delivers patient-specific adjustments and soft-tissue work.",
-  "True health care is proactive, preventative, and an ongoing experience we share with our patients - whether you come in for an adjustment, a lab review, or both.",
+  "True health care is proactive, preventative, and an ongoing experience we share with our patients - whether you come in for an adjustment, a results review, or both.",
 ];
 
 function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {

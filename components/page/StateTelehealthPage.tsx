@@ -111,13 +111,14 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
 
           <FadeUp delay={0.1}>
             <h2 className="font-display text-2xl font-bold text-brand md:text-3xl">
-              How do lab tests and lab draws work in {state.name}?
+              How does diagnostic testing work in {state.name}?
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone">
-              {/* TODO: needs client info - confirm which lab partner/draw-site network is used for this state */}
-              Functional medicine care often includes advanced lab testing. Your specific lab options and
-              draw-site logistics in {state.name} are confirmed with you directly once a plan is in place,
-              since this can depend on the test panel and your location.
+              {/* TODO: needs client info - confirm which outside testing partner/draw-site network is used for this state */}
+              Functional medicine care often includes advanced diagnostic testing. We do not process any
+              testing on-site, so it is ordered through outside partner facilities. Your specific options
+              and draw-site logistics in {state.name} are confirmed with you directly once a plan is in
+              place, since this can depend on the test panel and your location.
             </p>
           </FadeUp>
 
@@ -127,7 +128,7 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone">
               Telehealth covers the conversation, review of your history, and the care plan itself. A
-              physical exam, chiropractic adjustment, or in-office lab draw requires visiting one of our
+              physical exam or chiropractic adjustment requires visiting one of our
               two clinics in Merchantville, NJ or Chalfont, PA.{" "}
               {state.hasOffice
                 ? `For ${state.name} residents, the ${state.officeCity} office is the closest option.`
@@ -160,39 +161,6 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
             ))}
           </div>
 
-          <h3 className="mt-10 font-display text-xl font-bold text-brand">
-            Video visit versus a trip to the clinic
-          </h3>
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            <div className="rounded-2xl border border-brand/10 bg-cream-light/50 p-5">
-              <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
-                <Video size={14} />
-                By secure video
-              </p>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-stone">
-                <li>Free 30-minute fit consult with Dr. Chris</li>
-                <li>Review of your history, symptoms, and goals</li>
-                <li>Decision about whether functional lab testing makes sense</li>
-                <li>Follow-up conversations about the care plan</li>
-              </ul>
-            </div>
-            <div className="rounded-2xl border border-brand/10 bg-white p-5">
-              <p className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.22em] text-accent-dark">
-                <MapPin size={14} />
-                Only at Merchantville or Chalfont
-              </p>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-stone">
-                <li>Physical exam</li>
-                <li>Chiropractic adjustment</li>
-                <li>In-office lab draw</li>
-                <li>
-                  {state.hasOffice
-                    ? `The ${state.officeCity} office is in ${state.name}. It is optional for the functional medicine case.`
-                    : `${state.name} has no YHN clinic, so these require a trip.`}
-                </li>
-              </ul>
-            </div>
-          </div>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone">{state.scheduling}</p>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-stone">
             The shared clinical pathway, what the free consult is for, and the conditions this program takes on are on{" "}

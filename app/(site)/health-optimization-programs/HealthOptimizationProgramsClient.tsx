@@ -177,7 +177,7 @@ export default function HealthOptimizationProgramsClient() {
                 major illness or complex medical conditions.
               </p>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone">
-                These guided comprehensive programs provide targeted lab work, personalized
+                These guided comprehensive programs provide targeted diagnostic testing, personalized
                 recommendations, a structured roadmap, education, accountability, and ongoing
                 support to help you optimize your health and prevent future disease.
               </p>

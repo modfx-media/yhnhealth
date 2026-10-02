@@ -225,7 +225,13 @@ export default function HeroSection() {
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75">
               Meet with our team to discuss your health concerns, goals,
               symptoms, and treatment options. We&apos;ll help determine the best
-              path forward for your unique needs.
+              path forward for your unique needs.{" "}
+              <Link
+                href="/functional-medicine#states"
+                className="font-semibold text-white underline decoration-accent/60 underline-offset-4 hover:text-accent"
+              >
+                Serving 9 states
+              </Link>
             </p>
 
             {/* Stats strip */}

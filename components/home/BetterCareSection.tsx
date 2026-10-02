@@ -9,7 +9,7 @@ const FEATURES = [
   {
     icon: FlaskConical,
     title: "Functional Medicine",
-    body: "Doctor-led, root-cause investigation for chronic conditions, fatigue, hormones, gut health, and complex illness - built on advanced labs, personalized protocols, and close clinical follow-up.",
+    body: "Doctor-led, root-cause investigation for chronic conditions, fatigue, hormones, gut health, and complex illness - built on advanced diagnostic testing, personalized protocols, and close clinical follow-up.",
     image: "/images/yhn-clone/practice.webp",
     highlight: "Root-Cause Care",
     href: "/functional-medicine",
