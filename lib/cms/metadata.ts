@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/siteUrl";
+import { mediaUrl, publicImageSrc } from "./mediaUrl";
 import { queryRoutedContentByPath } from "./query";
 
 const DEFAULT_OG = "/images/yhn-clone/your-health-now.jpg";
-
-function mediaUrl(image: unknown): string | undefined {
-  if (typeof image === "object" && image && "url" in image && typeof image.url === "string") {
-    return image.url;
-  }
-  return undefined;
-}
 
 export async function cmsMetadata(path: string, fallback: Metadata): Promise<Metadata> {
   const routed = await queryRoutedContentByPath(path);
@@ -32,8 +26,9 @@ export async function cmsMetadata(path: string, fallback: Metadata): Promise<Met
   const noIndex = Boolean(meta && typeof meta === "object" && "noIndex" in meta && meta.noIndex);
   const noFollow = Boolean(meta && typeof meta === "object" && "noFollow" in meta && meta.noFollow);
   const image =
+    ("featuredImage" in doc ? mediaUrl(doc.featuredImage) : undefined) ||
     mediaUrl(meta && typeof meta === "object" && "image" in meta ? meta.image : undefined) ||
-    ("imageSrc" in doc && typeof doc.imageSrc === "string" ? doc.imageSrc : undefined) ||
+    ("imageSrc" in doc ? publicImageSrc(typeof doc.imageSrc === "string" ? doc.imageSrc : undefined) : undefined) ||
     DEFAULT_OG;
 
   if (!title && !description) return fallback;

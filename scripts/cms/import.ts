@@ -52,6 +52,8 @@ const POST_FIELDS = new Set([
   "imageAlt",
   "h1",
   "intro",
+  "featuredImage",
+  "content",
   "bodyHtml",
   "sections",
   "related",

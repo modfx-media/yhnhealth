@@ -13,6 +13,8 @@ import { Header } from "./globals/Header";
 import { Footer } from "./globals/Footer";
 import { SiteSettings } from "./globals/SiteSettings";
 import { getCorsOrigins, getPublicSiteURL, getServerURL } from "./lib/cms/urls";
+import { ensurePostMediaColumns } from "./lib/cms/ensurePostMediaColumns";
+import { articlePublicPath } from "./lib/cms/paths";
 import { previewFromPath } from "./lib/cms/preview";
 
 const dirname = process.cwd();
@@ -51,6 +53,9 @@ export default buildConfig({
     },
   }),
   sharp,
+  onInit: async (payload) => {
+    await ensurePostMediaColumns(payload);
+  },
   plugins: [
     seoPlugin({
       generateTitle: ({ doc }) => {
@@ -65,15 +70,22 @@ export default buildConfig({
             : "",
       generateURL: ({ doc }) => {
         const pathValue = typeof doc?.path === "string" ? doc.path : "";
-        if (!pathValue || previewFromPath(pathValue) === null) return getPublicSiteURL();
-        return `${getPublicSiteURL()}${pathValue === "/" ? "" : pathValue}`;
+        const slug = typeof doc?.slug === "string" ? doc.slug : null;
+        const publicPath =
+          pathValue.startsWith("/blog/") || pathValue.startsWith("/articles/")
+            ? articlePublicPath({ slug, path: pathValue }) || pathValue
+            : pathValue;
+        if (!publicPath || previewFromPath(publicPath) === null) return getPublicSiteURL();
+        return `${getPublicSiteURL()}${publicPath === "/" ? "" : publicPath}`;
       },
     }),
     vercelBlobStorage({
+      enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN),
       collections: {
         media: true,
       },
       token: process.env.BLOB_READ_WRITE_TOKEN,
+      clientUploads: true,
     }),
   ],
 });

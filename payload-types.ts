@@ -319,10 +319,16 @@ export interface Post {
   category?: string | null;
   author?: string | null;
   publishDate?: string | null;
+  featuredImage?: (number | null) | Media;
   imageSrc?: string | null;
   imageAlt?: string | null;
   h1?: string | null;
   intro?: string | null;
+  content?:
+    | {
+        [k: string]: unknown;
+      }
+    | null;
   bodyHtml?: string | null;
   sections?:
     | {
@@ -678,10 +684,12 @@ export interface PostsSelect<T extends boolean = true> {
   category?: T;
   author?: T;
   publishDate?: T;
+  featuredImage?: T;
   imageSrc?: T;
   imageAlt?: T;
   h1?: T;
   intro?: T;
+  content?: T;
   bodyHtml?: T;
   sections?:
     | T

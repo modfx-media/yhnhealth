@@ -4,7 +4,8 @@ export type ArticleBlock =
   | { type: "h3"; text: string }
   | { type: "list"; items: string[] }
   | { type: "quote"; text: string; cite?: string }
-  | { type: "callout"; title: string; text: string };
+  | { type: "callout"; title: string; text: string }
+  | { type: "image"; src: string; alt: string };
 
 export type Article = {
   slug: string;

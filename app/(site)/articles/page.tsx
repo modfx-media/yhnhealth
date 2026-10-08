@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seoData";
-import { getPublishedBlogPosts } from "@/lib/ranked/posts";
-import { blogPostToArticle } from "@/lib/ranked/to-article";
+import { getArticlesForIndex } from "@/lib/cms/articles";
 import ArticlesClient from "./ArticlesClient";
 import { CMSRoute } from "@/components/cms/CMSRoute";
 import { cmsMetadata } from "@/lib/cms/metadata";
@@ -15,8 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Page() {
-  const posts = await getPublishedBlogPosts();
-  const articles = posts.map(blogPostToArticle);
+  const articles = await getArticlesForIndex();
   return (
     <CMSRoute path={PATH}>
       <ArticlesClient articles={articles} />

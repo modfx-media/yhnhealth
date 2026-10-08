@@ -8,7 +8,17 @@ import {
 } from "@payloadcms/plugin-seo/fields";
 import { authenticated, authenticatedOrPublished } from "@/lib/cms/access";
 import { emptyStringToNull, emptyUniqueToNull } from "@/lib/cms/emptyToNull";
+import { articlePublicPath, normalizeArticlePath } from "@/lib/cms/paths";
 import { previewFromPath } from "@/lib/cms/preview";
+
+function postPreviewPath(data: { slug?: unknown; path?: unknown } | null | undefined): string | null {
+  return previewFromPath(
+    articlePublicPath({
+      slug: typeof data?.slug === "string" ? data.slug : null,
+      path: typeof data?.path === "string" ? data.path : null,
+    }),
+  );
+}
 
 export const Posts: CollectionConfig = {
   slug: "posts",
@@ -21,9 +31,9 @@ export const Posts: CollectionConfig = {
   admin: {
     defaultColumns: ["title", "slug", "path", "_status", "updatedAt"],
     livePreview: {
-      url: ({ data }) => previewFromPath(typeof data?.path === "string" ? data.path : null),
+      url: ({ data }) => postPreviewPath(data),
     },
-    preview: (data) => previewFromPath(typeof data?.path === "string" ? data.path : null),
+    preview: (data) => postPreviewPath(data),
     useAsTitle: "title",
   },
   defaultPopulate: {
@@ -97,10 +107,25 @@ export const Posts: CollectionConfig = {
       type: "date",
       admin: { date: { pickerAppearance: "dayAndTime" } },
     },
-    { name: "imageSrc", type: "text" },
+    {
+      name: "featuredImage",
+      type: "upload",
+      relationTo: "media",
+      admin: {
+        description: "Hero image for the article. Uploads are stored on Vercel Blob.",
+      },
+    },
+    { name: "imageSrc", type: "text", admin: { description: "Optional image URL when a Media upload is not used." } },
     { name: "imageAlt", type: "text" },
     { name: "h1", type: "text" },
     { name: "intro", type: "textarea" },
+    {
+      name: "content",
+      type: "richText",
+      admin: {
+        description: "Article body. Insert images with the upload button. They render inside the article.",
+      },
+    },
     { name: "bodyHtml", type: "textarea" },
     {
       name: "sections",
@@ -158,9 +183,7 @@ export const Posts: CollectionConfig = {
       emptyUniqueToNull,
       ({ data }) => {
         if (!data) return data;
-        if (!data.path && data.slug) {
-          data.path = `/articles/${data.slug}`;
-        }
+        normalizeArticlePath(data);
         return data;
       },
     ],

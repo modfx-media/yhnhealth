@@ -6,7 +6,7 @@ import ArticlePostClient from "@/app/(site)/articles/[slug]/ArticlePostClient";
 import JsonLd from "@/components/JsonLd";
 import { articleJsonLd, areaCityJsonLd, areaServiceJsonLd } from "@/lib/schema";
 import { SITE_URL } from "@/lib/siteUrl";
-import { getArticleAuthor } from "@/lib/articlesData";
+import { ARTICLE_BY_SLUG, getArticleAuthor, type Article } from "@/lib/articlesData";
 import type { RoutedContent } from "@/lib/cms/query";
 import { pageCityService, pageToModuleConfig, pageToServiceConfig, postToArticle } from "@/lib/cms/mapPage";
 import HomePageView from "@/components/home/HomePageView";
@@ -21,6 +21,10 @@ export function RenderRoutedContent({
 }) {
   if (routed.collection === "posts") {
     const article = postToArticle(routed.doc);
+    const related = (article.related ?? [])
+      .map((slug) => ARTICLE_BY_SLUG[slug])
+      .filter((item): item is Article => Boolean(item))
+      .slice(0, 3);
     return (
       <>
         <JsonLd
@@ -33,7 +37,7 @@ export function RenderRoutedContent({
             author: getArticleAuthor(article),
           })}
         />
-        <ArticlePostClient article={article} related={[]} />
+        <ArticlePostClient article={article} related={related} />
       </>
     );
   }

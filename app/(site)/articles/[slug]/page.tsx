@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getArticleAuthor } from "@/lib/articlesData";
+import { getPublishedCmsArticleSlugs } from "@/lib/cms/articles";
 import { getPublishedBlogPosts, getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { blogPostToArticle, relatedArticlesFor } from "@/lib/ranked/to-article";
 import ArticlePostClient from "./ArticlePostClient";
@@ -14,8 +15,16 @@ export const revalidate = 3600;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  const slugs = await getPublishedBlogSlugs().catch(() => []);
-  return slugs.map((slug) => ({ slug }));
+  const [local, cms] = await Promise.all([
+    getPublishedBlogSlugs().catch(() => [] as string[]),
+    getPublishedCmsArticleSlugs(),
+  ]);
+  return [...new Set([...local, ...cms])].map((slug) => ({ slug }));
+}
+
+function ArticleNotFound() {
+  notFound();
+  return null;
 }
 
 export async function generateMetadata({
@@ -24,9 +33,14 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const posts = await getPublishedBlogPosts();
+  const posts = await getPublishedBlogPosts().catch(() => []);
   const post = posts.find((p) => p.slug === slug);
-  if (!post) return { title: "Article Not Found | Your Health Now" };
+  if (!post) {
+    return cmsMetadata(`/articles/${slug}`, {
+      title: { absolute: "Article Not Found | Your Health Now" },
+      robots: { index: false, follow: true },
+    });
+  }
   const a = blogPostToArticle(post);
   const title = a.seoTitle ?? a.title;
   const description = a.excerpt;
@@ -57,14 +71,21 @@ export default async function ArticlePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const posts = await getPublishedBlogPosts({ generateForSlug: slug });
+  const path = `/articles/${slug}`;
+  const posts = await getPublishedBlogPosts({ generateForSlug: slug }).catch(() => []);
   const post = posts.find((p) => p.slug === slug);
-  if (!post) notFound();
+  if (!post) {
+    return (
+      <CMSRoute path={path}>
+        <ArticleNotFound />
+      </CMSRoute>
+    );
+  }
   const all = posts.map(blogPostToArticle);
   const article = blogPostToArticle(post);
   const related = relatedArticlesFor(post, all);
   return (
-    <CMSRoute path={`/articles/${article.slug}`}>
+    <CMSRoute path={path}>
       <JsonLd
         data={articleJsonLd({
           title: article.title,

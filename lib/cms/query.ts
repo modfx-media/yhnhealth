@@ -1,5 +1,6 @@
 import { draftMode } from "next/headers";
 import type { Page, Post } from "@/payload-types";
+import { slugFromArticlePath } from "./paths";
 import { getCMS } from "./payload";
 import { withCMS } from "./safe";
 
@@ -35,16 +36,30 @@ export async function queryRoutedContentByPath(path: string): Promise<RoutedCont
       return { collection: "pages", doc: page as Page };
     }
 
+    const articleSlug = slugFromArticlePath(path);
     const posts = await payload.find({
       collection: "posts",
-      where: { path: { equals: path } },
-      limit: 1,
-      depth: 1,
+      where: articleSlug
+        ? {
+            or: [
+              { path: { equals: `/articles/${articleSlug}` } },
+              { path: { equals: `/blog/${articleSlug}` } },
+              { slug: { equals: articleSlug } },
+            ],
+          }
+        : { path: { equals: path } },
+      sort: "-publishDate",
+      limit: articleSlug ? 5 : 1,
+      depth: 2,
       draft: isDraft,
       overrideAccess: isDraft,
     });
 
-    const post = posts.docs[0];
+    const post = articleSlug
+      ? posts.docs.find((doc) => doc.path === `/articles/${articleSlug}`) ||
+        posts.docs.find((doc) => doc.slug === articleSlug) ||
+        posts.docs.find((doc) => doc.path === `/blog/${articleSlug}`)
+      : posts.docs[0];
     if (post && (isDraft || post._status === "published")) {
       return { collection: "posts", doc: post as Post };
     }
