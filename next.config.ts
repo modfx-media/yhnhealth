@@ -79,6 +79,9 @@ const nextConfig: NextConfig = {
     ];
 
     return [
+      // CMS posts used to be stored under /blog. The public article URLs live at /articles.
+      { source: "/blog", destination: "/articles", permanent: true },
+      { source: "/blog/:slug", destination: "/articles/:slug", permanent: true },
       // /areas-we-serve/{city}/{service} -> closest live service/office page (one rule per service, any city)
       ...serviceRedirects.map(({ source, destination }) => ({
         source: `/areas-we-serve/:city/${source}`,

@@ -124,6 +124,23 @@ function Block({ block }: { block: ArticleBlock }) {
           </p>
         </aside>
       );
+    case "image":
+      return (
+        <figure className="my-8 overflow-hidden rounded-3xl border border-brand/10">
+          <div className="relative aspect-[16/10] w-full">
+            <Image
+              src={block.src}
+              alt={block.alt}
+              fill
+              sizes="(min-width: 1024px) 720px, 100vw"
+              className="object-cover"
+            />
+          </div>
+          {block.alt ? (
+            <figcaption className="px-4 py-3 text-sm text-stone">{block.alt}</figcaption>
+          ) : null}
+        </figure>
+      );
     default:
       return null;
   }

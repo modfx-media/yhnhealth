@@ -3,6 +3,7 @@ import { SITE_PATHS } from "@/lib/navigation";
 import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { SITE_URL } from "@/lib/siteUrl";
+import { articlePublicPath } from "@/lib/cms/paths";
 import { queryPublishedPagesForSitemap, queryPublishedPostsForSitemap } from "@/lib/cms/query";
 
 const BASE = SITE_URL;
@@ -26,10 +27,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const stamp = page.sourceUpdatedAt || page.updatedAt;
     if (stamp) cmsDates.set(page.path, new Date(stamp));
   }
+  const cmsArticlePaths = new Set<string>();
   for (const post of cmsPosts) {
-    if (!post.path) continue;
-    if (cmsSkip(post.meta)) skip.add(post.path);
-    if (post.updatedAt) cmsDates.set(post.path, new Date(post.updatedAt));
+    const publicPath = articlePublicPath(post);
+    if (!publicPath) continue;
+    if (cmsSkip(post.meta)) {
+      skip.add(publicPath);
+      continue;
+    }
+    if (post.updatedAt) cmsDates.set(publicPath, new Date(post.updatedAt));
+    cmsArticlePaths.add(publicPath);
   }
 
   const entry = (path: string, extras: Omit<MetadataRoute.Sitemap[number], "url">) => {
@@ -55,10 +62,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ).filter(Boolean) as MetadataRoute.Sitemap;
 
   const slugs = await getPublishedBlogSlugs().catch(() => []);
-  const articles = slugs
-    .map((slug) =>
-      entry(`/articles/${slug}`, { lastModified, changeFrequency: "weekly", priority: 0.6 }),
-    )
+  const articlePaths = new Set(slugs.map((slug) => `/articles/${slug}`));
+  for (const path of cmsArticlePaths) articlePaths.add(path);
+  const articles = [...articlePaths]
+    .map((path) => entry(path, { lastModified, changeFrequency: "weekly", priority: 0.6 }))
     .filter(Boolean) as MetadataRoute.Sitemap;
 
   const landingPages = [
