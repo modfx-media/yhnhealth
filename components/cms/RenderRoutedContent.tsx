@@ -21,6 +21,13 @@ export function RenderRoutedContent({
 }) {
   if (routed.collection === "posts") {
     const article = postToArticle(routed.doc);
+    const local = ARTICLE_BY_SLUG[article.slug];
+    const sharedDefault = "/images/yhn-clone/your-health-now.jpg";
+    if (local) {
+      if (!article.image || article.image === sharedDefault) article.image = local.image;
+      if (!article.date) article.date = local.date;
+      if (!article.imageAlt) article.imageAlt = local.imageAlt;
+    }
     const related = (article.related ?? [])
       .map((slug) => ARTICLE_BY_SLUG[slug])
       .filter((item): item is Article => Boolean(item))

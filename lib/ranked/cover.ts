@@ -309,14 +309,9 @@ export async function getRankedCoverImage(input: {
   return webUrl
 }
 
+/** Keep each post's own cover. A repeated URL is not replaced with a shared stock image. */
 export function ensureUniqueCoverImages<T extends { slug: string; coverImage: string; title?: string }>(
   posts: T[],
 ): T[] {
-  const used = new Set<string>()
-  return posts.map((post) => {
-    let cover = post.coverImage
-    if (!cover || used.has(cover)) cover = uniqueWebCoverUrl(post.slug, used, post.title)
-    used.add(cover)
-    return cover === post.coverImage ? post : { ...post, coverImage: cover }
-  })
+  return posts
 }

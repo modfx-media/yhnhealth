@@ -1,5 +1,6 @@
 import { draftMode } from "next/headers";
 import type { Page, Post } from "@/payload-types";
+import { isPublishDateLive } from "@/lib/ranked/dates";
 import { slugFromArticlePath } from "./paths";
 import { getCMS } from "./payload";
 import { withCMS } from "./safe";
@@ -61,6 +62,7 @@ export async function queryRoutedContentByPath(path: string): Promise<RoutedCont
         posts.docs.find((doc) => doc.path === `/blog/${articleSlug}`)
       : posts.docs[0];
     if (post && (isDraft || post._status === "published")) {
+      if (!isDraft && !isPublishDateLive(post.publishDate)) return null;
       return { collection: "posts", doc: post as Post };
     }
 

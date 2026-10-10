@@ -10,6 +10,7 @@ import { iconFromName } from "./icons";
 import { lexicalToBlocks } from "./lexical";
 import { mediaUrl, publicImageSrc } from "./mediaUrl";
 import { articlePublicPath } from "./paths";
+import { formatCalendarDate } from "@/lib/ranked/dates";
 
 export function pageToServiceConfig(doc: Page): ServiceConfig | null {
   const slug = doc.slug || doc.path?.replace(/^\//, "") || "";
@@ -161,15 +162,7 @@ export function postToArticle(doc: Post): Article {
     }
   }
 
-  const stamp = doc.publishDate || doc.updatedAt;
-  const date = stamp
-    ? new Date(stamp).toLocaleDateString("en-US", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-        timeZone: "UTC",
-      })
-    : "";
+  const date = doc.publishDate ? formatCalendarDate(doc.publishDate) : "";
 
   return {
     slug,

@@ -1,8 +1,8 @@
 import { getRankedContentDetail, isRankedConfigured, isRankedEnabled, listRankedContent } from './client'
-import { ensureUniqueCoverImages, getRankedCoverImage } from './cover'
+import { getRankedCoverImage } from './cover'
+import { isPublishDateLive } from './dates'
 import { fetchGoogleDocHtml } from './google-doc'
 import {
-  ensureUniquePublishDates,
   htmlToBlogPost,
   isBlogContentType,
   isRankedPostLive,
@@ -149,19 +149,24 @@ export async function getLiveRankedBlogPosts(
         coverImage: source.featured_image_url,
       })
       if (!post) continue
-      post.coverImage = await getRankedCoverImage({
-        contentId: source.id,
-        title: source.title,
-        slug,
-        generate: Boolean(opts.generateCovers) || opts.generateForSlug === slug,
-        reservedUrls: reservedCovers,
-      })
+      const ownImage = source.featured_image_url?.trim()
+      if (ownImage) {
+        post.coverImage = ownImage
+      } else {
+        post.coverImage = await getRankedCoverImage({
+          contentId: source.id,
+          title: source.title,
+          slug,
+          generate: Boolean(opts.generateCovers) || opts.generateForSlug === slug,
+          reservedUrls: reservedCovers,
+        })
+      }
       post.coverAlt = `${source.title} cover`
       post.relatedPosts = relatedFromLocal(slug)
       posts.push(post)
       taken.add(slug)
     }
-    return ensureUniquePublishDates(ensureUniqueCoverImages(posts))
+    return posts.filter((post) => isPublishDateLive(post.publishDate))
   } catch (err) {
     console.error('[ranked] failed to load content calendar', err)
     return []
@@ -179,14 +184,11 @@ export async function getPublishedBlogPost(slug: string): Promise<BlogPostData |
 }
 
 export async function getPublishedBlogPosts(opts: { generateForSlug?: string } = {}): Promise<BlogPostData[]> {
-  const local = getLocalBlogPosts()
-  if (!isRankedEnabled()) {
-    return ensureUniquePublishDates(ensureUniqueCoverImages(local))
-  }
+  const local = getLocalBlogPosts().filter((post) => isPublishDateLive(post.publishDate))
+  if (!isRankedEnabled()) return local
   const ranked = await getLiveRankedBlogPosts(undefined, opts)
   const taken = new Set(local.map((p) => p.slug))
-  const merged = [...local, ...ranked.filter((p) => !taken.has(p.slug))]
-  return ensureUniquePublishDates(ensureUniqueCoverImages(merged))
+  return [...local, ...ranked.filter((p) => !taken.has(p.slug) && isPublishDateLive(p.publishDate))]
 }
 
 export async function getPublishedBlogSlugs(): Promise<string[]> {

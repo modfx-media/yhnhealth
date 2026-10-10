@@ -1,22 +1,15 @@
+import { publicImageSrc } from '@/lib/cms/mediaUrl'
 import {
   ARTICLE_BY_SLUG,
   type Article,
   type ArticleBlock,
   type ArticleCategory,
 } from '@/lib/articlesData'
+import { formatCalendarDate } from './dates'
 import type { BlogPostData } from './types'
 
-function isoToDisplayDate(iso: string): string {
-  const day = iso.slice(0, 10)
-  const match = day.match(/^(\d{4})-(\d{2})-(\d{2})$/)
-  if (!match) return iso
-  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])))
-  return date.toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-    timeZone: 'UTC',
-  })
+function coverSrc(src: string | undefined, fallback?: string): string {
+  return publicImageSrc(src) || publicImageSrc(fallback) || src || fallback || ''
 }
 
 function inferCategory(title: string): ArticleCategory {
@@ -57,9 +50,8 @@ export function blogPostToArticle(post: BlogPostData): Article {
   if (local) {
     return {
       ...local,
-      date: isoToDisplayDate(post.publishDate),
-      image: post.coverImage || local.image,
-      imageAlt: post.coverAlt || local.imageAlt,
+      image: coverSrc(local.image, post.coverImage),
+      imageAlt: local.imageAlt || post.coverAlt,
     }
   }
 
@@ -68,9 +60,9 @@ export function blogPostToArticle(post: BlogPostData): Article {
     title: post.title,
     excerpt: post.metaDescription,
     category: inferCategory(post.title),
-    date: isoToDisplayDate(post.publishDate),
+    date: formatCalendarDate(post.publishDate),
     readTime: Math.max(3, Math.round(wordCount(post) / 220)),
-    image: post.coverImage,
+    image: coverSrc(post.coverImage),
     imageAlt: post.coverAlt || `${post.title} cover`,
     body: postToBody(post),
     related: post.relatedPosts?.map((r) => r.slug),

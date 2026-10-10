@@ -1,4 +1,6 @@
 import { getPublishedBlogPosts } from "@/lib/ranked/posts";
+import { calendarDay } from "@/lib/ranked/dates";
+import { publicImageSrc } from "./mediaUrl";
 import { getCMS } from "./payload";
 import { withCMS } from "./safe";
 import { SITE_URL } from "@/lib/siteUrl";
@@ -29,9 +31,11 @@ export async function upsertRankedPostsAsDrafts() {
         excerpt: post.metaDescription,
         h1: post.h1,
         intro: post.intro,
-        imageSrc: post.coverImage,
+        imageSrc: publicImageSrc(post.coverImage) || post.coverImage,
         imageAlt: post.coverAlt,
-        publishDate: post.publishDate,
+        publishDate: /^\d{4}-\d{2}-\d{2}$/.test(calendarDay(post.publishDate))
+          ? `${calendarDay(post.publishDate)}T12:00:00.000Z`
+          : post.publishDate,
         sections: post.sections.map((section) => ({
           heading: section.heading,
           body: section.body.join("\n\n"),
