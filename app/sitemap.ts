@@ -3,8 +3,10 @@ import { SITE_PATHS } from "@/lib/navigation";
 import { TELEHEALTH_STATES } from "@/data/telehealth-states";
 import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { SITE_URL } from "@/lib/siteUrl";
+import { canonicalSlugForCmsPost } from "@/lib/cms/articles";
 import { articlePublicPath } from "@/lib/cms/paths";
 import { queryPublishedPagesForSitemap, queryPublishedPostsForSitemap } from "@/lib/cms/query";
+import { isPublishDateLive } from "@/lib/ranked/dates";
 
 const BASE = SITE_URL;
 
@@ -35,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       skip.add(publicPath);
       continue;
     }
+    if (!isPublishDateLive(post.publishDate) || canonicalSlugForCmsPost(post)) continue;
     if (post.updatedAt) cmsDates.set(publicPath, new Date(post.updatedAt));
     cmsArticlePaths.add(publicPath);
   }

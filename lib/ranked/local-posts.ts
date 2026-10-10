@@ -1,5 +1,6 @@
 import { ARTICLES, type Article, type ArticleBlock } from '@/lib/articlesData'
 import { DEFAULT_CTA } from './config'
+import { calendarDay } from './dates'
 import type { BlogPostData } from './types'
 
 const MONTHS: Record<string, string> = {
@@ -17,7 +18,7 @@ const MONTHS: Record<string, string> = {
   december: '12',
 }
 
-/** Convert "August 25, 2026" (or already-ISO) to YYYY-MM-DD for unique-date logic. */
+/** Convert "August 25, 2026" (or already-ISO) to YYYY-MM-DD without shifting the calendar day. */
 export function displayDateToIso(date: string): string {
   const iso = date.trim()
   if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso
@@ -26,13 +27,8 @@ export function displayDateToIso(date: string): string {
     const month = MONTHS[match[1].toLowerCase()]
     if (month) return `${match[3]}-${month}-${match[2].padStart(2, '0')}`
   }
-  const parsed = new Date(iso)
-  if (!Number.isNaN(parsed.getTime())) {
-    const y = parsed.getFullYear()
-    const m = String(parsed.getMonth() + 1).padStart(2, '0')
-    const d = String(parsed.getDate()).padStart(2, '0')
-    return `${y}-${m}-${d}`
-  }
+  const day = calendarDay(iso)
+  if (/^\d{4}-\d{2}-\d{2}$/.test(day)) return day
   return iso.slice(0, 10)
 }
 

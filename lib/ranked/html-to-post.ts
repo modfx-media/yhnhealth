@@ -1,4 +1,5 @@
 import { DEFAULT_COVER, DEFAULT_COVER_ALT, DEFAULT_CTA } from './config'
+import { calendarDay, isPublishDateLive } from './dates'
 import type { BlogPostData } from './types'
 
 function decodeEntities(text: string): string {
@@ -155,63 +156,13 @@ export function isRankedPostLive(
 ): boolean {
   const s = status.trim().toLowerCase()
   if (s === 'revising' || s === 'cancelled' || s === 'canceled') return false
-  if (!scheduledDate) return true
-  const day = scheduledDate.slice(0, 10)
-  const today = now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' })
-  return day <= today
+  return isPublishDateLive(scheduledDate, now)
 }
 
+/** Scheduled day when Ranked has one. created_at is only used when no scheduled day exists. */
 export function publishDateFromRanked(scheduledDate: string | null, fallback: string): string {
-  if (scheduledDate) return scheduledDate.slice(0, 10)
-  return fallback.slice(0, 10)
+  const source = scheduledDate?.trim() ? scheduledDate : fallback
+  const day = calendarDay(source)
+  return /^\d{4}-\d{2}-\d{2}$/.test(day) ? day : source.slice(0, 10)
 }
 
-export function todayInNewYork(now = new Date()): string {
-  return now.toLocaleDateString('en-CA', { timeZone: 'America/New_York' })
-}
-
-export function addIsoDays(isoDate: string, days: number): string {
-  const [year, month, day] = isoDate.slice(0, 10).split('-').map(Number)
-  const next = new Date(Date.UTC(year, month - 1, day + days))
-  return next.toISOString().slice(0, 10)
-}
-
-export function nextUniquePublishDate(
-  preferred: string,
-  occupied: Set<string>,
-  today = todayInNewYork(),
-): string {
-  let date = preferred.slice(0, 10)
-  if (!occupied.has(date)) return date
-
-  let forward = date
-  while (forward < today) {
-    forward = addIsoDays(forward, 1)
-    if (!occupied.has(forward) && forward <= today) return forward
-  }
-
-  let back = preferred.slice(0, 10)
-  while (occupied.has(back)) back = addIsoDays(back, -1)
-  return back
-}
-
-/** No two posts share a publishDate. Keep original dates when they are free. */
-export function ensureUniquePublishDates<T extends { slug: string; publishDate: string }>(
-  posts: T[],
-  today = todayInNewYork(),
-): T[] {
-  const occupied = new Set<string>()
-  const sorted = [...posts].sort(
-    (a, b) => a.publishDate.localeCompare(b.publishDate) || a.slug.localeCompare(b.slug),
-  )
-  const remap = new Map<string, string>()
-  for (const post of sorted) {
-    const unique = nextUniquePublishDate(post.publishDate, occupied, today)
-    occupied.add(unique)
-    remap.set(post.slug, unique)
-  }
-  return posts.map((post) => {
-    const date = remap.get(post.slug)
-    return date && date !== post.publishDate ? { ...post, publishDate: date } : post
-  })
-}

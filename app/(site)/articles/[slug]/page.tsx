@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { getArticleAuthor } from "@/lib/articlesData";
-import { getPublishedCmsArticleSlugs } from "@/lib/cms/articles";
+import { canonicalSlugForCmsPost, getPublishedCmsArticleSlugs } from "@/lib/cms/articles";
+import { queryRoutedContentByPath } from "@/lib/cms/query";
 import { getPublishedBlogPosts, getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { blogPostToArticle, relatedArticlesFor } from "@/lib/ranked/to-article";
 import ArticlePostClient from "./ArticlePostClient";
@@ -36,6 +37,16 @@ export async function generateMetadata({
   const posts = await getPublishedBlogPosts().catch(() => []);
   const post = posts.find((p) => p.slug === slug);
   if (!post) {
+    const routed = await queryRoutedContentByPath(`/articles/${slug}`);
+    if (routed?.collection === "posts") {
+      const canonical = canonicalSlugForCmsPost(routed.doc);
+      if (canonical) {
+        return {
+          alternates: { canonical: `${SITE_URL}/articles/${canonical}` },
+          robots: { index: false, follow: true },
+        };
+      }
+    }
     return cmsMetadata(`/articles/${slug}`, {
       title: { absolute: "Article Not Found | Your Health Now" },
       robots: { index: false, follow: true },
@@ -75,6 +86,11 @@ export default async function ArticlePage({
   const posts = await getPublishedBlogPosts({ generateForSlug: slug }).catch(() => []);
   const post = posts.find((p) => p.slug === slug);
   if (!post) {
+    const routed = await queryRoutedContentByPath(path);
+    if (routed?.collection === "posts") {
+      const canonical = canonicalSlugForCmsPost(routed.doc);
+      if (canonical) permanentRedirect(`/articles/${canonical}`);
+    }
     return (
       <CMSRoute path={path}>
         <ArticleNotFound />
