@@ -8,6 +8,8 @@ import { articlePublicPath } from "@/lib/cms/paths";
 import { queryPublishedPagesForSitemap, queryPublishedPostsForSitemap } from "@/lib/cms/query";
 import { isPublishDateLive } from "@/lib/ranked/dates";
 
+
+export const revalidate = 300;
 const BASE = SITE_URL;
 
 function cmsSkip(meta?: { noIndex?: boolean | null; excludeFromSitemap?: boolean | null } | null) {

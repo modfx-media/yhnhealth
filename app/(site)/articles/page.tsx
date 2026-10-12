@@ -5,7 +5,7 @@ import ArticlesClient from "./ArticlesClient";
 import { CMSRoute } from "@/components/cms/CMSRoute";
 import { cmsMetadata } from "@/lib/cms/metadata";
 
-export const revalidate = 3600;
+export const revalidate = 300;
 
 const PATH = "/articles";
 

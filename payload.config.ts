@@ -17,6 +17,7 @@ import { ensurePostMediaColumns } from "./lib/cms/ensurePostMediaColumns";
 import { articlePublicPath } from "./lib/cms/paths";
 import { previewFromPath } from "./lib/cms/preview";
 
+import { scheduledPublishPlugin } from "./scheduled-publish";
 const dirname = process.cwd();
 const isVercel = Boolean(process.env.VERCEL);
 const isImport = process.env.CMS_IMPORT_APPLY === "1" || process.argv.some((arg) => arg.includes("cms/import"));
@@ -57,6 +58,7 @@ export default buildConfig({
     await ensurePostMediaColumns(payload);
   },
   plugins: [
+    scheduledPublishPlugin(),
     seoPlugin({
       generateTitle: ({ doc }) => {
         const title = typeof doc?.title === "string" ? doc.title : "";
