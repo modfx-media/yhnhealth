@@ -12,7 +12,7 @@ import { articleJsonLd } from "@/lib/schema";
 import { CMSRoute } from "@/components/cms/CMSRoute";
 import { cmsMetadata } from "@/lib/cms/metadata";
 
-export const revalidate = 3600;
+export const revalidate = 300;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {

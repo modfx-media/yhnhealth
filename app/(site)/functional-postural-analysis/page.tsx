@@ -4,6 +4,8 @@ import { CMSRoute } from "@/components/cms/CMSRoute";
 import { cmsMetadata } from "@/lib/cms/metadata";
 import ServicePageBySlug from "@/components/page/ServicePageBySlug";
 
+
+export const revalidate = 300;
 const PATH = "/functional-postural-analysis";
 
 export async function generateMetadata(): Promise<Metadata> {
