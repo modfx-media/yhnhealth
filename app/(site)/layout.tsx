@@ -10,6 +10,7 @@ import type { Header as HeaderGlobal } from "@/payload-types";
 import ScrollToTop from "@/components/ScrollToTop";
 import BottomBookBanner from "@/components/BottomBookBanner";
 import KnockKnockOffset from "@/components/KnockKnockOffset";
+import MetaPixel from "@/components/MetaPixel";
 import { BookingProvider } from "@/components/BookingPopup";
 import { SITE_URL } from "@/lib/siteUrl";
 import JsonLd from "@/components/JsonLd";
@@ -111,6 +112,7 @@ export default async function SiteLayout({
             })(window, document, "clarity", "script", "yj6pifnu2p");
           `}
         </Script>
+        <MetaPixel />
         <BookingProvider>
           <ScrollToTop />
           <Header items={navItems} />
