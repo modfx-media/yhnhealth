@@ -7,12 +7,10 @@ import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import { ArrowDown, ArrowUpRight, Check, ChevronDown, ChevronLeft, ChevronRight, RotateCw, Sparkles } from "lucide-react";
 import { HERO_SLIDES } from "@/lib/siteData";
 import { cn } from "@/lib/utils";
-import { useBookingPopup } from "@/components/BookingPopup";
 import FMCPBadge from "@/components/FMCPBadge";
 
 export default function HeroSection() {
   const [active, setActive] = useState(0);
-  const { openBooking } = useBookingPopup();
   const [paused, setPaused] = useState(false);
   const [flipped, setFlipped] = useState(false);
   const { scrollY } = useScroll();
@@ -165,15 +163,7 @@ export default function HeroSection() {
             >
               <div className="flex flex-col items-start gap-2">
               <motion.a
-              href="https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
-              target="_blank"
-              rel="noopener"
-              onClick={(e) => {
-                e.preventDefault();
-                openBooking(
-                  "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
-                );
-              }}
+              href="/functional-medicine"
               className="group relative inline-flex items-center gap-3 self-start overflow-hidden rounded-full bg-accent px-6 py-3.5 text-[12px] font-bold uppercase tracking-[0.22em] text-white shadow-[0_18px_45px_-15px_rgba(199,134,49,0.85)] ring-2 ring-accent/40 ring-offset-2 ring-offset-transparent transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:shadow-[0_22px_55px_-15px_rgba(199,134,49,1)] sm:px-7 sm:py-4"
             >
               {/* Pulsing halo */}

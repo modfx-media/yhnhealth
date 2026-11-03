@@ -56,8 +56,8 @@ export default function CoverageMap() {
       </p>
       <p className="mt-1 text-center text-sm text-stone">
         {active
-          ? "This state's page will open from the map once it is published."
-          : "Hover a state. Each one will open its own page as those pages are published."}
+          ? "Click your state!"
+          : "Click your state!"}
       </p>
     </div>
   );
