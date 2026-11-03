@@ -44,7 +44,7 @@ export const SEO: Record<string, SeoEntry> = {
   "/health-optimization-programs": {
     title: "Health Optimization Programs | Your Health Now",
     description:
-      "12 doctor-designed Health Optimization Programs - weight and metabolism, hormones, energy, thyroid, gut, longevity and more. 6- or 12-month pathways, with telehealth in 9 states.",
+      "12 doctor-designed Health Optimization Programs - weight and metabolism, hormones, energy, thyroid, gut, longevity and more. 6- or 12-month pathways, with consults in all 50 states.",
   },
   "/family-chiropractic-care": {
     title: "Chiropractor in Chalfont, PA & Merchantville, NJ | Your Health Now",

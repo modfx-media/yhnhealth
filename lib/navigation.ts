@@ -50,10 +50,7 @@ export const NAV_ITEMS: NavItem[] = [
   {
     label: "Functional Medicine",
     href: "/functional-medicine",
-    children: [
-      { label: "Personalized Clinical Care", href: "/functional-medicine" },
-      { label: "Health Optimization Programs", href: "/health-optimization-programs" },
-    ],
+    children: [],
   },
   {
     label: "Physiotherapy Services",
@@ -81,6 +78,7 @@ export const NAV_ITEMS: NavItem[] = [
     label: "Other Services",
     href: null,
     children: [
+      { label: "Health Optimization Programs", href: "/health-optimization-programs" },
       { label: "Lyme Disease", href: "/lyme-disease-solutions" },
       { label: "Physician Grade Supplementation", href: "/physician-grade-supplementation" },
       { label: "DOT Physicals", href: "/dot-physicals" },

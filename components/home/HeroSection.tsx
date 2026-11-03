@@ -161,31 +161,10 @@ export default function HeroSection() {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.7, ease: "easeOut" }}
-              className="mt-10 flex flex-col flex-wrap items-start gap-4 sm:flex-row sm:items-center"
+              className="mt-10 flex flex-col flex-wrap items-start gap-6 sm:flex-row sm:items-start"
             >
-              <Link
-                href="/locations"
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.24em] text-brand-dark transition-colors hover:bg-white"
-              >
-                Chiropractic in Chalfont
-                <ArrowUpRight size={14} />
-              </Link>
-              <Link
-                href="/locations"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.24em] text-white backdrop-blur transition-colors hover:border-accent hover:text-accent"
-              >
-                Chiropractic in Merchantville
-              </Link>
-              <Link
-                href="/about-us"
-                className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.24em] text-white/80 hover:text-accent"
-              >
-                Discover Our Care
-              </Link>
-            </motion.div>
-
-            {/* Free consultation call note */}
-            <motion.a
+              <div className="flex flex-col items-start gap-2">
+              <motion.a
               href="https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
               target="_blank"
               rel="noopener"
@@ -195,12 +174,7 @@ export default function HeroSection() {
                   "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
                 );
               }}
-              variants={{
-                hidden: { opacity: 0, y: 16 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.35 }}
-              className="group relative mt-6 inline-flex items-center gap-3 self-start overflow-hidden rounded-full bg-accent px-6 py-3.5 text-[12px] font-bold uppercase tracking-[0.22em] text-white shadow-[0_18px_45px_-15px_rgba(199,134,49,0.85)] ring-2 ring-accent/40 ring-offset-2 ring-offset-transparent transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:shadow-[0_22px_55px_-15px_rgba(199,134,49,1)] sm:px-7 sm:py-4"
+              className="group relative inline-flex items-center gap-3 self-start overflow-hidden rounded-full bg-accent px-6 py-3.5 text-[12px] font-bold uppercase tracking-[0.22em] text-white shadow-[0_18px_45px_-15px_rgba(199,134,49,0.85)] ring-2 ring-accent/40 ring-offset-2 ring-offset-transparent transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:shadow-[0_22px_55px_-15px_rgba(199,134,49,1)] sm:px-7 sm:py-4"
             >
               {/* Pulsing halo */}
               <motion.span
@@ -221,18 +195,36 @@ export default function HeroSection() {
                 className="relative transition-transform duration-300 group-hover:translate-x-1"
               />
             </motion.a>
-
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75">
-              Meet with our team to discuss your health concerns, goals,
-              symptoms, and treatment options. We&apos;ll help determine the best
-              path forward for your unique needs.{" "}
               <Link
                 href="/functional-medicine#states"
-                className="font-semibold text-white underline decoration-accent/60 underline-offset-4 hover:text-accent"
+                className="text-[12px] font-semibold uppercase tracking-[0.22em] text-white underline decoration-accent/60 underline-offset-4 hover:text-accent"
               >
                 Serving 9 states
               </Link>
-            </p>
+              </div>
+
+              <div className="flex flex-col items-start gap-2">
+                <Link
+                  href="/health-optimization-programs"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3.5 text-[12px] font-bold uppercase tracking-[0.22em] text-white backdrop-blur transition-colors hover:border-accent hover:text-accent sm:px-7 sm:py-4"
+                >
+                  Book Free Health Optimization Consultation
+                  <ArrowUpRight size={14} />
+                </Link>
+                <Link
+                  href="/health-optimization-programs#coverage"
+                  className="text-[12px] font-semibold uppercase tracking-[0.22em] text-white underline decoration-accent/60 underline-offset-4 hover:text-accent"
+                >
+                  Serving 50 states
+                </Link>
+              </div>
+              <Link
+                href="/about-us"
+                className="inline-flex w-full items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.24em] text-white/80 hover:text-accent"
+              >
+                Discover Our Care
+              </Link>
+            </motion.div>
 
             {/* Stats strip */}
             <motion.div

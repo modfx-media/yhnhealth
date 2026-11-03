@@ -24,6 +24,7 @@ import {
   Baby,
 } from "lucide-react";
 import { Breadcrumbs, BookingStrip, FadeUp } from "@/components/page/Primitives";
+import CoverageMap from "@/components/page/CoverageMap";
 
 const FEATURED = [
   {
@@ -132,7 +133,6 @@ export default function HealthOptimizationProgramsClient() {
           <Breadcrumbs
             trail={[
               { label: "Home", href: "/" },
-              { label: "Functional Medicine", href: "/functional-medicine" },
               { label: "Health Optimization Programs" },
             ]}
           />
@@ -277,7 +277,7 @@ export default function HealthOptimizationProgramsClient() {
           <FadeUp className="max-w-3xl">
             <p className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
               <Flame size={12} className="text-accent-dark" />
-              Featured Programs · Highest Demand in NJ &amp; PA
+              Featured Programs
             </p>
             <h2 className="mt-3 font-display text-3xl font-bold text-brand md:text-4xl">
               Six flagship pathways.
@@ -384,6 +384,29 @@ export default function HealthOptimizationProgramsClient() {
               <ArrowUpRight size={13} />
             </Link>
           </FadeUp>
+        </div>
+      </section>
+
+      <section id="coverage" className="scroll-mt-[120px] bg-mist/40 py-20 md:py-24">
+        <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
+          <FadeUp className="max-w-3xl">
+            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
+              Where consults are open
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-brand md:text-4xl">
+              Serving all 50 states.
+            </h2>
+            <div className="mt-4 h-[3px] w-20 bg-accent" />
+            <p className="mt-5 text-base leading-relaxed text-stone">
+              Health optimization consults are by secure video and are open to residents of every
+              state. The map is the full United States. A state opens its own page once that page
+              is published. The clinics in Merchantville, NJ and Chalfont, PA are for in-person
+              chiropractic care. They are not required for these programs.
+            </p>
+          </FadeUp>
+          <div className="mt-10">
+            <CoverageMap />
+          </div>
         </div>
       </section>
 
