@@ -19,7 +19,7 @@ const texas: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "Texas is too large to treat as a single waiting room, and Your Health Now does not have a Texas clinic \u2014 not in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. This page will not pretend otherwise.",
+      text: "Texas is too large to treat as a single waiting room, and Your Health Now does not have a Texas clinic \u2014 not in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. We will not pretend otherwise.",
     },
     {
       type: "p",
@@ -27,11 +27,11 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is not currently listed for Texas is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in Texas and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not place you in a Health Optimization Program just to have a Texas URL, and we will not imply that the nine-state clinical pathway is already listed here.",
+      text: "What is not currently listed for Texas is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in Texas and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not place you in a Health Optimization Program just so Texas has a listing, and we will not imply that the nine-state clinical pathway is already listed here.",
     },
     {
       type: "p",
-      text: "Austin, San Antonio, Houston, and Dallas all generate more \u201cfunctional medicine + city\u201d searches than \u201cfunctional medicine texas\u201d itself. That is useful context, and it is not a reason to invent a local office in any of those cities. This remains one statewide page, not a city page, and we are not launching Houston, Dallas, or Austin URLs in this batch.",
+      text: "Austin, San Antonio, Houston, and Dallas feel like different states from the driver\u2019s seat, and El Paso is a long way from all of them. None of those cities has a Your Health Now office. A Houston patient and an Austin patient get the same video visit with Dr. Chris. Fort Worth is not a separate program from Dallas, and the Panhandle is not a separate program from the Gulf.",
     },
     {
       type: "h2",
@@ -57,7 +57,7 @@ const texas: HoStatePage = {
       items: [
         "No office in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. A hands-on exam or an adjustment means going to Merchantville, New Jersey, at 5 W Chestnut Ave, or Chalfont, Pennsylvania, at 350 N Main St #201. The distance between Texas cities is already a drive. The program does not add a flight east unless you choose one.",
         "Personalized Clinical Care is not listed for Texas. A Houston or Austin search does not add the state to the nine-place clinical list on the live site.",
-        "This page does not claim Dr. Chris is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
+        "Nothing here claims Dr. Chris is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
       ],
     },
     {
@@ -102,15 +102,15 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC\u2019s 2024 BRFSS maps of self-reported height and weight ([adult obesity by state, 2024](https://www.cdc.gov/obesity/media/pdfs/2025/12/2011-2024-overall-obesity-prevalence-map-508.pdf)) put Texas at 35.6%, higher than the Batch 1 states already published on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
+      text: "The CDC\u2019s 2024 BRFSS maps of self-reported height and weight ([adult obesity by state, 2024](https://www.cdc.gov/obesity/media/pdfs/2025/12/2011-2024-overall-obesity-prevalence-map-508.pdf)) put Texas at 35.6%, higher than New York, California, and Florida, whose guides are already on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
     },
     {
       type: "p",
-      text: "Texas is also younger, as a whole, than the country. The Census Bureau\u2019s 2024 ACS 1-year estimates put 14.0% of Texas\u2019s population at age 65 or older, compared with 18.0% nationally. A younger age structure is not the same thing as having no interest in staying well over time, and it does not mean every Texas patient is early in adulthood. Two other programs belong on this page because of how people actually describe their days: long commutes, shift work, and the distance between cities. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Hormone Balance & Vitality Program](/health-optimization-programs) is for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. Briefings before the consult, not substitutes for it, are [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) and [when functional medicine and conventional care each fit](/articles/functional-medicine-vs-conventional).",
+      text: "Texas is also younger, as a whole, than the country. The Census Bureau\u2019s 2024 ACS 1-year estimates put 14.0% of Texas\u2019s population at age 65 or older, compared with 18.0% nationally. A younger age structure is not the same thing as having no interest in staying well over time, and it does not mean every Texas patient is early in adulthood. Two other programs belong in a Texas conversation because of how people actually describe their days: long commutes, shift work, and the distance between cities. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Hormone Balance & Vitality Program](/health-optimization-programs) is for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. Briefings before the consult, not substitutes for it, are [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) and [when functional medicine and conventional care each fit](/articles/functional-medicine-vs-conventional).",
     },
     {
       type: "p",
-      text: "The [Longevity & Healthy Aging Program](/health-optimization-programs) remains open to Texas residents who want that longer view, even though the state as a whole is younger than Oregon, Michigan, or Ohio in this same batch. The other programs on the main [programs](/health-optimization-programs) page stay open as well, including the Heart Health Optimization Program for people whose focus is cardiovascular wellness or family history. That program is not emergency care, and it does not replace a local physician when urgent symptoms appear.",
+      text: "The [Longevity & Healthy Aging Program](/health-optimization-programs) remains open to Texas residents who want that longer view, even though the state as a whole is younger than Oregon, Michigan, or Ohio. The other programs on the main [programs](/health-optimization-programs) page stay open as well, including the Heart Health Optimization Program for people whose focus is cardiovascular wellness or family history. That program is not emergency care, and it does not replace a local physician when urgent symptoms appear.",
     },
     {
       type: "h2",

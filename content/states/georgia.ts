@@ -19,7 +19,7 @@ const georgia: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "\u201cFunctional medicine atlanta\u201d is one of the strongest city searches in this entire rollout \u2014 about 1,900 US searches a month, per DataForSEO. That demand is real, and it is mostly local. Your Health Now does not have a Georgia clinic, not in Atlanta, Savannah, Augusta, Macon, or Columbus, and a video page is not going to replace an Atlanta map-pack listing. This page will stay honest about that.",
+      text: "Atlanta is where most Georgians start looking for a clinician they can drive to, and Savannah, Augusta, Macon, and Columbus are not the same trip. Your Health Now does not have a Georgia clinic in any of those cities. A video visit will not stand in for an in-town exam room in Buckhead or Midtown. What we can offer from Georgia is honest telehealth with Dr. Chris, not a pretend Atlanta office.",
     },
     {
       type: "p",
@@ -53,7 +53,7 @@ const georgia: HoStatePage = {
       items: [
         "No clinic inside the Perimeter, in Midtown, in Savannah, or in Augusta. An adjustment or a hands-on exam is only at Merchantville, New Jersey, 5 W Chestnut Ave, or Chalfont, Pennsylvania, 350 N Main St #201. Hartsfield-Jackson can get you on a plane. The program itself does not require that ticket.",
         "Personalized Clinical Care is not listed for Georgia. Florida\u2019s functional medicine page is for Florida residents. A Georgia address near the state line does not switch you onto it.",
-        "This page does not state that Dr. Chris holds every Georgia license. Scope is confirmed for where you live before a first appointment.",
+        "Nothing here states that Dr. Chris holds every Georgia license. Scope is confirmed for where you live before a first appointment.",
       ],
     },
     {
@@ -82,11 +82,11 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC\u2019s 2024 BRFSS adult obesity maps put Georgia at 35.4%, close to Texas (35.6%) on the same table and higher than the Batch 1 states already live on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a promise of a particular result.",
+      text: "The CDC\u2019s 2024 BRFSS adult obesity maps put Georgia at 35.4%, close to Texas (35.6%) on the same table and higher than New York, California, and Florida, whose guides are already on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a promise of a particular result.",
     },
     {
       type: "p",
-      text: "Georgia is younger than the country as a whole. The Census Bureau\u2019s 2024 ACS 1-year estimates put 15.8% of Georgia\u2019s population at age 65 or older, compared with 18.0% nationally. That is one reason this page does not lead with aging alone. A second, more everyday pattern \u2014 long workdays, travel through Hartsfield-Jackson, and stacked professional schedules \u2014 is why we also highlight the [Energy Restoration Program](/health-optimization-programs), for ongoing fatigue, burnout, poor recovery, or brain fog, and the [Hormone Balance & Vitality Program](/health-optimization-programs), for symptoms that may be related to hormone imbalance such as fatigue, poor sleep, mood changes, or low energy. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a visit.",
+      text: "Georgia is younger than the country as a whole. The Census Bureau\u2019s 2024 ACS 1-year estimates put 15.8% of Georgia\u2019s population at age 65 or older, compared with 18.0% nationally. That is one reason the Georgia guide does not lead with aging alone. A second, more everyday pattern \u2014 long workdays, travel through Hartsfield-Jackson, and stacked professional schedules \u2014 is why we also highlight the [Energy Restoration Program](/health-optimization-programs), for ongoing fatigue, burnout, poor recovery, or brain fog, and the [Hormone Balance & Vitality Program](/health-optimization-programs), for symptoms that may be related to hormone imbalance such as fatigue, poor sleep, mood changes, or low energy. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a visit.",
     },
     {
       type: "p",

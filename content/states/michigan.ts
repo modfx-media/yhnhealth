@@ -21,7 +21,7 @@ const michigan: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "Michigan is two peninsulas, not one metro, and Your Health Now does not have a clinic on either of them \u2014 not in Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, or Marquette. This page will not invent one.",
+      text: "Michigan is two peninsulas, not one metro, and Your Health Now does not have a clinic on either of them \u2014 not in Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, or Marquette. We will not invent one.",
     },
     {
       type: "p",
@@ -29,11 +29,11 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "Personalized Clinical Care, the pathway for complex or ongoing illness, is not on the live list for Michigan. That list is on the [Functional Medicine](/functional-medicine) page and it names nine other places. If what you are dealing with has already been worked up and still is not explained, say that on the call. A Health Optimization page exists so Michigan residents can read the proactive offer. It is not a way to sneak a complex case onto a URL.",
+      text: "Personalized Clinical Care, the pathway for complex or ongoing illness, is not on the live list for Michigan. That list is on the [Functional Medicine](/functional-medicine) page and it names nine other places. If what you are dealing with has already been worked up and still is not explained, say that on the call. A Health Optimization page exists so Michigan residents can read the proactive offer. It is not a way to stretch a complex case into a proactive program.",
     },
     {
       type: "p",
-      text: "Grand Rapids currently draws more \u201cfunctional medicine + city\u201d searches than Detroit \u2014 about 260 US searches a month versus 30, per DataForSEO, with Ann Arbor in between at 70. That is interesting demand context, and it is not a reason to build a Grand Rapids page or to treat Detroit as an afterthought. This is still one statewide video page. Ohio, next door, has its own Health Optimization page at [Health Optimization in Ohio](/health-optimization-programs/ohio). If you live in Ohio, use that page. If you live in Michigan, stay here.",
+      text: "Grand Rapids, Detroit, and Ann Arbor are different drives, and none of them is more the Michigan office than the others, because there is no Michigan office. A Grand Rapids patient is not sent to a different program from a Detroit patient. Ohio, next door, has its own Health Optimization guide at [Health Optimization in Ohio](/health-optimization-programs/ohio). If you live in Ohio, use that guide. If you live in Michigan, stay with this guide.",
     },
     {
       type: "h2",
@@ -88,7 +88,7 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC\u2019s 2024 BRFSS adult obesity maps put Michigan at 36.1%, among the higher figures in this batch and well above the Batch 1 states already live on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a promise of a particular result.",
+      text: "The CDC\u2019s 2024 BRFSS adult obesity maps put Michigan at 36.1%, among the higher figures for the states with guides so far, and well above New York, California, and Florida. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a promise of a particular result.",
     },
     {
       type: "p",
@@ -150,7 +150,7 @@ const michigan: HoStatePage = {
     },
     {
       q: "I live in Michigan, near Ohio. Which page should I use?",
-      a: "If you live in Michigan, use this page. If you live in Ohio, use [Health Optimization in Ohio](/health-optimization-programs/ohio).",
+      a: "If you live in Michigan, stay with this guide. If you live in Ohio, use [Health Optimization in Ohio](/health-optimization-programs/ohio).",
     },
   ],
   sources: [

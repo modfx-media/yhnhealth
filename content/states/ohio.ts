@@ -21,7 +21,7 @@ const ohio: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "Ohio has three large metros that people often treat as if they were three different health systems \u2014 Columbus, Cleveland, and Cincinnati \u2014 and none of them has a Your Health Now clinic. There is no office in Toledo, Dayton, or Akron either. This page will not invent one.",
+      text: "Ohio has three large metros that people often treat as if they were three different health systems \u2014 Columbus, Cleveland, and Cincinnati \u2014 and none of them has a Your Health Now clinic. There is no office in Toledo, Dayton, or Akron either. We will not invent one.",
     },
     {
       type: "p",
@@ -33,11 +33,11 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "Columbus currently leads Ohio city searches for functional medicine \u2014 about 480 US searches a month, with Cleveland at 320 and Cincinnati at 210, per DataForSEO. The statewide phrase \u201cfunctional medicine ohio\u201d is only 50. That pattern is useful context, and it is not a reason to launch a Columbus, Cleveland, or Cincinnati URL in this batch. This remains one statewide page.",
+      text: "Columbus, Cleveland, and Cincinnati are the three cities Ohio residents name first, and they are not interchangeable drives. None of them has a Your Health Now office, and neither do Toledo, Dayton, or Akron. A Columbus patient and a Cleveland patient get the same video visit with Dr. Chris. The program does not split by metro.",
     },
     {
       type: "p",
-      text: "People Also Ask results for Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a ranking of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Chris.",
+      text: "People Also Ask results for Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a directory of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Chris.",
     },
     {
       type: "h2",
@@ -63,7 +63,7 @@ const ohio: HoStatePage = {
       items: [
         "No office in the Short North, on Public Square, in Over-the-Rhine, or in Toledo, Dayton, or Akron. Hands-on exams and adjustments happen in Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). Cincinnati is not a short hop to Chalfont, and Cleveland is not a commute to Merchantville. The program is finished on video.",
         "Personalized Clinical Care is not listed for Ohio. Pennsylvania, next door, is on that list and has its own pages. Living in Youngstown or along the Ohio River does not make you a Pennsylvania patient.",
-        "This page does not claim a license for every Ohio service. The practice confirms scope for your county before a first appointment.",
+        "Nothing here claims a license for every Ohio service. The practice confirms scope for your county before a first appointment.",
       ],
     },
     {
@@ -92,7 +92,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "On the CDC\u2019s 2024 BRFSS adult obesity maps, Ohio\u2019s prevalence is 36.9% \u2014 the highest figure among the five states in this batch, and higher than Texas (35.6%), Georgia (35.4%), Michigan (36.1%), and Oregon (33.5%) on the same table. That is one reason this page puts the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, low energy, or a sense that metabolism has slowed. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
+      text: "On the CDC\u2019s 2024 BRFSS adult obesity maps, Ohio\u2019s prevalence is 36.9% \u2014 the highest figure among Texas, Georgia, Michigan, Oregon, and Ohio, and higher than Texas (35.6%), Georgia (35.4%), Michigan (36.1%), and Oregon (33.5%) on the same table. That is one reason we put the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, low energy, or a sense that metabolism has slowed. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
     },
     {
       type: "p",
@@ -162,7 +162,7 @@ const ohio: HoStatePage = {
     },
     {
       q: "Is the program different in Columbus than it is in Cleveland or Cincinnati?",
-      a: "No. Care is statewide. We are not launching city pages in this batch.",
+      a: "No. Care is statewide. Patients in Columbus, Cleveland, and Cincinnati are seen by telehealth, the same as patients in Toledo, Dayton, and Akron.",
     },
   ],
   sources: [

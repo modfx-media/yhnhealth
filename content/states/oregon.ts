@@ -19,7 +19,7 @@ const oregon: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "A Portland morning is already three hours underway when Merchantville is opening its doors, and that is the booking problem for almost all of Oregon. Someone finishing a night shift at OHSU, sitting in I-5 traffic out of Salem, or getting kids out the door in Eugene cannot use the first hours printed on a New Jersey calendar. The weekday window posted for the clinics runs until 8:00 p.m. on the East Coast, which is mid-afternoon on the Willamette and on the coast. Choose the hour you can actually close a door in Oregon, then translate that hour into New Jersey time before you confirm it.",
+      text: "A Portland morning is already three hours underway when Merchantville is opening its doors, and that is the booking problem for almost all of Oregon. Someone finishing a night shift at OHSU, sitting in an I-5 backup out of Salem, or getting kids out the door in Eugene cannot use the first hours printed on a New Jersey calendar. The weekday window posted for the clinics runs until 8:00 p.m. on the East Coast, which is mid-afternoon on the Willamette and on the coast. Choose the hour you can actually close a door in Oregon, then translate that hour into New Jersey time before you confirm it.",
     },
     {
       type: "p",
@@ -31,7 +31,7 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "Portland searches for functional medicine are as strong as the statewide phrase \u2014 about 320 US searches a month for each, per DataForSEO. That is useful context, and it is not a reason to pretend we have a waiting room in Portland, Eugene, or Bend. This remains one statewide page.",
+      text: "Portland, Eugene, and Bend are the cities people name when they picture Oregon care, and they are hours apart. None of them has a Your Health Now waiting room. A patient in the Pearl and a patient in Bend get the same video visit with Dr. Chris. The coast and the dry side of the state are included in that same visit.",
     },
     {
       type: "h2",
@@ -57,12 +57,12 @@ const oregon: HoStatePage = {
       items: [
         "No exam room in the Pearl, in Beaverton, in Bend, or anywhere else in Oregon. An adjustment or a hands-on exam means traveling to Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). The video program does not assume you will make that trip.",
         "Personalized Clinical Care, the pathway for complex or ongoing illness, is published for nine other places, Washington among them. It is not published for Oregon. A search that mentions Portland does not change that.",
-        "This page does not claim Dr. Chris holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
+        "Nothing here claims Dr. Chris holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
       ],
     },
     {
       type: "p",
-      text: "People Also Ask results for Oregon sometimes ask what naturopaths may do in the state, or where to get mental health help. Your Health Now is not a naturopathic clinic, and this page is not a mental-health crisis resource. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
+      text: "People Also Ask results for Oregon sometimes ask what naturopaths may do in the state, or where to get mental health help. Your Health Now is not a naturopathic clinic, and this guide is not a mental-health crisis resource. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
     },
     {
       type: "h2",
@@ -99,7 +99,7 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "Oregon is older than the country as a whole. The Census Bureau\u2019s 2024 ACS 1-year estimates put 19.9% of Oregon\u2019s population at age 65 or older, compared with 18.0% nationally \u2014 older than Texas (14.0%) and Georgia (15.8%) in this same batch, and close to Michigan and Ohio. That is why this page leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people whose focus is cardiovascular wellness or family history. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
+      text: "Oregon is older than the country as a whole. The Census Bureau\u2019s 2024 ACS 1-year estimates put 19.9% of Oregon\u2019s population at age 65 or older, compared with 18.0% nationally \u2014 older than Texas (14.0%) and Georgia (15.8%), and close to Michigan and Ohio. That is why the Oregon guide leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people whose focus is cardiovascular wellness or family history. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
     },
     {
       type: "p",
