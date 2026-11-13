@@ -25,11 +25,11 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is open to Michigan residents, on the Lower Peninsula and the Upper Peninsula alike, is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
+      text: "Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, and Marquette all book the same visit, because none of them has a Your Health Now office. On both peninsulas the work with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP is a proactive video program for energy, hormones, metabolism, and a longer view of health, for someone who is not in the middle of a complex illness. You begin with a short fit-check call. If it fits, the working session is ninety minutes on video, and you then stay with it for six months or for a year.",
     },
     {
       type: "p",
-      text: "What is not currently listed for Michigan is Personalized Clinical Care, the functional medicine telehealth pathway for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page. If you live in Michigan and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not place you in a Health Optimization Program just to have a Michigan URL.",
+      text: "Personalized Clinical Care, the pathway for complex or ongoing illness, is not on the live list for Michigan. That list is on the [Functional Medicine](/functional-medicine) page and it names nine other places. If what you are dealing with has already been worked up and still is not explained, say that on the call. A Health Optimization page exists so Michigan residents can read the proactive offer. It is not a way to sneak a complex case onto a URL.",
     },
     {
       type: "p",
@@ -57,9 +57,9 @@ const michigan: HoStatePage = {
     {
       type: "ul",
       items: [
-        "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in Michigan. It is not listed on the live site today.",
-        "A statement that Dr. Chris is licensed for every service in Michigan. Telehealth rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "No clinic on the Lower Peninsula and none above the bridge. An adjustment or a hands-on exam is a trip to Merchantville, New Jersey, at 5 W Chestnut Ave, or to Chalfont, Pennsylvania, at 350 N Main St #201. Lake-effect winters and the Mackinac crossing already make ordinary drives long. The video program does not add a flight to New Jersey.",
+        "The complex-illness pathway is not listed for Michigan today. Grand Rapids drawing more searches than Detroit does not create a local clinical office, and it does not add Michigan to the nine-place list.",
+        "Nothing here asserts a Michigan license for every kind of visit. Before the first appointment the practice confirms that the conversation is appropriate for where you live.",
       ],
     },
     {
@@ -72,7 +72,7 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "The first conversation is the complimentary 30-minute consult. It is not a treatment visit and not a diagnosis. You talk through why you are calling and whether a Health Optimization Program is appropriate. If you continue, the program starts with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. Professional supplements, when recommended, are purchased separately.",
+      text: "On the Lower Peninsula you book in Eastern time, the same hour printed on the calendar, whether you are in Detroit, Grand Rapids, or Ann Arbor. The opening call is a fit check of about half an hour, through Jane App or (609) 651-7436. It does not diagnose you, and it is not an adjustment in a Marquette office that does not exist. If you continue, the next video meeting runs about ninety minutes and covers history and goals, after which you choose six months or a year.",
     },
     {
       type: "p",

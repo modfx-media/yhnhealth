@@ -25,7 +25,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is open to Ohio residents is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video, from anywhere in the state. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
+      text: "What an Ohio resident can start, from the lakefront to the Ohio River, is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is a proactive plan for people who want help with energy, hormones, metabolism, or a longer view of health, and who are not asking for a complex-illness workup. The opening call is a fit check. If you go on, the next meeting is ninety minutes on video. After that you decide whether to stay six months or a full year.",
     },
     {
       type: "p",
@@ -61,9 +61,9 @@ const ohio: HoStatePage = {
     {
       type: "ul",
       items: [
-        "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in Ohio. It is not listed on the live site today.",
-        "A statement that Dr. Chris is licensed for every service in Ohio. Telehealth rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "No office in the Short North, on Public Square, in Over-the-Rhine, or in Toledo, Dayton, or Akron. Hands-on exams and adjustments happen in Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). Cincinnati is not a short hop to Chalfont, and Cleveland is not a commute to Merchantville. The program is finished on video.",
+        "Personalized Clinical Care is not listed for Ohio. Pennsylvania, next door, is on that list and has its own pages. Living in Youngstown or along the Ohio River does not make you a Pennsylvania patient.",
+        "This page does not claim a license for every Ohio service. The practice confirms scope for your county before a first appointment.",
       ],
     },
     {
@@ -76,7 +76,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "The first conversation is the complimentary 30-minute consult. It is not a treatment visit and not a diagnosis. You talk through why you are calling and whether a Health Optimization Program is appropriate. If you continue, the program starts with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. Professional supplements, when recommended, are purchased separately.",
+      text: "Ohio stays on Eastern time from Cincinnati to Ashtabula, so the hour you see is the hour you keep. Book the fit-check through Jane App or (609) 651-7436 at a time you can sit privately, including after a commute on 71 or 77. That call does not diagnose you and does not sign you up for a year. If you continue, the ninety-minute video meeting is where history and goals are set, and where you pick six months or twelve.",
     },
     {
       type: "p",
@@ -104,7 +104,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "The [Energy Restoration Program](/health-optimization-programs) and the [Hormone Balance & Vitality Program](/health-optimization-programs) remain open to Ohio residents as well. Articles on [functional medicine and fatigue](/articles/functional-medicine-fatigue-root-causes) and [functional medicine, hormones, and thyroid](/articles/functional-medicine-hormone-thyroid) are useful briefings before the consult.",
+      text: "The [Energy Restoration Program](/health-optimization-programs) and the [Hormone Balance & Vitality Program](/health-optimization-programs) remain open to Ohio residents as well. Before the consult, read [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) and [when functional medicine and conventional care each fit](/articles/functional-medicine-vs-conventional).",
     },
     {
       type: "h2",

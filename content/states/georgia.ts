@@ -23,7 +23,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is open to Georgia residents is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video, from anywhere in the state. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
+      text: "From Atlanta\u2019s perimeter to Savannah, Augusta, Macon, and Columbus, the offer is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is built for people who want a proactive plan around energy, hormones, metabolism, or longevity, and who are not bringing a complex illness that has already resisted ordinary care. You start with a fit-check call. If it fits, you come back for a ninety-minute video visit, then stay six months or a year.",
     },
     {
       type: "p",
@@ -51,9 +51,9 @@ const georgia: HoStatePage = {
     {
       type: "ul",
       items: [
-        "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. It is not listed for Georgia on the live site today.",
-        "A statement that Dr. Chris is licensed for every service in Georgia. Telehealth rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "No clinic inside the Perimeter, in Midtown, in Savannah, or in Augusta. An adjustment or a hands-on exam is only at Merchantville, New Jersey, 5 W Chestnut Ave, or Chalfont, Pennsylvania, 350 N Main St #201. Hartsfield-Jackson can get you on a plane. The program itself does not require that ticket.",
+        "Personalized Clinical Care is not listed for Georgia. Florida\u2019s functional medicine page is for Florida residents. A Georgia address near the state line does not switch you onto it.",
+        "This page does not state that Dr. Chris holds every Georgia license. Scope is confirmed for where you live before a first appointment.",
       ],
     },
     {
@@ -66,7 +66,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "The first conversation is the complimentary 30-minute consult. It is not a treatment visit and not a diagnosis. You talk through why you are calling and whether a Health Optimization Program is appropriate. If you continue, the program starts with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. Professional supplements, when recommended, are purchased separately.",
+      text: "Georgia keeps Eastern time from the mountains to the coast, so a 7:30 a.m. booking is 7:30 a.m. in Atlanta and in Savannah. Use Jane App or call (609) 651-7436 when you can actually talk, not from a security line at the airport. The opening call is a fit check. It does not diagnose you. If you continue, the next video visit runs about ninety minutes and sets history and goals, and then you choose six months or a year.",
     },
     {
       type: "p",

@@ -19,15 +19,15 @@ const oregon: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "Oregon is three hours behind the clocks in our New Jersey and Pennsylvania clinics. That one fact should change how you book. The Your Health Now calendar and the posted clinic hours \u2014 Monday through Friday, 7:30 a.m. to 8:00 p.m. Eastern \u2014 are 4:30 a.m. to 5:00 p.m. Pacific. An early Eastern slot is still the middle of the night in Portland, Eugene, Salem, or Bend. A late-afternoon Pacific slot is already evening in Merchantville. Pick the time that exists on your clock, not the time that looks convenient on an East Coast calendar.",
+      text: "A Portland morning is already three hours underway when Merchantville is opening its doors, and that is the booking problem for almost all of Oregon. Someone finishing a night shift at OHSU, sitting in I-5 traffic out of Salem, or getting kids out the door in Eugene cannot use the first hours printed on a New Jersey calendar. The weekday window posted for the clinics runs until 8:00 p.m. on the East Coast, which is mid-afternoon on the Willamette and on the coast. Choose the hour you can actually close a door in Oregon, then translate that hour into New Jersey time before you confirm it.",
     },
     {
       type: "p",
-      text: "Most of Oregon is on Pacific time. The majority of Malheur County, in the far east of the state, is on Mountain time, two hours behind Eastern rather than three. If that is where you live, convert by two hours, not three.",
+      text: "West of the Cascades, including Portland, the Willamette Valley, and the coast, the clock is Pacific. East of the mountains the picture changes in one county: most of Malheur County, up against Idaho, uses Mountain time, only two hours behind New Jersey rather than three. Ontario and the ranch towns around it should not borrow Portland\u2019s conversion. If you are not sure which side of that county line you live on, name the town on the call before a slot is locked.",
     },
     {
       type: "p",
-      text: "What you are booking is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. Your Health Now does not have an Oregon clinic, and Personalized Clinical Care \u2014 the functional medicine telehealth pathway for more complex or ongoing illness \u2014 is not currently listed for Oregon. Both of those limits are intentional on this page. The programs are open to Oregon residents because the site states that Health Optimization consults are open to residents of every state. The clinical pathway is open today in nine other places listed on the [Functional Medicine](/functional-medicine) page, including Washington, next door, but not here. Living in Portland does not open the Washington pathway. If you live in Washington, that state\u2019s functional medicine page is a separate offer, and it is not this one. If you live in California, use [Health Optimization in California](/health-optimization-programs/california).",
+      text: "From an Oregon address the visit is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, held on video. There is no Your Health Now room in Portland, Eugene, Salem, Bend, or Medford. The longer pathway for complex or ongoing illness, Personalized Clinical Care, is also not listed for this state. Washington, across the Columbia, is one of the nine places where that clinical pathway is published. A Portland ZIP code does not put you on Washington\u2019s page. If you live in California, use the California Health Optimization page instead of this one: [Health Optimization in California](/health-optimization-programs/california). The nine-place list itself is on [Functional Medicine](/functional-medicine).",
     },
     {
       type: "p",
@@ -55,9 +55,9 @@ const oregon: HoStatePage = {
     {
       type: "ul",
       items: [
-        "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. It is listed today in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C., not in Oregon.",
-        "A statement that Dr. Chris is licensed for every service in Oregon. Telehealth rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "No exam room in the Pearl, in Beaverton, in Bend, or anywhere else in Oregon. An adjustment or a hands-on exam means traveling to Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). The video program does not assume you will make that trip.",
+        "Personalized Clinical Care, the pathway for complex or ongoing illness, is published for nine other places, Washington among them. It is not published for Oregon. A search that mentions Portland does not change that.",
+        "This page does not claim Dr. Chris holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
       ],
     },
     {
@@ -70,19 +70,19 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "The first conversation is the complimentary 30-minute consult. It is not a treatment visit and not a diagnosis. You talk through why you are calling and whether a Health Optimization Program is appropriate. If you continue, the program starts with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. Professional supplements, when recommended, are purchased separately.",
+      text: "You start with a half-hour fit check, booked through Jane App or by calling (609) 651-7436. Dr. Chris uses it to hear why you called and whether a proactive program makes sense from where you actually live, whether that is inner Portland, a coast town, or the dry side of the state. The call does not diagnose you and it does not enroll you. If you continue, the next meeting is ninety minutes on video for history and goals, and then you decide whether to stay six months or a year.",
     },
     {
       type: "p",
-      text: "Because the calendar is Eastern, it helps to translate a few anchors before you confirm a slot (Pacific time):",
+      text: "Here is how a few real Oregon days line up with the New Jersey clock, so you are not guessing:",
     },
     {
       type: "ul",
       items: [
-        "10:00 a.m. Eastern is 7:00 a.m. Pacific.",
-        "1:00 p.m. Eastern is 10:00 a.m. Pacific.",
-        "4:00 p.m. Eastern is 1:00 p.m. Pacific.",
-        "8:00 p.m. Eastern, the close of posted clinic hours, is 5:00 p.m. Pacific.",
+        "Noon in Merchantville is 9:00 a.m. in Portland, Eugene, and Bend.",
+        "Mid-afternoon in New Jersey, 3:00 p.m. there, is noon on the Willamette and on the coast.",
+        "The last posted clinic hour, 8:00 p.m. in New Jersey, is 5:00 p.m. west of the Cascades.",
+        "In the Mountain-time part of Malheur County that same last hour is 6:00 p.m., not 5:00.",
       ],
     },
     {
@@ -107,7 +107,7 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "The [Hormone Balance & Vitality Program](/health-optimization-programs) is the fourth pathway we highlight here, for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. The article on [functional medicine, hormones, and thyroid](/articles/functional-medicine-hormone-thyroid) is a useful briefing before the consult. If inflammation or nutrition is more of the picture, [inflammation and chronic illness](/articles/inflammation-chronic-illness) and [personalized nutrition and functional medicine](/articles/personalized-nutrition-functional-medicine) are the closer reads.",
+      text: "The [Hormone Balance & Vitality Program](/health-optimization-programs) is the fourth pathway we highlight here, for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. Before the consult, a useful briefing is [when functional medicine and conventional care each fit](/articles/functional-medicine-vs-conventional). If inflammation or nutrition is more of the picture, [inflammation and chronic illness](/articles/inflammation-chronic-illness) and [personalized nutrition and functional medicine](/articles/personalized-nutrition-functional-medicine) are the closer reads.",
     },
     {
       type: "h2",

@@ -23,7 +23,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is open to Texas residents is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
+      text: "What a Texan can start, from the Piney Woods to the Permian Basin, is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is a proactive plan for energy, hormones, metabolism, and longer-range health, for someone who is not asking to unpack a complex illness on the first call. You begin with a fit-check conversation. If you continue, the next session is ninety minutes on video, and you then decide on six months or a year.",
     },
     {
       type: "p",
@@ -55,9 +55,9 @@ const texas: HoStatePage = {
     {
       type: "ul",
       items: [
-        "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in Texas. It is not listed on the live site today.",
-        "A statement that Dr. Chris is licensed for every service in Texas. Telehealth rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "No office in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. A hands-on exam or an adjustment means going to Merchantville, New Jersey, at 5 W Chestnut Ave, or Chalfont, Pennsylvania, at 350 N Main St #201. The distance between Texas cities is already a drive. The program does not add a flight east unless you choose one.",
+        "Personalized Clinical Care is not listed for Texas. A Houston or Austin search does not add the state to the nine-place clinical list on the live site.",
+        "This page does not claim Dr. Chris is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
       ],
     },
     {
@@ -86,7 +86,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "The first conversation is the complimentary 30-minute consult. It is not a treatment visit and not a diagnosis. You talk through why you are calling and whether a Health Optimization Program is appropriate. If you continue, the program starts with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. Professional supplements, when recommended, are purchased separately.",
+      text: "Houston, Dallas, Austin, and San Antonio book on Central time, one hour behind the New Jersey clock. El Paso and Hudspeth County book on Mountain time, two hours behind. The opening call, through Jane App or (609) 651-7436, is a fit check sized to that clock. It does not diagnose you, and it is not a clinic visit in a Texas city. If you continue, the ninety-minute video meeting sets history and goals, and you choose six months or a year.",
     },
     {
       type: "p",
@@ -102,11 +102,11 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC\u2019s 2024 BRFSS adult obesity maps put Texas at 35.6%, higher than the Batch 1 states already published on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
+      text: "The CDC\u2019s 2024 BRFSS maps of self-reported height and weight ([adult obesity by state, 2024](https://www.cdc.gov/obesity/media/pdfs/2025/12/2011-2024-overall-obesity-prevalence-map-508.pdf)) put Texas at 35.6%, higher than the Batch 1 states already published on this site. For residents whose goals involve weight change, cravings, low energy, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work. It is not a claim that we treat a particular diagnosis, and it is not a promise of a particular result.",
     },
     {
       type: "p",
-      text: "Texas is also younger, as a whole, than the country. The Census Bureau\u2019s 2024 ACS 1-year estimates put 14.0% of Texas\u2019s population at age 65 or older, compared with 18.0% nationally. A younger age structure is not the same thing as having no interest in staying well over time, and it does not mean every Texas patient is early in adulthood. Two other programs belong on this page because of how people actually describe their days: long commutes, shift work, and the distance between cities. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Hormone Balance & Vitality Program](/health-optimization-programs) is for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. Our articles on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) and [functional medicine, hormones, and thyroid](/articles/functional-medicine-hormone-thyroid) are useful briefings before the consult, not substitutes for one.",
+      text: "Texas is also younger, as a whole, than the country. The Census Bureau\u2019s 2024 ACS 1-year estimates put 14.0% of Texas\u2019s population at age 65 or older, compared with 18.0% nationally. A younger age structure is not the same thing as having no interest in staying well over time, and it does not mean every Texas patient is early in adulthood. Two other programs belong on this page because of how people actually describe their days: long commutes, shift work, and the distance between cities. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Hormone Balance & Vitality Program](/health-optimization-programs) is for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. Briefings before the consult, not substitutes for it, are [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) and [when functional medicine and conventional care each fit](/articles/functional-medicine-vs-conventional).",
     },
     {
       type: "p",
