@@ -36,7 +36,7 @@ const california: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before any paid visit.",
+        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before you continue.",
       ],
     },
     { type: "p", text: "Not available in California:" },
@@ -45,7 +45,7 @@ const california: HoStatePage = {
       items: [
         "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
         "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. That pathway is currently offered in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. Arizona, Idaho, and Washington are already on that list; California is not. We will not blur the line to chase “functional medicine california” searches.",
-        "Published prices, or a claim that insurance will pay. California People Also Ask results often start with coverage. The honest answer is that it depends on your plan and the services involved, and that the free consult is the place to ask.",
+        "A prediction that a program will produce a particular result. Program details are covered in the consult.",
         "A statement that Dr. Chris is licensed for every service in California. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
@@ -78,11 +78,11 @@ const california: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC’s 2024 BRFSS adult obesity maps put California at 29.1% — close to New York (29.5%) and Florida (29.6%) on the same table. For residents whose goals involve weight change, cravings, blood sugar concerns, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
+      text: "The CDC’s 2024 BRFSS adult obesity maps put California at 29.1% — close to New York (29.5%) and Florida (29.6%) on the same table. For residents whose goals involve weight change, cravings, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
     },
     {
       type: "p",
-      text: "California is younger, as a whole, than the other states in this first group. The Census Bureau’s 2024 ACS 1-year estimates put 16.5% of California’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, and 21.8% in Florida. “Younger than Florida” is not the same thing as having no interest in aging well. DataForSEO currently measures a small but real volume for “longevity clinic california” and for “health optimization california.” Your Health Now is not a brick-and-mortar longevity clinic in California; it is a video program. The [Longevity & Healthy Aging Program](/health-optimization-programs) is the pathway written for people who want to take a proactive approach to energy, cognitive function, and longer-term wellness. The [Heart Health Optimization Program](/health-optimization-programs) sits next to it for residents whose focus is cholesterol, blood pressure, inflammation, family history, or cardiovascular wellness. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
+      text: "California is younger, as a whole, than the other states in this first group. The Census Bureau’s 2024 ACS 1-year estimates put 16.5% of California’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, and 21.8% in Florida. “Younger than Florida” is not the same thing as having no interest in aging well. DataForSEO currently measures a small but real volume for “longevity clinic california” and for “health optimization california.” Your Health Now is not a brick-and-mortar longevity clinic in California; it is a video program. The [Longevity & Healthy Aging Program](/health-optimization-programs) is the pathway written for people who want to take a proactive approach to energy, cognitive function, and longer-term wellness. The [Heart Health Optimization Program](/health-optimization-programs) sits next to it for residents who want a structured look at cardiovascular wellness and family history. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
     },
     {
       type: "p",
@@ -125,8 +125,8 @@ const california: HoStatePage = {
       a: "The calendar is Eastern time. Subtract three hours for Pacific time. Posted hours that run until 8:00 p.m. Eastern close at 5:00 p.m. Pacific. Early morning Eastern slots are before a typical California workday starts.",
     },
     {
-      q: "Does insurance pay for a functional medicine or health optimization visit in California?",
-      a: "Coverage depends on your plan and the services involved. We do not publish prices or a coverage guarantee on this page. Ask during the free 30-minute consult, or call (609) 651-7436.",
+      q: "Where do I ask how a California program is set up?",
+      a: "Program details are covered in the complimentary 30-minute consult, or by calling (609) 651-7436. Convert the booking slot to Pacific time before you confirm it.",
     },
     {
       q: "What does a Health Optimization Program actually involve?",

@@ -19,7 +19,7 @@ const newYork: HoStatePage = {
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in New York | YHN",
   metaDescription:
-    "New York residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in New York.",
+    "Health optimization telehealth in New York is a secure video visit with Dr. Chris Chianese, from the city to Buffalo. There is no YHN clinic in the state.",
   h1: "Health Optimization Programs by Telehealth in New York",
   primaryKeyword: "health optimization telehealth in New York",
   blocks: [
@@ -50,7 +50,7 @@ const newYork: HoStatePage = {
       items: [
         "A Your Health Now clinic, waiting room, physical exam, or chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you will not be traveling to either office, do not expect a local in-person visit to be part of this program.",
         "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in New York. It is not listed on the live site today.",
-        "Published prices, or a guarantee of insurance coverage. People Also Ask results for New York often jump straight to cost. We will not invent a number here. Ask on the free consult.",
+        "A prediction of a particular result. Program details for a New York resident are covered in the consult, not assumed from a search result.",
         "A statement that Dr. Chris is licensed to practice every form of care in New York. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
@@ -78,7 +78,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC’s 2024 BRFSS adult obesity maps put New York at 29.5% — close to the figures for California (29.1%) and Florida (29.6%) on the same table. For residents whose goals involve weight change, cravings, blood sugar concerns, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
+      text: "The CDC’s 2024 BRFSS adult obesity maps put New York at 29.5% — close to the figures for California (29.1%) and Florida (29.6%) on the same table. For residents whose goals involve weight change, cravings, or a slower metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
     },
     {
       type: "p",
@@ -127,10 +127,6 @@ const newYork: HoStatePage = {
     {
       q: "I live in New York City. Is the program any different from upstate?",
       a: "No. The program is by secure video statewide. New York City, Long Island, and upstate residents use the same consult and the same 90-minute visit. The booking calendar is Eastern time for the entire state.",
-    },
-    {
-      q: "How much does a Health Optimization Program cost in New York?",
-      a: "We do not publish prices on this page. Cost and insurance coverage depend on the pathway and on your plan. Ask during the free 30-minute consult, or call (609) 651-7436, before you book a paid visit.",
     },
     {
       q: "Can Dr. Chris prescribe medication in New York?",

@@ -42,7 +42,7 @@ const pennsylvania: HoStatePage = {
       items: [
         "A chiropractic adjustment or a physical exam over video.",
         "A requirement that western or central Pennsylvania patients travel east for the program itself. Chalfont is optional.",
-        "Published program prices, or a promise that insurance will cover the work. Ask on the free consult.",
+        "A prediction of a particular result. Program details are covered in the consult.",
         "A blanket licensing claim in marketing copy. Telehealth rules vary by state and by provider type; the team confirms licensing and scope of practice before a first visit.",
       ],
     },
@@ -71,11 +71,11 @@ const pennsylvania: HoStatePage = {
     { type: "p", text: "These figures describe the state, not our patient roster." },
     {
       type: "p",
-      text: "On the CDC’s 2024 BRFSS adult obesity maps, Pennsylvania’s prevalence is 34.2%. That is noticeably higher than New Jersey (27.7%), New York (29.5%), and Florida (29.6%) on the same table. It is one reason this page puts the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, low energy, or blood sugar concerns; it is not a claim that we treat a particular diagnosis, and it is not a weight-loss guarantee.",
+      text: "On the CDC’s 2024 BRFSS adult obesity maps, Pennsylvania’s prevalence is 34.2%. That is noticeably higher than New Jersey (27.7%), New York (29.5%), and Florida (29.6%) on the same table. It is one reason this page puts the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, or low energy. It is not a claim that we treat a particular diagnosis, and it is not a weight-loss guarantee.",
     },
     {
       type: "p",
-      text: "Pennsylvania is also an older state than the country as a whole. The U.S. Census Bureau’s 2024 American Community Survey 1-year estimates put 20.4% of Pennsylvania’s population at age 65 or older, compared with 18.0% nationally. For residents whose goal is to stay capable as they age — energy, cardiovascular wellness, or a longer view of health rather than a single symptom — the [Longevity & Healthy Aging Program](/health-optimization-programs) and the [Heart Health Optimization Program](/health-optimization-programs) are the pathways written for that work. Heart Health is designed for people looking to support cholesterol, blood pressure, inflammation, family history, or overall cardiovascular wellness, again as a structured program, not as an emergency service and not as a substitute for a local physician when urgent care is needed.",
+      text: "Pennsylvania is also an older state than the country as a whole. The U.S. Census Bureau’s 2024 American Community Survey 1-year estimates put 20.4% of Pennsylvania’s population at age 65 or older, compared with 18.0% nationally. For residents whose goal is to stay capable as they age — energy, cardiovascular wellness, or a longer view of health rather than a single symptom — the [Longevity & Healthy Aging Program](/health-optimization-programs) and the [Heart Health Optimization Program](/health-optimization-programs) are the pathways written for that work. Heart Health is designed for people who want a structured look at cardiovascular wellness and family history, again as a program, not as emergency care and not as a substitute for a local physician when urgent care is needed.",
     },
     {
       type: "p",
@@ -113,8 +113,8 @@ const pennsylvania: HoStatePage = {
       a: "No. Dr. Chris is a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. We do not provide legal advice about naturopathy in Pennsylvania.",
     },
     {
-      q: "Does insurance cover these programs in Pennsylvania?",
-      a: "Coverage depends on your plan and the services involved. We do not list prices here. The free 30-minute consult, or a call to (609) 651-7436, is the place to get a straight answer before a paid visit.",
+      q: "Where do I ask how a Pennsylvania program is set up?",
+      a: "Program details are covered in the complimentary 30-minute consult, or by calling (609) 651-7436. An in-person visit at Chalfont is a separate booking from that conversation.",
     },
     {
       q: "What happens on the first program visit?",

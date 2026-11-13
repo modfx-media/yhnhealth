@@ -43,7 +43,7 @@ const florida: HoStatePage = {
       items: [
         "A Your Health Now office, a physical exam, or an adjustment. Those happen only in Merchantville or Chalfont.",
         "A single “Florida package” that mixes a Health Optimization Program and Personalized Clinical Care into one product. They are different pathways. The free consult is where you choose.",
-        "Published prices, or a guarantee of insurance coverage. Ask on the consult.",
+        "A prediction of a particular result. Program details are covered in the consult.",
         "A blanket licensing claim. As the Florida functional medicine page already states, telehealth licensing rules vary by state and by provider type, and the team confirms licensing and scope of practice before a first visit. This page does not add a new licensing statement on top of that.",
       ],
     },
@@ -64,11 +64,11 @@ const florida: HoStatePage = {
     { type: "p", text: "These figures are about the state, not about outcomes in our practice." },
     {
       type: "p",
-      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason this page leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people looking to support cholesterol, blood pressure, inflammation, family history, or overall cardiovascular wellness. DataForSEO also measures a small volume for “longevity clinic florida.” Your Health Now is not a walk-in longevity clinic in Florida; it is a video program with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
+      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason this page leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people who want a structured look at cardiovascular wellness and family history. DataForSEO also measures a small volume for “longevity clinic florida.” Your Health Now is not a walk-in longevity clinic in Florida; it is a video program with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
     },
     {
       type: "p",
-      text: "The CDC’s 2024 BRFSS adult obesity maps put Florida at 29.6%. For residents whose goals involve weight change, cravings, blood sugar concerns, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the third pathway this page emphasizes. The other nine programs remain open to Florida residents and are described on the main programs page.",
+      text: "The CDC’s 2024 BRFSS adult obesity maps put Florida at 29.6%. For residents whose goals involve weight change, cravings, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the third pathway this page emphasizes. The other nine programs remain open to Florida residents and are described on the main programs page.",
     },
     {
       type: "p",
@@ -115,8 +115,8 @@ const florida: HoStatePage = {
       a: "Those labels are used loosely, and they are not interchangeable licenses. At Your Health Now, Florida residents can use a structured Health Optimization Program or, when the case is more complex, Personalized Clinical Care, both with Dr. Chris, by video. This page does not compare every holistic or naturopathic model in Florida.",
     },
     {
-      q: "Does insurance cover these programs in Florida?",
-      a: "Coverage depends on your plan and the services involved. We do not list prices here. Ask during the free 30-minute consult, or call (609) 651-7436, before a paid visit.",
+      q: "Where do I ask how a Florida program is set up?",
+      a: "Program details are covered in the complimentary 30-minute consult, or by calling (609) 651-7436. If you live in the Central-time panhandle, convert the slot before you confirm it.",
     },
     {
       q: "I live in Tampa, Orlando, or Miami. Is there a city-specific program?",

@@ -13,7 +13,7 @@ const newJersey: HoStatePage = {
   presence: "clinic",
   title: "Health Optimization Telehealth in New Jersey | YHN",
   metaDescription:
-    "New Jersey residents can start a Health Optimization Program by video with Dr. Chris, or visit the Merchantville clinic in person.",
+    "Functional medicine telehealth in New Jersey starts with a Health Optimization Program by video with Dr. Chris, or a visit to the Merchantville clinic.",
   h1: "Health Optimization Programs by Telehealth in New Jersey",
   primaryKeyword: "functional medicine telehealth New Jersey",
   blocks: [
@@ -44,7 +44,7 @@ const newJersey: HoStatePage = {
       type: "ul",
       items: [
         "A chiropractic adjustment or a physical exam over video. Those happen only in the clinic.",
-        "A published price list or a guarantee that insurance will pay. Coverage depends on your plan and the services involved; ask on the free consult.",
+        "A prediction about how your own case will turn out. Program details are covered in the consult.",
         "A claim, on this page, that a particular license covers every service in New Jersey. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
@@ -72,7 +72,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "The CDC’s 2024 Behavioral Risk Factor Surveillance System maps, based on self-reported height and weight, put adult obesity in New Jersey at 27.7%. That is lower than several neighboring states, including Pennsylvania at 34.2% on the same map, but it is still more than one in four adults. For residents whose goals involve weight change, cravings, blood sugar concerns, or a sense that metabolism has slowed, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
+      text: "The CDC’s 2024 Behavioral Risk Factor Surveillance System maps, based on self-reported height and weight, put adult obesity in New Jersey at 27.7%. That is lower than several neighboring states, including Pennsylvania at 34.2% on the same map, but it is still more than one in four adults. For residents whose goals involve weight change, cravings, or a sense that metabolism has slowed, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the pathway designed for that work.",
     },
     {
       type: "p",
@@ -93,7 +93,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "People often ask, in general searches about functional medicine, whether these clinicians “go to medical school.” The honest answer for this practice is the credential list above. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first paid visit, not guessed in marketing copy.",
+      text: "People often ask, in general searches about functional medicine, whether these clinicians “go to medical school.” The honest answer for this practice is the credential list above. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first visit, not guessed in marketing copy.",
     },
     { type: "h2", text: "How to start" },
     {
@@ -131,8 +131,8 @@ const newJersey: HoStatePage = {
       a: "Yes. Residence in North Jersey does not require a trip to Merchantville for a Health Optimization Program. Come in only if you want an exam or an adjustment.",
     },
     {
-      q: "Does insurance cover Health Optimization Programs or functional medicine telehealth in New Jersey?",
-      a: "It depends on your plan and the services involved. We do not publish prices here. Ask during the free 30-minute consult, or call (609) 651-7436, before you book a paid visit.",
+      q: "Where do I ask how a New Jersey program is set up?",
+      a: "Program details are covered in the complimentary 30-minute consult, or by calling (609) 651-7436. For an in-person visit at Merchantville, call (856) 532-2063. The video program and the clinic visit are scheduled separately.",
     },
     {
       q: "What time zone is the booking calendar on?",

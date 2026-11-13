@@ -55,7 +55,7 @@ const hub: HoHubPage = {
     },
     {
       type: "p",
-      text: "Licensing and scope of practice are confirmed before a first visit. Telehealth rules vary by state and by provider type. These pages do not claim a license in a state unless the live site already says so. Insurance coverage also varies; the free consult is the place to ask, and we do not publish prices on these pages.",
+      text: "Licensing and scope of practice are confirmed before a first visit. Telehealth rules vary by state and by provider type. These pages do not claim a license in a state unless the live site already says so. Program details for your own situation are covered in the complimentary consult.",
     },
     { type: "h2", text: "Who you see on a telehealth visit" },
     {
@@ -94,8 +94,8 @@ const hub: HoHubPage = {
       a: "Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. The complimentary consult and the 90-minute program visit are with him.",
     },
     {
-      q: "Is telehealth covered by insurance?",
-      a: "Coverage depends on your plan and the services involved. We do not list prices or insurance rules on this page. Ask during the free 30-minute consult, or call (609) 651-7436, for a straight answer on your situation before you book a paid visit.",
+      q: "Where are the details of a program explained?",
+      a: "Program details for your situation are covered in the complimentary 30-minute consult with Dr. Chris, or by calling (609) 651-7436. That call is a fit check. It is not a diagnosis, and it does not start a pathway by itself.",
     },
     {
       q: "How do I book, and what time zone is the calendar on?",
