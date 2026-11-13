@@ -116,7 +116,7 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone">
               {/* TODO: needs client info - confirm which outside care-team partner/draw-site network is used for this state */}
               Functional medicine care is built around your history, symptoms, and goals. If additional
-              bloodwork or diagnostics would help, your doctor discusses the options with you directly,
+              evaluation or diagnostics would help, your doctor discusses the options with you directly,
               since this can depend on your specific case and location in {state.name}.
             </p>
           </FadeUp>
@@ -137,13 +137,13 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
 
           <FadeUp delay={0.2}>
             <h2 className="font-display text-2xl font-bold text-brand md:text-3xl">
-              What does functional medicine telehealth cost, and is it covered by insurance?
+              Is functional medicine telehealth covered by insurance?
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone">
-              {/* TODO: needs client info - confirm current self-pay pricing and insurance/superbill policy for telehealth */}
-              Pricing and insurance coverage for functional medicine telehealth depend on your plan and the
-              services involved. The free 30-minute consult call is the best way to get a straight answer
-              for your {state.name} coverage before you book a paid visit.
+              {/* TODO: needs client info - confirm how insurance coverage questions are answered on the consult */}
+              Insurance coverage for functional medicine telehealth depends on your plan and the
+              services involved. The consult call is the best way to get a straight answer
+              for your {state.name} coverage before you book.
             </p>
           </FadeUp>
         </div>

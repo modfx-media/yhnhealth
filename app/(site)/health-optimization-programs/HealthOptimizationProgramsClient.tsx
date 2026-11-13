@@ -30,7 +30,7 @@ const FEATURED = [
   {
     icon: Scale,
     title: "Healthy Weight & Metabolism Program",
-    body: "Designed for individuals struggling with weight gain, difficulty losing weight, cravings, low energy, blood sugar concerns, or a \u201Cslow metabolism.\u201D This program focuses on improving metabolism, supporting healthy weight loss, balancing blood sugar, increasing energy, and helping your body function more efficiently through a personalized functional medicine approach.",
+    body: "Designed for individuals struggling with weight gain, difficulty losing weight, cravings, low energy, or a \u201Cslow metabolism.\u201D This program focuses on improving metabolism, supporting healthy weight loss, increasing energy, and helping your body function more efficiently through a personalized functional medicine approach.",
   },
   {
     icon: Activity,
@@ -63,7 +63,7 @@ const ADDITIONAL = [
   {
     icon: Heart,
     title: "Heart Health Optimization Program",
-    body: "Designed for individuals looking to support heart health and reduce future health risks related to cholesterol, blood pressure, inflammation, family history, or overall cardiovascular wellness. This program focuses on helping you build a healthier foundation for long-term health.",
+    body: "Designed for individuals looking to support heart health and reduce future health risks related to inflammation, family history, or overall cardiovascular wellness.",
   },
   {
     icon: Brain,
