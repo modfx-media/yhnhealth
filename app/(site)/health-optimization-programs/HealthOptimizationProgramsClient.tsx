@@ -63,7 +63,7 @@ const ADDITIONAL = [
   {
     icon: Heart,
     title: "Heart Health Optimization Program",
-    body: "Designed for individuals looking to support heart health and reduce future health risks related to inflammation, family history, or overall cardiovascular wellness.",
+    body: "Designed for individuals looking to support heart health and reduce future health risks related to inflammation, family history, or overall cardiovascular wellness. This program focuses on helping you build a healthier foundation for long-term health.",
   },
   {
     icon: Brain,
