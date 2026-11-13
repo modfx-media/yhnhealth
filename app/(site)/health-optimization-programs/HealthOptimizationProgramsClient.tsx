@@ -400,7 +400,12 @@ export default function HealthOptimizationProgramsClient() {
             <p className="mt-5 text-base leading-relaxed text-stone">
               Health optimization consults are by secure video and are open to residents of every
               state. The map is the full United States. Click your state! The clinics in
-              Merchantville, NJ and Chalfont, PA are for in-person chiropractic care.
+              Merchantville, NJ and Chalfont, PA are for in-person chiropractic care. Published
+              state guides are indexed on the{" "}
+              <Link href="/states" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                state-by-state page
+              </Link>
+              .
             </p>
           </FadeUp>
           <div className="mt-10">

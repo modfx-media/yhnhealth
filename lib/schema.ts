@@ -3,6 +3,8 @@ import { CLINICS, type City, type ServiceData } from "@/lib/pseoData";
 import { AVERAGE_RATING, VERIFIED_REVIEW_COUNT, reviewsFor } from "@/lib/testimonialsData";
 import { getDisplayedGoogleReviews } from "@/lib/google-reviews";
 import { TELEHEALTH_STATES, type TelehealthState } from "@/data/telehealth-states";
+import type { HoHubPage, HoStatePage } from "@/content/states/types";
+import { HO_CONTENT_UPDATED } from "@/content/states/updated";
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -362,6 +364,76 @@ export function stateTelehealthJsonLd(state: TelehealthState, reviewedDate: stri
         parentOrganization: { "@id": ORG_ID },
       },
       publisher: { "@id": ORG_ID },
+    },
+  ];
+}
+
+/**
+ * Schema for a Health Optimization state guide.
+ * MedicalBusiness and the clinician record already ship in the sitewide graph
+ * (layout). These nodes reference those @ids. reviewedBy is omitted until a
+ * clinician signs this draft; dateModified is the content date only.
+ */
+export function hoStateJsonLd(state: HoStatePage) {
+  const pageUrl = `${SITE_URL}/health-optimization-programs/${state.slug}`;
+  return [
+    breadcrumbJsonLd([
+      { name: "Home", url: `${SITE_URL}/` },
+      { name: "Health Optimization", url: `${SITE_URL}/health-optimization-programs` },
+      { name: state.name, url: pageUrl },
+    ]),
+    faqJsonLd(state.faqs),
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "@id": `${pageUrl}#webpage`,
+      name: state.title,
+      url: pageUrl,
+      description: state.metaDescription,
+      dateModified: HO_CONTENT_UPDATED,
+      author: { "@id": DR_CHRIS_ID },
+      about: {
+        "@type": "Service",
+        name: "Health Optimization Programs",
+        serviceType: "Telehealth health optimization program",
+        areaServed: { "@type": "State", name: state.name },
+        provider: { "@id": DR_CHRIS_ID },
+      },
+      publisher: { "@id": ORG_ID },
+      isPartOf: { "@id": WEBSITE_ID },
+    },
+  ];
+}
+
+/** Schema for the /states hub. ItemList includes published guides only. */
+export function hoHubJsonLd(hub: HoHubPage, pages: { name: string; slug: string }[]) {
+  const pageUrl = `${SITE_URL}/states`;
+  return [
+    breadcrumbJsonLd([
+      { name: "Home", url: `${SITE_URL}/` },
+      { name: "States", url: pageUrl },
+    ]),
+    faqJsonLd(hub.faqs),
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#webpage`,
+      name: hub.title,
+      url: pageUrl,
+      description: hub.metaDescription,
+      dateModified: HO_CONTENT_UPDATED,
+      isPartOf: { "@id": WEBSITE_ID },
+      publisher: { "@id": ORG_ID },
+      about: { "@id": ORG_ID },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: pages.map((page, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: page.name,
+          url: `${SITE_URL}/health-optimization-programs/${page.slug}`,
+        })),
+      },
     },
   ];
 }

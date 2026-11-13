@@ -15,6 +15,7 @@ import {
 import { NAV_ITEMS, isNavGroup } from "@/lib/navigation";
 import { LOCATIONS, HOURS } from "@/lib/siteData";
 import { TELEHEALTH_STATES } from "@/data/telehealth-states";
+import { PUBLISHED_STATE_PAGES } from "@/content/states";
 import { Breadcrumbs, FadeUp } from "@/components/page/Primitives";
 
 const TOTAL_STATES = TELEHEALTH_STATES.length;
@@ -208,6 +209,46 @@ export default function SitemapPage() {
                   </ul>
                 )}
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* HEALTH OPTIMIZATION STATE GUIDES */}
+      <section className="bg-white py-20 md:py-24">
+        <div className="mx-auto max-w-[1320px] px-6 lg:px-10">
+          <FadeUp className="max-w-2xl">
+            <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent-dark">
+              Health Optimization · published guides
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-brand md:text-4xl">
+              State guides that are live.
+            </h2>
+            <div className="mt-4 h-[3px] w-20 bg-accent" />
+            <p className="mt-5 text-sm leading-relaxed text-stone">
+              These pages sit beside the functional medicine telehealth list. States without a guide are not linked.
+            </p>
+            <Link
+              href="/states"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
+            >
+              Open the state guide
+              <ArrowUpRight size={12} />
+            </Link>
+          </FadeUp>
+          <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {PUBLISHED_STATE_PAGES.map((state) => (
+              <Link
+                key={state.slug}
+                href={`/health-optimization-programs/${state.slug}`}
+                className="group flex items-center justify-between gap-2 rounded-2xl border border-brand/10 bg-cream-light px-5 py-4 text-sm font-semibold text-brand shadow-card transition-all hover:-translate-y-0.5 hover:shadow-card-hover"
+              >
+                <span className="inline-flex items-center gap-1.5">
+                  <MapPin size={13} className="text-accent-dark" />
+                  {state.name}
+                </span>
+                <ArrowUpRight size={13} className="shrink-0 text-accent-dark transition-transform group-hover:-translate-y-0.5" />
+              </Link>
             ))}
           </div>
         </div>
