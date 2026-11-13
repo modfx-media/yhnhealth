@@ -23,7 +23,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "Two other things are also open in New Jersey, and they should not be mixed up with the programs on this page. Personalized Clinical Care — doctor-led [functional medicine](/functional-medicine) telehealth for more complex or ongoing illness — is already offered to New Jersey residents and has its own page, [Functional Medicine Telehealth in New Jersey](/functional-medicine/new-jersey). In-person chiropractic exams and adjustments are available at the Merchantville clinic, booked separately with the clinic care team. A video program visit is not an adjustment, and an adjustment is not how a Health Optimization Program starts.",
+      text: "Two other things are also open in New Jersey, and they should not be mixed up with the programs described here. Personalized Clinical Care — doctor-led [functional medicine](/functional-medicine) telehealth for more complex or ongoing illness — is already offered to New Jersey residents and has its own page, [Functional Medicine Telehealth in New Jersey](/functional-medicine/new-jersey). In-person chiropractic exams and adjustments are available at the Merchantville clinic, booked separately with the clinic care team. A video program visit is not an adjustment, and an adjustment is not how a Health Optimization Program starts.",
     },
     {
       type: "p",
@@ -45,7 +45,7 @@ const newJersey: HoStatePage = {
       items: [
         "A chiropractic adjustment or a physical exam over video. Those happen only in the clinic.",
         "A prediction about how your own case will turn out. Program details are covered in the consult.",
-        "A claim, on this page, that a particular license covers every service in New Jersey. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "A claim here that a particular license covers every service in New Jersey. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
     { type: "h2", text: "How care works from New Jersey" },
@@ -76,7 +76,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "New Jersey is also a high-incidence state for Lyme disease. CDC’s 2023 National Notifiable Diseases Surveillance System tables report 7,224 Lyme disease cases in New Jersey. A Health Optimization Program is not a Lyme clinic, and this page will not treat it as one. If tick-borne illness, lingering symptoms after a tick bite, or a complex overlap of fatigue and inflammation is the reason you are calling, start with [functional medicine telehealth in New Jersey](/functional-medicine/new-jersey) and the site’s [chronic Lyme and functional medicine](/articles/chronic-lyme-functional-medicine) article, or ask on the consult whether Personalized Clinical Care is the better fit.",
+      text: "New Jersey is also a high-incidence state for Lyme disease. CDC’s 2023 National Notifiable Diseases Surveillance System tables report 7,224 Lyme disease cases in New Jersey. A Health Optimization Program is not a Lyme clinic, and we will not treat it as one. If tick-borne illness, lingering symptoms after a tick bite, or a complex overlap of fatigue and inflammation is the reason you are calling, start with [functional medicine telehealth in New Jersey](/functional-medicine/new-jersey) and the site’s [chronic Lyme and functional medicine](/articles/chronic-lyme-functional-medicine) article, or ask on the consult whether Personalized Clinical Care is the better fit.",
     },
     {
       type: "p",
@@ -84,12 +84,12 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "Those three program families are the ones this page emphasizes for New Jersey. The other nine programs remain open to New Jersey residents; they are described on the main programs page rather than restated here.",
+      text: "Those three program families are the ones we emphasize for New Jersey. The other nine programs remain open to New Jersey residents; they are described on the main programs page rather than restated here.",
     },
     { type: "h2", text: "Who you see, and what his training actually is" },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is not an MD, and this page will not imply that he is. He is a Doctor of Chiropractic (Sherman College, summa cum laude) with a Master of Science in Applied Nutrition from Canisius College, the Certification in Patient-Specific Chiropractic (CPSC) program he founded, and the Functional Medicine Certified Professional (FMCP) credential through the Institute for Functional Medicine, where he is a member and listed provider. His full biography, including additional training in IASTM, Active Release Technique, and functional neurology, is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Chris Chianese. He is not an MD, and we will not imply that he is. He is a Doctor of Chiropractic (Sherman College, summa cum laude) with a Master of Science in Applied Nutrition from Canisius College, the Certification in Patient-Specific Chiropractic (CPSC) program he founded, and the Functional Medicine Certified Professional (FMCP) credential through the Institute for Functional Medicine, where he is a member and listed provider. His full biography, including additional training in IASTM, Active Release Technique, and functional neurology, is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "p",
@@ -115,8 +115,8 @@ const newJersey: HoStatePage = {
       a: "Yes. They are scheduled separately. The Health Optimization work happens by secure video (or as otherwise confirmed with you). An exam or adjustment is its own clinic visit with the care team at 5 W Chestnut Ave.",
     },
     {
-      q: "What is the difference between this page and your Functional Medicine New Jersey page?",
-      a: "This page is for the twelve Health Optimization Programs — structured, proactive pathways. The [Functional Medicine New Jersey](/functional-medicine/new-jersey) page is for Personalized Clinical Care, the functional medicine telehealth pathway for more complex or ongoing illness. Both are open in New Jersey. The free consult is where you sort out which one fits.",
+      q: "What is the difference between Health Optimization in New Jersey and your Functional Medicine New Jersey guide?",
+      a: "Health Optimization is the twelve programs — structured, proactive pathways. The [Functional Medicine New Jersey](/functional-medicine/new-jersey) page is for Personalized Clinical Care, the functional medicine telehealth pathway for more complex or ongoing illness. Both are open in New Jersey. The free consult is where you sort out which one fits.",
     },
     {
       q: "Does a functional medicine clinician have to go to medical school?",
@@ -124,7 +124,7 @@ const newJersey: HoStatePage = {
     },
     {
       q: "What is the difference between a functional medicine doctor and a holistic doctor?",
-      a: "Those labels are used loosely in search results, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs and Personalized Clinical Care follow a structured, doctor-led functional medicine approach with Dr. Chris. We do not use this page to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
+      a: "Those labels are used loosely in search results, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs and Personalized Clinical Care follow a structured, doctor-led functional medicine approach with Dr. Chris. We do not use this guide to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
     },
     {
       q: "I live in North Jersey. Can I stay on video the entire time?",

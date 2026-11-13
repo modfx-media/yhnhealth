@@ -18,10 +18,10 @@ const florida: HoStatePage = {
   h1: "Health Optimization Programs by Telehealth in Florida",
   primaryKeyword: "health optimization telehealth in Florida",
   blocks: [
-    { type: "p", text: "Florida already has a functional medicine telehealth page on this site. This page is for something different." },
+    { type: "p", text: "Florida already has a functional medicine telehealth guide on this site. What you are reading now is for something different." },
     {
       type: "p",
-      text: "[Functional Medicine Telehealth in Florida](/functional-medicine/florida) is the home for Personalized Clinical Care: doctor-led functional medicine with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, for more complex or ongoing illness, by secure video, with no Florida office. If that is the care you need, go there. This page is for the twelve [Health Optimization Programs](/health-optimization-programs) — structured 6- or 12-month pathways for people who want a proactive plan around longevity, heart health, metabolism, hormones, energy, and related goals, even if they are not dealing with a major or complex condition.",
+      text: "[Functional Medicine Telehealth in Florida](/functional-medicine/florida) is the home for Personalized Clinical Care: doctor-led functional medicine with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, for more complex or ongoing illness, by secure video, with no Florida office. If that is the care you need, go there. What follows is the twelve [Health Optimization Programs](/health-optimization-programs) — structured 6- or 12-month pathways for people who want a proactive plan around longevity, heart health, metabolism, hormones, energy, and related goals, even if they are not dealing with a major or complex condition.",
     },
     {
       type: "p",
@@ -44,12 +44,12 @@ const florida: HoStatePage = {
         "A Your Health Now office, a physical exam, or an adjustment. Those happen only in Merchantville or Chalfont.",
         "A single “Florida package” that mixes a Health Optimization Program and Personalized Clinical Care into one product. They are different pathways. The free consult is where you choose.",
         "A prediction of a particular result. Program details are covered in the consult.",
-        "A blanket licensing claim. As the Florida functional medicine page already states, telehealth licensing rules vary by state and by provider type, and the team confirms licensing and scope of practice before a first visit. This page does not add a new licensing statement on top of that.",
+        "A blanket licensing claim. As the Florida functional medicine page already states, telehealth licensing rules vary by state and by provider type, and the team confirms licensing and scope of practice before a first visit. Nothing here adds a new licensing statement on top of that.",
       ],
     },
     {
       type: "p",
-      text: "Tampa, Orlando, and Miami all show measurable “functional medicine + city” search volume. This is still a statewide page, not a city page, and we are not creating a Tampa, Orlando, or Miami URL as part of this batch. Residents in those metros, in Jacksonville, in Tallahassee, and in the panhandle use the same two statewide pathways.",
+      text: "Tampa, Orlando, and Miami are large and far apart, and so are Jacksonville, Tallahassee, and the panhandle. Care does not change by metro. Residents in all of those places, and in the Keys, use the same two statewide pathways: a Health Optimization Program by video, or functional medicine telehealth when that is the closer fit. The peninsula and the panhandle are not separate programs.",
     },
     { type: "h2", text: "How care works from Florida, including the panhandle clock" },
     {
@@ -64,11 +64,11 @@ const florida: HoStatePage = {
     { type: "p", text: "These figures are about the state, not about outcomes in our practice." },
     {
       type: "p",
-      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason this page leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people who want a structured look at cardiovascular wellness and family history. DataForSEO also measures a small volume for “longevity clinic florida.” Your Health Now is not a walk-in longevity clinic in Florida; it is a video program with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
+      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason the Florida guide leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people who want a structured look at cardiovascular wellness and family history. Many people in Miami, Tampa, and Naples want a longevity clinic they can drive to. Your Health Now does not keep a walk-in office anywhere in Florida. Longevity support with Dr. Chris is a video program, with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
     },
     {
       type: "p",
-      text: "The CDC’s 2024 BRFSS adult obesity maps put Florida at 29.6%. For residents whose goals involve weight change, cravings, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the third pathway this page emphasizes. The other nine programs remain open to Florida residents and are described on the main programs page.",
+      text: "The CDC’s 2024 BRFSS adult obesity maps put Florida at 29.6%. For residents whose goals involve weight change, cravings, or metabolism, the [Healthy Weight & Metabolism Program](/health-optimization-programs) is the third pathway the Florida guide emphasizes. The other nine programs remain open to Florida residents and are described on the main programs page.",
     },
     {
       type: "p",
@@ -77,7 +77,7 @@ const florida: HoStatePage = {
     { type: "h2", text: "Who you see" },
     {
       type: "p",
-      text: "Telehealth visits, on both the program pathway and the Florida functional medicine pathway, are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. Florida People Also Ask results sometimes ask about naturopathic medical school in the state or about “top healthcare providers in Florida.” We will not publish a ranking of Florida health systems, and we are not a naturopathic school or clinic. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits, on both the program pathway and the Florida functional medicine pathway, are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. Florida People Also Ask results sometimes ask about naturopathic medical school in the state or about “top healthcare providers in Florida.” We will not publish a directory of Florida health systems, and we are not a naturopathic school or clinic. His biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     { type: "h2", text: "How to start" },
     {
@@ -91,8 +91,8 @@ const florida: HoStatePage = {
   ],
   faqs: [
     {
-      q: "How is this page different from Functional Medicine Telehealth in Florida?",
-      a: "This page is for the twelve Health Optimization Programs, which are proactive, structured pathways. [Functional Medicine Telehealth in Florida](/functional-medicine/florida) is for Personalized Clinical Care, the pathway for more complex or ongoing illness. Both are open to Florida residents, both are video only, and the free consult is where you choose.",
+      q: "How is Health Optimization different from Functional Medicine Telehealth in Florida?",
+      a: "Health Optimization is the twelve programs, which are proactive, structured pathways. [Functional Medicine Telehealth in Florida](/functional-medicine/florida) is for Personalized Clinical Care, the pathway for more complex or ongoing illness. Both are open to Florida residents, both are video only, and the free consult is where you choose.",
     },
     {
       q: "Is there a Your Health Now office in Florida?",
@@ -112,7 +112,7 @@ const florida: HoStatePage = {
     },
     {
       q: "What is the difference between functional medicine and holistic medicine?",
-      a: "Those labels are used loosely, and they are not interchangeable licenses. At Your Health Now, Florida residents can use a structured Health Optimization Program or, when the case is more complex, Personalized Clinical Care, both with Dr. Chris, by video. This page does not compare every holistic or naturopathic model in Florida.",
+      a: "Those labels are used loosely, and they are not interchangeable licenses. At Your Health Now, Florida residents can use a structured Health Optimization Program or, when the case is more complex, Personalized Clinical Care, both with Dr. Chris, by video. We do not compare every holistic or naturopathic model in Florida.",
     },
     {
       q: "Where do I ask how a Florida program is set up?",
@@ -120,7 +120,7 @@ const florida: HoStatePage = {
     },
     {
       q: "I live in Tampa, Orlando, or Miami. Is there a city-specific program?",
-      a: "No. Care is statewide. The program and the functional medicine pathway are the same offer whether you live in those metros or elsewhere in Florida. We are not launching city pages in this batch.",
+      a: "No. Care is statewide. Patients anywhere in Florida, including Tampa, Orlando, and Miami, are seen by telehealth. The program and the functional medicine pathway are the same offer in those cities as in Jacksonville, Tallahassee, and the panhandle.",
     },
   ],
   sources: [

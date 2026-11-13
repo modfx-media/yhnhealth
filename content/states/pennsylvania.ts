@@ -48,7 +48,7 @@ const pennsylvania: HoStatePage = {
     },
     {
       type: "p",
-      text: "People Also Ask results for Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). We will not use this page to give legal advice about other professions.",
+      text: "People Also Ask results for Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). We will not use this guide to give legal advice about other professions.",
     },
     { type: "h2", text: "How care works from Pennsylvania" },
     {
@@ -61,7 +61,7 @@ const pennsylvania: HoStatePage = {
     },
     {
       type: "p",
-      text: "Philadelphia and Pittsburgh show up often in functional medicine searches — DataForSEO currently measures about 140 monthly US searches for “functional medicine philadelphia” and about 260 for “functional medicine pittsburgh.” This is still a statewide page, not a city page, and we are not building a page for each metro. The practical point is simply this: a Philadelphia-area patient may find Chalfont a realistic drive for hands-on care; a Pittsburgh-area patient generally will not, and does not have to. The program is built to be completed by video either way.",
+      text: "Philadelphia and Pittsburgh are a full state apart, and both are part of the same Pennsylvania offer. A patient near Philadelphia can sometimes drive to the Chalfont clinic when they want an exam or an adjustment. A patient in Pittsburgh, Erie, or anywhere else in the west generally will not make that drive, and does not have to. The Health Optimization Program is finished by video either way. There is no separate Philadelphia office and no separate Pittsburgh office. Chalfont remains the only Pennsylvania clinic, in Bucks County, and it is optional.",
     },
     {
       type: "p",
@@ -71,7 +71,7 @@ const pennsylvania: HoStatePage = {
     { type: "p", text: "These figures describe the state, not our patient roster." },
     {
       type: "p",
-      text: "On the CDC’s 2024 BRFSS adult obesity maps, Pennsylvania’s prevalence is 34.2%. That is noticeably higher than New Jersey (27.7%), New York (29.5%), and Florida (29.6%) on the same table. It is one reason this page puts the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, or low energy. It is not a claim that we treat a particular diagnosis, and it is not a weight-loss guarantee.",
+      text: "On the CDC’s 2024 BRFSS adult obesity maps, Pennsylvania’s prevalence is 34.2%. That is noticeably higher than New Jersey (27.7%), New York (29.5%), and Florida (29.6%) on the same table. It is one reason we put the [Healthy Weight & Metabolism Program](/health-optimization-programs) first among the programs we highlight here. The program is designed for people dealing with weight gain, difficulty losing weight, cravings, or low energy. It is not a claim that we treat a particular diagnosis, and it is not a weight-loss guarantee.",
     },
     {
       type: "p",
@@ -102,11 +102,11 @@ const pennsylvania: HoStatePage = {
     },
     {
       q: "Is this the same as your Functional Medicine Pennsylvania page?",
-      a: "No. This page is for the twelve Health Optimization Programs. [Functional Medicine Telehealth in Pennsylvania](/functional-medicine/pennsylvania) is for Personalized Clinical Care, the pathway for more complex or ongoing illness. Both are open to Pennsylvania residents. The free consult is where you choose.",
+      a: "No. Health Optimization is the twelve programs. [Functional Medicine Telehealth in Pennsylvania](/functional-medicine/pennsylvania) is for Personalized Clinical Care, the pathway for more complex or ongoing illness. Both are open to Pennsylvania residents. The free consult is where you choose.",
     },
     {
       q: "Can a PA practice functional medicine?",
-      a: "If you mean a physician assistant, that is a different license than the one described on this page, and we are not going to answer a scope-of-practice question for another profession. If you mean Pennsylvania the state: yes, Pennsylvania residents can use both Health Optimization Programs and functional medicine telehealth with Dr. Chris, as described above. His credentials are on [Meet the Doctor](/meet-the-doctor).",
+      a: "If you mean a physician assistant, that is a different license than the one described here, and we are not going to answer a scope-of-practice question for another profession. If you mean Pennsylvania the state: yes, Pennsylvania residents can use both Health Optimization Programs and functional medicine telehealth with Dr. Chris, as described above. His credentials are on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "Is Your Health Now a naturopathic clinic?",
