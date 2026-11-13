@@ -40,6 +40,21 @@ const hub: HoHubPage = {
         "[Health Optimization in Florida](/health-optimization-programs/florida): programs by video for Florida residents, including the Central-time panhandle. Florida also has an existing [functional medicine telehealth in Florida](/functional-medicine/florida) page. There is no YHN clinic in Florida.",
       ],
     },
+    { type: "h2", text: "A second group is now live" },
+    {
+      type: "p",
+      text: "These five pages are also published. Each one is telehealth only. There is no Your Health Now clinic in any of them, and Personalized Clinical Care is not currently listed there.",
+    },
+    {
+      type: "ul",
+      items: [
+        "[Health Optimization in Texas](/health-optimization-programs/texas): programs by video. Most of the state is on Central time. El Paso is on Mountain time.",
+        "[Health Optimization in Georgia](/health-optimization-programs/georgia): programs by video, on Eastern time. There is no clinic in Atlanta.",
+        "[Health Optimization in Oregon](/health-optimization-programs/oregon): programs by video. Most of the state is on Pacific time.",
+        "[Health Optimization in Michigan](/health-optimization-programs/michigan): programs by video on both peninsulas. Four western Upper Peninsula counties are on Central time.",
+        "[Health Optimization in Ohio](/health-optimization-programs/ohio): programs by video, on Eastern time. There is no clinic in Columbus, Cleveland, or Cincinnati.",
+      ],
+    },
     {
       type: "p",
       text: "Other states will appear here as their pages are published. Until then they are not linked.",
