@@ -197,6 +197,19 @@ export default function StateTelehealthPage({ state }: { state: TelehealthState 
                 {"."}
               </>
             )}
+            {(state.slug === "new-jersey" || state.slug === "pennsylvania" || state.slug === "florida") && (
+              <>
+                {" "}
+                The Health Optimization guide for this state is{" "}
+                <Link
+                  href={`/health-optimization-programs/${state.slug}`}
+                  className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark"
+                >
+                  {state.name} programs by telehealth
+                </Link>
+                {"."}
+              </>
+            )}
           </p>
         </div>
 

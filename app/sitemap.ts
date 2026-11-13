@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_PATHS } from "@/lib/navigation";
 import { TELEHEALTH_STATES } from "@/data/telehealth-states";
+import { PUBLISHED_STATE_PAGES } from "@/content/states";
+import { HO_CONTENT_UPDATED } from "@/content/states/updated";
 import { getPublishedBlogSlugs } from "@/lib/ranked/posts";
 import { SITE_URL } from "@/lib/siteUrl";
 import { canonicalSlugForCmsPost } from "@/lib/cms/articles";
@@ -66,6 +68,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entry(`/functional-medicine/${s.slug}`, { lastModified, changeFrequency: "monthly", priority: 0.7 }),
   ).filter(Boolean) as MetadataRoute.Sitemap;
 
+  const stateGuideUpdated = new Date(`${HO_CONTENT_UPDATED}T12:00:00.000Z`);
+  const stateGuides = [
+    entry("/states", { lastModified: stateGuideUpdated, changeFrequency: "weekly", priority: 0.8 }),
+    ...PUBLISHED_STATE_PAGES.map((state) =>
+      entry(`/health-optimization-programs/${state.slug}`, {
+        lastModified: stateGuideUpdated,
+        changeFrequency: "monthly",
+        priority: 0.7,
+      }),
+    ),
+  ].filter(Boolean) as MetadataRoute.Sitemap;
+
   const slugs = await getPublishedBlogSlugs().catch(() => []);
   const articlePaths = new Set(slugs.map((slug) => `/articles/${slug}`));
   for (const path of cmsArticlePaths) articlePaths.add(path);
@@ -81,5 +95,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
   ].filter(Boolean) as MetadataRoute.Sitemap;
 
-  return [...core, ...telehealthStates, ...articles, ...landingPages];
+  return [...core, ...telehealthStates, ...stateGuides, ...articles, ...landingPages];
 }

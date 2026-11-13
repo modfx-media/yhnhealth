@@ -379,7 +379,11 @@ export default function FunctionalMedicineClient() {
             </h2>
             </div>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-stone">
-              Select your preferred state.
+              Select your preferred state. Health Optimization Programs are a separate pathway, published on the{" "}
+              <Link href="/states" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                state guide
+              </Link>
+              .
             </p>
           </FadeUp>
 

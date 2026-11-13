@@ -1,11 +1,19 @@
 import { SITE_URL } from "@/lib/siteUrl";
 import { TELEHEALTH_STATES } from "@/data/telehealth-states";
+import { PUBLISHED_STATE_PAGES } from "@/content/states";
 
 /** Plain-text crawler guide for AI assistants (ChatGPT, Perplexity, Claude, etc). See GEO section of the SEO strategy guide. */
 export async function GET() {
   const stateLines = TELEHEALTH_STATES.map(
     (s) => `- ${s.name} telehealth: ${SITE_URL}/functional-medicine/${s.slug}`,
   ).join("\n");
+
+  const programLines = [
+    `- State guide: ${SITE_URL}/states`,
+    ...PUBLISHED_STATE_PAGES.map(
+      (state) => `- ${state.name}: ${SITE_URL}/health-optimization-programs/${state.slug}`,
+    ),
+  ].join("\n");
 
   const body = `# Your Health Now
 
@@ -28,6 +36,9 @@ export async function GET() {
 
 ## Functional Medicine Telehealth, by State
 ${stateLines}
+
+## Health Optimization Programs, by State
+${programLines}
 
 ## Booking
 - Free 30-minute functional medicine consult (Jane App): https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2
