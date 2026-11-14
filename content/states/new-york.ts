@@ -25,7 +25,7 @@ const newYork: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "A lot of people in New York search for a functional medicine doctor as if the only door that matters is an office in Manhattan. Your Health Now does not have a New York clinic — not in New York City, not in Westchester, not in Albany, Buffalo, Rochester, or on Long Island — and this page will not pretend otherwise.",
+      text: "A lot of people in New York search for a functional medicine doctor as if the only door that matters is an office in Manhattan. Your Health Now does not have a New York clinic — not in New York City, not in Westchester, not in Albany, Buffalo, Rochester, or on Long Island — and we will not pretend otherwise.",
     },
     {
       type: "p",
@@ -33,7 +33,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is not currently listed for New York is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in New York and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not enroll you in a Health Optimization Program just to have a New York URL, and we will not imply that the nine-state clinical pathway is already available here.",
+      text: "What is not currently listed for New York is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in New York and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not enroll you in a Health Optimization Program just to have a New York listing, and we will not imply that the nine-state clinical pathway is already available here.",
     },
     { type: "h2", text: "What is available in New York — and what is not" },
     { type: "p", text: "Available to New York residents:" },
@@ -82,7 +82,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "A second pattern this page takes seriously is the stacked New York workday: people who feel drained, foggy, or off, without a single clear diagnosis. Two programs are written for that picture. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Brain Health & Cognitive Performance Program](/health-optimization-programs) is for brain fog, poor concentration, memory concerns, or a wish to support focus and healthy aging. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a clinical visit.",
+      text: "A second pattern we take seriously is the stacked New York workday: people who feel drained, foggy, or off, without a single clear diagnosis. Two programs are written for that picture. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Brain Health & Cognitive Performance Program](/health-optimization-programs) is for brain fog, poor concentration, memory concerns, or a wish to support focus and healthy aging. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a clinical visit.",
     },
     {
       type: "p",
@@ -103,7 +103,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "Two questions show up often in New York People Also Ask results: whether functional medicine doctors go to medical school, and whether a “functional doctor” can prescribe medication. Training is the credential list above, not a medical-school degree we do not have. Prescribing authority is a scope-of-practice question; it is not something this page will claim or hint at. If it matters to your case, ask on the consult, where licensing and scope are confirmed.",
+      text: "Two questions show up often in New York People Also Ask results: whether functional medicine doctors go to medical school, and whether a “functional doctor” can prescribe medication. Training is the credential list above, not a medical-school degree we do not have. Prescribing authority is a scope-of-practice question; it is not something we will claim or hint at. If it matters to your case, ask on the consult, where licensing and scope are confirmed.",
     },
     { type: "h2", text: "How to start" },
     {
@@ -130,7 +130,7 @@ const newYork: HoStatePage = {
     },
     {
       q: "Can Dr. Chris prescribe medication in New York?",
-      a: "This page does not make prescribing claims. Licensing and scope of practice are confirmed before a first visit. If prescribing is part of what you need, ask that question on the consult rather than assuming it from a title.",
+      a: "We do not make prescribing claims. Licensing and scope of practice are confirmed before a first visit. If prescribing is part of what you need, ask that question on the consult rather than assuming it from a title.",
     },
     {
       q: "Do functional medicine doctors go to medical school?",
