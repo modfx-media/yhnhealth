@@ -93,7 +93,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "People often ask, in general searches about functional medicine, whether these clinicians “go to medical school.” The honest answer for this practice is the credential list above. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first visit, not guessed in marketing copy.",
+      text: "People often ask whether Dr. Chris went to medical school. The honest answer is the credential list above. He is a chiropractic physician, not an MD. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first visit, not guessed ahead of that conversation.",
     },
     { type: "h2", text: "How to start" },
     {
@@ -124,7 +124,7 @@ const newJersey: HoStatePage = {
     },
     {
       q: "What is the difference between a functional medicine doctor and a holistic doctor?",
-      a: "Those labels are used loosely in search results, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs and Personalized Clinical Care follow a structured, doctor-led functional medicine approach with Dr. Chris. We do not use this guide to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
+      a: "Those labels are used loosely in everyday conversation, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs and Personalized Clinical Care follow a structured, doctor-led functional medicine approach with Dr. Chris. We do not use this guide to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
     },
     {
       q: "I live in North Jersey. Can I stay on video the entire time?",
