@@ -172,7 +172,6 @@ export async function organizationGraph() {
         description:
           "Chiropractic and functional medicine clinics in Chalfont, Pennsylvania and Merchantville, New Jersey. Doctor-led care for back pain, neck pain, sciatica, and root-cause health concerns.",
         medicalSpecialty: ["Chiropractic", "FunctionalMedicine"],
-        priceRange: "$$",
         email: "info@yhnhealth.com",
         sameAs: [
           "https://www.facebook.com/yhnhealth/",

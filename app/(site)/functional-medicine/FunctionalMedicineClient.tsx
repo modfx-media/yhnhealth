@@ -310,7 +310,7 @@ export default function FunctionalMedicineClient() {
               How a functional medicine visit works.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone">
-              This is the same pathway in every state we serve. What changes by state is whether a clinic is nearby and what time the video visit lands on your clock. Those details are on the state pages. Licensing, your care team, and what a visit costs are confirmed with you on the consult. They are not guessed on this page.
+              This is the same pathway in every state we serve. What changes by state is whether a clinic is nearby and what time the video visit lands on your clock. Those details are on the state pages. Licensing, your care team, and program details are confirmed with you on the consult. They are not guessed on this page.
             </p>
           </FadeUp>
 
