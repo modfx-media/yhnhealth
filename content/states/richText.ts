@@ -7,6 +7,10 @@ const ALLOWED_HOSTS = new Set([
   "www.yhnhealth.com",
   "yourhealthnow.janeapp.com",
   "maps.app.goo.gl",
+  "www.cdc.gov",
+  "cdc.gov",
+  "stacks.cdc.gov",
+  "www2.census.gov",
 ]);
 
 /** Internal paths and a short allow-list of hosts already used on the site. */
