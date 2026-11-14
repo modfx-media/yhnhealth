@@ -56,7 +56,7 @@ const texas: HoStatePage = {
       type: "ul",
       items: [
         "No office in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. A hands-on exam or an adjustment means going to Merchantville, New Jersey, at 5 W Chestnut Ave, or Chalfont, Pennsylvania, at 350 N Main St #201. The distance between Texas cities is already a drive. The program does not add a flight east unless you choose one.",
-        "Personalized Clinical Care is not listed for Texas. A Houston or Austin search does not add the state to the nine-place clinical list on the live site.",
+        "Personalized Clinical Care is not listed for Texas. Living in Houston or Austin does not add the state to the nine-place clinical list on the live site.",
         "Nothing here claims Dr. Chris is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
       ],
     },
@@ -118,7 +118,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and Your Health Now is not a naturopathic clinic. People Also Ask results for Texas often start with those two comparisons. His full training is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and Your Health Now is not a naturopathic clinic. Those are the two comparisons people in Texas often raise with us first. His full training is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "p",

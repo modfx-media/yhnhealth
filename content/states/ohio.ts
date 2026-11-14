@@ -37,7 +37,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "People Also Ask results for Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a directory of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Chris.",
+      text: "People who live anywhere in Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a directory of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Chris.",
     },
     {
       type: "h2",

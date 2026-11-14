@@ -56,13 +56,13 @@ const oregon: HoStatePage = {
       type: "ul",
       items: [
         "No exam room in the Pearl, in Beaverton, in Bend, or anywhere else in Oregon. An adjustment or a hands-on exam means traveling to Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). The video program does not assume you will make that trip.",
-        "Personalized Clinical Care, the pathway for complex or ongoing illness, is published for nine other places, Washington among them. It is not published for Oregon. A search that mentions Portland does not change that.",
+        "Personalized Clinical Care, the pathway for complex or ongoing illness, is published for nine other places, Washington among them. It is not published for Oregon. A Portland street address, on its own, does not change that.",
         "Nothing here claims Dr. Chris holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
       ],
     },
     {
       type: "p",
-      text: "People Also Ask results for Oregon sometimes ask what naturopaths may do in the state, or where to get mental health help. Your Health Now is not a naturopathic clinic, and this guide is not a mental-health crisis resource. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
+      text: "People who live in Oregon sometimes ask what naturopaths may do in the state, or where someone nearby can get mental health help. Your Health Now is not a naturopathic clinic, and this guide is not a mental-health crisis resource. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
     },
     {
       type: "h2",

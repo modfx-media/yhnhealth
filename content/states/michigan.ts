@@ -58,7 +58,7 @@ const michigan: HoStatePage = {
       type: "ul",
       items: [
         "No clinic on the Lower Peninsula and none above the bridge. An adjustment or a hands-on exam is a trip to Merchantville, New Jersey, at 5 W Chestnut Ave, or to Chalfont, Pennsylvania, at 350 N Main St #201. Lake-effect winters and the Mackinac crossing already make ordinary drives long. The video program does not add a flight to New Jersey.",
-        "The complex-illness pathway is not listed for Michigan today. Grand Rapids drawing more searches than Detroit does not create a local clinical office, and it does not add Michigan to the nine-place list.",
+        "The complex-illness pathway is not listed for Michigan today. Whether you live in Grand Rapids or in Detroit, that does not create a local clinical office, and it does not add Michigan to the nine-place list.",
         "Nothing here asserts a Michigan license for every kind of visit. Before the first appointment the practice confirms that the conversation is appropriate for where you live.",
       ],
     },
@@ -108,7 +108,7 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People Also Ask results for Michigan often ask what a functional medicine doctor actually does, and what the disadvantages are. On this offer, the work is a structured Health Optimization Program: a documented intake, a 90-minute visit, a 6- or 12-month pathway, and follow-up. From Michigan, this offer does not include a local clinic visit, a physical exam, an adjustment, emergency care, or Personalized Clinical Care. It does not replace your Michigan primary care relationship. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People in Michigan often ask what a functional medicine doctor actually does, and what the disadvantages are. On this offer, the work is a structured Health Optimization Program: a documented intake, a 90-minute visit, a 6- or 12-month pathway, and follow-up. From Michigan, this offer does not include a local clinic visit, a physical exam, an adjustment, emergency care, or Personalized Clinical Care. It does not replace your Michigan primary care relationship. His biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "h2",

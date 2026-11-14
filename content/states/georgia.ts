@@ -70,7 +70,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "There is no separate Atlanta version of the program. People Also Ask results sometimes ask about the limits of this kind of care, and the limits from Georgia are plain: no local clinic, no hands-on visit, no Personalized Clinical Care pathway, and no replacement for a Georgia primary care relationship. The work that is open is the structured program with Dr. Chris, by video.",
+      text: "There is no separate Atlanta version of the program. People sometimes ask about the limits of this kind of care, and the limits from Georgia are plain: no local clinic, no hands-on visit, no Personalized Clinical Care pathway, and no replacement for a Georgia primary care relationship. The work that is open is the structured program with Dr. Chris, by video.",
     },
     {
       type: "h2",
@@ -94,7 +94,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "If the reason you are searching is a long, complicated illness rather than a proactive plan, say so on the consult. We will not stretch a Health Optimization Program to cover a kind of care that is not currently listed for Georgia.",
+      text: "If what you need is help with a long, complicated illness rather than a proactive plan, say so on the consult. We will not stretch a Health Optimization Program to cover a kind of care that is not currently listed for Georgia.",
     },
     {
       type: "h2",
@@ -102,7 +102,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People Also Ask results for Georgia often start there, and they sometimes ask how functional medicine differs from integrative medicine. Those terms are used loosely in search results, and they are not interchangeable licenses. At Your Health Now, Georgia residents can use a structured Health Optimization Program with Dr. Chris, by video. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People in Georgia often start with the fact that he is not an MD, and they sometimes ask how functional medicine differs from integrative medicine. Those terms are used loosely in conversation, and they are not interchangeable licenses. At Your Health Now, Georgia residents can use a structured Health Optimization Program with Dr. Chris, by video. His biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "h2",
