@@ -72,12 +72,12 @@ const florida: HoStatePage = {
     },
     {
       type: "p",
-      text: "If the reason you are searching is a long, complicated illness rather than a proactive plan, do not start here. Use [Functional Medicine Telehealth in Florida](/functional-medicine/florida). If fatigue, hormones, or gut health is part of the picture and you are still sorting out which path you are on, the articles on [functional medicine and fatigue](/articles/functional-medicine-fatigue-root-causes), [hormones and thyroid](/articles/functional-medicine-hormone-thyroid), and [gut health](/articles/functional-medicine-gut-health) are useful background before the consult.",
+      text: "If what you need is help with a long, complicated illness rather than a proactive plan, do not start here. Use [Functional Medicine Telehealth in Florida](/functional-medicine/florida). If fatigue, hormones, or gut health is part of the picture and you are still sorting out which path you are on, the articles on [functional medicine and fatigue](/articles/functional-medicine-fatigue-root-causes), [hormones and thyroid](/articles/functional-medicine-hormone-thyroid), and [gut health](/articles/functional-medicine-gut-health) are useful background before the consult.",
     },
     { type: "h2", text: "Who you see" },
     {
       type: "p",
-      text: "Telehealth visits, on both the program pathway and the Florida functional medicine pathway, are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. Florida People Also Ask results sometimes ask about naturopathic medical school in the state or about “top healthcare providers in Florida.” We will not publish a directory of Florida health systems, and we are not a naturopathic school or clinic. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits, on both the program pathway and the Florida functional medicine pathway, are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. People sometimes ask whether we run a naturopathic medical school in Florida or keep a list of the state’s healthcare providers. We will not publish a directory of Florida health systems, and we are not a naturopathic school or clinic. His biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     { type: "h2", text: "How to start" },
     {

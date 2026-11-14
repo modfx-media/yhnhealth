@@ -28,7 +28,7 @@ const california: HoStatePage = {
     },
     {
       type: "p",
-      text: "Los Angeles, San Diego, and San Francisco all generate more “functional medicine + city” searches than “functional medicine california” itself. That is useful context, and it is not a reason to pretend we have a waiting room in any of those cities. This remains one statewide page.",
+      text: "Los Angeles, San Diego, and San Francisco are where California patients most often expect a walk-in functional medicine office. That expectation is not a waiting room we have in any of those cities. Care for California residents is one statewide video program with Dr. Chris, done from home.",
     },
     { type: "h2", text: "What is available in California — and what is not" },
     { type: "p", text: "Available to California residents:" },
@@ -44,7 +44,7 @@ const california: HoStatePage = {
       type: "ul",
       items: [
         "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. That pathway is currently offered in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. Arizona, Idaho, and Washington are already on that list; California is not. We will not blur the line to chase “functional medicine california” searches.",
+        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. That pathway is currently offered in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. Arizona, Idaho, and Washington are already on that list; California is not. We will not describe a Health Optimization Program as that clinical pathway, and we do not offer functional medicine clinic care in California.",
         "A prediction that a program will produce a particular result. Program details are covered in the consult.",
         "A statement that Dr. Chris is licensed for every service in California. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
@@ -91,7 +91,7 @@ const california: HoStatePage = {
     { type: "h2", text: "Limits of this offer, stated plainly" },
     {
       type: "p",
-      text: "California People Also Ask results also ask what a functional medicine doctor actually does, how that differs from a regular doctor, and what the disadvantages are. Those are fair questions, especially on a page that cannot offer an in-state clinic or the more intensive clinical pathway.",
+      text: "People in California often ask what a functional medicine doctor actually does, how that differs from a regular doctor, and what the disadvantages are. Those are fair questions, especially where there is no in-state clinic and the more intensive clinical pathway is not offered.",
     },
     {
       type: "p",

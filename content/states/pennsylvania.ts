@@ -48,7 +48,7 @@ const pennsylvania: HoStatePage = {
     },
     {
       type: "p",
-      text: "People Also Ask results for Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). We will not use this guide to give legal advice about other professions.",
+      text: "People in Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). We will not use this guide to give legal advice about other professions.",
     },
     { type: "h2", text: "How care works from Pennsylvania" },
     {
