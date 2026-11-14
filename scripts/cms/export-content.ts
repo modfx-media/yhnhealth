@@ -6,7 +6,6 @@ import { SERVICE_CONTENT } from "@/lib/serviceContent";
 import { MODULES } from "@/lib/moduleContent";
 import { CITIES, SERVICES } from "@/lib/pseoData";
 import { getLocalBlogPosts } from "@/lib/ranked/local-posts";
-import { nameFromIcon } from "@/lib/cms/icons";
 import { templateForPath } from "@/lib/cms/templates";
 import { SITE_URL } from "@/lib/siteUrl";
 
@@ -96,7 +95,7 @@ function serviceRecord(pagePath: string): RecordDoc {
       benefitsEyebrow: service.benefits?.eyebrow,
       benefitsTitle: service.benefits?.title,
       benefitItems: service.benefits?.items.map((item) => ({
-        icon: nameFromIcon(item.icon),
+        icon: item.icon,
         title: item.title,
         body: item.body,
       })),

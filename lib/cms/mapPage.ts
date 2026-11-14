@@ -6,7 +6,6 @@ import { CITY_BY_SLUG, SERVICE_BY_SLUG } from "@/lib/pseoData";
 import type { Article, ArticleBlock, ArticleCategory } from "@/lib/articlesData";
 import { ARTICLE_CATEGORIES } from "@/lib/articlesData";
 import type { Page, Post } from "@/payload-types";
-import { iconFromName } from "./icons";
 import { lexicalToBlocks } from "./lexical";
 import { mediaUrl, publicImageSrc } from "./mediaUrl";
 import { articlePublicPath } from "./paths";
@@ -37,7 +36,7 @@ export function pageToServiceConfig(doc: Page): ServiceConfig | null {
             eyebrow: doc.benefitsEyebrow || fallback?.benefits?.eyebrow,
             title: doc.benefitsTitle || fallback?.benefits?.title || "",
             items: doc.benefitItems.map((item) => ({
-              icon: iconFromName(item.icon),
+              icon: item.icon || "Activity",
               title: item.title,
               body: item.body || undefined,
             })),
