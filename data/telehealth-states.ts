@@ -4,7 +4,7 @@
  *
  * Only New Jersey and Pennsylvania have a physical YHN clinic (Merchantville,
  * NJ and Chalfont, PA). Every other state is telehealth-only. State-specific
- * legal/licensing, care-team, and pricing facts are not yet confirmed by
+ * legal/licensing and care-team facts are not yet confirmed by
  * the client - those fields are intentionally left blank/generic in the copy
  * and flagged with a `{/* TODO: needs client info *}/` comment in
  * components/page/StateTelehealthPage.tsx rather than guessed at here.
@@ -28,7 +28,7 @@ export type TelehealthState = {
   directAnswer: string;
   /**
    * Paragraphs that stay true if you delete the state name from a sibling page.
-   * Geography and scheduling only. No licensing, care-team network, or price claims.
+   * Geography and scheduling only. No licensing or care-team network claims.
    */
   localGuide: string[];
   /** One scheduling fact that is true for this state and not copy-pasted. */
@@ -88,7 +88,7 @@ export const TELEHEALTH_STATES: TelehealthState[] = [
     localGuide: [
       "The Pennsylvania clinic is in Bucks County: 350 N Main St #201, Chalfont, PA 18914, (609) 651-7436. It is one office in the eastern part of the state. Living in Pittsburgh, Erie, Scranton, or anywhere else in Pennsylvania does not block a video visit, and it does not mean you are expected to drive to Chalfont for the functional medicine case.",
       "Use Chalfont when you want a physical exam or a chiropractic adjustment. Those are separate from the video visit. A patient who only wants the functional medicine work can stay on video for the consult, the history and symptom review, the decision about a care plan, and follow-up.",
-      "Pennsylvania is on Eastern time, the same clock as the Chalfont and Merchantville clinics. The free 30-minute call is where you learn whether this pathway fits, before any paid visit.",
+      "Pennsylvania is on Eastern time, the same clock as the Chalfont and Merchantville clinics. The free 30-minute call is where you learn whether this pathway fits, before any full visit.",
     ],
     scheduling:
       "Chalfont hours and the booking calendar are Eastern time. That matches the whole state, so you do not convert.",
