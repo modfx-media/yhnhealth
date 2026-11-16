@@ -45,7 +45,11 @@ export function BookingStrip({
   title?: string;
   copy?: string;
   fm?: boolean;
-  /** When set with `fm`, the consult control goes here instead of the booking widget. */
+  /**
+   * When set with `fm`, the consult control goes here instead of the functional
+   * medicine booking URL. An absolute http(s) URL opens in a new tab the same
+   * way other Jane links do. A site path stays in the current tab.
+   */
   consultHref?: string;
 }) {
   const palettes = {
@@ -58,6 +62,9 @@ export function BookingStrip({
   const FM_BOOKING_URL =
     "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
   const { openBooking } = useBookingPopup();
+  const consultIsExternal = Boolean(consultHref?.startsWith("http"));
+  const fmHref = consultHref ?? FM_BOOKING_URL;
+  const openFmBooking = Boolean(fm && (!consultHref || consultIsExternal));
 
   return (
     <motion.section
@@ -94,14 +101,14 @@ export function BookingStrip({
             </Link>
           )}
           <a
-            href={fm ? (consultHref ?? FM_BOOKING_URL) : "tel:8565322063"}
-            target={fm && !consultHref ? "_blank" : undefined}
-            rel={fm && !consultHref ? "noopener noreferrer" : undefined}
+            href={fm ? fmHref : "tel:8565322063"}
+            target={openFmBooking ? "_blank" : undefined}
+            rel={openFmBooking ? "noopener noreferrer" : undefined}
             onClick={
-              fm && !consultHref
+              openFmBooking
                 ? (e) => {
                     e.preventDefault();
-                    openBooking(FM_BOOKING_URL);
+                    openBooking(fmHref);
                   }
                 : undefined
             }

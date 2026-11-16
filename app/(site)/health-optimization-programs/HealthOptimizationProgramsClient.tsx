@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
+import { useBookingPopup } from "@/components/BookingPopup";
 import {
   ArrowUpRight,
   Compass,
@@ -91,6 +92,9 @@ const ADDITIONAL = [
   },
 ];
 
+const HO_DISCOVERY_URL =
+  "https://yourhealthnow.janeapp.com/locations/mmwc/book#/staff_member/01a1cb1a-714c-74ef-b7ee-1a63754ddae0";
+
 const PATHWAYS = [
   {
     months: "6-Month",
@@ -105,6 +109,7 @@ const PATHWAYS = [
 ];
 
 export default function HealthOptimizationProgramsClient() {
+  const { openBooking } = useBookingPopup();
   return (
     <main className="bg-white">
       {/* HERO */}
@@ -203,13 +208,19 @@ export default function HealthOptimizationProgramsClient() {
                     Support lasting health and wellness improvements
                   </li>
                 </ul>
-                <Link
-                  href="/health-optimization-programs"
+                <a
+                  href={HO_DISCOVERY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openBooking(HO_DISCOVERY_URL);
+                  }}
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
                 >
                   Schedule your FREE Discovery Call
                   <ArrowUpRight size={13} />
-                </Link>
+                </a>
               </div>
             </FadeUp>
           </div>
@@ -410,7 +421,7 @@ export default function HealthOptimizationProgramsClient() {
         title="A complimentary 30-minute consultation."
         copy="Speak with the Doctor to find the program that fits your goals, weight, hormones, energy, longevity, and more."
         fm
-        consultHref="/health-optimization-programs"
+        consultHref={HO_DISCOVERY_URL}
       />
     </main>
   );

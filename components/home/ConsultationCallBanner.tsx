@@ -11,6 +11,10 @@ import {
   PhoneCall,
   Video,
 } from "lucide-react";
+import { useBookingPopup } from "@/components/BookingPopup";
+
+const HO_DISCOVERY_URL =
+  "https://yourhealthnow.janeapp.com/locations/mmwc/book#/staff_member/01a1cb1a-714c-74ef-b7ee-1a63754ddae0";
 
 const BENEFITS = [
   "Address your unique health goals",
@@ -28,6 +32,7 @@ const CASES = [
 ];
 
 export default function ConsultationCallBanner() {
+  const { openBooking } = useBookingPopup();
   return (
     <section className="relative overflow-hidden bg-cream-light py-16 md:py-20">
       <div
@@ -127,8 +132,14 @@ export default function ConsultationCallBanner() {
                 </p>
 
                 <div className="mt-5 space-y-3">
-                  <Link
-                    href="/health-optimization-programs"
+                  <a
+                    href={HO_DISCOVERY_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openBooking(HO_DISCOVERY_URL);
+                    }}
                     className="group flex items-center justify-between gap-3 rounded-2xl border border-accent bg-accent px-5 py-4 transition-all hover:-translate-y-0.5 hover:bg-accent-dark hover:shadow-card"
                   >
                     <div>
@@ -142,7 +153,7 @@ export default function ConsultationCallBanner() {
                     <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-accent">
                       <Calendar size={14} strokeWidth={2.25} />
                     </span>
-                  </Link>
+                  </a>
 
                   <div className="flex items-center justify-between gap-3 rounded-2xl border border-brand/10 bg-white px-5 py-4">
                     <div className="text-left">
