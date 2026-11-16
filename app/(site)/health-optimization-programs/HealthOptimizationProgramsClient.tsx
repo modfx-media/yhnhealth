@@ -189,20 +189,20 @@ export default function HealthOptimizationProgramsClient() {
                   How It Starts
                 </p>
                 <p className="mt-3 font-display text-2xl font-bold text-brand">
-                  90-minute telehealth visit with the Doctor.
+                  30min Discovery call with the doctor.
                 </p>
                 <ul className="mt-5 space-y-3 text-sm text-stone">
                   <li className="flex items-start gap-2">
                     <Video size={14} className="mt-0.5 shrink-0 text-accent-dark" />
-                    Comprehensive intake &amp; goal setting
+                    Address your unique health goals
                   </li>
                   <li className="flex items-start gap-2">
                     <Calendar size={14} className="mt-0.5 shrink-0 text-accent-dark" />
-                    Choose 6- or 12-month pathway
+                    Provide focused, ongoing guidance
                   </li>
                   <li className="flex items-start gap-2">
                     <Pill size={14} className="mt-0.5 shrink-0 text-accent-dark" />
-                    Professional supplements purchased separately &amp; discounted for patients
+                    Support lasting health and wellness improvements
                   </li>
                 </ul>
                 <Link
@@ -217,7 +217,7 @@ export default function HealthOptimizationProgramsClient() {
                   }}
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
                 >
-                  Book Free Consultation
+                  Schedule your FREE Discovery Call
                   <ArrowUpRight size={13} />
                 </Link>
               </div>

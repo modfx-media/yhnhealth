@@ -25,7 +25,7 @@ const newYork: HoStatePage = {
   blocks: [
     {
       type: "p",
-      text: "A lot of people in New York search for a functional medicine doctor as if the only door that matters is an office in Manhattan. Your Health Now does not have a New York clinic — not in New York City, not in Westchester, not in Albany, Buffalo, Rochester, or on Long Island — and this page will not pretend otherwise.",
+      text: "A lot of people in New York look for a functional medicine doctor as if the only door that matters is an office in Manhattan. Your Health Now does not have a New York clinic — not in New York City, not in Westchester, not in Albany, Buffalo, Rochester, or on Long Island — and we will not pretend otherwise.",
     },
     {
       type: "p",
@@ -33,7 +33,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is not currently listed for New York is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in New York and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not enroll you in a Health Optimization Program just to have a New York URL, and we will not imply that the nine-state clinical pathway is already available here.",
+      text: "What is not currently listed for New York is Personalized Clinical Care, the functional medicine telehealth pathway Your Health Now offers for more complex or ongoing illness. That clinical pathway is open today in nine places listed on the [Functional Medicine](/functional-medicine) page: New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. If you live in New York and your situation is chronic, multi-system, or has not improved with conventional care, say so on the consult. We will not enroll you in a Health Optimization Program just to have a New York listing, and we will not imply that the nine-state clinical pathway is already available here.",
     },
     { type: "h2", text: "What is available in New York — and what is not" },
     { type: "p", text: "Available to New York residents:" },
@@ -50,7 +50,7 @@ const newYork: HoStatePage = {
       items: [
         "A Your Health Now clinic, waiting room, physical exam, or chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you will not be traveling to either office, do not expect a local in-person visit to be part of this program.",
         "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in New York. It is not listed on the live site today.",
-        "A prediction of a particular result. Program details for a New York resident are covered in the consult, not assumed from a search result.",
+        "A prediction of a particular result. Program details for a New York resident are covered in the consult, not assumed before you have spoken with Dr. Chris.",
         "A statement that Dr. Chris is licensed to practice every form of care in New York. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
@@ -82,7 +82,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "A second pattern this page takes seriously is the stacked New York workday: people who feel drained, foggy, or off, without a single clear diagnosis. Two programs are written for that picture. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Brain Health & Cognitive Performance Program](/health-optimization-programs) is for brain fog, poor concentration, memory concerns, or a wish to support focus and healthy aging. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a clinical visit.",
+      text: "A second pattern we take seriously is the stacked New York workday: people who feel drained, foggy, or off, without a single clear diagnosis. Two programs are written for that picture. The [Energy Restoration Program](/health-optimization-programs) is for ongoing fatigue, burnout, low motivation, poor recovery, or brain fog. The [Brain Health & Cognitive Performance Program](/health-optimization-programs) is for brain fog, poor concentration, memory concerns, or a wish to support focus and healthy aging. Our article on [why fatigue persists](/articles/functional-medicine-fatigue-root-causes) is a companion for that conversation, not a stand-in for a clinical visit.",
     },
     {
       type: "p",
@@ -90,11 +90,11 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "Tick-borne illness is also part of New York’s public-health picture, especially outside New York City. The New York State Department of Health’s 2025 tickborne disease surveillance report counted 18,704 confirmed or probable Lyme disease cases in 2024 in New York State excluding New York City, with cases reported in all 57 counties outside the city, and an incidence of 164.8 per 100,000. The report notes that a 2022 change in the national surveillance case definition contributed to the higher counts, so the number should be read with that in mind. A Health Optimization Program is not a Lyme pathway. If Lyme disease or a complicated, lingering illness is why you are searching, say so on the consult. We will not stretch a proactive program to cover a kind of care that is not currently listed for New York.",
+      text: "Tick-borne illness is also part of New York’s public-health picture, especially outside New York City. The New York State Department of Health’s 2025 tickborne disease surveillance report counted 18,704 confirmed or probable Lyme disease cases in 2024 in New York State excluding New York City, with cases reported in all 57 counties outside the city, and an incidence of 164.8 per 100,000. The report notes that a 2022 change in the national surveillance case definition contributed to the higher counts, so the number should be read with that in mind. A Health Optimization Program is not a Lyme pathway. If Lyme disease or a complicated, lingering illness is why you are calling, say so on the consult. We will not stretch a proactive program to cover a kind of care that is not currently listed for New York.",
     },
     {
       type: "p",
-      text: "The Census Bureau’s 2024 ACS 1-year estimates put 18.9% of New York’s population at age 65 or older, slightly above the U.S. figure of 18.0%. The [Longevity & Healthy Aging Program](/health-optimization-programs) remains open to New York residents who want that longer view; it is not the only program we emphasize here, because the search and day-to-day pattern in this state is at least as much about energy and hormones as it is about age.",
+      text: "The Census Bureau’s 2024 ACS 1-year estimates put 18.9% of New York’s population at age 65 or older, slightly above the U.S. figure of 18.0%. The [Longevity & Healthy Aging Program](/health-optimization-programs) remains open to New York residents who want that longer view; it is not the only program we emphasize here, because day-to-day life in this state is at least as much about energy and hormones as it is about age.",
     },
     { type: "h2", text: "Who you see, and questions we will answer plainly" },
     {
@@ -103,7 +103,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "Two questions show up often in New York People Also Ask results: whether functional medicine doctors go to medical school, and whether a “functional doctor” can prescribe medication. Training is the credential list above, not a medical-school degree we do not have. Prescribing authority is a scope-of-practice question; it is not something this page will claim or hint at. If it matters to your case, ask on the consult, where licensing and scope are confirmed.",
+      text: "Two questions come up often from people in New York: whether functional medicine doctors go to medical school, and whether a “functional doctor” can prescribe medication. Training is the credential list above, not a medical-school degree we do not have. Prescribing authority is a scope-of-practice question; it is not something we will claim or hint at. If it matters to your case, ask on the consult, where licensing and scope are confirmed.",
     },
     { type: "h2", text: "How to start" },
     {
@@ -130,7 +130,7 @@ const newYork: HoStatePage = {
     },
     {
       q: "Can Dr. Chris prescribe medication in New York?",
-      a: "This page does not make prescribing claims. Licensing and scope of practice are confirmed before a first visit. If prescribing is part of what you need, ask that question on the consult rather than assuming it from a title.",
+      a: "We do not make prescribing claims. Licensing and scope of practice are confirmed before a first visit. If prescribing is part of what you need, ask that question on the consult rather than assuming it from a title.",
     },
     {
       q: "Do functional medicine doctors go to medical school?",

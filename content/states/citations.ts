@@ -10,3 +10,8 @@ export const CDC_OBESITY_2024_LABEL =
 
 export const CENSUS_AGE_65_2024_LABEL =
   "U.S. Census Bureau, American Community Survey 2024 1-year estimates, Geographic Comparison Table GCT0103 (share of the population age 65 and older)";
+
+export const CDC_NNDSS_2023_HREF = "https://stacks.cdc.gov/view/cdc/251108/cdc_251108_DS1.pdf";
+
+export const CDC_NNDSS_2023_LABEL =
+  "CDC National Notifiable Diseases Surveillance System annual tables, United States, 2023";

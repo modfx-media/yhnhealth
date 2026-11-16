@@ -24,11 +24,11 @@ const california: HoStatePage = {
     },
     {
       type: "p",
-      text: "What you are booking is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. Your Health Now does not have a California clinic, and Personalized Clinical Care — the functional medicine telehealth pathway for more complex or ongoing illness — is not currently listed for California. Both of those limits are intentional on this page. The programs are open to California residents because the site states that Health Optimization consults are open to residents of every state. The clinical pathway is open today in nine other places listed on the [Functional Medicine](/functional-medicine) page, not here.",
+      text: "What you are booking is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. Your Health Now does not have a California clinic, and Personalized Clinical Care — the functional medicine telehealth pathway for more complex or ongoing illness — is not currently listed for California. Both of those limits are stated here on purpose. The programs are open to California residents because the site states that Health Optimization consults are open to residents of every state. The clinical pathway is open today in nine other places listed on the [Functional Medicine](/functional-medicine) page, not here.",
     },
     {
       type: "p",
-      text: "Los Angeles, San Diego, and San Francisco all generate more “functional medicine + city” searches than “functional medicine california” itself. That is useful context, and it is not a reason to pretend we have a waiting room in any of those cities. This remains one statewide page.",
+      text: "Los Angeles, San Diego, and San Francisco are where California patients most often expect a walk-in functional medicine office. That expectation is not a waiting room we have in any of those cities. Care for California residents is one statewide video program with Dr. Chris, done from home.",
     },
     { type: "h2", text: "What is available in California — and what is not" },
     { type: "p", text: "Available to California residents:" },
@@ -44,7 +44,7 @@ const california: HoStatePage = {
       type: "ul",
       items: [
         "A Your Health Now office, a physical exam, or a chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you are not traveling to one of those clinics, the entire program is video.",
-        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. That pathway is currently offered in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. Arizona, Idaho, and Washington are already on that list; California is not. We will not blur the line to chase “functional medicine california” searches.",
+        "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness. That pathway is currently offered in New Jersey, Pennsylvania, Florida, Delaware, Vermont, Arizona, Idaho, Washington, and Washington, D.C. Arizona, Idaho, and Washington are already on that list; California is not. We will not describe a Health Optimization Program as that clinical pathway, and we do not offer functional medicine clinic care in California.",
         "A prediction that a program will produce a particular result. Program details are covered in the consult.",
         "A statement that Dr. Chris is licensed for every service in California. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
@@ -82,16 +82,16 @@ const california: HoStatePage = {
     },
     {
       type: "p",
-      text: "California is younger, as a whole, than the other states in this first group. The Census Bureau’s 2024 ACS 1-year estimates put 16.5% of California’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, and 21.8% in Florida. “Younger than Florida” is not the same thing as having no interest in aging well. DataForSEO currently measures a small but real volume for “longevity clinic california” and for “health optimization california.” Your Health Now is not a brick-and-mortar longevity clinic in California; it is a video program. The [Longevity & Healthy Aging Program](/health-optimization-programs) is the pathway written for people who want to take a proactive approach to energy, cognitive function, and longer-term wellness. The [Heart Health Optimization Program](/health-optimization-programs) sits next to it for residents who want a structured look at cardiovascular wellness and family history. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
+      text: "California is younger, as a whole, than the other states in this first group. The Census Bureau’s 2024 ACS 1-year estimates put 16.5% of California’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, and 21.8% in Florida. “Younger than Florida” is not the same thing as having no interest in aging well. People in Los Angeles, San Diego, and the Bay Area often want a longevity clinic they can walk into. Your Health Now does not keep a storefront clinic in any of those cities. Longevity support with Dr. Chris is a video program you do from home. The [Longevity & Healthy Aging Program](/health-optimization-programs) is the pathway written for people who want to take a proactive approach to energy, cognitive function, and longer-term wellness. The [Heart Health Optimization Program](/health-optimization-programs) sits next to it for residents who want a structured look at cardiovascular wellness and family history. Neither program is emergency care, and neither replaces a local physician when urgent symptoms appear.",
     },
     {
       type: "p",
-      text: "The third program this page highlights is the [Hormone Balance & Vitality Program](/health-optimization-programs), for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. The article on [functional medicine, hormones, and thyroid](/articles/functional-medicine-hormone-thyroid) is a useful briefing before the consult, not a substitute for one. If inflammation or lingering discomfort is more of the picture than hormones, [inflammation and chronic illness](/articles/inflammation-chronic-illness) and [personalized nutrition and functional medicine](/articles/personalized-nutrition-functional-medicine) are the closer reads, and the Inflammation & Pain Recovery Program remains open to California residents on the main [programs](/health-optimization-programs) page.",
+      text: "The third program highlighted for California is the [Hormone Balance & Vitality Program](/health-optimization-programs), for symptoms that may be related to hormone imbalance such as fatigue, weight changes, poor sleep, mood changes, or low energy. The article on [functional medicine, hormones, and thyroid](/articles/functional-medicine-hormone-thyroid) is a useful briefing before the consult, not a substitute for one. If inflammation or lingering discomfort is more of the picture than hormones, [inflammation and chronic illness](/articles/inflammation-chronic-illness) and [personalized nutrition and functional medicine](/articles/personalized-nutrition-functional-medicine) are the closer reads, and the Inflammation & Pain Recovery Program remains open to California residents on the main [programs](/health-optimization-programs) page.",
     },
     { type: "h2", text: "Limits of this offer, stated plainly" },
     {
       type: "p",
-      text: "California People Also Ask results also ask what a functional medicine doctor actually does, how that differs from a regular doctor, and what the disadvantages are. Those are fair questions, especially on a page that cannot offer an in-state clinic or the more intensive clinical pathway.",
+      text: "People in California often ask what a functional medicine doctor actually does, how that differs from a regular doctor, and what the disadvantages are. Those are fair questions, especially where there is no in-state clinic and the more intensive clinical pathway is not offered.",
     },
     {
       type: "p",

@@ -198,7 +198,7 @@ export default function HeroSection() {
                   href="/health-optimization-programs"
                   className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3.5 text-[12px] font-bold uppercase tracking-[0.22em] text-white backdrop-blur transition-colors hover:border-accent hover:text-accent sm:px-7 sm:py-4"
                 >
-                  Book Free Health Optimization Consultation
+                  Learn More – Health Optimization Programs
                   <ArrowUpRight size={14} />
                 </Link>
                 <Link

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 import Script from "next/script";
-import { Phone, MapPin, Calendar, ArrowUpRight, Video, Clock, Navigation } from "lucide-react";
+import { Phone, Calendar, ArrowUpRight, Video, Clock, Navigation } from "lucide-react";
 import { Breadcrumbs } from "@/components/page/Primitives";
 import { useBookingPopup } from "@/components/BookingPopup";
 import { LOCATIONS } from "@/lib/siteData";
@@ -13,11 +13,6 @@ const MAP_EMBEDS: Record<string, string> = {
     "https://www.google.com/maps?q=5+W+Chestnut+Ave,+Merchantville,+NJ+08109&output=embed",
   Chalfont:
     "https://www.google.com/maps?q=350+N+Main+St+%23201,+Chalfont,+PA+18914&output=embed",
-};
-
-const LOCATION_STATE: Record<string, string> = {
-  Merchantville: "NJ",
-  Chalfont: "PA",
 };
 
 const FM_BOOKING_URL =
@@ -88,22 +83,11 @@ export default function ContactClient() {
             />
             <p className="text-[10px] font-bold uppercase tracking-[0.32em] text-accent">Visit or Book</p>
             <h2 className="mt-3 font-display text-3xl font-bold leading-tight md:text-4xl">
-              Two locations. <br />
-              Book in seconds.
+              Book a consult. <br />
+              In seconds.
             </h2>
 
             <div className="mt-10 space-y-8">
-              {LOCATIONS.map((loc) => (
-                <LocationBlock
-                  key={loc.name}
-                  title={`${loc.name}, ${LOCATION_STATE[loc.name] ?? ""}`}
-                  address={loc.address}
-                  phone={loc.phone}
-                  tel={loc.tel}
-                  bookingUrl={loc.bookingUrl}
-                />
-              ))}
-
               <div className="rounded-2xl border border-accent/40 bg-white/5 p-6 backdrop-blur">
                 <p className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
                   <Video size={11} strokeWidth={2.25} />
@@ -146,6 +130,41 @@ export default function ContactClient() {
                   (609) 651-7436
                 </a>
               </div>
+
+              <div className="rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur">
+                <p className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.28em] text-accent">
+                  <Video size={11} strokeWidth={2.25} />
+                  Health Optimization
+                </p>
+                <p className="mt-3 font-display text-2xl font-bold leading-tight text-white">
+                  Book a Free Discovery Call
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-white/70">
+                  A complimentary 30-minute call with Dr. Chris to find the Health
+                  Optimization Program that fits your goals. Open to residents in{" "}
+                  <Link href="/health-optimization-programs#coverage" className="font-semibold text-accent hover:text-white">
+                    all 50 states
+                  </Link>
+                  .
+                </p>
+                <a
+                  href={FM_BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    openBooking(FM_BOOKING_URL);
+                  }}
+                  className="group mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-[10px] font-bold uppercase tracking-[0.22em] text-white transition-all hover:-translate-y-0.5 hover:bg-accent-dark"
+                >
+                  <Calendar size={12} strokeWidth={2.25} />
+                  Book a Free Discovery Call
+                  <ArrowUpRight
+                    size={12}
+                    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  />
+                </a>
+              </div>
             </div>
           </motion.aside>
         </div>
@@ -168,6 +187,20 @@ export default function ContactClient() {
                     referrerPolicy="no-referrer-when-downgrade"
                     className="absolute inset-0 h-full w-full border-0"
                   />
+                  <a
+                    href={loc.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openBooking(loc.bookingUrl);
+                    }}
+                    className="absolute bottom-3 left-1/2 z-10 inline-flex -translate-x-1/2 items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.22em] text-white shadow-card transition-all hover:-translate-y-0.5 hover:bg-accent-dark"
+                  >
+                    <Calendar size={12} strokeWidth={2.25} />
+                    Book Online
+                    <ArrowUpRight size={12} />
+                  </a>
                 </div>
                 <div className="flex flex-col gap-3 px-5 py-4 sm:flex-row sm:items-center sm:justify-between">
                   <div className="min-w-0">
@@ -212,47 +245,3 @@ export default function ContactClient() {
   );
 }
 
-function LocationBlock({
-  title,
-  address,
-  phone,
-  tel,
-  bookingUrl,
-}: {
-  title: string;
-  address: string;
-  phone: string;
-  tel: string;
-  bookingUrl: string;
-}) {
-  const { openBooking } = useBookingPopup();
-  return (
-    <div>
-      <p className="font-display text-lg font-bold">{title}</p>
-      <p className="mt-3 inline-flex items-start gap-2 text-sm text-white/75">
-        <MapPin size={13} className="mt-0.5 shrink-0 text-accent" strokeWidth={2} />
-        <span>{address}</span>
-      </p>
-      <div className="mt-3 flex flex-wrap items-center gap-3">
-        <a href={tel} className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-accent">
-          <Phone size={13} className="text-accent" strokeWidth={2} />
-          {phone}
-        </a>
-        <a
-          href={bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => {
-            e.preventDefault();
-            openBooking(bookingUrl);
-          }}
-          className="group inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-[10px] font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-accent-dark"
-        >
-          <Calendar size={12} strokeWidth={2.25} />
-          Book Online
-          <ArrowUpRight size={12} className="transition-transform group-hover:translate-x-0.5" />
-        </a>
-      </div>
-    </div>
-  );
-}

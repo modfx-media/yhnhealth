@@ -3,12 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, type LucideIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Breadcrumbs, FadeUp, Parallax } from "@/components/page/Primitives";
+import { iconFromName } from "@/lib/cms/icons";
 import { CLINICS } from "@/lib/pseoData";
 
 export type ServiceSection = { heading?: string; body: string };
-export type ServiceBenefit = { icon: LucideIcon; title: string; body?: string };
+export type ServiceBenefit = { icon: string; title: string; body?: string };
 export type ServiceRelated = { slug: string; label: string };
 
 export type ServiceConfig = {
@@ -188,7 +189,7 @@ export default function ServicePage({ config }: { config: ServiceConfig }) {
                 className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
               >
                 {benefits.items.map((item, i) => {
-                  const Icon = item.icon;
+                  const Icon = iconFromName(item.icon);
                   return (
                     <motion.div
                       key={i}

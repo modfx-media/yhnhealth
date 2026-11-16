@@ -9,9 +9,7 @@ import ServicesGrid from "@/components/home/ServicesGrid";
 import MeetTeamSection from "@/components/home/MeetTeamSection";
 import MissionBanner from "@/components/home/MissionBanner";
 import ArticlesSection from "@/components/home/ArticlesSection";
-import NewsletterSection from "@/components/home/NewsletterSection";
 import HoursContactSection from "@/components/home/HoursContactSection";
-import LocationMapSection from "@/components/home/LocationMapSection";
 import DoctorSnippetSection from "@/components/home/DoctorSnippetSection";
 import QuestionFormSection from "@/components/home/QuestionFormSection";
 
@@ -31,9 +29,7 @@ export default function HomePageView() {
       <MissionBanner />
       <ArticlesSection />
       <QuestionFormSection />
-      <NewsletterSection />
       <HoursContactSection />
-      <LocationMapSection />
     </main>
   );
 }

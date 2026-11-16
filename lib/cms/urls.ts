@@ -1,3 +1,5 @@
+import { resolveSiteUrl, SITE_URL } from "../siteUrl";
+
 const APEX = "https://yhnhealth.com";
 const WWW = "https://www.yhnhealth.com";
 
@@ -6,7 +8,7 @@ function stripSlash(value: string): string {
 }
 
 export function getPublicSiteURL(): string {
-  return stripSlash(process.env.NEXT_PUBLIC_SITE_URL || APEX);
+  return SITE_URL;
 }
 
 export function getServerURL(): string {
@@ -15,12 +17,12 @@ export function getServerURL(): string {
 
   if (process.env.VERCEL) {
     if (server && !/localhost|127\.0\.0\.1/i.test(server)) {
-      return stripSlash(server);
+      return resolveSiteUrl(server);
     }
     return site;
   }
 
-  if (server) return stripSlash(server);
+  if (server) return resolveSiteUrl(server);
   return site || "http://localhost:3000";
 }
 

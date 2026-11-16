@@ -17,18 +17,18 @@ const FM_BOOKING_URL =
   "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2";
 
 const BENEFITS = [
-  "Speak directly with Dr. Chris",
-  "Review your goals & symptoms",
-  "See if functional medicine fits",
+  "Address your unique health goals",
+  "Focused, ongoing guidance",
+  "Lasting health improvements",
 ];
 
 const CASES = [
-  "Fatigue & low energy",
-  "Hormone & thyroid concerns",
-  "Gut & digestive issues",
-  "Autoimmune & inflammation",
-  "Chronic Lyme & complex illness",
-  "Brain fog & sleep issues",
+  "Weight & metabolism",
+  "Hormone balance",
+  "Energy & burnout",
+  "Thyroid concerns",
+  "Gut health",
+  "Longevity & healthy aging",
 ];
 
 export default function ConsultationCallBanner() {
@@ -63,23 +63,23 @@ export default function ConsultationCallBanner() {
             <div className="md:col-span-7">
               <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.32em] text-accent-dark">
                 <FlaskConical size={12} strokeWidth={2.25} />
-                Functional Medicine · Telehealth
+                Health Optimization · Telehealth
               </span>
 
               <h2 className="mt-6 font-display text-3xl font-bold leading-[1.1] text-brand md:text-4xl lg:text-5xl">
-                Free 30-Min{" "}
+                30 Minutes with{" "}
                 <span className="font-script font-normal italic text-accent">
-                  Consultation Call
+                  Dr. Chris
                 </span>
               </h2>
 
               <p className="mt-5 max-w-xl text-base leading-relaxed text-stone md:text-lg">
-                Wondering if functional medicine is the right path for your
-                chronic symptoms? Start with a complimentary 30-minute phone
-                consultation with Dr. Chris, no waiting room, no
-                in-person visit required. Open to residents in{" "}
-                <Link href="/functional-medicine#states" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
-                  9 states nationwide
+                Health Optimization Programs are structured, doctor-led pathways
+                for energy, hormones, metabolism, longevity, and overall wellness.
+                Start with a complimentary 30-minute discovery call with Dr. Chris.
+                Open to residents in{" "}
+                <Link href="/health-optimization-programs#coverage" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
+                  all 50 states
                 </Link>
                 .
               </p>
@@ -127,8 +127,8 @@ export default function ConsultationCallBanner() {
                   30 minutes with Dr. Chris
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-stone">
-                  Functional medicine telehealth visits available across 9
-                  states nationwide. Pick a time that works for you.
+                  A complimentary 30-minute discovery call, by secure video,
+                  open to residents in all 50 states.
                 </p>
 
                 <div className="mt-5 space-y-3">
@@ -144,10 +144,10 @@ export default function ConsultationCallBanner() {
                   >
                     <div>
                       <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-white/85">
-                        Free 30-Min Consult
+                        Free Discovery Call
                       </p>
                       <p className="mt-1 font-display text-lg font-bold text-white">
-                        Book with Dr. Chris
+                        30 minutes with Dr. Chris
                       </p>
                     </div>
                     <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-accent">
@@ -166,7 +166,7 @@ export default function ConsultationCallBanner() {
                           className="text-accent"
                           strokeWidth={2.25}
                         />
-                        9 States Nationwide
+                        50 States Nationwide
                       </p>
                     </div>
                     <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand/5 text-brand">

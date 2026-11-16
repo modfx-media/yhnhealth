@@ -65,7 +65,7 @@ export default function StatesHubMap({ live }: { live: LiveState[] }) {
         {active
           ? current
             ? "Guide published. Open the state page."
-            : "Coming soon. No page and no URL yet."
+            : "Coming soon. A written guide is not published yet."
           : "Gold states have a guide. Other states are coming soon and are not linked."}
       </p>
     </div>

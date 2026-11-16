@@ -3,34 +3,6 @@
  * Every paragraph and subheading is preserved word-for-word from the live site.
  * Hero image filenames mirror the slug under /public/images/services/.
  */
-import {
-  Activity,
-  Bone,
-  Brain,
-  Briefcase,
-  CheckCircle2,
-  Cpu,
-  Frown,
-  Heart,
-  Keyboard,
-  Lightbulb,
-  Mic2,
-  Monitor,
-  Moon,
-  Mouse,
-  PersonStanding,
-  Pill,
-  Repeat,
-  Shield,
-  ShieldCheck,
-  Sparkles,
-  Stethoscope,
-  TrendingUp,
-  Users,
-  Utensils,
-  Workflow,
-  Zap,
-} from "lucide-react";
 import type { ServiceConfig } from "@/components/page/ServicePage";
 
 const RELATED: Record<string, { slug: string; label: string }[]> = {
@@ -98,15 +70,15 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "Common Symptoms When Health Is Compromised",
       title: "Signs your nervous system needs attention",
       items: [
-        { icon: Activity, title: "Pain", body: "Acute or chronic discomfort that limits daily life." },
-        { icon: Moon, title: "Fatigue", body: "Constant low energy despite rest." },
-        { icon: Frown, title: "Irritability", body: "Mood swings driven by stress and tension." },
-        { icon: Moon, title: "Sleeplessness", body: "Trouble falling or staying asleep." },
-        { icon: Brain, title: "Headaches", body: "Tension and migraine headaches that recur." },
-        { icon: Utensils, title: "Digestive problems", body: "Nervous system dysregulation often shows up here first." },
-        { icon: Zap, title: "Stress", body: "Persistent fight-or-flight overload." },
-        { icon: Lightbulb, title: "Inattentiveness", body: "Brain fog, poor focus, slowed reactions." },
-        { icon: Shield, title: "Sickness", body: "An immune system that can't keep up." },
+        { icon: "Activity", title: "Pain", body: "Acute or chronic discomfort that limits daily life." },
+        { icon: "Moon", title: "Fatigue", body: "Constant low energy despite rest." },
+        { icon: "Frown", title: "Irritability", body: "Mood swings driven by stress and tension." },
+        { icon: "Moon", title: "Sleeplessness", body: "Trouble falling or staying asleep." },
+        { icon: "Brain", title: "Headaches", body: "Tension and migraine headaches that recur." },
+        { icon: "Utensils", title: "Digestive problems", body: "Nervous system dysregulation often shows up here first." },
+        { icon: "Zap", title: "Stress", body: "Persistent fight-or-flight overload." },
+        { icon: "Lightbulb", title: "Inattentiveness", body: "Brain fog, poor focus, slowed reactions." },
+        { icon: "Shield", title: "Sickness", body: "An immune system that can't keep up." },
       ],
     },
     related: pickRelated("chiropractic", "family-chiropractic-care"),
@@ -419,31 +391,31 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       title: "Five non-negotiable quality standards",
       items: [
         {
-          icon: Sparkles,
+          icon: "Sparkles",
           title: "Purity",
           body:
             "They must be at least 99% pure and contain no fillers, binders, dyes, or other unknown additives.",
         },
         {
-          icon: ShieldCheck,
+          icon: "ShieldCheck",
           title: "Safety & Effectiveness",
           body:
             "They must be safe and effective, and their ingredients must be third-party tested for purity.",
         },
         {
-          icon: Pill,
+          icon: "Pill",
           title: "Bioavailability",
           body:
             "They are formulated to be fully bioavailable, meaning the body can absorb nutrients more quickly and for longer.",
         },
         {
-          icon: Workflow,
+          icon: "Workflow",
           title: "Manufacturing",
           body:
             "Strict guidelines are present to ensure all product processing provides only the intended formulations and support.",
         },
         {
-          icon: CheckCircle2,
+          icon: "CheckCircle2",
           title: "Sourcing",
           body:
             "They must adhere to guidelines that ensure the ingredients and compositions are only obtained from pure, non-toxic, and organic sources.",
@@ -499,12 +471,12 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "Our Ergonomic Assessment Determines",
       title: "Six factors that shape your daily health",
       items: [
-        { icon: Monitor, title: "How your computer is positioned" },
-        { icon: Keyboard, title: "Where your keyboard is located" },
-        { icon: Briefcase, title: "How high your desk is" },
-        { icon: PersonStanding, title: "What type of chair you use" },
-        { icon: Mouse, title: "How you interact with your environment" },
-        { icon: Repeat, title: "What recurring body patterns you have adapted" },
+        { icon: "Monitor", title: "How your computer is positioned" },
+        { icon: "Keyboard", title: "Where your keyboard is located" },
+        { icon: "Briefcase", title: "How high your desk is" },
+        { icon: "PersonStanding", title: "What type of chair you use" },
+        { icon: "Mouse", title: "How you interact with your environment" },
+        { icon: "Repeat", title: "What recurring body patterns you have adapted" },
       ],
     },
     related: pickRelated("other", "ergonomics"),
@@ -535,19 +507,19 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       title: "Three measurable wins for your team",
       items: [
         {
-          icon: TrendingUp,
+          icon: "TrendingUp",
           title: "1. Productivity",
           body:
             "Performance improves when employees are present and engaged, rather than home sick or slowed by illness.",
         },
         {
-          icon: Zap,
+          icon: "Zap",
           title: "2. Motivation",
           body:
             "Wellness talks empower workers to take their health seriously and make active, health-conscious choices.",
         },
         {
-          icon: Heart,
+          icon: "Heart",
           title: "3. Morale",
           body: "Workplace positivity improves when workers are happy and healthy.",
         },
@@ -650,13 +622,13 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "The YHN Difference",
       title: "Why employers choose Worksite Care",
       items: [
-        { icon: CheckCircle2, title: "ZERO COST to the Organization" },
-        { icon: Shield, title: "ZERO LIABILITY to the Organization" },
-        { icon: Sparkles, title: "ZERO WORK for You - All you do is Show us the Room" },
-        { icon: Heart, title: "ONLY Safe, Natural, Effective, Drug-Free, & Surgery-Free care" },
-        { icon: Briefcase, title: "NO Dedicated on-site Space needed" },
-        { icon: TrendingUp, title: "INCREASE Employee Productivity & Engagement" },
-        { icon: Users, title: "ENHANCE Participation in Other Health Initiatives" },
+        { icon: "CheckCircle2", title: "ZERO COST to the Organization" },
+        { icon: "Shield", title: "ZERO LIABILITY to the Organization" },
+        { icon: "Sparkles", title: "ZERO WORK for You - All you do is Show us the Room" },
+        { icon: "Heart", title: "ONLY Safe, Natural, Effective, Drug-Free, & Surgery-Free care" },
+        { icon: "Briefcase", title: "NO Dedicated on-site Space needed" },
+        { icon: "TrendingUp", title: "INCREASE Employee Productivity & Engagement" },
+        { icon: "Users", title: "ENHANCE Participation in Other Health Initiatives" },
       ],
     },
     related: pickRelated("other", "worksite-care"),
@@ -686,12 +658,12 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "What Sets Our Approach Apart",
       title: "Back pain care built around the actual cause",
       items: [
-        { icon: Stethoscope, title: "Exam-driven diagnosis", body: "Orthopedic and neurological testing before any adjustment." },
-        { icon: Activity, title: "Decompression for discs", body: "Flexion-distraction traction for herniated and bulging discs." },
-        { icon: ShieldCheck, title: "Sciatica-specific care", body: "We differentiate disc, piriformis, SI, and stenosis cases." },
-        { icon: Zap, title: "Fast phase-one relief", body: "Most patients feel meaningful change in 1-3 visits." },
-        { icon: Heart, title: "Hip & core rebuild", body: "Long-term correction, not just symptom chasing." },
-        { icon: CheckCircle2, title: "Imaging only when indicated", body: "We avoid unnecessary MRIs and scans." },
+        { icon: "Stethoscope", title: "Exam-driven diagnosis", body: "Orthopedic and neurological testing before any adjustment." },
+        { icon: "Activity", title: "Decompression for discs", body: "Flexion-distraction traction for herniated and bulging discs." },
+        { icon: "ShieldCheck", title: "Sciatica-specific care", body: "We differentiate disc, piriformis, SI, and stenosis cases." },
+        { icon: "Zap", title: "Fast phase-one relief", body: "Most patients feel meaningful change in 1-3 visits." },
+        { icon: "Heart", title: "Hip & core rebuild", body: "Long-term correction, not just symptom chasing." },
+        { icon: "CheckCircle2", title: "Imaging only when indicated", body: "We avoid unnecessary MRIs and scans." },
       ],
     },
     related: [
@@ -726,12 +698,12 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "Conditions We Treat Most Often",
       title: "From tech neck to whiplash",
       items: [
-        { icon: Brain, title: "Cervicogenic headaches", body: "Upper-cervical adjustments and suboccipital release." },
-        { icon: Zap, title: "Tension & migraine support", body: "Trigger mapping paired with hands-on care." },
-        { icon: ShieldCheck, title: "Whiplash protocols", body: "Phased acute-to-rehab care with proper documentation." },
-        { icon: Monitor, title: "Tech-neck correction", body: "Posture and screen-setup coaching that actually sticks." },
-        { icon: Stethoscope, title: "Red-flag screening", body: "We rule out serious causes before every treatment plan." },
-        { icon: Heart, title: "Low-force options available", body: "Instrument-assisted care for patients who prefer it." },
+        { icon: "Brain", title: "Cervicogenic headaches", body: "Upper-cervical adjustments and suboccipital release." },
+        { icon: "Zap", title: "Tension & migraine support", body: "Trigger mapping paired with hands-on care." },
+        { icon: "ShieldCheck", title: "Whiplash protocols", body: "Phased acute-to-rehab care with proper documentation." },
+        { icon: "Monitor", title: "Tech-neck correction", body: "Posture and screen-setup coaching that actually sticks." },
+        { icon: "Stethoscope", title: "Red-flag screening", body: "We rule out serious causes before every treatment plan." },
+        { icon: "Heart", title: "Low-force options available", body: "Instrument-assisted care for patients who prefer it." },
       ],
     },
     related: [
@@ -766,12 +738,12 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "What Patients Gain",
       title: "Relief that outlasts the visit",
       items: [
-        { icon: Activity, title: "Restored thoracic motion", body: "Manual mobilization and adjustment of stiff segments." },
-        { icon: Heart, title: "Easier breathing", body: "Diaphragm and posterior-chain rehab for shallow breathers." },
-        { icon: ShieldCheck, title: "Red-flag screening first", body: "We rule out cardiac and other non-mechanical causes." },
-        { icon: Monitor, title: "Real workstation fixes", body: "Screen height and chair adjustments matched to you." },
-        { icon: Stethoscope, title: "Rib-mechanics testing", body: "Rib-head dysfunction is common and very treatable." },
-        { icon: CheckCircle2, title: "Long-term durability", body: "Posture rebuild, not a one-visit fix." },
+        { icon: "Activity", title: "Restored thoracic motion", body: "Manual mobilization and adjustment of stiff segments." },
+        { icon: "Heart", title: "Easier breathing", body: "Diaphragm and posterior-chain rehab for shallow breathers." },
+        { icon: "ShieldCheck", title: "Red-flag screening first", body: "We rule out cardiac and other non-mechanical causes." },
+        { icon: "Monitor", title: "Real workstation fixes", body: "Screen height and chair adjustments matched to you." },
+        { icon: "Stethoscope", title: "Rib-mechanics testing", body: "Rib-head dysfunction is common and very treatable." },
+        { icon: "CheckCircle2", title: "Long-term durability", body: "Posture rebuild, not a one-visit fix." },
       ],
     },
     related: [
@@ -806,12 +778,12 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
       eyebrow: "What We Address",
       title: "The whole shoulder complex, not just the ache",
       items: [
-        { icon: Activity, title: "Restored overhead motion", body: "Combined joint and soft-tissue treatment." },
-        { icon: Heart, title: "Less night pain", body: "Most patients notice improved sleep within 2-3 weeks." },
-        { icon: Stethoscope, title: "Whole-chain assessment", body: "Cuff, scapula, thoracic spine, and neck evaluated together." },
-        { icon: ShieldCheck, title: "Post-op friendly", body: "Rehab coordinated alongside your surgeon's protocol." },
-        { icon: Zap, title: "ART & IASTM in-house", body: "Precise soft-tissue tools most PT clinics don't offer." },
-        { icon: CheckCircle2, title: "Sport-specific recovery", body: "Return-to-throw and return-to-lift progressions." },
+        { icon: "Activity", title: "Restored overhead motion", body: "Combined joint and soft-tissue treatment." },
+        { icon: "Heart", title: "Less night pain", body: "Most patients notice improved sleep within 2-3 weeks." },
+        { icon: "Stethoscope", title: "Whole-chain assessment", body: "Cuff, scapula, thoracic spine, and neck evaluated together." },
+        { icon: "ShieldCheck", title: "Post-op friendly", body: "Rehab coordinated alongside your surgeon's protocol." },
+        { icon: "Zap", title: "ART & IASTM in-house", body: "Precise soft-tissue tools most PT clinics don't offer." },
+        { icon: "CheckCircle2", title: "Sport-specific recovery", body: "Return-to-throw and return-to-lift progressions." },
       ],
     },
     related: [
@@ -822,6 +794,3 @@ export const SERVICE_CONTENT: Record<string, ServiceConfig> = {
     ],
   },
 };
-
-// Quietly reference unused icons so tree-shaking still picks them, and TS doesn't warn:
-void Bone; void Cpu; void Mic2; void Stethoscope;
