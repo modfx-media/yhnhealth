@@ -147,14 +147,8 @@ export default function ContactClient() {
                   </Link>
                   .
                 </p>
-                <a
-                  href={FM_BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    openBooking(FM_BOOKING_URL);
-                  }}
+                <Link
+                  href="/health-optimization-programs"
                   className="group mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-[10px] font-bold uppercase tracking-[0.22em] text-white transition-all hover:-translate-y-0.5 hover:bg-accent-dark"
                 >
                   <Calendar size={12} strokeWidth={2.25} />
@@ -163,7 +157,7 @@ export default function ContactClient() {
                     size={12}
                     className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </motion.aside>

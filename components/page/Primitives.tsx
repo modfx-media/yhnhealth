@@ -38,12 +38,15 @@ export function BookingStrip({
   title = "Ready to feel the difference?",
   copy = "Schedule your visit at our Merchantville, NJ or Chalfont, PA location.",
   fm = false,
+  consultHref,
 }: {
   variant?: "navy" | "cream" | "gold" | "split";
   eyebrow?: string;
   title?: string;
   copy?: string;
   fm?: boolean;
+  /** When set with `fm`, the consult control goes here instead of the booking widget. */
+  consultHref?: string;
 }) {
   const palettes = {
     navy: "bg-brand text-white",
@@ -91,11 +94,11 @@ export function BookingStrip({
             </Link>
           )}
           <a
-            href={fm ? FM_BOOKING_URL : "tel:8565322063"}
-            target={fm ? "_blank" : undefined}
-            rel={fm ? "noopener noreferrer" : undefined}
+            href={fm ? (consultHref ?? FM_BOOKING_URL) : "tel:8565322063"}
+            target={fm && !consultHref ? "_blank" : undefined}
+            rel={fm && !consultHref ? "noopener noreferrer" : undefined}
             onClick={
-              fm
+              fm && !consultHref
                 ? (e) => {
                     e.preventDefault();
                     openBooking(FM_BOOKING_URL);

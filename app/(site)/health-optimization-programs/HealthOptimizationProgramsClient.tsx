@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { useBookingPopup } from "@/components/BookingPopup";
 import {
   ArrowUpRight,
   Compass,
@@ -106,7 +105,6 @@ const PATHWAYS = [
 ];
 
 export default function HealthOptimizationProgramsClient() {
-  const { openBooking } = useBookingPopup();
   return (
     <main className="bg-white">
       {/* HERO */}
@@ -206,15 +204,7 @@ export default function HealthOptimizationProgramsClient() {
                   </li>
                 </ul>
                 <Link
-                  href="https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    openBooking(
-                      "https://yourhealthnow.janeapp.com/locations/yhn/book#staff_member/2"
-                    );
-                  }}
+                  href="/health-optimization-programs"
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-6 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
                 >
                   Schedule your FREE Discovery Call
@@ -420,6 +410,7 @@ export default function HealthOptimizationProgramsClient() {
         title="A complimentary 30-minute consultation."
         copy="Speak with the Doctor to find the program that fits your goals, weight, hormones, energy, longevity, and more."
         fm
+        consultHref="/health-optimization-programs"
       />
     </main>
   );
