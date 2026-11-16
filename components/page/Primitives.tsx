@@ -39,6 +39,7 @@ export function BookingStrip({
   copy = "Schedule your visit at our Merchantville, NJ or Chalfont, PA location.",
   fm = false,
   consultHref,
+  consultLabel = "Free Consult Call",
 }: {
   variant?: "navy" | "cream" | "gold" | "split";
   eyebrow?: string;
@@ -51,6 +52,8 @@ export function BookingStrip({
    * way other Jane links do. A site path stays in the current tab.
    */
   consultHref?: string;
+  /** Visible label for the consult control. CSS uppercases it. */
+  consultLabel?: string;
 }) {
   const palettes = {
     navy: "bg-brand text-white",
@@ -119,7 +122,7 @@ export function BookingStrip({
             }`}
           >
             <Phone size={12} strokeWidth={2.25} />
-            Free Consult Call
+            {consultLabel}
           </a>
           {fm && (
             <a
