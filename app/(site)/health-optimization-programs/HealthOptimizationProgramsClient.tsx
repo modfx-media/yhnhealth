@@ -381,7 +381,7 @@ export default function HealthOptimizationProgramsClient() {
               href="/functional-medicine"
               className="mt-7 inline-flex items-center gap-2 rounded-full bg-brand px-7 py-3.5 text-[11px] font-bold uppercase tracking-[0.24em] text-white transition-colors hover:bg-accent"
             >
-              Explore Personalized Clinical Care
+              Explore Functional Medicine Clinical Care
               <ArrowUpRight size={13} />
             </Link>
           </FadeUp>
@@ -422,6 +422,7 @@ export default function HealthOptimizationProgramsClient() {
         copy="Speak with the Doctor to find the program that fits your goals, weight, hormones, energy, longevity, and more."
         fm
         consultHref={HO_DISCOVERY_URL}
+        consultLabel="Free Discovery Call"
       />
     </main>
   );
