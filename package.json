@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:metadata": "tsx --test lib/cms/resolveMetadata.test.ts",
     "generate:types": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/generate.ts types",
     "generate:importmap": "node scripts/cms/patch-payload-loader.mjs && tsx --env-file=.env scripts/cms/generate.ts importmap",
     "cms:export": "tsx scripts/cms/export-content.ts",
