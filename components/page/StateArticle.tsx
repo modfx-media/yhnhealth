@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ShieldCheck, Stethoscope } from "lucide-react";
 import { FadeUp } from "@/components/page/Primitives";
 import RichParagraph, { RichInline } from "@/components/page/RichParagraph";
-import FMCPBadge from "@/components/FMCPBadge";
 import type { CopyBlock, HoFaq, SourceNote } from "@/content/states/types";
 
 export function splitIntro(blocks: CopyBlock[]) {
@@ -94,16 +93,15 @@ export function ArticleSources({ sources }: { sources: SourceNote[] }) {
   );
 }
 
-/** Matches the byline already used on functional medicine state pages. No review date until one is confirmed. */
+/** Health Optimization pages. No review date until one is confirmed. */
 export function ClinicianReview({ children }: { children?: ReactNode }) {
   return (
     <FadeUp>
       <div className="mt-16 flex max-w-3xl flex-col items-start gap-6 rounded-3xl border border-brand/10 bg-white p-6 shadow-soft sm:flex-row sm:items-center">
-        <FMCPBadge size={72} showLabel={false} />
         <div>
           <p className="flex items-center gap-2 text-sm font-semibold text-brand">
             <Stethoscope size={14} className="text-accent" />
-            Medically reviewed by Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP
+            Medically reviewed by Dr. Lillee Chianese, DC, ART, CPSC, NRCME
           </p>
           {children}
           <Link

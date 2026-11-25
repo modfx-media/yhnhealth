@@ -86,7 +86,7 @@ export default function HealthOptimizationStatePage({ state }: { state: HoStateP
       <BookingStrip
         fm
         eyebrow="Free 30-Min Consult"
-        title={`Talk with Dr. Chris about a ${state.name} visit`}
+        title={`Talk with Dr. Lillee about a ${state.name} visit`}
         copy="The complimentary consult is a fit check on video. It is not a diagnosis, and it does not start a pathway by itself."
       />
     </main>

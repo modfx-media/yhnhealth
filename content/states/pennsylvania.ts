@@ -14,7 +14,7 @@ const pennsylvania: HoStatePage = {
   presence: "clinic",
   title: "Health Optimization Telehealth in Pennsylvania | YHN",
   metaDescription:
-    "Pennsylvania residents can start a Health Optimization Program by video with Dr. Chris. The Chalfont clinic is optional for chiropractic care.",
+    "Pennsylvania residents can start a Health Optimization Program by video with Dr. Lillee. The Chalfont clinic is optional for chiropractic care.",
   h1: "Health Optimization Programs by Telehealth in Pennsylvania",
   primaryKeyword: "functional medicine telehealth Pennsylvania",
   blocks: [
@@ -24,7 +24,7 @@ const pennsylvania: HoStatePage = {
     },
     {
       type: "p",
-      text: "Pennsylvania residents work with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. The programs are the same twelve structured pathways offered in other states: a complimentary 30-minute consult, a 90-minute telehealth visit, and a 6- or 12-month plan. What is distinctive here is the combination of that video pathway, an in-person clinic for people who want an exam or an adjustment, and an already live functional medicine telehealth page for more complex cases.",
+      text: "Pennsylvania residents work with Dr. Lillee Chianese, DC, ART, CPSC, NRCME, by secure video. The programs are the same twelve structured pathways offered in other states: a complimentary 30-minute consult, a 90-minute telehealth visit, and a 6- or 12-month plan. What is distinctive here is the combination of that video pathway, an in-person clinic for people who want an exam or an adjustment, and an already live functional medicine telehealth page for more complex cases.",
     },
     { type: "h2", text: "What is available in Pennsylvania — and what is not" },
     { type: "p", text: "Available to Pennsylvania residents:" },
@@ -48,7 +48,7 @@ const pennsylvania: HoStatePage = {
     },
     {
       type: "p",
-      text: "People in Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). We will not use this guide to give legal advice about other professions.",
+      text: "People in Pennsylvania sometimes mix up “PA” the state with “PA” the physician assistant, and they sometimes ask whether naturopathy is legal here. Your Health Now is not a naturopathic clinic and is not a physician-assistant practice. Telehealth for these programs is with Dr. Lillee, a chiropractic physician (DC, ART, CPSC, NRCME). Her training is on [Meet the Doctor](/meet-the-doctor). We will not use this guide to give legal advice about other professions.",
     },
     { type: "h2", text: "How care works from Pennsylvania" },
     {
@@ -94,7 +94,7 @@ const pennsylvania: HoStatePage = {
   faqs: [
     {
       q: "I live in western Pennsylvania. Do I have to come to Chalfont for a Health Optimization Program?",
-      a: "No. Chalfont is optional. Program visits with Dr. Chris are by secure video for Pennsylvania residents anywhere in the state, including Pittsburgh, Erie, and the rest of the west. The office is for an exam or an adjustment if you want one.",
+      a: "No. Chalfont is optional. Program visits with Dr. Lillee are by secure video for Pennsylvania residents anywhere in the state, including Pittsburgh, Erie, and the rest of the west. The office is for an exam or an adjustment if you want one.",
     },
     {
       q: "Can I combine a video program with in-person chiropractic care in Chalfont?",
@@ -106,11 +106,11 @@ const pennsylvania: HoStatePage = {
     },
     {
       q: "Can a PA practice functional medicine?",
-      a: "If you mean a physician assistant, that is a different license than the one described here, and we are not going to answer a scope-of-practice question for another profession. If you mean Pennsylvania the state: yes, Pennsylvania residents can use both Health Optimization Programs and functional medicine telehealth with Dr. Chris, as described above. His credentials are on [Meet the Doctor](/meet-the-doctor).",
+      a: "If you mean a physician assistant, that is a different license than the one described here, and we are not going to answer a scope-of-practice question for another profession. If you mean Pennsylvania the state: yes, Pennsylvania residents can use Health Optimization Programs with Dr. Lillee and functional medicine telehealth with Dr. Chris, as described above. Credentials for both are on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "Is Your Health Now a naturopathic clinic?",
-      a: "No. Dr. Chris is a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. We do not provide legal advice about naturopathy in Pennsylvania.",
+      a: "No. Dr. Lillee, who leads Health Optimization visits, is a chiropractic physician (DC, ART, CPSC, NRCME), not an MD. Functional medicine visits are with Dr. Chris, who is also not an MD. We do not provide legal advice about naturopathy in Pennsylvania.",
     },
     {
       q: "Where do I ask how a Pennsylvania program is set up?",

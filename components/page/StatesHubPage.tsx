@@ -84,7 +84,7 @@ export default function StatesHubPage({ hub, live }: { hub: HoHubPage; live: Liv
         fm
         eyebrow="Free 30-Min Consult"
         title="Start with a fit check, then open your state if it is live."
-        copy="The consult is on video with Dr. Chris. A state without a guide can still begin from the programs page."
+        copy="The consult is on video with Dr. Lillee. A state without a guide can still begin from the programs page."
       />
     </main>
   );

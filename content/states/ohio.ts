@@ -15,7 +15,7 @@ const ohio: HoStatePage = {
   abbreviation: "OH",
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in Ohio | YHN",
-  metaDescription: "Ohio residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in Ohio, including Columbus and Cleveland.",
+  metaDescription: "Ohio residents can start a Health Optimization Program by video with Dr. Lillee Chianese. There is no YHN clinic in Ohio, including Columbus and Cleveland.",
   h1: "Health Optimization Programs by Telehealth in Ohio",
   primaryKeyword: "health optimization telehealth in Ohio",
   blocks: [
@@ -25,7 +25,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "What an Ohio resident can start, from the lakefront to the Ohio River, is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is a proactive plan for people who want help with energy, hormones, metabolism, or a longer view of health, and who are not asking for a complex-illness workup. The opening call is a fit check. If you go on, the next meeting is ninety minutes on video. After that you decide whether to stay six months or a full year.",
+      text: "What an Ohio resident can start, from the lakefront to the Ohio River, is a video Health Optimization Program with Dr. Lillee Chianese, DC, ART, CPSC, NRCME. It is a proactive plan for people who want help with energy, hormones, metabolism, or a longer view of health, and who are not asking for a complex-illness workup. The opening call is a fit check. If you go on, the next meeting is ninety minutes on video. After that you decide whether to stay six months or a full year.",
     },
     {
       type: "p",
@@ -33,11 +33,11 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "Columbus, Cleveland, and Cincinnati are the three cities Ohio residents name first, and they are not interchangeable drives. None of them has a Your Health Now office, and neither do Toledo, Dayton, or Akron. A Columbus patient and a Cleveland patient get the same video visit with Dr. Chris. The program does not split by metro.",
+      text: "Columbus, Cleveland, and Cincinnati are the three cities Ohio residents name first, and they are not interchangeable drives. None of them has a Your Health Now office, and neither do Toledo, Dayton, or Akron. A Columbus patient and a Cleveland patient get the same video visit with Dr. Lillee. The program does not split by metro.",
     },
     {
       type: "p",
-      text: "People who live anywhere in Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a directory of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Chris.",
+      text: "People who live anywhere in Ohio sometimes ask for a list of major healthcare companies in the state, or how a naturopath differs from a functional medicine doctor. We will not publish a directory of Ohio health systems. Your Health Now is not a naturopathic clinic. Telehealth for these programs is with Dr. Lillee.",
     },
     {
       type: "h2",
@@ -51,7 +51,7 @@ const ohio: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
+        "A complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
       ],
     },
     {
@@ -112,7 +112,7 @@ const ohio: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. His biography is on [Meet the Doctor](/meet-the-doctor). A Health Optimization Program is not a replacement for your Ohio primary care relationship.",
+      text: "Telehealth visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD, and she is not a naturopathic physician. Her biography is on [Meet the Doctor](/meet-the-doctor). A Health Optimization Program is not a replacement for your Ohio primary care relationship.",
     },
     {
       type: "p",
@@ -149,8 +149,8 @@ const ohio: HoStatePage = {
       a: "Eastern time, which is Ohio\u2019s time zone statewide. A slot at 7:30 a.m. is 7:30 a.m. on your clock.",
     },
     {
-      q: "Is Dr. Chris a medical doctor or a naturopathic physician?",
-      a: "No. He is a Doctor of Chiropractic with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
+      q: "Is Dr. Lillee a medical doctor or a naturopathic physician?",
+      a: "No. She is a Doctor of Chiropractic (DC, ART, CPSC, NRCME). Her training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
     },
     {
       q: "Can I get a chiropractic adjustment in Ohio through this visit?",
@@ -158,7 +158,7 @@ const ohio: HoStatePage = {
     },
     {
       q: "I have questions about Lyme disease. Is this the right page?",
-      a: "A Health Optimization Program is not the Lyme pathway, and Personalized Clinical Care is not currently listed for Ohio. Tell Dr. Chris why you are calling on the complimentary consult so you are not placed in the wrong type of care.",
+      a: "A Health Optimization Program is not the Lyme pathway, and Personalized Clinical Care is not currently listed for Ohio. Tell Dr. Lillee why you are calling on the complimentary consult so you are not placed in the wrong type of care.",
     },
     {
       q: "Is the program different in Columbus than it is in Cleveland or Cincinnati?",

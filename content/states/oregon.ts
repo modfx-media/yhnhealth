@@ -13,7 +13,7 @@ const oregon: HoStatePage = {
   abbreviation: "OR",
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in Oregon | YHN",
-  metaDescription: "Oregon residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in Oregon. Book against Pacific time.",
+  metaDescription: "Oregon residents can start a Health Optimization Program by video with Dr. Lillee Chianese. There is no YHN clinic in Oregon. Book against Pacific time.",
   h1: "Health Optimization Programs by Telehealth in Oregon",
   primaryKeyword: "health optimization telehealth in Oregon",
   blocks: [
@@ -27,11 +27,11 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "From an Oregon address the visit is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, held on video. There is no Your Health Now room in Portland, Eugene, Salem, Bend, or Medford. The longer pathway for complex or ongoing illness, Personalized Clinical Care, is also not listed for this state. Washington, across the Columbia, is one of the nine places where that clinical pathway is published. A Portland ZIP code does not put you on Washington\u2019s page. If you live in California, use the California Health Optimization page instead of this one: [Health Optimization in California](/health-optimization-programs/california). The nine-place list itself is on [Functional Medicine](/functional-medicine).",
+      text: "From an Oregon address the visit is a Health Optimization Program with Dr. Lillee Chianese, DC, ART, CPSC, NRCME, held on video. There is no Your Health Now room in Portland, Eugene, Salem, Bend, or Medford. The longer pathway for complex or ongoing illness, Personalized Clinical Care, is also not listed for this state. Washington, across the Columbia, is one of the nine places where that clinical pathway is published. A Portland ZIP code does not put you on Washington\u2019s page. If you live in California, use the California Health Optimization page instead of this one: [Health Optimization in California](/health-optimization-programs/california). The nine-place list itself is on [Functional Medicine](/functional-medicine).",
     },
     {
       type: "p",
-      text: "Portland, Eugene, and Bend are the cities people name when they picture Oregon care, and they are hours apart. None of them has a Your Health Now waiting room. A patient in the Pearl and a patient in Bend get the same video visit with Dr. Chris. The coast and the dry side of the state are included in that same visit.",
+      text: "Portland, Eugene, and Bend are the cities people name when they picture Oregon care, and they are hours apart. None of them has a Your Health Now waiting room. A patient in the Pearl and a patient in Bend get the same video visit with Dr. Lillee. The coast and the dry side of the state are included in that same visit.",
     },
     {
       type: "h2",
@@ -45,7 +45,7 @@ const oregon: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
+        "A complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
       ],
     },
     {
@@ -57,12 +57,12 @@ const oregon: HoStatePage = {
       items: [
         "No exam room in the Pearl, in Beaverton, in Bend, or anywhere else in Oregon. An adjustment or a hands-on exam means traveling to Merchantville, New Jersey (5 W Chestnut Ave) or Chalfont, Pennsylvania (350 N Main St #201). The video program does not assume you will make that trip.",
         "Personalized Clinical Care, the pathway for complex or ongoing illness, is published for nine other places, Washington among them. It is not published for Oregon. A Portland street address, on its own, does not change that.",
-        "Nothing here claims Dr. Chris holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
+        "Nothing here claims Dr. Lillee holds every Oregon license. Scope is checked with you before a first appointment, because the rules depend on the state and on the kind of visit.",
       ],
     },
     {
       type: "p",
-      text: "People who live in Oregon sometimes ask what naturopaths may do in the state, or where someone nearby can get mental health help. Your Health Now is not a naturopathic clinic, and this guide is not a mental-health crisis resource. Telehealth for these programs is with Dr. Chris, a chiropractic physician with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
+      text: "People who live in Oregon sometimes ask what naturopaths may do in the state, or where someone nearby can get mental health help. Your Health Now is not a naturopathic clinic, and this guide is not a mental-health crisis resource. Telehealth for these programs is with Dr. Lillee, a chiropractic physician (DC, ART, CPSC, NRCME). Her training is on [Meet the Doctor](/meet-the-doctor). If you need urgent mental-health support, use local emergency services or a local clinician; do not use this program as a stand-in for that care.",
     },
     {
       type: "h2",
@@ -70,7 +70,7 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "You start with a half-hour fit check, booked through Jane App or by calling (609) 651-7436. Dr. Chris uses it to hear why you called and whether a proactive program makes sense from where you actually live, whether that is inner Portland, a coast town, or the dry side of the state. The call does not diagnose you and it does not enroll you. If you continue, the next meeting is ninety minutes on video for history and goals, and then you decide whether to stay six months or a year.",
+      text: "You start with a half-hour fit check, booked through Jane App or by calling (609) 651-7436. Dr. Lillee uses it to hear why you called and whether a proactive program makes sense from where you actually live, whether that is inner Portland, a coast town, or the dry side of the state. The call does not diagnose you and it does not enroll you. If you continue, the next meeting is ninety minutes on video for history and goals, and then you decide whether to stay six months or a year.",
     },
     {
       type: "p",
@@ -115,7 +115,7 @@ const oregon: HoStatePage = {
     },
     {
       type: "p",
-      text: "What we do, on this offer, is a structured Health Optimization Program: a documented intake, a 90-minute visit with Dr. Chris, a 6- or 12-month pathway, and follow-up, using a functional medicine approach. What we do not do from Oregon is provide a local physical exam, an adjustment, urgent or emergency care, or Personalized Clinical Care for complex illness. We also do not present Dr. Chris as a medical doctor or as a naturopathic physician. A Health Optimization Program is not a replacement for your Oregon primary care relationship.",
+      text: "What we do, on this offer, is a structured Health Optimization Program: a documented intake, a 90-minute visit with Dr. Lillee, a 6- or 12-month pathway, and follow-up, using a functional medicine approach. What we do not do from Oregon is provide a local physical exam, an adjustment, urgent or emergency care, or Personalized Clinical Care for complex illness. We also do not present Dr. Lillee as a medical doctor or as a naturopathic physician. A Health Optimization Program is not a replacement for your Oregon primary care relationship.",
     },
     {
       type: "p",
@@ -148,8 +148,8 @@ const oregon: HoStatePage = {
       a: "The calendar is Eastern time. Most of Oregon is Pacific time, so subtract three hours. Posted hours that run until 8:00 p.m. Eastern close at 5:00 p.m. Pacific. If you live in the part of Malheur County that uses Mountain time, subtract two hours.",
     },
     {
-      q: "Is Dr. Chris a medical doctor or a naturopathic physician?",
-      a: "No. He is a Doctor of Chiropractic with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
+      q: "Is Dr. Lillee a medical doctor or a naturopathic physician?",
+      a: "No. She is a Doctor of Chiropractic (DC, ART, CPSC, NRCME). Her training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
     },
     {
       q: "Can I get a chiropractic adjustment in Oregon through this visit?",

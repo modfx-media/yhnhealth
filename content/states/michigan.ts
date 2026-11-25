@@ -15,7 +15,7 @@ const michigan: HoStatePage = {
   abbreviation: "MI",
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in Michigan | YHN",
-  metaDescription: "Michigan residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in Michigan on the Lower or Upper Peninsula.",
+  metaDescription: "Michigan residents can start a Health Optimization Program by video with Dr. Lillee Chianese. There is no YHN clinic in Michigan on the Lower or Upper Peninsula.",
   h1: "Health Optimization Programs by Telehealth in Michigan",
   primaryKeyword: "health optimization telehealth in Michigan",
   blocks: [
@@ -25,7 +25,7 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, and Marquette all book the same visit, because none of them has a Your Health Now office. On both peninsulas the work with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP is a proactive video program for energy, hormones, metabolism, and a longer view of health, for someone who is not in the middle of a complex illness. You begin with a short fit-check call. If it fits, the working session is ninety minutes on video, and you then stay with it for six months or for a year.",
+      text: "Detroit, Grand Rapids, Ann Arbor, Lansing, Traverse City, and Marquette all book the same visit, because none of them has a Your Health Now office. On both peninsulas the work with Dr. Lillee Chianese, DC, ART, CPSC, NRCME is a proactive video program for energy, hormones, metabolism, and a longer view of health, for someone who is not in the middle of a complex illness. You begin with a short fit-check call. If it fits, the working session is ninety minutes on video, and you then stay with it for six months or for a year.",
     },
     {
       type: "p",
@@ -47,7 +47,7 @@ const michigan: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
+        "A complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
       ],
     },
     {
@@ -108,7 +108,7 @@ const michigan: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People in Michigan often ask what a functional medicine doctor actually does, and what the disadvantages are. On this offer, the work is a structured Health Optimization Program: a documented intake, a 90-minute visit, a 6- or 12-month pathway, and follow-up. From Michigan, this offer does not include a local clinic visit, a physical exam, an adjustment, emergency care, or Personalized Clinical Care. It does not replace your Michigan primary care relationship. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD. People in Michigan often ask what a functional medicine doctor actually does, and what the disadvantages are. On this offer, the work is a structured Health Optimization Program: a documented intake, a 90-minute visit, a 6- or 12-month pathway, and follow-up. From Michigan, this offer does not include a local clinic visit, a physical exam, an adjustment, emergency care, or Personalized Clinical Care. It does not replace your Michigan primary care relationship. Her biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "h2",
@@ -137,8 +137,8 @@ const michigan: HoStatePage = {
       a: "If you live in Gogebic, Iron, Dickinson, or Menominee County, you are on Central time, one hour behind the booking calendar. Subtract an hour from the Eastern-time slot you see. The rest of Michigan, including the rest of the Upper Peninsula, stays on Eastern time and does not convert.",
     },
     {
-      q: "Is Dr. Chris a medical doctor?",
-      a: "No. He is a Doctor of Chiropractic with a master\u2019s in applied nutrition and the IFM FMCP credential. Details are on [Meet the Doctor](/meet-the-doctor).",
+      q: "Is Dr. Lillee a medical doctor?",
+      a: "No. She is a Doctor of Chiropractic (DC, ART, CPSC, NRCME). Details are on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "Can I get a chiropractic adjustment in Michigan through this visit?",
@@ -146,7 +146,7 @@ const michigan: HoStatePage = {
     },
     {
       q: "I have questions about Lyme disease. Is this the right page?",
-      a: "A Health Optimization Program is not the Lyme pathway, and Personalized Clinical Care is not currently listed for Michigan. Tell Dr. Chris why you are calling on the complimentary consult so you are not placed in the wrong type of care. Background reading is on the Lyme pages linked above.",
+      a: "A Health Optimization Program is not the Lyme pathway, and Personalized Clinical Care is not currently listed for Michigan. Tell Dr. Lillee why you are calling on the complimentary consult so you are not placed in the wrong type of care. Background reading is on the Lyme pages linked above.",
     },
     {
       q: "I live in Michigan, near Ohio. Which page should I use?",

@@ -14,7 +14,7 @@ const florida: HoStatePage = {
   presence: "fm-telehealth",
   title: "Health Optimization Telehealth in Florida | YHN",
   metaDescription:
-    "Florida residents can start a Health Optimization Program by video with Dr. Chris, or use our existing functional medicine telehealth page.",
+    "Florida residents can start a Health Optimization Program by video with Dr. Lillee, or use our existing functional medicine telehealth page.",
   h1: "Health Optimization Programs by Telehealth in Florida",
   primaryKeyword: "health optimization telehealth in Florida",
   blocks: [
@@ -58,13 +58,13 @@ const florida: HoStatePage = {
     },
     {
       type: "p",
-      text: "The complimentary consult is a fit check with Dr. Chris, not a treatment visit and not a diagnosis. If a Health Optimization Program is the right path, it begins with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. If Personalized Clinical Care is the right path, follow the process described on the [Florida functional medicine](/functional-medicine/florida) page rather than starting a program that is not built for a complex case. Professional supplements, when recommended in a program, are purchased separately.",
+      text: "The complimentary consult is a fit check with Dr. Lillee, not a treatment visit and not a diagnosis. If a Health Optimization Program is the right path, it begins with a 90-minute telehealth visit: intake, goal setting, and the choice of a 6-month or 12-month pathway. If Personalized Clinical Care is the right path, follow the process described on the [Florida functional medicine](/functional-medicine/florida) page rather than starting a program that is not built for a complex case. Professional supplements, when recommended in a program, are purchased separately.",
     },
     { type: "h2", text: "Florida health picture, and which programs are most relevant here" },
     { type: "p", text: "These figures are about the state, not about outcomes in our practice." },
     {
       type: "p",
-      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason the Florida guide leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people who want a structured look at cardiovascular wellness and family history. Many people in Miami, Tampa, and Naples want a longevity clinic they can drive to. Your Health Now does not keep a walk-in office anywhere in Florida. Longevity support with Dr. Chris is a video program, with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
+      text: "Florida is older than the country, and older than the other states in this first group. The Census Bureau’s 2024 American Community Survey 1-year estimates put 21.8% of Florida’s population at age 65 or older, compared with 18.0% nationally, 20.4% in Pennsylvania, 18.9% in New York, 18.0% in New Jersey, and 16.5% in California. That is the main reason the Florida guide leads with the [Longevity & Healthy Aging Program](/health-optimization-programs), for people who want a proactive plan around energy, cognitive function, and longer-term wellness, and the [Heart Health Optimization Program](/health-optimization-programs), for people who want a structured look at cardiovascular wellness and family history. Many people in Miami, Tampa, and Naples want a longevity clinic they can drive to. Your Health Now does not keep a walk-in office anywhere in Florida. Longevity support with Dr. Lillee is a video program, with no local office. Neither of those programs is emergency or hospital care, and neither replaces a Florida physician when urgent symptoms appear.",
     },
     {
       type: "p",
@@ -77,7 +77,7 @@ const florida: HoStatePage = {
     { type: "h2", text: "Who you see" },
     {
       type: "p",
-      text: "Telehealth visits, on both the program pathway and the Florida functional medicine pathway, are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and he is not a naturopathic physician. People sometimes ask whether we run a naturopathic medical school in Florida or keep a list of the state’s healthcare providers. We will not publish a directory of Florida health systems, and we are not a naturopathic school or clinic. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Health Optimization visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD. Florida functional medicine visits stay with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, who is also not an MD and not a naturopathic physician. People sometimes ask whether we run a naturopathic medical school in Florida or keep a list of the state’s healthcare providers. We will not publish a directory of Florida health systems, and we are not a naturopathic school or clinic. Biographies for both doctors are on [Meet the Doctor](/meet-the-doctor).",
     },
     { type: "h2", text: "How to start" },
     {
@@ -108,11 +108,11 @@ const florida: HoStatePage = {
     },
     {
       q: "Does a functional medicine or health optimization clinician have to go to medical school?",
-      a: "Not always. Dr. Chris is a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential, not an MD and not a naturopathic doctor. His training is on [Meet the Doctor](/meet-the-doctor).",
+      a: "Not always. Health Optimization visits are with Dr. Lillee, a chiropractic physician (DC, ART, CPSC, NRCME), not an MD. Functional medicine visits in Florida are with Dr. Chris, who is also not an MD. Training for both is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "What is the difference between functional medicine and holistic medicine?",
-      a: "Those labels are used loosely, and they are not interchangeable licenses. At Your Health Now, Florida residents can use a structured Health Optimization Program or, when the case is more complex, Personalized Clinical Care, both with Dr. Chris, by video. We do not compare every holistic or naturopathic model in Florida.",
+      a: "Those labels are used loosely, and they are not interchangeable licenses. At Your Health Now, Florida residents can use a structured Health Optimization Program with Dr. Lillee or, when the case is more complex, Personalized Clinical Care with Dr. Chris, both by video. We do not compare every holistic or naturopathic model in Florida.",
     },
     {
       q: "Where do I ask how a Florida program is set up?",

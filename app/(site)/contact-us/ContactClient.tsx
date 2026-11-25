@@ -142,7 +142,7 @@ export default function ContactClient() {
                   Book a Free Discovery Call
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">
-                  A complimentary 30-minute call with Dr. Chris to find the Health
+                  A complimentary 30-minute call with Dr. Lillee to find the Health
                   Optimization Program that fits your goals. Open to residents in{" "}
                   <Link href="/health-optimization-programs#coverage" className="font-semibold text-accent hover:text-white">
                     all 50 states

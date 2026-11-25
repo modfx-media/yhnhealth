@@ -69,14 +69,14 @@ export default function ConsultationCallBanner() {
               <h2 className="mt-6 font-display text-3xl font-bold leading-[1.1] text-brand md:text-4xl lg:text-5xl">
                 30 Minutes with{" "}
                 <span className="font-script font-normal italic text-accent">
-                  Dr. Chris
+                  Dr. Lillee
                 </span>
               </h2>
 
               <p className="mt-5 max-w-xl text-base leading-relaxed text-stone md:text-lg">
                 Health Optimization Programs are structured, doctor-led pathways
                 for energy, hormones, metabolism, longevity, and overall wellness.
-                Start with a complimentary 30-minute discovery call with Dr. Chris.
+                Start with a complimentary 30-minute discovery call with Dr. Lillee.
                 Open to residents in{" "}
                 <Link href="/health-optimization-programs#coverage" className="font-semibold text-brand underline decoration-accent/50 underline-offset-4 hover:text-accent-dark">
                   all 50 states
@@ -124,7 +124,7 @@ export default function ConsultationCallBanner() {
                   Schedule Your Free Consult
                 </p>
                 <p className="mt-3 font-display text-xl font-bold leading-tight text-brand md:text-2xl">
-                  30 minutes with Dr. Chris
+                  30 minutes with Dr. Lillee
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-stone">
                   A complimentary 30-minute discovery call, by secure video,
@@ -147,7 +147,7 @@ export default function ConsultationCallBanner() {
                         Free Discovery Call
                       </p>
                       <p className="mt-1 font-display text-lg font-bold text-white">
-                        30 minutes with Dr. Chris
+                        30 minutes with Dr. Lillee
                       </p>
                     </div>
                     <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-accent">

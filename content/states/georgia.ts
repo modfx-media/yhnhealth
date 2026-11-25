@@ -13,17 +13,17 @@ const georgia: HoStatePage = {
   abbreviation: "GA",
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in Georgia | YHN",
-  metaDescription: "Georgia residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in Georgia, including metro Atlanta.",
+  metaDescription: "Georgia residents can start a Health Optimization Program by video with Dr. Lillee Chianese. There is no YHN clinic in Georgia, including metro Atlanta.",
   h1: "Health Optimization Programs by Telehealth in Georgia",
   primaryKeyword: "health optimization telehealth in Georgia",
   blocks: [
     {
       type: "p",
-      text: "Atlanta is where most Georgians start looking for a clinician they can drive to, and Savannah, Augusta, Macon, and Columbus are not the same trip. Your Health Now does not have a Georgia clinic in any of those cities. A video visit will not stand in for an in-town exam room in Buckhead or Midtown. What we can offer from Georgia is honest telehealth with Dr. Chris, not a pretend Atlanta office.",
+      text: "Atlanta is where most Georgians start looking for a clinician they can drive to, and Savannah, Augusta, Macon, and Columbus are not the same trip. Your Health Now does not have a Georgia clinic in any of those cities. A video visit will not stand in for an in-town exam room in Buckhead or Midtown. What we can offer from Georgia is honest telehealth with Dr. Lillee, not a pretend Atlanta office.",
     },
     {
       type: "p",
-      text: "From Atlanta\u2019s perimeter to Savannah, Augusta, Macon, and Columbus, the offer is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is built for people who want a proactive plan around energy, hormones, metabolism, or longevity, and who are not bringing a complex illness that has already resisted ordinary care. You start with a fit-check call. If it fits, you come back for a ninety-minute video visit, then stay six months or a year.",
+      text: "From Atlanta\u2019s perimeter to Savannah, Augusta, Macon, and Columbus, the offer is a video Health Optimization Program with Dr. Lillee Chianese, DC, ART, CPSC, NRCME. It is built for people who want a proactive plan around energy, hormones, metabolism, or longevity, and who are not bringing a complex illness that has already resisted ordinary care. You start with a fit-check call. If it fits, you come back for a ninety-minute video visit, then stay six months or a year.",
     },
     {
       type: "p",
@@ -41,7 +41,7 @@ const georgia: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, including for people who live well outside metro Atlanta.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
+        "A complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
       ],
     },
     {
@@ -53,7 +53,7 @@ const georgia: HoStatePage = {
       items: [
         "No clinic inside the Perimeter, in Midtown, in Savannah, or in Augusta. An adjustment or a hands-on exam is only at Merchantville, New Jersey, 5 W Chestnut Ave, or Chalfont, Pennsylvania, 350 N Main St #201. Hartsfield-Jackson can get you on a plane. The program itself does not require that ticket.",
         "Personalized Clinical Care is not listed for Georgia. Florida\u2019s functional medicine page is for Florida residents. A Georgia address near the state line does not switch you onto it.",
-        "Nothing here states that Dr. Chris holds every Georgia license. Scope is confirmed for where you live before a first appointment.",
+        "Nothing here states that Dr. Lillee holds every Georgia license. Scope is confirmed for where you live before a first appointment.",
       ],
     },
     {
@@ -70,7 +70,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "There is no separate Atlanta version of the program. People sometimes ask about the limits of this kind of care, and the limits from Georgia are plain: no local clinic, no hands-on visit, no Personalized Clinical Care pathway, and no replacement for a Georgia primary care relationship. The work that is open is the structured program with Dr. Chris, by video.",
+      text: "There is no separate Atlanta version of the program. People sometimes ask about the limits of this kind of care, and the limits from Georgia are plain: no local clinic, no hands-on visit, no Personalized Clinical Care pathway, and no replacement for a Georgia primary care relationship. The work that is open is the structured program with Dr. Lillee, by video.",
     },
     {
       type: "h2",
@@ -102,7 +102,7 @@ const georgia: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. People in Georgia often start with the fact that he is not an MD, and they sometimes ask how functional medicine differs from integrative medicine. Those terms are used loosely in conversation, and they are not interchangeable licenses. At Your Health Now, Georgia residents can use a structured Health Optimization Program with Dr. Chris, by video. His biography is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD. People in Georgia often start with the fact that she is not an MD, and they sometimes ask how functional medicine differs from integrative medicine. Those terms are used loosely in conversation, and they are not interchangeable licenses. At Your Health Now, Georgia residents can use a structured Health Optimization Program with Dr. Lillee, by video. Her biography is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "h2",
@@ -135,8 +135,8 @@ const georgia: HoStatePage = {
       a: "Eastern time, which is Georgia\u2019s time zone. A slot at 7:30 a.m. is 7:30 a.m. on your clock.",
     },
     {
-      q: "Is Dr. Chris a medical doctor?",
-      a: "No. He is a Doctor of Chiropractic with a master\u2019s in applied nutrition and the IFM FMCP credential. Details are on [Meet the Doctor](/meet-the-doctor).",
+      q: "Is Dr. Lillee a medical doctor?",
+      a: "No. She is a Doctor of Chiropractic (DC, ART, CPSC, NRCME). Details are on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "Can I get a chiropractic adjustment in Georgia through this visit?",
@@ -148,7 +148,7 @@ const georgia: HoStatePage = {
     },
     {
       q: "What if my situation is more complex than a Health Optimization Program?",
-      a: "Tell Dr. Chris that on the complimentary consult. If Personalized Clinical Care is not open in Georgia, the honest next step may be a different kind of local care, not a stretched program.",
+      a: "Tell Dr. Lillee that on the complimentary consult. If Personalized Clinical Care is not open in Georgia, the honest next step may be a different kind of local care, not a stretched program.",
     },
   ],
   sources: [

@@ -13,7 +13,7 @@ const texas: HoStatePage = {
   abbreviation: "TX",
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in Texas | YHN",
-  metaDescription: "Texas residents can start a Health Optimization Program by video with Dr. Chris Chianese. There is no YHN clinic in Texas. Book on Central or Mountain time.",
+  metaDescription: "Texas residents can start a Health Optimization Program by video with Dr. Lillee Chianese. There is no YHN clinic in Texas. Book on Central or Mountain time.",
   h1: "Health Optimization Programs by Telehealth in Texas",
   primaryKeyword: "health optimization telehealth in Texas",
   blocks: [
@@ -23,7 +23,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "What a Texan can start, from the Piney Woods to the Permian Basin, is a video Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. It is a proactive plan for energy, hormones, metabolism, and longer-range health, for someone who is not asking to unpack a complex illness on the first call. You begin with a fit-check conversation. If you continue, the next session is ninety minutes on video, and you then decide on six months or a year.",
+      text: "What a Texan can start, from the Piney Woods to the Permian Basin, is a video Health Optimization Program with Dr. Lillee Chianese, DC, ART, CPSC, NRCME. It is a proactive plan for energy, hormones, metabolism, and longer-range health, for someone who is not asking to unpack a complex illness on the first call. You begin with a fit-check conversation. If you continue, the next session is ninety minutes on video, and you then decide on six months or a year.",
     },
     {
       type: "p",
@@ -31,7 +31,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "Austin, San Antonio, Houston, and Dallas feel like different states from the driver\u2019s seat, and El Paso is a long way from all of them. None of those cities has a Your Health Now office. A Houston patient and an Austin patient get the same video visit with Dr. Chris. Fort Worth is not a separate program from Dallas, and the Panhandle is not a separate program from the Gulf.",
+      text: "Austin, San Antonio, Houston, and Dallas feel like different states from the driver\u2019s seat, and El Paso is a long way from all of them. None of those cities has a Your Health Now office. A Houston patient and an Austin patient get the same video visit with Dr. Lillee. Fort Worth is not a separate program from Dallas, and the Panhandle is not a separate program from the Gulf.",
     },
     {
       type: "h2",
@@ -45,7 +45,7 @@ const texas: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state.",
-        "A complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
+        "A complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436, as a fit check before a first visit.",
       ],
     },
     {
@@ -57,7 +57,7 @@ const texas: HoStatePage = {
       items: [
         "No office in Austin, Houston, Dallas, San Antonio, Fort Worth, or El Paso. A hands-on exam or an adjustment means going to Merchantville, New Jersey, at 5 W Chestnut Ave, or Chalfont, Pennsylvania, at 350 N Main St #201. The distance between Texas cities is already a drive. The program does not add a flight east unless you choose one.",
         "Personalized Clinical Care is not listed for Texas. Living in Houston or Austin does not add the state to the nine-place clinical list on the live site.",
-        "Nothing here claims Dr. Chris is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
+        "Nothing here claims Dr. Lillee is licensed for every Texas service. Scope is confirmed for your part of the state before a first appointment.",
       ],
     },
     {
@@ -118,7 +118,7 @@ const texas: HoStatePage = {
     },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD, and Your Health Now is not a naturopathic clinic. Those are the two comparisons people in Texas often raise with us first. His full training is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD, and Your Health Now is not a naturopathic clinic. Those are the two comparisons people in Texas often raise with us first. Her full training is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "p",
@@ -151,8 +151,8 @@ const texas: HoStatePage = {
       a: "The calendar is Eastern time. Most of Texas is Central time, so subtract one hour. If you live in El Paso or Hudspeth County, you are on Mountain time; subtract two hours. Posted hours that run until 8:00 p.m. Eastern close at 7:00 p.m. Central and 6:00 p.m. Mountain.",
     },
     {
-      q: "Is Dr. Chris a medical doctor?",
-      a: "No. He is a Doctor of Chiropractic with a master\u2019s in applied nutrition and the IFM FMCP credential. His training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
+      q: "Is Dr. Lillee a medical doctor?",
+      a: "No. She is a Doctor of Chiropractic (DC, ART, CPSC, NRCME). Her training is listed on [Meet the Doctor](/meet-the-doctor). Your Health Now is not a naturopathic clinic.",
     },
     {
       q: "Can I get a chiropractic adjustment as part of this Texas visit?",
@@ -164,7 +164,7 @@ const texas: HoStatePage = {
     },
     {
       q: "What if my situation is more complex than a Health Optimization Program?",
-      a: "Tell Dr. Chris that on the complimentary consult. Do not choose a proactive program just because it is the offer currently listed for Texas. If Personalized Clinical Care is not open in the state, the honest next step may be a different kind of local care, not a stretched program.",
+      a: "Tell Dr. Lillee that on the complimentary consult. Do not choose a proactive program just because it is the offer currently listed for Texas. If Personalized Clinical Care is not open in the state, the honest next step may be a different kind of local care, not a stretched program.",
     },
   ],
   sources: [

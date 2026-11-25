@@ -10,7 +10,7 @@ const hub: HoHubPage = {
   blocks: [
     {
       type: "p",
-      text: "Your Health Now offers structured Health Optimization Programs to residents of every U.S. state, by secure video, with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. This hub is the map of what is actually open where you live — not a list of cities, and not a promise that every service on the site is available in every state.",
+      text: "Your Health Now offers structured Health Optimization Programs to residents of every U.S. state, by secure video, with Dr. Lillee Chianese, DC, ART, CPSC, NRCME. This hub is the map of what is actually open where you live — not a list of cities, and not a promise that every service on the site is available in every state.",
     },
     { type: "p", text: "There are two telehealth pathways, and they are not the same." },
     {
@@ -62,7 +62,7 @@ const hub: HoHubPage = {
     { type: "h2", text: "How a Health Optimization Program actually starts" },
     {
       type: "p",
-      text: "The first conversation is a complimentary 30-minute consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436. It is a fit check, not a treatment visit and not a diagnosis. You talk through why you are calling and whether a program, Personalized Clinical Care (if it is open in your state), or a different kind of local care is the better next step.",
+      text: "The first conversation is a complimentary 30-minute consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436. It is a fit check, not a treatment visit and not a diagnosis. You talk through why you are calling and whether a program, Personalized Clinical Care (if it is open in your state), or a different kind of local care is the better next step.",
     },
     {
       type: "p",
@@ -75,7 +75,7 @@ const hub: HoHubPage = {
     { type: "h2", text: "Who you see on a telehealth visit" },
     {
       type: "p",
-      text: "Telehealth visits for Health Optimization Programs, and for functional medicine in the nine states where that pathway is open, are with Dr. Chris Chianese. He is a chiropractic physician (DC, Sherman College) with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine, where he is a member and listed provider. His full training is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Health Optimization visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD. Functional medicine telehealth, in the nine states where that pathway is open, stays with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. Training for both doctors is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "p",
@@ -98,7 +98,7 @@ const hub: HoHubPage = {
     },
     {
       q: "What is the difference between Health Optimization Programs and functional medicine telehealth?",
-      a: "Health Optimization Programs are structured 6- or 12-month pathways for people who want a proactive plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. Personalized Clinical Care — functional medicine telehealth for more complex or ongoing illness — is currently offered only in nine states and Washington, D.C. The free consult is where Dr. Chris helps you tell the two apart.",
+      a: "Health Optimization Programs are structured 6- or 12-month pathways for people who want a proactive plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. Personalized Clinical Care — functional medicine telehealth for more complex or ongoing illness — is currently offered only in nine states and Washington, D.C. The free consult is where Dr. Lillee helps you tell the two apart.",
     },
     {
       q: "Do I have to visit the New Jersey or Pennsylvania clinic?",
@@ -106,11 +106,11 @@ const hub: HoHubPage = {
     },
     {
       q: "Who is the doctor on a telehealth visit?",
-      a: "Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP. The complimentary consult and the 90-minute program visit are with him.",
+      a: "Dr. Lillee Chianese, DC, ART, CPSC, NRCME. The complimentary consult and the 90-minute program visit are with her.",
     },
     {
       q: "Where are the details of a program explained?",
-      a: "Program details for your situation are covered in the complimentary 30-minute consult with Dr. Chris, or by calling (609) 651-7436. That call is a fit check. It is not a diagnosis, and it does not start a pathway by itself.",
+      a: "Program details for your situation are covered in the complimentary 30-minute consult with Dr. Lillee, or by calling (609) 651-7436. That call is a fit check. It is not a diagnosis, and it does not start a pathway by itself.",
     },
     {
       q: "How do I book, and what time zone is the calendar on?",

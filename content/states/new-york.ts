@@ -19,7 +19,7 @@ const newYork: HoStatePage = {
   presence: "ho-telehealth",
   title: "Health Optimization Telehealth in New York | YHN",
   metaDescription:
-    "Health optimization telehealth in New York is a secure video visit with Dr. Chris Chianese, from the city to Buffalo. There is no YHN clinic in the state.",
+    "Health optimization telehealth in New York is a secure video visit with Dr. Lillee Chianese, from the city to Buffalo. There is no YHN clinic in the state.",
   h1: "Health Optimization Programs by Telehealth in New York",
   primaryKeyword: "health optimization telehealth in New York",
   blocks: [
@@ -29,7 +29,7 @@ const newYork: HoStatePage = {
     },
     {
       type: "p",
-      text: "What is open to New York residents is a Health Optimization Program with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
+      text: "What is open to New York residents is a Health Optimization Program with Dr. Lillee Chianese, DC, ART, CPSC, NRCME, by secure video. These are structured, doctor-led 6- or 12-month pathways that use a functional medicine approach for people who want a plan around energy, hormones, metabolism, longevity, and related goals, even if they are not dealing with a major or complex illness. They start with a complimentary 30-minute consult and, if you continue, a 90-minute telehealth visit.",
     },
     {
       type: "p",
@@ -41,7 +41,7 @@ const newYork: HoStatePage = {
       type: "ul",
       items: [
         "All twelve [Health Optimization Programs](/health-optimization-programs), by secure video, from anywhere in the state, including New York City, Long Island, the Hudson Valley, and upstate.",
-        "A complimentary 30-minute fit-check consult with Dr. Chris, booked through Jane App or by calling (609) 651-7436.",
+        "A complimentary 30-minute fit-check consult with Dr. Lillee, booked through Jane App or by calling (609) 651-7436.",
       ],
     },
     { type: "p", text: "Not available in New York:" },
@@ -50,8 +50,8 @@ const newYork: HoStatePage = {
       items: [
         "A Your Health Now clinic, waiting room, physical exam, or chiropractic adjustment. Hands-on care is only at 5 W Chestnut Ave, Merchantville, NJ, and 350 N Main St #201, Chalfont, PA. If you will not be traveling to either office, do not expect a local in-person visit to be part of this program.",
         "Personalized Clinical Care / functional medicine telehealth for complex or chronic illness, unless and until the practice confirms that pathway is open in New York. It is not listed on the live site today.",
-        "A prediction of a particular result. Program details for a New York resident are covered in the consult, not assumed before you have spoken with Dr. Chris.",
-        "A statement that Dr. Chris is licensed to practice every form of care in New York. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
+        "A prediction of a particular result. Program details for a New York resident are covered in the consult, not assumed before you have spoken with Dr. Lillee.",
+        "A statement that Dr. Lillee is licensed to practice every form of care in New York. Telehealth licensing rules vary by state and by provider type. The team confirms licensing and scope of practice before a first visit.",
       ],
     },
     {
@@ -99,7 +99,7 @@ const newYork: HoStatePage = {
     { type: "h2", text: "Who you see, and questions we will answer plainly" },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is a Doctor of Chiropractic with a Master of Science in Applied Nutrition, the CPSC credential he founded, and the IFM FMCP credential through the Institute for Functional Medicine. He is not an MD. His full training is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Telehealth visits are with Dr. Lillee Chianese. She is a Doctor of Chiropractic (Sherman College, summa cum laude). She is Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). She is not an MD. Her full training is on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       type: "p",
@@ -129,12 +129,12 @@ const newYork: HoStatePage = {
       a: "No. The program is by secure video statewide. New York City, Long Island, and upstate residents use the same consult and the same 90-minute visit. The booking calendar is Eastern time for the entire state.",
     },
     {
-      q: "Can Dr. Chris prescribe medication in New York?",
+      q: "Can Dr. Lillee prescribe medication in New York?",
       a: "We do not make prescribing claims. Licensing and scope of practice are confirmed before a first visit. If prescribing is part of what you need, ask that question on the consult rather than assuming it from a title.",
     },
     {
       q: "Do functional medicine doctors go to medical school?",
-      a: "Not always, and Dr. Chris did not. He is a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential. Details are on [Meet the Doctor](/meet-the-doctor).",
+      a: "Not always, and Dr. Lillee did not. She is a chiropractic physician (DC, ART, CPSC, NRCME). Details are on [Meet the Doctor](/meet-the-doctor).",
     },
     {
       q: "Can I get a chiropractic adjustment as part of this New York visit?",
@@ -142,7 +142,7 @@ const newYork: HoStatePage = {
     },
     {
       q: "What if my situation is more complex than a Health Optimization Program?",
-      a: "Tell Dr. Chris that on the free consult. Do not choose a proactive program just because it is the offer currently listed for New York. If Personalized Clinical Care is not open in the state, the honest next step may be a different kind of local care, not a stretched program.",
+      a: "Tell Dr. Lillee that on the free consult. Do not choose a proactive program just because it is the offer currently listed for New York. If Personalized Clinical Care is not open in the state, the honest next step may be a different kind of local care, not a stretched program.",
     },
   ],
   sources: [

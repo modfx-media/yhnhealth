@@ -192,7 +192,7 @@ export default function HealthOptimizationProgramsClient() {
                   How It Starts
                 </p>
                 <p className="mt-3 font-display text-2xl font-bold text-brand">
-                  30min Discovery call with the doctor.
+                  30min Discovery call with Dr. Lillee.
                 </p>
                 <ul className="mt-5 space-y-3 text-sm text-stone">
                   <li className="flex items-start gap-2">
@@ -419,7 +419,7 @@ export default function HealthOptimizationProgramsClient() {
         variant="navy"
         eyebrow="Get Started"
         title="A complimentary 30-minute consultation."
-        copy="Speak with the Doctor to find the program that fits your goals, weight, hormones, energy, longevity, and more."
+        copy="Speak with Dr. Lillee to find the program that fits your goals, weight, hormones, energy, longevity, and more."
         fm
         consultHref={HO_DISCOVERY_URL}
         consultLabel="Free Discovery Call"

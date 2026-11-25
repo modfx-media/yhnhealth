@@ -13,13 +13,13 @@ const newJersey: HoStatePage = {
   presence: "clinic",
   title: "Health Optimization Telehealth in New Jersey | YHN",
   metaDescription:
-    "Functional medicine telehealth in New Jersey starts with a Health Optimization Program by video with Dr. Chris, or a visit to the Merchantville clinic.",
+    "Functional medicine telehealth in New Jersey starts with a Health Optimization Program by video with Dr. Lillee, or a visit to the Merchantville clinic.",
   h1: "Health Optimization Programs by Telehealth in New Jersey",
   primaryKeyword: "functional medicine telehealth New Jersey",
   blocks: [
     {
       type: "p",
-      text: "Merchantville is a working clinic at 5 W Chestnut Ave, Merchantville, NJ 08109, not a mailing address used to look local. If you live in Hoboken, Princeton, Morristown, or along the Shore, you still do not have to drive there to start a Health Optimization Program. New Jersey residents can begin with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP, by secure video from anywhere in the state.",
+      text: "Merchantville is a working clinic at 5 W Chestnut Ave, Merchantville, NJ 08109, not a mailing address used to look local. If you live in Hoboken, Princeton, Morristown, or along the Shore, you still do not have to drive there to start a Health Optimization Program. New Jersey residents can begin with Dr. Lillee Chianese, DC, ART, CPSC, NRCME, by secure video from anywhere in the state.",
     },
     {
       type: "p",
@@ -63,7 +63,7 @@ const newJersey: HoStatePage = {
     },
     {
       type: "p",
-      text: "If additional work beyond a Health Optimization Program seems to be in order — for example a more complex, chronic, or multi-system case — Dr. Chris will say so on the consult and point you to Personalized Clinical Care. That conversation belongs in New Jersey because the clinical pathway is actually open here.",
+      text: "If additional work beyond a Health Optimization Program seems to be in order — for example a more complex, chronic, or multi-system case — Dr. Lillee will say so on the consult and point you to Personalized Clinical Care. That conversation belongs in New Jersey because the clinical pathway is actually open here.",
     },
     { type: "h2", text: "New Jersey health picture, and which programs are most relevant here" },
     {
@@ -86,14 +86,14 @@ const newJersey: HoStatePage = {
       type: "p",
       text: "Those three program families are the ones we emphasize for New Jersey. The other nine programs remain open to New Jersey residents; they are described on the main programs page rather than restated here.",
     },
-    { type: "h2", text: "Who you see, and what his training actually is" },
+    { type: "h2", text: "Who you see, and what her training actually is" },
     {
       type: "p",
-      text: "Telehealth visits are with Dr. Chris Chianese. He is not an MD, and we will not imply that he is. He is a Doctor of Chiropractic (Sherman College, summa cum laude) with a Master of Science in Applied Nutrition from Canisius College, the Certification in Patient-Specific Chiropractic (CPSC) program he founded, and the Functional Medicine Certified Professional (FMCP) credential through the Institute for Functional Medicine, where he is a member and listed provider. His full biography, including additional training in IASTM, Active Release Technique, and functional neurology, is on [Meet the Doctor](/meet-the-doctor).",
+      text: "Health Optimization visits are with Dr. Lillee Chianese. She is not an MD, and we will not imply that she is. She is a Doctor of Chiropractic (Sherman College, summa cum laude), Webster Technique Certified, an Elite Provider in Active Release Technique (ART), an instructor for the Certification in Patient-Specific Chiropractic (CPSC), and a Nationally Registered Certified Medical Examiner (NRCME). Her biography is on [Meet the Doctor](/meet-the-doctor). Personalized Clinical Care in New Jersey stays with Dr. Chris Chianese, MS, DC, CPSC, IFM FMCP.",
     },
     {
       type: "p",
-      text: "People often ask whether Dr. Chris went to medical school. The honest answer is the credential list above. He is a chiropractic physician, not an MD. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first visit, not guessed ahead of that conversation.",
+      text: "People often ask whether Dr. Lillee went to medical school. The honest answer is the credential list above. She is a chiropractic physician, not an MD. Scope of practice — including what can and cannot be done on a telehealth visit in New Jersey — is confirmed with you before a first visit, not guessed ahead of that conversation.",
     },
     { type: "h2", text: "How to start" },
     {
@@ -108,7 +108,7 @@ const newJersey: HoStatePage = {
   faqs: [
     {
       q: "Do I need to live near Merchantville to start a Health Optimization Program in New Jersey?",
-      a: "No. Video visits with Dr. Chris are open to residents anywhere in New Jersey. The Merchantville clinic is available if you want or need an in-person chiropractic visit, but it is not required for the program.",
+      a: "No. Video visits with Dr. Lillee are open to residents anywhere in New Jersey. The Merchantville clinic is available if you want or need an in-person chiropractic visit, but it is not required for the program.",
     },
     {
       q: "Can I combine a video program with in-person chiropractic care at Merchantville?",
@@ -120,11 +120,11 @@ const newJersey: HoStatePage = {
     },
     {
       q: "Does a functional medicine clinician have to go to medical school?",
-      a: "Training varies. Dr. Chris is a chiropractic physician with a master’s in applied nutrition and the IFM FMCP credential, not an MD. His training is listed on [Meet the Doctor](/meet-the-doctor). We do not treat “functional medicine” as a substitute description for a medical-school degree.",
+      a: "Training varies. Health Optimization visits are with Dr. Lillee, a chiropractic physician (DC, ART, CPSC, NRCME), not an MD. Personalized Clinical Care is with Dr. Chris, who is also not an MD. Training for both is on [Meet the Doctor](/meet-the-doctor). We do not treat “functional medicine” as a substitute description for a medical-school degree.",
     },
     {
       q: "What is the difference between a functional medicine doctor and a holistic doctor?",
-      a: "Those labels are used loosely in everyday conversation, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs and Personalized Clinical Care follow a structured, doctor-led functional medicine approach with Dr. Chris. We do not use this guide to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
+      a: "Those labels are used loosely in everyday conversation, and they are not interchangeable licenses. At Your Health Now, Health Optimization Programs with Dr. Lillee and Personalized Clinical Care with Dr. Chris follow a structured, doctor-led approach. We do not use this guide to compare every holistic model in New Jersey. If you want to know what we actually do, the programs page and the free consult are the straight answers.",
     },
     {
       q: "I live in North Jersey. Can I stay on video the entire time?",
